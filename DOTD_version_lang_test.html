@@ -1,0 +1,868 @@
+<!------------- AM HTML EMAIL BOILERPLATE v2.0 // RDELACRUZ ------------->
+<!DOCTYPE HTML>
+<html>
+<head>
+    	<script type="text/javascript">
+            var pth = "https://s3.amazonaws.com/emailsquareknot/HARMONY_MAIN/IMAGES/";
+		function go()
+		{
+            var lng = document.getElementById("lang").value;
+            var ver = document.getElementById("version").value;
+            var d = new Date();
+            var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+            var fmons  = ["janvier", "février","mars","avril","mai","juin","juillet","août","septembre","octobre","novembre","décembre"];
+            var dt1 = months[d.getMonth()] + " " + d.getDate() + ", " + d.getFullYear();
+            var dt2 = d.getDate() + " " + months[d.getMonth()]  + " " + d.getFullYear();
+            document.getElementById("fname1").innerHTML = "Amanda-Courtney";
+            document.getElementById("fname2").innerHTML = "Amanda-Courtney";
+            document.getElementById("curdate").innerHTML = dt1;
+            document.getElementById("asofdate").innerHTML = dt1;
+            document.getElementById("dateasof").innerHTML = dt2;
+            document.getElementById("icon").src = pth + "am_dream_rewards_icon_" + lng + ".png";
+            document.getElementById("heroimg").src = pth + "am_dotd_2020_hero_" + lng + ".jpg";
+
+            if (lng == "e")
+                {
+                    tag = "Today's deal:"
+                    cta = "Use Miles";
+                    cat = 'Or, maybe something else from our <a href="https://rewards.airmiles.ca/merchandise?locale=en_CA&utm_campaign=' + ver + '_dotd-solo&utm_source=airmiles&utm_medium=email" target="_blank" style="font-weight: bold; color: #1790CC">Dream&nbsp;Catalogue</a>?';
+                    document.getElementById("fheader").style.display = "none";
+                    document.getElementById("eheader").style.display = "block";
+                    document.getElementById("ffooter").style.display = "none";
+                    document.getElementById("efooter").style.display = "block";
+                }
+            
+            if(lng == "f")
+                {
+                    tag = "Aubaine du jour&nbsp;:"
+                    cta = "Utilisez vos milles";
+                    cat = 'Ou, vous convoitez peut-être quelque chose dans notre <a href="https://rewards.airmiles.ca/merchandise?locale=fr_CA&utm_campaign=' + ver + '_dotd-solo&utm_source=airmiles&utm_medium=email" target="_blank" style="font-weight: bold; color: #1790CC">catalogue&nbsp;Rêves</a>?';
+                    document.getElementById("eheader").style.display = "none";
+                    document.getElementById("fheader").style.display = "block";
+                    document.getElementById("efooter").style.display = "none";
+                    document.getElementById("ffooter").style.display = "block";
+                }
+
+            document.getElementById("tagline").innerHTML = tag;
+            document.getElementById("cta1").innerHTML = cta;
+
+            switch (ver+lng)
+                {
+                    case '47395e':
+                    pcopy = 'Get the <b>Cuisinart<sup style="font-size: 75%; line-height: 75%;">®</sup> Griddler Five</b> for <b>28%</b> fewer&nbsp;Miles!';
+                    purl = 'https://rewards.airmiles.ca/merchandise/kitchen-and-dining/specialty-appliances/cuisinart-griddler-five/76415?utm_campaign=47395_julythursdaydotd&utm_source=airmiles&utm_medium=email&utm_content=-cuisinart';
+                    expd = 'While quantities last. Deal ends July&nbsp;2, 2020, 11:59 p.m. ET.';
+                    break;
+                    case '47396e':
+                    pcopy = 'Get the <b>Ray-Ban Aviator Classic Sunglasses</b> for <b>35%</b> fewer&nbsp;Miles!';
+                    purl = 'https://rewards.airmiles.ca/merchandise/mode-et-beaut%C3%A9/lunettes-de-soleil/lunettes-de-soleil-aviator-classicde-ray-ban---or-polioror-brun-classique-b-15/110462?locale=en_CA&utm_campaign=47396_julythursdaydotd&utm_source=airmiles&utm_medium=email&utm_content=-rayban';
+                    expd = 'While quantities last. Deal ends July&nbsp;9, 2020, 11:59 p.m. ET.';
+                    break;
+                    case '47397e':
+                    pcopy = 'Get the <b>Cuisinart<sup style="font-size: 75%; line-height: 75%;">®</sup> Precision Master Stand Mixer with Ice Cream Maker Attachment</b> for <b>32%</b> fewer&nbsp;Miles!';
+                    purl = 'https://rewards.airmiles.ca/merchandise/114198?utm_campaign=47397_julythursdaydotd&utm_source=airmiles&utm_medium=email&utm_content=-icecream';
+                    expd = 'While quantities last. Deal ends July&nbsp;19, 2020, 11:59 p.m. ET.';
+                    break;
+                    case '47398e':
+                    pcopy = 'Get the <b>Samsung Galaxy Buds</b> for <b>40%</b> fewer&nbsp;Miles!';
+                    purl = 'https://rewards.airmiles.ca/merchandise/114192?utm_campaign=47398_julythursdaydotd&utm_source=airmiles&utm_medium=email&utm_content=-samsung';
+                    expd = 'While quantities last. Deal ends July&nbsp;23, 2020, 11:59 p.m. ET.';
+                    break;
+                    case '47399e':
+                    pcopy = 'Get the <b>Revlon Salon One-Step Hair Dryer and Volumizer</b> for <b>33%</b> fewer&nbsp;Miles!';
+                    purl = 'https://rewards.airmiles.ca/merchandise/fashion-and-beauty/personal-care/revlon-salon-one-step-hair-dryer-and-volumizer---blackorpink/107368?utm_campaign=47399_julythursdaydotd&utm_source=airmiles&utm_medium=email&utm_content=-revlon';
+                    expd = 'While quantities last. Deal ends July&nbsp;30, 2020, 11:59 p.m. ET.';
+                    break;
+                    case '47395f':
+                    pcopy = 'Obtenez la <b>Gril Griddler Cinq de Cuisinart<sup style="font-size: 75%; line-height: 75%;">MD</sup></b> pour <b>28&nbsp;%</b> de milles en&nbsp;moins!';
+                    purl = 'https://rewards.airmiles.ca/merchandise/kitchen-and-dining/specialty-appliances/cuisinart-griddler-five/76415?locale=fr_CA&utm_campaign=47395_julythursdaydotd&utm_source=airmiles&utm_medium=email&utm_content=-cuisinart';
+                    expd = 'Jusqu‘à épuisement des stocks. L‘aubaine prend fin le 2&nbsp;juillet&nbsp;2020 à 23 h 59 (HE).';
+                    break;
+                    case '47396f':
+                    pcopy = 'Obtenez la <b>Lunettes de soleil Aviator Classic de Ray-Ban</b> pour <b>35&nbsp;%</b> de milles en&nbsp;moins!';
+                    purl = 'https://rewards.airmiles.ca/merchandise/mode-et-beaut%C3%A9/lunettes-de-soleil/lunettes-de-soleil-aviator-classicde-ray-ban---or-polioror-brun-classique-b-15/110462?utm_campaign=47396_julythursdaydotd&utm_source=airmiles&utm_medium=email&utm_content=-rayban';
+                    expd = 'Jusqu‘à épuisement des stocks. L‘aubaine prend fin le 9&nbsp;juillet&nbsp;2020 à 23 h 59 (HE).';
+                    break;
+                    case '47397f':
+                    pcopy = 'Obtenez la <b>Batteur sur socle Precision Master de Cuisinart avec l’accessoire pour crème glacée</b> pour <b>32&nbsp;%</b> de milles en&nbsp;moins!';
+                    purl = 'https://rewards.airmiles.ca/merchandise/114198?utm_campaign=47397_julythursdaydotd&utm_source=airmiles&utm_medium=email&utm_content=-icecream';
+                    expd = 'Jusqu‘à épuisement des stocks. L‘aubaine prend fin le 19&nbsp;juillet&nbsp;2020 à 23 h 59 (HE).';
+                    break;
+                    case '47398f':
+                    pcopy = 'Obtenez la <b>Oreillettes Galaxy Buds Samsung</b> pour <b>40&nbsp;%</b> de milles en&nbsp;moins!';
+                    purl = 'https://rewards.airmiles.ca/merchandise/114192?utm_campaign=47398_julythursdaydotd&utm_source=airmiles&utm_medium=email&utm_content=-samsung';
+                    expd = 'Jusqu‘à épuisement des stocks. L‘aubaine prend fin le 23&nbsp;juillet&nbsp;2020 à 23 h 59 (HE).';
+                    break;
+                    case '47399f':
+                    pcopy = 'Obtenez la <b>Sèche-cheveux et volumateur de salon One Step de Revlon</b> pour <b>33&nbsp;%</b> de milles en&nbsp;moins!';
+                    purl = 'https://rewards.airmiles.ca/merchandise/fashion-and-beauty/personal-care/revlon-salon-one-step-hair-dryer-and-volumizer---blackorpink/107368?locale=fr_CA&utm_campaign=47399_julythursdaydotd&utm_source=airmiles&utm_medium=email&utm_content=-revlon';
+                    expd = 'Jusqu‘à épuisement des stocks. L‘aubaine prend fin le 30&nbsp;juillet&nbsp;2020 à 23 h 59 (HE).';
+                }
+
+            document.getElementById("prodcopy").innerHTML = pcopy;
+            document.getElementById("prodimg").src = pth + ver + "_am_dotd_offer.jpg";
+            document.getElementById("produrl").setAttribute("href",purl);
+            document.getElementById("cta1url").setAttribute("href",purl);
+            document.getElementById("expcopy").innerHTML = expd;
+            document.getElementById("catcopy").innerHTML = cat;
+
+        }
+
+	</script>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>DOTD</title>
+<style type="text/css">
+/*---------------------------- RESET STYLES ----------------------------*/
+table, td {
+ border-collapse: collapse;
+ mso-table-lspace: 0pt;
+ mso-table-rspace: 0pt;
+}
+.ReadMsgBody {
+ width: 100%;
+}
+.ExternalClass {
+ width: 100%;
+}
+a img {
+ border: none;
+}
+.yshortcuts, a .yshortcuts, a .yshortcuts:hover, a .yshortcuts:active, a .yshortcuts:focus {
+ background-color: transparent !important;
+ border: none !important;
+ color: inherit !important;
+}
+
+/*----- IOS LINKS FIX -----*/
+
+a[x-apple-data-detectors] {
+ color: inherit !important;
+ text-decoration: none !important;
+ font-size: inherit !important;
+ font-family: inherit !important;
+ font-weight: inherit !important;
+ line-height: inherit !important;
+}
+.appleIOSFix a {
+ color: inherit;
+ text-decoration: none;
+}
+
+/*----- WEBFONTS -----*/
+
+@media screen {
+@font-face {
+ font-family: 'OmnesLight';
+ src: url('https://squ.airmiles.ca/cdn/font/files/OmnesLight.ttf') format('truetype');
+ font-weight: normal;
+ font-style: normal;
+}
+@font-face {
+ font-family: 'Omnes';
+ src: url('https://squ.airmiles.ca/cdn/font/files/Omnes.ttf') format('truetype');
+ font-weight: normal;
+ font-style: normal;
+}
+@font-face {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Nunito Regular'), local('Nunito-Regular'), url(https://fonts.gstatic.com/s/nunito/v8/6TbRXKWJjpj6V2v_WyRbMevvDin1pK8aKteLpeZ5c0A.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+}
+
+/*-- Insert Media Queries --*/
+/*---------------------------- MOBILE TARGETING ----------------------------*/
+
+@media only screen and (max-device-width: 480px) {
+/* TEMPLATE AND BASIC STYLES */
+
+/*----- STRUCTURE -----*/
+
+*[class=Container] {
+ max-width: 600px !important;
+ width: 100% !important;
+}
+*[class=Stack] {
+ display: block !important;
+ clear: both !important;
+ width: 100% !important;
+}
+*[class=TopCol] {
+ display: table-header-group !important;
+ clear: both !important;
+}
+*[class=BottomCol] {
+ display: table-footer-group !important;
+ width: 100% !important;
+}
+*[class=MidCol] {
+ display: table-row-group !important;
+ width: 100% !important;
+}
+*[class=RevStack] {
+ display: table-cell !important;
+ width: auto !important;
+}
+*[class=Fullwidth] {
+ width: 100% !important;
+}
+*[class=Halfwidth] {
+ width: 50% !important;
+ height: auto !important;
+}
+*[class=BottomNav] {
+ display: block !important;
+ clear: both !important;
+ width: auto !important;
+ font-size: 17px !important;
+ background-color: #15bef0 !important;
+ border: solid !important;
+ border-width: 2px !important;
+ border-color: #FFFFFF !important;
+ padding: 8px 8px 8px 8px !important;
+}
+*[class=CenterTbl] {
+ margin: auto !important;
+}
+/*----- CONTENT -----*/
+
+*[class=Img] {
+ max-width: 600px !important;
+ height: auto !important;
+ width: 100% !important;
+}
+*[class=Origsize] {
+ width: auto !important;
+ height: auto !important;
+}
+*[class=Hide] {
+ display: none !important;
+}
+*[class=LeftAlign] {
+ text-align: left !important;
+}
+*[class=CenterAlign] {
+ text-align: center !important;
+}
+*[class=RightAlign] {
+ text-align: right !important;
+}
+*[class=LetterCap] {
+ text-transform: uppercase !important;
+}
+*[class=Headline] {
+ font-size: 30px !important;
+ line-height: 32px !important;
+}
+*[class=Body] {
+ font-size: 15px !important;
+ line-height: 18px !important;
+}
+*[class=Legal] {
+ font-size: 12px !important;
+ line-height: 12px !important;
+}
+*[class=WhiteLink] {
+ color: #FFFFFF !important;
+}
+*[class=DarkLink] {
+ color: #000000 !important;
+}
+*[class=AMButton] {
+ width: 70px !important;
+ height: auto !important;
+}
+
+/* Insert ADDITIONAL STYLES here - IF REQUIRED */
+
+
+}
+
+
+                </style>
+         </head>
+<body style="margin: 0; padding: 0; -webkit-font-smoothing: antialiased; width: 100%; -webkit-text-size-adjust: none; background-color: #EFEFEF;">
+<center>
+
+
+<!--Begin SLUGLINE-->
+  <table width="640" border="0" cellspacing="0" cellpadding="0" class="Hide">
+    <tr>
+      <td style="padding: 0px 0px 20px 0px;"><table width="640" border="0" cellspacing="0" cellpadding="0" style="background-color: #FFFFFF;">
+          <tr>
+            <td width="620" height="20" align="center" style="background-color: #f4a57a;
+background-image: repeating-linear-gradient(45deg, transparent, transparent 25px, rgba(255,255,255,.5) 25px, rgba(255,255,255,.5) 50px); padding: 3px 0px 3px 0px;"><span style="font-size: 11px; font-family: Arial, Helvetica, sans-serif; font-weight: bold; color: #000000;">REMOVE BEFORE POSTING</span></td>
+          </tr>
+        </table>
+        <table width="640" height="195" border="0" cellpadding="0" cellspacing="10" style="background-image: url(https://s3.amazonaws.com/emailsquareknot/HARMONY_MAIN/IMAGES/TMP_email_slug_NEW.gif); background-position: top; background-repeat: no-repeat;">
+          <tr>
+            <td width="620"  valign="top" style="padding: 12px 0px 0px 0px">
+                <table width="620" border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                    <td>
+                        <table>
+                            <tbody>
+                                <tr>
+                                  <td width="180" height="25">&nbsp;</td>
+                                  <td width="295" height="25" align="left" style="background-color: #FBEB7C; font-size: 12px; font-family: Arial, Helvetica, sans-serif">
+                                      <label for="lang" style="padding: 0px 0px 0px 10px; font-size: 14px; font-family: Airal, Helvetica, sans-serif; color: #000000"><b>Select Language:&nbsp;</b></label>
+                                      <select name="lang" id="lang">
+                                          <option value="e">English</option>
+                                          <option value="f">French</option>
+                                      </select>
+                                    </td>
+                                  <td width="49" height="25">&nbsp;</td>
+                                  <td width="116" height="25" align="right" style="font-size: 12px; font-family: Arial, Helvetica, sans-serif;">AC</td>
+                                </tr>
+                                <tr>
+                                  <td width="180" height="24">&nbsp;</td>
+                                  <td width="295" height="24" align="left" style="background-color : #FBEB7C;  font-size: 12px; font-family: Arial, Helvetica, sans-serif">
+                                      <label for="version" style="padding: 0px 0px 0px 10px; font-size: 14px; font-family: Airal, Helvetica, sans-serif; color: #000000"><b>Select Version:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b></label>
+                                      <select name="version" id="version">
+                                          <option value="47395">July 2</option>
+                                          <option value="47396">July 9</option>
+                                          <option value="47397">July 16</option>
+                                          <option value="47398">July 23</option>
+                                          <option value="47399">July 30</option>
+                                      </select>
+                                <button onclick="go()">Go!</button>
+                                    </td>
+                                  <td width="49" height="24">&nbsp;</td>
+                                  <td width="116" height="24" align="right" style="font-size: 12px; font-family: Arial, Helvetica, sans-seri;"><span id="curdate"></span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td>
+                        <table>
+                            <tbody>
+                                <tr>
+                                  <td width="180" height="18">&nbsp;</td>
+                                  <td width="288" height="18" align="right" valign="bottom" style="font-size: 12px; font-family: Arial, Helvetica, sans-serif; line-height: 20px">DOTD versions test</td>
+                                  <td width="50" height="18">&nbsp;</td>
+                                  <td width="122" height="18">&nbsp;</td>
+                                </tr>
+                                <tr>
+                                  <td width="180" height="24">&nbsp;</td>
+                                  <td width="288" height="24" align="right" valign="bottom" style="font-size: 12px; font-family: Arial, Helvetica, sans-serif;"><b>Responsive</b></td>
+                                  <td width="50" height="24">&nbsp;</td>
+                                  <td width="122" height="24">&nbsp;</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+                </table></td>
+          </tr>
+
+          <tr>
+            <td width="620" height="52" valign="top"><table width="72" height="45" valign="top" border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                  <td align="center" style="font-size: 18px; font-family: Arial, Helvetica, sans-serif; font-weight: bold; color: #CD0B0E; line-height: 18px">R1</td>
+                </tr>
+              </table></td>
+          </tr>
+        </table>
+        <table width="640" border="0" cellspacing="0" cellpadding="0" style="background-color: #FFFFFF;">
+          <tr>
+            <td width="620" height="20" align="center" style="background-color: #f4a57a;
+background-image: repeating-linear-gradient(45deg, transparent, transparent 25px, rgba(255,255,255,.5) 25px, rgba(255,255,255,.5) 50px); padding: 3px 0px 3px 0px;"><span style="font-size: 11px; font-family: Arial, Helvetica, sans-serif; font-weight: bold; color: #000000;">REMOVE BEFORE POSTING</span></td>
+          </tr>
+        </table></td>
+    </tr>
+  </table>
+<!--End SLUGLINE-->
+
+
+  <table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#EFEFEF">
+    <tbody>
+      <tr>
+        <td align="center"><!--Begin CONTAINER-->
+          <table width="600" border="0" cellspacing="0" cellpadding="0" class="Container">
+            <tbody>
+              <tr>
+                <td align="center" bgcolor="#FFFFFF">
+
+<!--Begin TEMPLATE HEADER English-->         
+<div id = "eheader"  style="display: none">
+          <table width="100%" border="0" cellspacing="0" cellpadding="0" style="border-top: solid; border-top-width: 1px; border-top-color: #CCCCCC;">
+            <tbody>
+              <tr>
+                <td width="6%" align="left" valign="top">&nbsp;</td>
+                <td align="left" valign="top" style="padding: 20px 0px 20px 0px;"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tbody>
+                      <tr>
+                        <td width="22%" align="left" valign="middle"><img src="https://s3.amazonaws.com/emailsquareknot/HARMONY_MAIN/IMAGES/AM_Button_B_E.png" alt="AIR&nbsp;MILES" width="95" height="95" border="0" style="vertical-align: bottom;" class="Img"></td>
+                        <td align="left" valign="top">&nbsp;</td>
+                        <td width="73%" align="right" valign="middle"><table border="0" cellspacing="0" cellpadding="0">
+                            <tbody>
+                              <tr>
+                                <td align="left"><table border="0" cellspacing="0" cellpadding="0">
+                                    <tbody>
+                                      <tr>
+                                        <td align="left" valign="top" style="font-size: 15px; font-family: Calibri, Arial, Helvetica, sans-serif; line-height: 18px; color: #4c4c4c; white-space: nowrap;">Hey <span id="fname1"></span>! <br>
+                                          <span class="appleIOSFix">As of <span id="asofdate"></span></span>, you have:</td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                  <table border="0" cellspacing="0" cellpadding="0">
+                                    <tbody>
+                                      <tr>
+                                        <td width="140" align="left" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                            <tbody>
+                                              <tr>
+                                                <td width="10" align="left" valign="middle" style="font-size: 32px; font-family: Calibri, Arial, Helvetica, sans-serif; line-height: 32px; color: #065ba4; white-space: nowrap;"><span class="Headline">0,000&nbsp;</span></td>
+                                                <td width="70" align="left" valign="middle" style="font-size: 13px; font-family: Calibri, Arial, Helvetica, sans-serif; line-height: 13px; color: #065ba4;" class="Legal">Cash <br>
+                                                  Miles</td>
+                                              </tr>
+                                            </tbody>
+                                          </table></td>
+                                        <td width="20" align="center" valign="top">&nbsp;</td>
+                                        <td width="140" align="left" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                            <tbody>
+                                              <tr>
+                                                <td width="10" align="left" valign="middle" style="font-size: 32px; font-family: Calibri, Arial, Helvetica, sans-serif; line-height: 32px; color: #065ba4; white-space: nowrap;"><span class="Headline">0,000&nbsp;</span></td>
+                                                <td width="70" align="left" valign="middle" style="font-size: 13px; font-family: Calibri, Arial, Helvetica, sans-serif; line-height: 13px; color: #065ba4;" class="Legal">Dream <br>
+                                                  Miles</td>
+                                              </tr>
+                                            </tbody>
+                                          </table></td>
+                                      </tr>
+                                    </tbody>
+                                  </table></td>
+                              </tr>
+                            </tbody>
+                          </table></td>
+                      </tr>
+                    </tbody>
+                  </table></td>
+                <td width="6%" align="left" valign="top">&nbsp;</td>
+              </tr>
+            </tbody>
+          </table>
+</div>
+<!--End TEMPLATE HEADER English-->
+
+
+<!--Begin TEMPLATE HEADER French-->
+<div id = "fheader" style="display: none">
+<table width="100%" border="0" cellspacing="0" cellpadding="0" style="border-top: solid; border-top-width: 1px; border-top-color: #CCCCCC;">
+            <tbody>
+              <tr>
+                <td width="6%" align="left" valign="top">&nbsp;</td>
+                <td align="left" valign="top" style="padding: 20px 0px 20px 0px;"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tbody>
+                      <tr>
+                        <td width="22%" align="left" valign="middle"><img src="https://s3.amazonaws.com/emailsquareknot/HARMONY_MAIN/IMAGES/AM_Button_B_F.png" alt="AIR&nbsp;MILES" width="95" height="95" border="0" style="vertical-align: bottom;" class="Img"></td>
+                        <td align="left" valign="top">&nbsp;</td>
+                        <td width="73%" align="right" valign="middle"><table border="0" cellspacing="0" cellpadding="0">
+                            <tbody>
+                              <tr>
+                                <td align="left"><table border="0" cellspacing="0" cellpadding="0">
+                                    <tbody>
+                                      <tr>
+                                        <td align="left" valign="top" style="font-size: 15px; font-family: Calibri, Arial, Helvetica, sans-serif; line-height: 18px; color: #4c4c4c; white-space: nowrap;">Bonjour <span id="fname2"></span>! <br>
+                                          <span class="appleIOSFix"></span>Au <span id="dateasof"></span>, vous avez :</td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                  <table border="0" cellspacing="0" cellpadding="0">
+                                    <tbody>
+                                      <tr>
+                                        <td width="140" align="left" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                            <tbody>
+                                              <tr>
+                                                <td width="10" align="left" valign="middle" style="font-size: 32px; font-family: Calibri, Arial, Helvetica, sans-serif; line-height: 32px; color: #065ba4; white-space: nowrap;"><span class="Headline">0&nbsp;000&nbsp;</span></td>
+                                                <td width="70" align="left" valign="middle" style="font-size: 13px; font-family: Calibri, Arial, Helvetica, sans-serif; line-height: 13px; color: #065ba4;" class="Legal">Milles <br>
+                                                  Argent</td>
+                                              </tr>
+                                            </tbody>
+                                          </table></td>
+                                        <td width="20" align="center" valign="top">&nbsp;</td>
+                                        <td width="140" align="left" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                            <tbody>
+                                              <tr>
+                                                <td width="10" align="left" valign="middle" style="font-size: 32px; font-family: Calibri, Arial, Helvetica, sans-serif; line-height: 32px; color: #065ba4; white-space: nowrap;"><span class="Headline">0&nbsp;000&nbsp;</span></td>
+                                                <td width="70" align="left" valign="middle" style="font-size: 13px; font-family: Calibri, Arial, Helvetica, sans-serif; line-height: 13px; color: #065ba4;" class="Legal">Milles <br>
+                                                  Rêves</td>
+                                              </tr>
+                                            </tbody>
+                                          </table></td>
+                                      </tr>
+                                    </tbody>
+                                  </table></td>
+                              </tr>
+                            </tbody>
+                          </table></td>
+                      </tr>
+                    </tbody>
+                  </table></td>
+                <td width="6%" align="left" valign="top">&nbsp;</td>
+              </tr>
+            </tbody>
+          </table>
+</div>
+<!--End TEMPLATE HEADER French-->
+
+<!--Begin Contatiner-->
+<table width="100%" bgcolor="" border="0" cellspacing="0" cellpadding="0">
+            <tbody>
+              <tr>
+                <td width="6%">&nbsp;</td>
+                <td>
+                  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tbody>
+                      <tr>
+                        <td align="left"  style="padding: 20px 0px 20px 0px"><img src="xx" id="icon" height="30" alt="Icon" border="0" style="vertical-align: bottom" class="Origsize"></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                 </td>
+              <td width="6%">&nbsp;</td>  
+              </tr>
+            </tbody>
+</table>
+
+<!--Begin HERO1COLRSPNOBTN-->
+          <table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="">
+            <tbody>
+              <tr>
+              <td align="center" style="line-height: 1px; padding: 0px 0px 0px 0px;"><div><img src="xx" id="heroimg" alt="Hero" width="600" height="462" class="Img" style="vertical-align: bottom;" border="0"></div></td>
+              </tr>
+            </tbody>
+          </table>
+<!--End HERO1COLRSPNOBTN-->
+
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tbody>
+              <tr>
+                <td width="6%">&nbsp;</td>
+                <!--Begin TXT1COLCTR-->
+                <td>
+                  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tbody>
+                      <tr>
+                        <td align="center"  style="padding: 40px 0px 15px 0px; font-size: 26px; font-weight: lighter; font-family: Calibri, Arial, Helvetica, sans-serif; line-height: 30px; color: #1790CC" ><span id="tagline"></span></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+ <!--End TXT1COLCTR-->
+              <td width="6%">&nbsp;</td>  
+              </tr>
+            </tbody>
+</table>
+
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tbody>
+              <tr>
+                <td width="6%">&nbsp;</td>
+                <!--Begin TXT1COLCTR-->
+                <td>
+                  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tbody>
+                      <tr>
+                        <td align="center"  style="padding: 10px 0px 20px 0px; font-size: 20px; font-weight: lighter; font-family: Calibri, Arial, Helvetica, sans-serif; line-height: 24px; color: #5E5E5E" ><span id="prodcopy"></span></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+ <!--End TXT1COLCTR-->
+              <td width="6%">&nbsp;</td>  
+              </tr>
+            </tbody>
+</table>
+
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tbody>
+              <tr>
+                <td width="6%">&nbsp;</td>
+                <!--Begin ADFULLBTN-->
+                <td>
+                  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tbody>
+                      <tr>
+                        <td align="center"  style="padding: 20px 0px 10px 0px"><a id="produrl" target="_blank"><img src="xx" id="prodimg" width="350" alt="Product" border="0" style="vertical-align: bottom" class="Img"></a></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+<!--End ADFULLBTN-->
+              <td width="6%">&nbsp;</td>  
+              </tr>
+            </tbody>
+</table>
+
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tbody>
+              <tr>
+                <td width="6%">&nbsp;</td>
+                <!--Begin BTNBRANDHTMLBL-->
+                      <td width="160" style="padding: 20px 0px 20px 0px;" class="Stack" ><table align="center"  border="0" cellpadding="0" cellspacing="0" class="Fullwidth">
+                            <tbody>
+                              <tr>
+                                <td width="200" height="45" align="center" valign="middle" bgcolor="#1790CC"><div><a id="cta1url" target="_blank" style="background-color: #1790CC; background-image: url(https://s3.amazonaws.com/emailsquareknot/HARMONY_MAIN/IMAGES/AM_CTA_B_BG.jpg); background-position: center; background-repeat: repeat-x; color: #FFFFFF; display: inline-block; font-family: Calibri, Arial, Helvetica, sans-serif; font-size: 20px; font-weight: lighter; line-height: 45px; text-align: center; text-decoration: none; width: 200px; -webkit-text-size-adjust: none; white-space: nowrap;" class="Fullwidth"><span id="cta1"></span></a></div></td>
+                              </tr>
+                            </tbody>
+                      </table>
+                </td>
+<!--End BTNBRANDHTMLBL-->
+              <td width="6%">&nbsp;</td>  
+              </tr>
+            </tbody>
+</table>
+
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tbody>
+              <tr>
+                <td width="6%">&nbsp;</td>
+                <!--Begin TXT1COLCTR-->
+                <td>
+                  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tbody>
+                      <tr>
+                        <td align="center"  style="padding: 10px 0px 20px 0px; font-size: 12px; font-weight: lighter; font-family: Calibri, Arial, Helvetica, sans-serif; line-height: 16px; color: #5E5E5E" ><span id = "expcopy"></span></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+ <!--End TXT1COLCTR-->
+              <td width="6%">&nbsp;</td>  
+              </tr>
+            </tbody>
+</table>
+
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tbody>
+              <tr>
+                <td width="6%">&nbsp;</td>
+                <!--Begin TXT1COLCTR-->
+                <td>
+                  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tbody>
+                      <tr>
+                        <td align="center"  style="padding: 10px 0px 20px 0px; font-size: 20px; font-weight: lighter; font-family: Calibri, Arial, Helvetica, sans-serif; line-height: 24px; color: #5E5E5E" ><span id="catcopy"></span></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+ <!--End TXT1COLCTR-->
+              <td width="6%">&nbsp;</td>  
+              </tr>
+            </tbody>
+</table>
+
+<!--Begin Footer English-->
+<div id = "efooter" style="display: none">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tbody>
+              <tr>
+                <td width="6%" align="left" valign="top">&nbsp;</td>
+                <td align="center" style="padding: 20px 0px 20px 0px;"><br class="Hide">
+                  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tbody>
+                      <tr>
+                        <td align="left" valign="middle" class="Hide"><img src="https://s3.amazonaws.com/emailsquareknot/HARMONY_MAIN/IMAGES/AM_Button_B_E.png" alt="AIR&nbsp;MILES" width="95" height="95" border="0" style="vertical-align: bottom;"></td>
+                        <td width="260" align="center" valign="top"><table border="0" cellspacing="0" cellpadding="0" class="Fullwidth">
+                            <tbody>
+                              <tr>
+                                <td align="center" valign="top"><a href="https://www.facebook.com/AirMilesCanada" target="_blank"><img src="https://s3.amazonaws.com/emailsquareknot/HARMONY_MAIN/IMAGES/TMP_icon_FB.png" width="47" height="47" alt="Facebook" border="0" style="vertical-align: bottom"></a></td>
+                                <td width="20" align="center" valign="top">&nbsp;</td>
+                                <td align="center" valign="top"><a href="https://twitter.com/AIRMILES" target="_blank"><img src="https://s3.amazonaws.com/emailsquareknot/HARMONY_MAIN/IMAGES/TMP_icon_TWT.png" width="47" height="47" alt="Twitter" border="0" style="vertical-align: bottom"></a></td>
+                                <td width="20" align="center" valign="top">&nbsp;</td>
+                                <td align="center" valign="top"><a href="https://instagram.com/airmiles_canada/" target="_blank"><img src="https://s3.amazonaws.com/emailsquareknot/HARMONY_MAIN/IMAGES/TMP_icon_INST.png" width="47" height="47" alt="Instagram" border="0" style="vertical-align: bottom"></a></td>
+                                <td width="20" align="center" valign="top">&nbsp;</td>
+                                <td align="center" valign="top"><a href="http://www.youtube.com/user/AIRMILESCanada" target="_blank"><img src="https://s3.amazonaws.com/emailsquareknot/HARMONY_MAIN/IMAGES/TMP_icon_YTB.png" width="47" height="47" alt="Youtube" border="0" style="vertical-align: bottom"></a></td>
+                              </tr>
+                            </tbody>
+                          </table>
+                          <br>
+                          <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                            <tbody>
+                              <tr>
+                                <td width="130" align="center" valign="bottom"><img src="https://s3.amazonaws.com/emailsquareknot/HARMONY_MAIN/IMAGES/TMP_img_AM_App_E.png" width="130" height="75" alt="AM_App" border="0" style="vertical-align: bottom"></td>
+                                <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                    <tbody>
+                                      <tr>
+                                        <td align="right" class="CenterTxt"><a href="https://itunes.apple.com/ca/app/air-miles-reward-program/id388705262" target="_blank"><img src="https://s3.amazonaws.com/emailsquareknot/HARMONY_MAIN/IMAGES/TMP_badge_Apple_App_E.png" width="125" height="42" alt="iTunes - Download on the AppStore" border="0" style="vertical-align: bottom"></a></td>
+                                      </tr>
+                                      <tr>
+                                        <td align="right" class="CenterTxt"><a href="https://play.google.com/store/apps/details?id=com.airmiles&hl=en" target="_blank"><img src="https://s3.amazonaws.com/emailsquareknot/HARMONY_MAIN/IMAGES/TMP_badge_Google_Play_E.png" width="125" height="49" alt="Get it on Google Play" border="0" style="vertical-align: bottom"></a></td>
+                                      </tr>
+                                    </tbody>
+                                  </table></td>
+                              </tr>
+                            </tbody>
+                          </table></td>
+                      </tr>
+                    </tbody>
+                  </table></td>
+                <td width="6%" align="left" valign="top">&nbsp;</td>
+              </tr>
+              <tr>
+                <td width="6%" align="left" valign="top">&nbsp;</td>
+                <td align="center" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0" style="font-size: 15px; font-family: Calibri, Arial, Helvetica, sans-serif; color: #065ba4;">
+                    <tbody>
+                      <tr>
+                        <td width="60" align="center" valign="middle" class="BottomNav"><a href="https://www.airmiles.ca/arrow/PrivacyPolicy?changeLocale=en_CA" target="_blank" style="color: #065ba4; text-decoration: none;" class="WhiteLink">Privacy</a></td>
+                        <td align="center" valign="middle" class="Hide">|</td>
+                        <td width="50" align="center" valign="middle" class="BottomNav"><a href="https://www.airmiles.ca/arrow/TermsAndConditions?changeLocale=en_CA" target="_blank" style="color: #065ba4; text-decoration: none;" class="WhiteLink">Legal</a></td>
+                        <td align="center" valign="middle" class="Hide">|</td>
+                        <td width="80" align="center" valign="middle" class="BottomNav"><a href="https://www.airmiles.ca/arrow/Home?changeLocale=en_CA" target="_blank" style="color: #065ba4; text-decoration: none;" class="WhiteLink">airmiles.ca</a></td>
+                        <td align="center" valign="middle" class="Hide">|</td>
+                        <td width="110" align="center" valign="middle" class="BottomNav"><a href="https://www.airmiles.ca/arrow/SelfServe?changeLocale=en_CA" target="_blank" style="color: #065ba4; text-decoration: none;" class="WhiteLink">Update Profile</a></td>
+                        <td align="center" valign="middle" class="Hide">|</td>
+                        <td width="90" align="center" valign="middle" class="BottomNav"><a href="http://emails.airmiles.ca/PUBLISH(new_optout_en)" target="_blank" style="color: #065ba4; text-decoration: none;" class="WhiteLink">Unsubscribe</a></td>
+                      </tr>
+                    </tbody>
+                  </table></td>
+                <td width="6%" align="left" valign="top">&nbsp;</td>
+              </tr>
+              <tr>
+                <td width="6%" align="left" valign="top">&nbsp;</td>
+                <td align="left" style="font-size: 11px; font-family: Calibri, Arial, Helvetica, sans-serif; line-height: 16px; color: #065ba4; padding: 20px 0px 20px 0px;"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tbody>
+                      <tr>
+                        <td align="left" valign="top" style="font-size: 18px; font-family: Calibri, Arial, Helvetica, sans-serif; line-height: 22px; color: #065ba4;" class="Body">Please do not reply to this email. <br>
+                          If you have any questions or comments, <a href="https://www.airmiles.ca/arrow/ContactUs?changeLocale=en_CA" target="_blank" style="color: #065ba4;">contact&nbsp;us</a>.</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <br>
+                  <br class="Hide">
+                  <div>The AIR MILES Reward Program will never ask that you provide any personal information via email. If you receive such&nbsp;an email that appears to be from the AIR MILES Reward Program, do not reply and forward the email to <a href="mailto:phishing@airmiles.ca" target="_blank" style="color: #065ba4;">phishing@airmiles.ca</a>. Never share your PIN with anyone other than those that are allowed to act on behalf of the Account. </div>
+                  <br>
+                  <div class="appleIOSFix">Address: 351 King St. East, Suite 200, Toronto, ON M5G&nbsp;0L6</div>
+                  <br>
+                <div>&reg;&trade; Trademarks of AM&nbsp;Royalties Limited Partnership used under license by LoyaltyOne,&nbsp;Co. Sponsor, Supplier and Retailer&nbsp;trademarks are owned by the respective Sponsors, Suppliers or Retailers or authorized for their use in&nbsp;Canada.</div></td>
+                <td width="6%" align="left" valign="top">&nbsp;</td>
+              </tr>
+            </tbody>
+          </table>
+</div>                    
+<!--End Footer English-->
+
+<!--Begin Footer French-->
+<div id = "ffooter" style="display: none">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td width="6%" align="left" valign="top">&nbsp;</td>
+      <td align="center" style="padding: 20px 0px 20px 0px;"><br class="Hide">
+        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tbody>
+            <tr>
+              <td align="left" valign="middle" class="Hide"><img src="https://s3.amazonaws.com/emailsquareknot/HARMONY_MAIN/IMAGES/AM_Button_B_F.png" alt="AIR&nbsp;MILES" width="95" height="95" border="0" style="vertical-align: bottom;"></td>
+              <td width="260" align="center" valign="top"><table border="0" cellspacing="0" cellpadding="0" class="Fullwidth">
+                <tbody>
+                  <tr>
+                    <td align="center" valign="top"><a href="https://www.facebook.com/AirMilesCanada" target="_blank"><img src="https://s3.amazonaws.com/emailsquareknot/HARMONY_MAIN/IMAGES/TMP_icon_FB.png" width="47" height="47" alt="Facebook" border="0" style="vertical-align: bottom"></a></td>
+                    <td width="20" align="center" valign="top">&nbsp;</td>
+                    <td align="center" valign="top"><a href="https://twitter.com/AIRMILES" target="_blank"><img src="https://s3.amazonaws.com/emailsquareknot/HARMONY_MAIN/IMAGES/TMP_icon_TWT.png" width="47" height="47" alt="Twitter" border="0" style="vertical-align: bottom"></a></td>
+                    <td width="20" align="center" valign="top">&nbsp;</td>
+                    <td align="center" valign="top"><a href="https://instagram.com/airmiles_canada/" target="_blank"><img src="https://s3.amazonaws.com/emailsquareknot/HARMONY_MAIN/IMAGES/TMP_icon_INST.png" width="47" height="47" alt="Instagram" border="0" style="vertical-align: bottom"></a></td>
+                    <td width="20" align="center" valign="top">&nbsp;</td>
+                    <td align="center" valign="top"><a href="http://www.youtube.com/user/AIRMILESCanada" target="_blank"><img src="https://s3.amazonaws.com/emailsquareknot/HARMONY_MAIN/IMAGES/TMP_icon_YTB.png" width="47" height="47" alt="Youtube" border="0" style="vertical-align: bottom"></a></td>
+                  </tr>
+                </tbody>
+              </table>
+                <br>
+                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                  <tbody>
+                    <tr>
+                      <td width="130" align="center" valign="bottom"><img src="https://s3.amazonaws.com/emailsquareknot/HARMONY_MAIN/IMAGES/TMP_img_AM_App_E.png" width="130" height="75" alt="AM_App" border="0" style="vertical-align: bottom"></td>
+                      <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                        <tbody>
+                          <tr>
+                            <td align="right" class="CenterTxt"><a href="https://itunes.apple.com/ca/app/air-miles-reward-program/id388705262&l=fr" target="_blank"><img src="https://s3.amazonaws.com/emailsquareknot/HARMONY_MAIN/IMAGES/TMP_badge_Apple_App_F.png" width="125" height="42" alt="iTunes - Download on the AppStore" border="0" style="vertical-align: bottom"></a></td>
+                          </tr>
+                          <tr>
+                            <td align="right" class="CenterTxt"><a href="https://play.google.com/store/apps/details?id=com.airmiles&hl=fr" target="_blank"><img src="https://s3.amazonaws.com/emailsquareknot/HARMONY_MAIN/IMAGES/TMP_badge_Google_Play_F.png" width="125" height="49" alt="Get it on Google Play" border="0" style="vertical-align: bottom"></a></td>
+                          </tr>
+                        </tbody>
+                      </table></td>
+                    </tr>
+                  </tbody>
+                </table></td>
+            </tr>
+          </tbody>
+        </table></td>
+      <td width="6%" align="left" valign="top">&nbsp;</td>
+    </tr>
+  </tbody>
+</table>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td align="center" style="padding: 0px 5px 0px 5px;"><table width="100%" border="0" cellspacing="0" cellpadding="0" style="font-size: 14px; font-family: Calibri, 'Trebuchet MS', Helvetica, sans-serif; color: #065ba4;">
+        <tbody>
+          <tr>
+            <td align="center" valign="middle" class="BottomNav"><a href="https://www.airmiles.ca/arrow/PrivacyPolicy?changeLocale=fr_FR" target="_blank" style="color: #065ba4; text-decoration: none;" class="WhiteLink">Confidentialité</a></td>
+            <td align="center" valign="middle" class="Hide">|</td>
+            <td align="center" valign="middle" class="BottomNav"><a href="https://www.airmiles.ca/arrow/TermsAndConditions?changeLocale=fr_FR" target="_blank" style="color: #065ba4; text-decoration: none;" class="WhiteLink">Mentions légales</a></td>
+            <td align="center" valign="middle" class="Hide">|</td>
+            <td align="center" valign="middle" class="BottomNav"><a href="https://www.airmiles.ca/arrow/Home?changeLocale=fr_FR" target="_blank" style="color: #065ba4; text-decoration: none;" class="WhiteLink">airmiles.ca</a></td>
+            <td align="center" valign="middle" class="Hide">|</td>
+            <td align="center" valign="middle" class="BottomNav"><a href="https://www.airmiles.ca/arrow/SelfServe?changeLocale=fr_FR" target="_blank" style="color: #065ba4; text-decoration: none;" class="WhiteLink">Mettre à jour le profil </a></td>
+            <td align="center" valign="middle" class="Hide">|</td>
+            <td align="center" valign="middle" class="BottomNav"><a href="http://emails.airmiles.ca/PUBLISH(new_optout_fr)" target="_blank" style="color: #065ba4; text-decoration: none;" class="WhiteLink">Vous désabonner</a></td>
+          </tr>
+        </tbody>
+      </table></td>
+    </tr>
+  </tbody>
+</table>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td width="6%" align="left" valign="top">&nbsp;</td>
+      <td align="left" style="font-size: 11px; font-family: Calibri, Arial, Helvetica, sans-serif; line-height: 16px; color: #065ba4; padding: 20px 0px 20px 0px;"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tbody>
+          <tr>
+            <td align="left" valign="top" style="font-size: 18px; font-family: Calibri, Arial, Helvetica, sans-serif; line-height: 22px; color: #065ba4;" class="Body"> Veuillez ne pas répondre à ce courriel. <br>
+              Pour toute question, <a href="https://www.airmiles.ca/arrow/ContactUs?changeLocale=fr_FR" target="_blank" style="color: #065ba4;">communiquez avec nous</a>.</td>
+          </tr>
+        </tbody>
+      </table>
+        <br>
+        <br class="Hide">
+        <div>Le Programme de récompense AIR MILES ne vous enverra jamais de courriel vous demandant de fournir des renseignements personnels. Si vous recevez un tel courriel qui semble avoir été envoyé par le Programme de récompense AIR MILES, ne répondez pas et transférez le courriel à <a href="mailto:phishing@airmiles.ca" target="_blank" style="color: #065ba4;">phishing@airmiles.ca</a>. Ne communiquez jamais votre NIP à d&#39;autres personnes que celles autorisées à agir au nom du titulaire du compte. </div>
+        <br>
+        <div class="appleIOSFix">Adresse : 351 King St. East, Suite 200, Toronto, ON M5G&nbsp;0L6</div>
+        <br>
+        <div><sup style="font-size: 75%; line-height: 75%;">md/mc</sup> Marque déposée/de commerce d’AM Royalties Limited Partnership, employée en vertu d’une licence par LoyaltyOne, Co. Les marques de commerce des commanditaires, fournisseurs et détaillants sont la propriété respective de ces derniers et leur usage est autorisé au Canada.</div></td>
+      <td width="6%" align="left" valign="top">&nbsp;</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+<!--End Footer French-->
+
+
+                  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td align="center" valign="top"><img src="https://s3.amazonaws.com/emailsquareknot/HARMONY_MAIN/IMAGES/stopper.png" width="360" height="10" alt="stopper"></td>
+                    </tr>
+                    <tr>
+                      <td align="center" valign="top" class="Hide"><img src="https://s3.amazonaws.com/emailsquareknot/HARMONY_MAIN/IMAGES/stopper.png" width="600" height="10" alt="stopper" style="min-width: 600px;"></td>
+                    </tr>
+                  </table></td>
+              </tr>
+            </tbody>
+          </table>
+        <!--End CONTAINER--></td>
+      </tr>
+    </tbody>
+  </table>
+</center>
+</body>
+</html>
+<!--End Boiler Plate-->

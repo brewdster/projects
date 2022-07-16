@@ -1,0 +1,366 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <script type="text/javascript">
+    //sample docket = 61376, 61899, 61696 (LAWT)
+    var docknum = window.location.search.toUpperCase().substr(1,5);
+    //alert (docknum);
+    var pth = "https://www.airmiles.ca/content/dam/airmiles/campaigns/";
+    var d = new Date();
+    var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+    var dt1 = months[d.getMonth()] + " " + d.getDate() + ", " + d.getFullYear();
+
+    var trig = window.location.search.toUpperCase().substr(6,1);
+
+    document.addEventListener("DOMContentLoaded",function(event)
+      {
+        if (trig == '&')
+          {
+            bnr = window.location.search.toUpperCase().substr(7,4);
+            if (bnr == "LAWT")
+              {
+                spon = "lawtons";
+              }
+            else
+              {
+                spon = "sobeys";
+              }
+            document.getElementById("curdate").innerHTML = dt1;
+            document.getElementById("ofr1img").src = pth + spon + "/" + docknum + "_" + bnr + "_OFFR_01_E.png";
+            document.getElementById("ofr2img").src = pth + spon + "/" + docknum + "_" + bnr + "_OFFR_02_E.png";
+            document.getElementById("ofr3img").src = pth + spon + "/" + docknum + "_" + bnr + "_OFFR_03_E.png";
+            document.getElementById("ofr4img").src = pth + spon + "/" + docknum + "_" + bnr + "_OFFR_04_E.png";
+            document.getElementById("ofr5img").src = pth + spon + "/" + docknum + "_" + bnr + "_OFFR_05_E.png";
+            document.getElementById("ofr6img").src = pth + spon + "/" + docknum + "_" + bnr + "_OFFR_06_E.png";
+          }
+      })
+
+    function go()
+      {
+        var bnr = document.getElementById("banner").value;
+          if (bnr == "LAWT")
+            {
+              spon = "lawtons";
+            }
+          else
+            {
+              spon = "sobeys";
+            }
+        document.getElementById("curdate").innerHTML = dt1;
+        document.getElementById("ofr1img").src = pth + spon + "/" + docknum + "_" + bnr + "_OFFR_01_E.png";
+        document.getElementById("ofr2img").src = pth + spon + "/" + docknum + "_" + bnr + "_OFFR_02_E.png";
+        document.getElementById("ofr3img").src = pth + spon + "/" + docknum + "_" + bnr + "_OFFR_03_E.png";
+        document.getElementById("ofr4img").src = pth + spon + "/" + docknum + "_" + bnr + "_OFFR_04_E.png";
+        document.getElementById("ofr5img").src = pth + spon + "/" + docknum + "_" + bnr + "_OFFR_05_E.png";
+        document.getElementById("ofr6img").src = pth + spon + "/" + docknum + "_" + bnr + "_OFFR_06_E.png";
+      }
+
+  </script>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>Sobeys Banner / Offers testing</title>
+<style type="text/css">
+/*---------------------------- RESET STYLES ----------------------------*/
+table, td {
+ border-collapse: collapse;
+ mso-table-lspace: 0pt;
+ mso-table-rspace: 0pt;
+}
+.ReadMsgBody {
+ width: 100%;
+}
+.ExternalClass {
+ width: 100%;
+}
+a img {
+ border: none;
+}
+.yshortcuts, a .yshortcuts, a .yshortcuts:hover, a .yshortcuts:active, a .yshortcuts:focus {
+ background-color: transparent !important;
+ border: none !important;
+ color: inherit !important;
+}
+
+/*----- IOS LINKS FIX -----*/
+
+a[x-apple-data-detectors] {
+ color: inherit !important;
+ text-decoration: none !important;
+ font-size: inherit !important;
+ font-family: inherit !important;
+ font-weight: inherit !important;
+ line-height: inherit !important;
+}
+.appleIOSFix a {
+ color: inherit;
+ text-decoration: none;
+}
+
+/*----- WEBFONTS -----*/
+
+@media screen {
+@font-face {
+ font-family: 'OmnesLight';
+ src: url('https://squ.airmiles.ca/cdn/font/files/OmnesLight.ttf') format('truetype');
+ font-weight: normal;
+ font-style: normal;
+}
+@font-face {
+ font-family: 'Omnes';
+ src: url('https://squ.airmiles.ca/cdn/font/files/Omnes.ttf') format('truetype');
+ font-weight: normal;
+ font-style: normal;
+}
+@font-face {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Nunito Regular'), local('Nunito-Regular'), url(https://fonts.gstatic.com/s/nunito/v8/6TbRXKWJjpj6V2v_WyRbMevvDin1pK8aKteLpeZ5c0A.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+}
+
+/*-- Insert Media Queries --*/
+/*---------------------------- MOBILE TARGETING ----------------------------*/
+
+@media only screen and (max-device-width: 480px) {
+/* TEMPLATE AND BASIC STYLES */
+
+/*----- STRUCTURE -----*/
+
+*[class=Container] {
+ max-width: 600px !important;
+ width: 100% !important;
+}
+*[class=Stack] {
+ display: block !important;
+ clear: both !important;
+ width: 100% !important;
+}
+*[class=TopCol] {
+ display: table-header-group !important;
+ clear: both !important;
+}
+*[class=BottomCol] {
+ display: table-footer-group !important;
+ width: 100% !important;
+}
+*[class=MidCol] {
+ display: table-row-group !important;
+ width: 100% !important;
+}
+*[class=RevStack] {
+ display: table-cell !important;
+ width: auto !important;
+}
+*[class=Fullwidth] {
+ width: 100% !important;
+}
+*[class=Halfwidth] {
+ width: 50% !important;
+ height: auto !important;
+}
+*[class=BottomNav] {
+ display: block !important;
+ clear: both !important;
+ width: auto !important;
+ font-size: 17px !important;
+ background-color: #15bef0 !important;
+ border: solid !important;
+ border-width: 2px !important;
+ border-color: #FFFFFF !important;
+ padding: 8px 8px 8px 8px !important;
+}
+*[class=CenterTbl] {
+ margin: auto !important;
+}
+/*----- CONTENT -----*/
+
+*[class=Img] {
+ max-width: 600px !important;
+ height: auto !important;
+ width: 100% !important;
+}
+*[class=Origsize] {
+ width: auto !important;
+ height: auto !important;
+}
+*[class=Hide] {
+ display: none !important;
+}
+*[class=LeftAlign] {
+ text-align: left !important;
+}
+*[class=CenterAlign] {
+ text-align: center !important;
+}
+*[class=RightAlign] {
+ text-align: right !important;
+}
+*[class=LetterCap] {
+ text-transform: uppercase !important;
+}
+*[class=Headline] {
+ font-size: 30px !important;
+ line-height: 32px !important;
+}
+*[class=Body] {
+ font-size: 15px !important;
+ line-height: 18px !important;
+}
+*[class=Legal] {
+ font-size: 12px !important;
+ line-height: 12px !important;
+}
+*[class=WhiteLink] {
+ color: #FFFFFF !important;
+}
+*[class=DarkLink] {
+ color: #000000 !important;
+}
+*[class=AMButton] {
+ width: 70px !important;
+ height: auto !important;
+}
+
+/* Insert ADDITIONAL STYLES here - IF REQUIRED */
+
+
+}
+
+
+                </style>
+         </head>
+<body style="margin: 0; padding: 0; -webkit-font-smoothing: antialiased; width: 100%; -webkit-text-size-adjust: none; background-color: #EFEFEF;">
+<center>
+
+
+<!--Begin SLUGLINE-->
+<table width="640" border="0" cellspacing="0" cellpadding="0" class="Hide">
+  <tr>
+    <td style="padding: 0px 0px 20px 0px;">
+      <table width="640" border="0" cellspacing="0" cellpadding="0" style="background-color: #FFFFFF;">
+        <tr>
+          <td width="620" height="20" align="center" style="background-color: #f4a57a; background-image: repeating-linear-gradient(45deg, transparent, transparent 25px, rgba(255,255,255,.5) 25px, rgba(255,255,255,.5) 50px); padding: 3px 0px 3px 0px;"><span style="font-size: 11px; font-family: Arial, Helvetica, sans-serif; font-weight: bold; color: #000000;">REMOVE BEFORE POSTING</span>
+          </td>
+        </tr>
+      </table>
+      <table width="640" height="195" border="0" cellpadding="0" cellspacing="10" style="background-image: url(https://s3.amazonaws.com/emailsquareknot/HARMONY_MAIN/IMAGES/TMP_email_slug_NEW.gif); background-position: top; background-repeat: no-repeat;">
+        <tr>
+          <td width="620"  valign="top" style="padding: 12px 0px 0px 0px">
+              <table width="620" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td>
+                  <table>
+                    <tbody>
+                      <tr>
+                        <td width="180" height="27">&nbsp;</td>
+                        <td width="296" height="27" align="right" style="padding: 0px 5px 0px 0px; font-size: 12px; font-family: Arial, Helvetica, sans-serif"><strong>Sobeys</strong></td>
+                        <td width="42" height="27">&nbsp;</td>
+                        <td width="122" height="27" align="right" style="font-size: 12px; font-family: Arial, Helvetica, sans-serif;">AC</td>
+                      </tr>
+                      <tr>
+                        <td width="180" height="22">&nbsp;</td>
+                        <td width="296" height="22" align="left" style="background-color : #FBEB7C;  font-size: 12px; font-family: Arial, Helvetica, sans-serif">
+                          <label for="banner" style="padding: 0px 0px 0px 10px; font-size: 14px; font-family: Airal, Helvetica, sans-serif; color: #000000"><b>Select Banner:</b></label>
+                          <select name="banner" id="banner">
+                              <option value="SBYA">SBYA</option>
+                              <option value="SBYO">SBYO</option>
+                              <option value="SBYW">SBYW</option>
+                              <option value="FOOD">FOOD</option>
+                              <option value="FLDO">FLDO</option>
+                              <option value="IGAW">IGAW</option>
+                              <option value="5000">5000</option>
+                              <option value="THRF">THRF</option>
+                              <option value="LAWT">LAWT</option>
+                              <option value="SURO">SURO</option>
+                          </select>
+                          <button onclick="go()">Go!</button>
+                        </td>
+                        <td width="42" height="22">&nbsp;</td>
+                        <td width="122" height="22" align="right" style="font-size: 12px; font-family: Arial, Helvetica, sans-serif;"><span id="curdate"></span></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+
+              <tr>
+                <td>
+                  <table>
+                    <tbody>
+                      <tr>
+                        <td width="180" height="18">&nbsp;</td>
+                        <td width="296" height="18" align="right" valign="bottom" style="padding: 0px 5px 0px 0px; font-size: 12px; font-family: Arial, Helvetica, sans-serif; line-height: 20px">Sobeys Banner / Offers Testing</td>
+                        <td width="42" height="18">&nbsp;</td>
+                        <td width="122" height="18">&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td width="180" height="24">&nbsp;</td>
+                        <td width="296" height="24" align="right" valign="bottom" style="padding: 0px 5px 0px 0px; font-size: 12px; font-family: Arial, Helvetica, sans-serif;"><b>For internal review only</b></td>
+                        <td width="42" height="24">&nbsp;</td>
+                        <td width="122" height="24">&nbsp;</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+              </table>
+          </td>
+        </tr>
+
+        <tr>
+          <td width="620" height="52" valign="top"><table width="72" height="45" valign="top" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td align="center" style="font-size: 18px; font-family: Arial, Helvetica, sans-serif; font-weight: bold; color: #CD0B0E; line-height: 18px">AEM</td>
+            </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+      <table width="640" border="0" cellspacing="0" cellpadding="0" style="background-color: #FFFFFF;">
+        <tr>
+          <td width="620" height="20" align="center" style="background-color: #f4a57a; background-image: repeating-linear-gradient(45deg, transparent, transparent 25px, rgba(255,255,255,.5) 25px, rgba(255,255,255,.5) 50px); padding: 3px 0px 3px 0px;"><span style="font-size: 11px; font-family: Arial, Helvetica, sans-serif; font-weight: bold; color: #000000;">REMOVE BEFORE POSTING</span></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<!--End SLUGLINE-->
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#EFEFEF">
+  <tbody>
+    <tr>
+      <td align="center">
+        <!--Begin CONTAINER-->
+        <table width="600" border="0" cellspacing="0" cellpadding="0" class="Container">
+          <tbody>
+            <tr>
+              <td align="center" bgcolor="#FFFFFF">
+
+                <!--Begin SBYPRODOFFR-->
+                <table align="center" width="600" border="0" cellspacing="0" cellpadding="0" bgcolor="#1790cc" class="Fullwidth">
+                <tbody>
+                  <tr>
+                    <td width="580" align="center" style="padding: 20px 10px 20px 10px;" class="Fullwidth"><img src="https://s3.amazonaws.com/emailsquareknot/HARMONY_MAIN/IMAGES/fpo_select_banner.png" id="ofr1img" width="190" height="280" border="0" style="vertical-align: bottom;" alt="Offer 1" class="Halfwidth"><img src="https://s3.amazonaws.com/emailsquareknot/HARMONY_MAIN/IMAGES/fpo_select_banner.png" id="ofr2img"  width="190" height="280" border="0" style="vertical-align: bottom;" alt="Offer 2" class="Halfwidth"><img src="https://s3.amazonaws.com/emailsquareknot/HARMONY_MAIN/IMAGES/fpo_select_banner.png" id="ofr3img"  width="190" height="280" border="0" style="vertical-align: bottom;" alt="Offer 3" class="Halfwidth"><img src="https://s3.amazonaws.com/emailsquareknot/HARMONY_MAIN/IMAGES/fpo_select_banner.png" id="ofr4img"  width="190" height="280" border="0" style="vertical-align: bottom;" alt="Offer 4" class="Halfwidth"><img src="https://s3.amazonaws.com/emailsquareknot/HARMONY_MAIN/IMAGES/fpo_select_banner.png" id="ofr5img"  width="190" height="280" border="0" style="vertical-align: bottom;" alt="Offer 5" class="Halfwidth"><img src="https://s3.amazonaws.com/emailsquareknot/HARMONY_MAIN/IMAGES/fpo_select_banner.png" id="ofr6img"  width="190" height="280" border="0" style="vertical-align: bottom;" alt="Offer 6" class="Halfwidth"></td>
+                  </tr>
+                </tbody>
+                </table>
+                <!--End SBYPRODOFFR-->
+
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      <!--End CONTAINER--></td>
+    </tr>
+  </tbody>
+</table>
+
+</center>
+
+</body>
+</html>

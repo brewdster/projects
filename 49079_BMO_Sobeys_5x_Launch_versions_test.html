@@ -1,0 +1,1044 @@
+<!------------- AM HTML EMAIL BOILERPLATE v4.0 // RDELACRUZ ------------->
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml"
+xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+lang="en" xml:lang="en">
+<head>
+
+    	<script type="text/javascript">
+            var docknum = "49709";
+            var pth = "https://s3.amazonaws.com/emailsquareknot/HARMONY_MAIN/IMAGES/";
+		function go()
+		{
+            var bnr = document.getElementById("banner").value;
+            var fnm = document.getElementById("fname").value;
+            var crd = document.getElementById("card").value;
+            if (fnm=== '')
+                {
+                    fnm='Amanda-Courtney';
+                }
+            var d = new Date();
+            var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+            var dt1 = months[d.getMonth()] + " " + d.getDate() + ", " + d.getFullYear();
+            document.getElementById("asofdate").innerHTML = dt1;
+            document.getElementById("curdate").innerHTML = dt1;
+            document.getElementById("logo1").src = pth +  "49081_Partnerlogo_" + bnr + "_E.png";
+            document.getElementById("logo2").src = pth + "49081_LOGO_" + bnr + "_E.jpg";
+            document.getElementById("heroimg").src = pth +  "49081_BMO_SBY_Hero_" + crd + "_E.png";
+            document.getElementById("cardimg").src = pth + "BMO_card_" + crd + "_E.png";
+
+            switch (bnr)
+                {
+                    case 'SBYA':
+                    partner = "Sobeys";
+                    tcol = "#48A548"
+                    break;
+
+                    case 'SBYO':
+                    partner = "Sobeys";
+                    tcol = "#48A548"
+                    break;
+
+                    case 'SBYW':
+                    partner = "Sobeys";
+                    tcol = "#48A548"
+                    break;
+
+                    case 'FOOD':
+                    partner = "Foodland & participating CO&#8209;OPs";
+                    tcol = "#ED1C24"
+                    break;
+
+                    case 'FLDO':
+                    partner = "Foodland";
+                    tcol = "#ED1C24"
+                    break;
+
+                    case '5000':
+                    partner = "Safeway";
+                    tcol = "#ED1C24"
+                    break;
+
+                    case 'IGAW':
+                    partner = "IGA";
+                    tcol = "#ED1C24"
+                    break;
+
+                    case 'THRF':
+                    partner = "Thrifty Foods";
+                    tcol = "#48A548"
+                    break;
+
+                    case 'SURO':
+                    partner = "Sobeys Urban Fresh";
+                    tcol = "#000000"
+                    break;
+
+                    case 'IGAQ':
+                    partner = "IGA & IGA Extra";
+                    tcol = "#E9141B"
+                    break;
+
+                    case 'TGAQ':
+                    partner = "Rachelle Béry";
+                    tcol = "#BF311A"
+                    break;
+
+                    case 'TRAD':
+                    partner = "Les Marchés Tradition";
+                    tcol = "#EA1321"
+                    break;
+
+                }
+
+                    document.getElementById("txtcol").style.color = tcol;
+                    document.getElementById("partner1").innerHTML = partner;
+                    document.getElementById("partner2").innerHTML = partner;
+                    document.getElementById("partner3").innerHTML = partner;
+                    document.getElementById("partner4").innerHTML = partner;
+                    document.getElementById("fname1").innerHTML = fnm;
+                    document.getElementById("firstname").innerHTML = fnm;
+
+                if (crd == "IGA")
+                    {
+                        crdnm = 'BMO<sup style="font-size: 75%; line-height: 75%;">®†</sup> IGA AIR&nbsp;MILES<sup style="font-size: 75%; line-height: 75%;">®</sup> Mastercard<sup style="font-size: 75%; line-height: 75%;">®</sup>*';
+                    }
+               else if (crd == "NOFEE")
+                    {
+                        crdnm = 'BMO<sup style="font-size: 75%; line-height: 75%;">®</sup> AIR MILES<sup style="font-size: 75%; line-height: 75%;">®†</sup> No-Fee Mastercard<sup style="font-size: 75%; line-height: 75%;">®</sup>*';
+                    }
+               else if (crd == "NOFEE_SMLBIZ")
+                    {
+                        crdnm = 'BMO<sup style="font-size: 75%; line-height: 75%;">®</sup> AIR MILES<sup style="font-size: 75%; line-height: 75%;">®†</sup> No-Fee Business<sup style="font-size: 75%; line-height: 75%;">®</sup> Mastercard<sup style="font-size: 75%; line-height: 75%;">®</sup>*';
+                    }
+               else if (crd == "SMLBIZ")
+                    {
+                        crdnm = 'BMO<sup style="font-size: 75%; line-height: 75%;">®</sup> AIR MILES<sup style="font-size: 75%; line-height: 75%;">®†</sup> Business Mastercard<sup style="font-size: 75%; line-height: 75%;">®</sup>*';
+                    }
+               else if (crd == "SOBEYS")
+                    {
+                        crdnm = 'BMO<sup style="font-size: 75%; line-height: 75%;">®†</sup> Sobeys<sup style="font-size: 75%; line-height: 75%;">®‡</sup> AIR MILES<sup style="font-size: 75%; line-height: 75%;">®</sup> Mastercard<sup style="font-size: 75%; line-height: 75%;">®</sup>*';
+                    }
+               else if (crd == "WORLD")
+                    {
+                        crdnm = 'BMO<sup style="font-size: 75%; line-height: 75%;">®</sup> AIR MILES<sup style="font-size: 75%; line-height: 75%;">®†</sup> World Mastercard<sup style="font-size: 75%; line-height: 75%;">®</sup>*';
+                    }
+               else if (crd == "WORLDELITE")
+                    {
+                        crdnm = 'BMO<sup style="font-size: 75%; line-height: 75%;">®</sup> AIR MILES<sup style="font-size: 75%; line-height: 75%;">®†</sup> World Elite<sup style="font-size: 75%; line-height: 75%;">®</sup>* Mastercard<sup style="font-size: 75%; line-height: 75%;">®</sup>*';
+                    }
+                    document.getElementById("crdnm1").innerHTML = crdnm;
+                    document.getElementById("crdnm2").innerHTML = crdnm;
+
+        }
+
+	</script>
+
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>49079 Sobeys_5x_Launch E</title>
+<style type="text/css">
+/*---------------------------- RESET STYLES ----------------------------*/
+table, td {
+ border-collapse: collapse;
+ mso-table-lspace: 0pt;
+ mso-table-rspace: 0pt;
+}
+.ReadMsgBody {
+ width: 100%;
+}
+.ExternalClass {
+ width: 100%;
+}
+a img {
+ border: none;
+}
+.yshortcuts, a .yshortcuts, a .yshortcuts:hover, a .yshortcuts:active, a .yshortcuts:focus {
+ background-color: transparent !important;
+ border: none !important;
+ color: inherit !important;
+}
+
+/*----- IOS LINKS FIX -----*/
+
+a[x-apple-data-detectors] {
+ color: inherit !important;
+ text-decoration: none !important;
+ font-size: inherit !important;
+ font-family: inherit !important;
+ font-weight: inherit !important;
+ line-height: inherit !important;
+}
+.appleIOSFix a {
+ color: inherit;
+ text-decoration: none;
+}
+
+/*----- WEBFONTS -----*/
+
+@media screen {
+@font-face {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Nunito Regular'), local('Nunito-Regular'), url(https://fonts.gstatic.com/s/nunito/v8/6TbRXKWJjpj6V2v_WyRbMevvDin1pK8aKteLpeZ5c0A.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+}
+
+/*----- GMAIL SPECIFIC -----*/
+
+u + .body .Gmail-hide {
+display: none;
+}
+u + .body .Gmail-show {
+display: block !important;
+}
+
+/*-- Insert Media Queries --*/
+/*---------------------------- MOBILE TARGETING ----------------------------*/
+
+@media only screen and (max-device-width: 480px) {
+/* TEMPLATE AND BASIC STYLES */
+
+/*----- STRUCTURE -----*/
+
+*[class=Container] {
+ max-width: 600px !important;
+ width: 100% !important;
+}
+*[class=Stack] {
+ display: block !important;
+ clear: both !important;
+ width: 100% !important;
+}
+*[class=TopCol] {
+ display: table-header-group !important;
+ clear: both !important;
+}
+*[class=BottomCol] {
+ display: table-footer-group !important;
+ width: 100% !important;
+}
+*[class=MidCol] {
+ display: table-row-group !important;
+ width: 100% !important;
+}
+*[class=RevStack] {
+ display: table-cell !important;
+ width: auto !important;
+}
+*[class=Fullwidth] {
+ width: 100% !important;
+}
+*[class=Halfwidth] {
+ width: 50% !important;
+ height: auto !important;
+}
+*[class=BottomNav] {
+ display: block !important;
+ clear: both !important;
+ width: auto !important;
+ font-size: 16px !important;
+ font-weight: lighter !important;
+ background-color: #065ba4 !important;
+ border: solid !important;
+ border-width: 2px !important;
+ border-color: #FFFFFF !important;
+ padding: 12px 8px 12px 8px !important;
+ -moz-border-radius: 6px !important;
+ -webkit-border-radius: 6px !important;
+ border-radius: 6px !important;
+}
+*[class=AMSNav] {
+ display: block !important;
+ clear: both !important;
+ width: auto !important;
+ font-size: 16px !important;
+ font-weight: lighter !important;
+ background-color: #065ba4 !important;
+ border: solid !important;
+ border-width: 2px !important;
+ border-color: #FFFFFF !important;
+ padding: 12px 8px 12px 8px !important;
+}
+*[class=CenterTbl] {
+ margin: auto !important;
+}
+/*----- CONTENT -----*/
+
+*[class=Img] {
+ max-width: 600px !important;
+ height: auto !important;
+ width: 100% !important;
+}
+*[class=Origsize] {
+ width: auto !important;
+ height: auto !important;
+}
+*[class=Hide] {
+ display: none !important;
+}
+*[class=LeftAlign] {
+ text-align: left !important;
+}
+*[class=CenterAlign] {
+ text-align: center !important;
+}
+*[class=RightAlign] {
+ text-align: right !important;
+}
+*[class=LetterCap] {
+ text-transform: uppercase !important;
+}
+*[class=Headline] {
+ font-size: 30px !important;
+ line-height: 32px !important;
+}
+*[class=SubHdline] {
+ font-size: 24px !important;
+ line-height: 26px !important;
+}
+*[class=Body] {
+ font-size: 15px !important;
+ line-height: 18px !important;
+}
+*[class=Legal] {
+ font-size: 12px !important;
+ line-height: 12px !important;
+}
+*[class=WhiteLink] {
+ color: #FFFFFF !important;
+}
+*[class=DarkLink] {
+ color: #000000 !important;
+}
+*[class=AMButton] {
+ width: 70px !important;
+ height: auto !important;
+}
+
+/* Insert ADDITIONAL STYLES here - IF REQUIRED */
+
+*[class=Width_70P] {
+ width: 70% !important;
+ height: auto !important;
+}
+
+}
+
+
+                </style>
+         </head>
+<body style="margin: 0; padding: 0; -webkit-font-smoothing: antialiased; width: 100%; -webkit-text-size-adjust: none; background-color: #EFEFEF;" class="body" >
+<table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td align="center">
+<!--Begin SLUGLINE-->
+  <table role="presentation" width="640" border="0" cellspacing="0" cellpadding="0" class="Hide">
+    <tr>
+      <td style="padding: 0px 0px 20px 0px;">
+          <table role="presentation" width="640" border="0" cellspacing="0" cellpadding="0" style="background-color: #FFFFFF;">
+          <tr>
+            <td width="620" height="20" align="center" style="background-color: #f4a57a;
+background-image: repeating-linear-gradient(45deg, transparent, transparent 25px, rgba(255,255,255,.5) 25px, rgba(255,255,255,.5) 50px); padding: 3px 0px 3px 0px;"><span style="font-size: 11px; font-family: Arial, Helvetica, sans-serif; font-weight: bold; color: #000000;">REMOVE BEFORE POSTING</span></td>
+          </tr>
+        </table>
+        <table role="presentation" width="640" height="195" border="0" cellpadding="0" cellspacing="10" style="background-image: url(https://s3.amazonaws.com/emailsquareknot/HARMONY_MAIN/IMAGES/TMP_email_slug_NEW.gif); background-position: top; background-repeat: no-repeat;">
+          <tr>
+            <td width="640" align="center" valign="top" style="padding: 11px 0px 0px 0px">
+                <table role="presentation" width="640" border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                  <td width="171" height="30">&nbsp;</td>
+                  <td width="279" height="30" align="left" style="padding: 0px 0px 0px 5px; background-color: #FBEB7C; font-size: 12px; font-family: Arial, Helvetica, sans-serif; font-weight: bold;"><label for="fname" style="font-size: 14px; font-family: Airal, Helvetica, sans-serif; color: #000000"><b>Enter name:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b></label><input type="text" id="fname" name="fname" placeholder="Amanda-Courtney"></td>
+                  <td width="160" height="30" align="right" style="padding: 0px 20px 0px 0px; font-size: 12px; font-family: Arial, Helvetica, sans-serif;">AC</td>
+                </tr>
+                <tr>
+                  <td width="171" height="25">&nbsp;</td>
+                  <td width="279" height="25" align="left" style="padding: 0px 0px 0px 5px; background-color: #FBEB7C; font-size: 12px; font-family: Arial, Helvetica, sans-serif;">
+                      <label for="banner" style="font-size: 14px; font-family: Airal, Helvetica, sans-serif; color: #000000"><b>Select Banner:</b></label>
+                                  <select name="banner" id="banner">
+                                      <option value="SBYA">SBYA</option>
+                                      <option value="SBYO">SBYO</option>
+                                      <option value="SBYW">SBYW</option>
+                                      <option value="FOOD">FOOD</option>
+                                      <option value="FLDO">FLDO</option>
+                                      <option value="IGAW">IGAW</option>
+                                      <option value="5000">5000</option>
+                                      <option value="SURO">SURO</option>
+                                      <option value="IGAQ">IGAQ</option>
+                                      <option value="TGAQ">TGAQ</option>
+                                      <option value="TRAD">TRAD</option>
+                                  </select>
+                  </td>
+                  <td width="160" height="25" align="right" style="padding: 0px 20px 0px 0px; font-size: 12px; font-family: Arial, Helvetica, sans-serif;"><span id="curdate"></span></td>
+                </tr>
+                <tr>
+                  <td width="171" height="24">&nbsp;</td>
+                  <td width="279" height="24" align="left" style="padding: 0px 0px 0px 5px; background-color: #FBEB7C; font-size: 12px; font-family: Arial, Helvetica, sans-serif;">
+                      <label for="Card" style="font-size: 14px; font-family: Airal, Helvetica, sans-serif; color: #000000"><b>Select Card:</b></label>
+                                  <select name="card" id="card">
+                                      <option value="IGA">IGA</option>
+                                      <option value="NOFEE">NOFEE</option>
+                                      <option value="NOFEE_SMLBIZ">NOFEE_SMLBIZ</option>
+                                      <option value="SMLBIZ">SMLBIZ</option>
+                                      <option value="SOBEYS">SOBEYS</option>
+                                      <option value="WORLD">WORLD</option>
+                                      <option value="WORLDELITE">WORLDELITE</option>
+                                  </select>
+                                <button onclick="go()">Go!</button>
+                    </td>
+                  <td width="180" height="24">&nbsp;</td>
+                </tr>
+                <tr>
+                  <td width="171" height="30">&nbsp;</td>
+                  <td width="279" height="30" align="right" style="font-size: 12px; font-family: Arial, Helvetica, sans-serif; padding: 0px 5px 0px 5px"><strong>For internal review only.</strong></td>
+                  <td width="180" height="30">&nbsp;</td>
+                </tr>
+              </table>
+              </td>
+          </tr>
+          <tr>
+            <td width="640" height="55">
+                <table role="presentation" width="72" height="55" border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                  <td align="center" style="font-size: 18px; font-family: Arial, Helvetica, sans-serif; font-weight: bold; color: #CD0B0E; line-height: 22px">R1</td>
+                </tr>
+              </table></td>
+          </tr>
+        </table>
+        <table role="presentation" width="640" border="0" cellspacing="0" cellpadding="0" style="background-color: #FFFFFF;">
+          <tr>
+            <td width="620" height="20" align="center" style="background-color: #f4a57a;
+background-image: repeating-linear-gradient(45deg, transparent, transparent 25px, rgba(255,255,255,.5) 25px, rgba(255,255,255,.5) 50px); padding: 3px 0px 3px 0px;"><span style="font-size: 11px; font-family: Arial, Helvetica, sans-serif; font-weight: bold; color: #000000;">REMOVE BEFORE POSTING</span></td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+<!--End SLUGLINE-->
+      </td>
+    </tr>
+  </tbody>
+</table>
+<table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#EFEFEF">
+    <tbody>
+      <tr>
+        <td align="center">
+          <!--Begin CONTAINER-->
+          <table role="presentation" width="600" border="0" cellspacing="0" cellpadding="0" class="Container">
+            <tbody>
+              <tr>
+                <td align="center" bgcolor="#FFFFFF">
+
+<!--Begin TEMPLATE HEADER-->
+<header>
+  <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" style="border-top: solid; border-top-width: 1px; border-top-color: #CCCCCC;">
+    <tbody>
+      <tr>
+        <td width="6%" align="left" valign="top">&nbsp;</td>
+        <td align="left" valign="top" style="padding: 20px 0px 20px 0px;"><table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tbody>
+              <tr>
+                <td width="22%" align="left" valign="middle"><img role="presentation" src="https://s3.amazonaws.com/emailsquareknot/HARMONY_MAIN/IMAGES/AM_Button_B_E.png" alt="" width="95" height="95" border="0" style="vertical-align: bottom;" class="Img"></td>
+                <td align="left" valign="top">&nbsp;</td>
+                <td width="73%" align="right" valign="middle"><table role="presentation" border="0" cellspacing="0" cellpadding="0">
+                    <tbody>
+                      <tr>
+                        <td align="left"><table role="presentation" border="0" cellspacing="0" cellpadding="0">
+                            <tbody>
+                              <tr>
+                                <td align="left" valign="top" style="font-size: 14px; font-family: 'Nunito', Calibri, Arial, Helvetica, sans-serif; line-height: 18px; color: #333333; white-space: nowrap;">Hey <span id="fname1"></span>! <br>
+                                  <span class="appleIOSFix">As of <span id="asofdate"></span></span>, you have:</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                          <table role="presentation" border="0" cellspacing="0" cellpadding="0">
+                            <tbody>
+                              <tr>
+                                <td width="140" align="left" valign="top"><table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0">
+                                    <tbody>
+                                      <tr>
+                                        <td width="10" align="left" valign="middle" style="font-size: 32px; font-family: Calibri, Arial, Helvetica, sans-serif; line-height: 32px; color: #065ba4; white-space: nowrap;"><span class="Headline">4,321&nbsp;</span></td>
+                                        <td width="70" align="left" valign="middle" style="font-size: 13px; font-family: Calibri, Arial, Helvetica, sans-serif; line-height: 13px; color: #065ba4;" class="Legal">Cash <br>
+                                          Miles</td>
+                                      </tr>
+                                    </tbody>
+                                  </table></td>
+                                <td width="20" align="center" valign="top">&nbsp;</td>
+                                <td width="140" align="left" valign="top"><table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0">
+                                    <tbody>
+                                      <tr>
+                                        <td width="10" align="left" valign="middle" style="font-size: 32px; font-family: Calibri, Arial, Helvetica, sans-serif; line-height: 32px; color: #065ba4; white-space: nowrap;"><span class="Headline">1,234&nbsp;</span></td>
+                                        <td width="70" align="left" valign="middle" style="font-size: 13px; font-family: Calibri, Arial, Helvetica, sans-serif; line-height: 13px; color: #065ba4;" class="Legal">Dream <br>
+                                          Miles</td>
+                                      </tr>
+                                    </tbody>
+                                  </table></td>
+                              </tr>
+                            </tbody>
+                          </table></td>
+                      </tr>
+                    </tbody>
+                  </table></td>
+              </tr>
+            </tbody>
+          </table></td>
+        <td width="6%" align="left" valign="top">&nbsp;</td>
+      </tr>
+    </tbody>
+  </table>
+</header>
+<!--End TEMPLATE HEADER-->
+
+
+<!--Begin MAIN-->
+<main>
+<!--Begin 3COLTBL-->
+<table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#0079C1">
+          <tbody>
+             <tr>
+                <td width="6%">&nbsp;</td>
+                <!--Begin LOGOHFLENS-->
+                <td align="center" valign="top" style="padding: 0px 0px 10px 0px">
+                   <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0">
+                      <tbody>
+                         <tr align="center">
+                            <td width="180"  align="right" class="TopCol"><img role="presentation" src="xx" id="logo1" width="170" height="90" alt="" border="0" style="vertical-align: bottom;"></td>
+                         </tr>
+                      </tbody>
+                   </table>
+                </td>
+                <!--End LOGOHFLENS-->
+                <td width="6%">&nbsp;</td>  
+             </tr>
+          </tbody>
+</table>
+<!--End 3COLTBL-->
+
+<!--Begin 3COLTBL-->
+<table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td width="6%">&nbsp;</td>
+      <td align="center">
+        <!--Begin HDLNH1CTR-->
+        <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tbody>
+            <tr>
+              <td align="center" valign="top"><h1 style="margin-bottom: 0px; font-size: 70px; font-family: 'Nunito', Calibri, Arial, Helvetica, sans-serif; line-height: 70px; color: #1790CC; font-weight: lighter">Get more Miles!</h1></td>
+            </tr>
+          </tbody>
+        </table>
+        <!--End HDLNH1CTR-->
+      </td>
+      <td width="6%">&nbsp;</td>
+    </tr>
+  </tbody>
+</table>
+<!--End 3COLTBL-->
+
+<!--Begin 3COLTBL-->
+<table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td width="6%">&nbsp;</td>
+      <td align="center" style="padding: 15px 0px 10px 0px;">
+          <!--Begin SBHDH2CTR-->
+            <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tbody>
+                <tr>
+                  <td align="center" valign="top"><h2 style="font-size: 20px; font-family: 'Nunito', Calibri, Arial, Helvetica, sans-serif; line-height: 24px; color: #5E5E5E; font-weight: normal">Get topped up to <span id="txtcol" style="font-size: 40px"><strong>5x</strong></span> the AIR&nbsp;MILES<sup style="font-size: 75%; line-height: 75%;">®</sup> Reward&nbsp;Miles*</h2></td>
+                </tr>
+              </tbody>
+            </table>
+            <!--End SBHDH2CTR-->
+      </td>
+      <td width="6%">&nbsp;</td>
+    </tr>
+  </tbody>
+</table>
+<!--End 3COLTBL-->
+
+<!--Begin 3COLTBL-->
+<table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td width="6%">&nbsp;</td>
+      <td align="center" style="padding: 20px 0px 20px 0px">
+        <!--Begin IMGLRG-->
+        <div style="border-bottom: 1px solid #BBBDBF"><img role="presentation" src="xx" id="heroimg" alt="" width="447" height="268" class="Img" style="vertical-align: bottom;" border="0"></div>
+        <!--End IMGLRG-->
+        </td>
+      <td width="6%">&nbsp;</td>
+    </tr>
+  </tbody>
+</table>
+<!--End 3COLTBL-->
+
+<!--Begin 3COLTBL-->
+<table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td width="6%">&nbsp;</td>
+      <td width="31%" align="center" style="padding: 15px 0px 15px 0px;">
+        <!--Begin IMGSML-->
+        <div><img role="presentation" src="xx" id="logo2" alt="" width="135" height="60" class="Width_70P" style="vertical-align: bottom;" border="0"></div>
+        <!--End IMGSML-->
+      </td>
+      <td width="26%" align="center" style="padding: 15px 0px 15px 0px">
+        <!--Begin IMGSML-->
+        <div><img role="presentation" src="https://s3.amazonaws.com/emailsquareknot/HARMONY_MAIN/IMAGES/AM_Button_B_E.png" alt="" width="65" height="65" class="Halfwidth" style="vertical-align: bottom;" border="0"></div>
+        <!--End IMGSML-->
+      </td>
+      <td width="31%" align="center" style="padding: 15px 0px 15px 0px;">
+        <!--Begin IMGSML-->
+        <div><img role="presentation" src="https://s3.amazonaws.com/emailsquareknot/HARMONY_MAIN/IMAGES/49079_bmo_logo_e.jpg" alt="" width="135" height="44" class="Width_70P" style="vertical-align: bottom;" border="0"></div>
+        <!--End IMGSML-->
+      </td>
+      <td width="6%">&nbsp;</td>
+    </tr>
+  </tbody>
+</table>
+<!--End 3COLTBL-->
+
+<!--Begin 3COLTBL-->
+<table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#FFFFFF">
+  <tbody>
+    <tr>
+      <td width="6%">&nbsp;</td>
+      <td align="center">
+        <!--Begin TXTLFT-->
+        <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tbody>
+            <tr>
+              <td align="left" valign="top" style="font-size: 16px; font-family: Arial, Helvetica, sans-serif; line-height: 20px; color: #000000; padding: 0px 0px 0px 0px;"><p><span id="firstname"></span>,</p><p>From now until May&nbsp;31,&nbsp;2021, get topped up to 5x the AIR&nbsp;MILES Reward Miles when you use your BMO<sup style="font-size: 75%; line-height: 75%;">®†</sup> AIR&nbsp;MILES<sup style="font-size: 75%; line-height: 75%;">®</sup> Credit Card at&nbsp;<span id="partner1"></span>.*</p></td>
+            </tr>
+          </tbody>
+        </table>
+        <!--End TXTLFT-->  
+      </td>
+      <td width="6%">&nbsp;</td>
+    </tr>
+  </tbody>
+</table>
+<!--End 3COLTBL-->
+
+<!--Begin 3COLTBL-->
+<table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td width="2%">&nbsp;</td>
+      <td align="center" style="padding: 20px 0px 0px 0px">
+        <!--Begin SBHDH3CTR-->
+        <table role="presentation" width="340" border="0" cellspacing="0" cellpadding="0" class="Fullwidth">
+          <tbody>
+            <tr>
+              <td align="center" valign="top"><h3 style="font-size: 22px; font-family: Arial, Helvetica, sans-serif; line-height: 22px; color: #0079C1; font-weight: normal; margin-bottom: 0px">Here’s an example of how it works</h3>
+                <!--Begin HRDVDR-->
+                <hr style="border-width: 0; background: #0079C1; color: #0079C1; width: 100%; height: 3px;">
+                <!--End HRDVDR-->
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <!--End SBHDH3CTR-->
+      </td>
+      <td width="2%">&nbsp;</td>
+    </tr>
+  </tbody>
+</table>
+<!--End 3COLTBL-->
+
+<!--Begin 3COLTBL-->
+<table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#FFFFFF">
+  <tbody>
+    <tr>
+      <td width="6%">&nbsp;</td>
+      <td align="center" style="padding: 10px 0px 0px 0px">
+        <!--Begin TXTCTR-->
+        <table role="presentation" width="340" border="0" cellspacing="0" cellpadding="0">
+          <tbody>
+            <tr>
+              <td align="center" valign="top" style="font-size: 16px; font-family: Arial, Helvetica, sans-serif; line-height: 20px; color: #000000; padding: 0px 0px 0px 0px;"><p>If you spend $100 on eligible purchases at <span id="partner2"></span>, you can get:</p></td>
+            </tr>
+          </tbody>
+        </table>
+        <!--End TXTCTR-->  
+      </td>
+      <td width="6%">&nbsp;</td>
+    </tr>
+  </tbody>
+</table>
+<!--End 3COLTBL-->
+
+<!--Begin 3COLTBL-->
+<table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td width="6%">&nbsp;</td>
+      <td align="center" style="padding: 20px 0px 20px 0px;">
+          <table role="presentation" width="460" border="0" cellspacing="0" cellpadding="0" class="Fullwidth">
+          <tbody>
+            <tr>
+              <td align="center" valign="middle">
+                <br>
+
+                <table role="presentation" width="90%" border="0" cellspacing="0" cellpadding="0" class="Fullwidth">
+                  <tbody>
+                    <tr>
+                      <td align="left" valign="middle">
+                          <!--Begin TXTLFT-->
+                          <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0">
+                            <tbody>
+                              <tr>
+                                <td align="left" valign="middle" style="font-size: 18px; font-family: Arial, Helvetica, sans-serif; line-height: 18px; color: #000000;" class="Body"><strong><span id="partner3"></span> Base&nbsp;Miles</strong><br><span style="font-size: 14px">(found in your transaction history)*</span></td>
+                              </tr>
+                            </tbody>
+                          </table>
+                      <!--End TXTLFT-->
+                      </td>
+                      <td width="20" valign="middle">&nbsp;</td>
+                      <td width="100" align="right" valign="middle" style="padding: 0px 10px 0px 0px;">
+                          <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0">
+                              <tbody>
+                                  <tr>
+                                      <td align="right" valign="top" style="font-size: 48px; font-family: Calibri, Arial, Helvetica, sans-serif; line-height: 48px; color: #0079C1">5</td>
+                                  </tr>
+                              </tbody>
+                          </table>
+                        </td>
+                    </tr>
+                  </tbody>
+                </table>
+                <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0">
+                  <tbody>
+                    <tr>
+                      <td align="center" valign="middle" style="padding: 10px 0px 10px 0px; font-size: 42px; font-family: Calibri, Arial, Helvetica, sans-serif; line-height: 42px; color: #0079C1">+</td>
+                    </tr>
+                  </tbody>
+                </table>
+
+                <table role="presentation" width="90%" border="0" cellspacing="0" cellpadding="0" class="Fullwidth">
+                  <tbody>
+                    <tr>
+                      <td align="left" valign="middle">
+                          <!--Begin TXTLFT-->
+                          <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0">
+                            <tbody>
+                              <tr>
+                                <td align="left" valign="middle" style="font-size: 18px; font-family: Arial, Helvetica, sans-serif; line-height: 18px; color: #000000;" class="Body"><strong><span id="crdnm1"></span> Base&nbsp;Miles</strong>*<br>
+                                <span style="font-size: 14px">(found on your billing statement and transaction history)*</span></td>
+                              </tr>
+                            </tbody>
+                          </table>
+                      <!--End TXTLFT-->
+                      </td>
+                      <td width="20" valign="middle">&nbsp;</td>
+                      <td width="100" align="right" valign="middle" style="padding: 0px 10px 0px 0px;">
+                          <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0">
+                              <tbody>
+                                  <tr>
+                                      <td align="right" valign="top" style="font-size: 48px; font-family: Calibri, Arial, Helvetica, sans-serif; line-height: 48px; color: #0079C1">12</td>
+                                  </tr>
+                              </tbody>
+                          </table>
+                        </td>
+                    </tr>
+                  </tbody>
+                </table>
+                <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0">
+                  <tbody>
+                    <tr>
+                      <td align="center" valign="middle" style="padding: 10px 0px 10px 0px; font-size: 42px; font-family: Calibri, Arial, Helvetica, sans-serif; line-height: 42px; color: #0079C1">+</td>
+                    </tr>
+                  </tbody>
+                </table>
+
+
+                <table role="presentation" width="90%" border="0" cellspacing="0" cellpadding="0" class="Fullwidth">
+                  <tbody>
+                    <tr>
+                      <td align="left" valign="middle">
+                          <!--Begin TXTLFT-->
+                          <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0">
+                            <tbody>
+                              <tr>
+                                <td align="left" valign="middle" style="font-size: 18px; font-family: Arial, Helvetica, sans-serif; line-height: 18px; color: #000000;" class="Body"><strong>BMO Top-Up to 5x the Miles</strong>*<br>
+                                <span style="font-size: 14px">(found in your AIR&nbsp;MILES transaction history within 2 weeks)*</span></td>
+                              </tr>
+                            </tbody>
+                          </table>
+                      <!--End TXTLFT-->
+                      </td>
+                      <td width="20" valign="middle">&nbsp;</td>
+                      <td width="100" align="right" valign="middle" style="padding: 0px 10px 0px 0px;">
+                          <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0">
+                              <tbody>
+                                  <tr>
+                                      <td align="right" valign="top" style="font-size: 48px; font-family: Calibri, Arial, Helvetica, sans-serif; line-height: 48px; color: #0079C1">8</td>
+                                  </tr>
+                              </tbody>
+                          </table>
+                        </td>
+                    </tr>
+                  </tbody>
+                </table>
+                <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0">
+                  <tbody>
+                    <tr>
+                      <td align="center" valign="middle" style="padding: 10px 0px 10px 0px; font-size: 42px; font-family: Calibri, Arial, Helvetica, sans-serif; line-height: 42px; color: #0079C1">=</td>
+                    </tr>
+                  </tbody>
+                </table>
+
+                <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#0079C1" class="Fullwidth">
+                    <tbody>
+                        <tr>
+                            <td>
+                                <table role="presentation" width="90%" align="center" border="0" cellspacing="0" cellpadding="0" class="Fullwidth">
+                                  <tbody>
+                                    <tr>
+                                      <td align="left" valign="middle">
+                                          <!--Begin TXTLFT-->
+                                          <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0">
+                                              <tbody>
+                                                  <tr>
+                                                      <td height="22" align="left" valign="middle" class="Body" style="padding: 0px 0px 0px 10px; font-size: 18px; font-family: Arial, Helvetica, sans-serif; line-height: 22px; color: #FFFFFF;"><strong>Total Miles</strong> you get</td>
+                                                  </tr>
+                                              </tbody>
+                                          </table>
+                                          <!--End TXTLFT-->
+                                        </td>
+                                        <td width="20" valign="middle">&nbsp;</td>
+                                        <td width="100" align="right" valign="middle" style="padding: 0px 10px 0px 0px;">
+                                            <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0">
+                                                <tbody>
+                                                    <tr>
+                                                        <td align="right" valign="top" style="font-size: 48px; font-family: 'Nunito', Calibri, Arial, Helvetica, sans-serif; line-height: 48px; color: #FFFFFF; padding: 10px 0px 10px 0px;">25</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+        <!--Begin SBHDH3CTR-->
+        <table role="presentation" width="460" border="0" cellspacing="0" cellpadding="0" class="Fullwidth">
+          <tbody>
+            <tr>
+              <td align="center" valign="top"><h3 style="font-size: 26px; font-family: Calibri, Arial, Helvetica, sans-serif; line-height: 30px; color: #0079C1; font-weight: normal" class="SubHdline">That's <strong>5x the Miles</strong></h3></td>
+            </tr>
+          </tbody>
+        </table>
+        <!--End SBHDH3CTR-->
+
+        <!--Begin IMGMED-->
+        <table role="presentation" border="0" cellspacing="0" cellpadding="0">
+          <tbody>
+            <tr>
+              <td align="center" valign="middle"><img role="presentation" src="xx" id="cardimg" height="80" alt="" border="0" style="vertical-align: bottom;"/></td>
+              <td align="center" valign="middle">
+                  <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0">
+                      <tbody>
+                          <tr>
+                              <td align="center" valign="top" style="font-size: 24px; font-family: Arial, Helvetica, sans-serif; line-height: 24px; color: #0064b5; padding: 0px 10px 0px 10px;"><strong>+</strong></td>
+                          </tr>
+                      </tbody>
+                  </table>
+                </td>
+              <td align="center" valign="middle"><img role="presentation" src="https://s3.amazonaws.com/emailsquareknot/HARMONY_MAIN/IMAGES/AM_card_B_E.png" height="80" alt="" border="0" style="vertical-align: bottom;"/></td>
+            </tr>
+          </tbody>
+        </table>
+        <!--End IMGMED-->
+        <br>
+
+        <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#F5F6F7">
+          <tbody>
+            <tr>
+              <td width="10%" align="center">&nbsp;</td>
+              <td align="center" style="padding: 0px 0px 25px 0px;">
+                  <!--Begin IMGSML-->
+                  <div><img role="presentation" src="https://s3.amazonaws.com/emailsquareknot/HARMONY_MAIN/IMAGES/42394_BMO_Smokey_IMG_arrow.png" width="30" height="30" alt="" border="0" style="vertical-align: bottom;"/></div>
+                  <!--Begin IMGSML-->
+                  <!--Begin  SBHDH3CTR-->
+                    <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0">
+                      <tbody>
+                        <tr>
+                          <td align="center" valign="top"><h3  style="font-size: 30px; font-family: Calibri, Arial, Helvetica, sans-serif; line-height: 34px; color: #0079C1; padding: 0px 0px 10px 0px; font-weight: normal; margin: 0px" class="SubHdline">Don't miss out on Miles</h3></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  <!--End  SBHDH3CTR-->
+                  <!--Begin TXTCTR-->
+                  <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0">
+                     <tbody>
+                       <tr>
+                         <td align="center" valign="top" style="font-size: 16px; font-family: Arial, Helvetica, sans-serif; line-height: 22px; color: #5e5e5e;" class="Body"><p>Use your AIR&nbsp;MILES Card every time you pay with your <span id="crdnm2"></span> at <span id="partner4"></span> to get more Miles,&nbsp;faster.</p></td>
+                       </tr>
+                     </tbody>
+                  </table>
+                  <!--End TXTCTR-->
+                </td>
+              <td width="10%" align="center">&nbsp;</td>
+            </tr>
+          </tbody>
+        </table>
+        <br>
+        <br>
+
+        <!--Begin BTNPRTNR-->
+        <table role="presentation" border="0" cellpadding="0" cellspacing="0" class="Fullwidth">
+          <tbody>
+            <tr>
+              <td width="300" height="50" align="center" valign="middle" bgcolor="#0079C1"><div><a href="${URL1}" target="_blank" style="color: #FFFFFF; display: inline-block; font-family: 'Nunito', Calibri, Arial, Helvetica, sans-serif; font-size: 22px; font-weight: lighter; line-height: 50px; text-align: center; text-decoration: none; width: 300px; -webkit-text-size-adjust: none; white-space: nowrap;" class="Fullwidth">Learn more</a></div></td>
+            </tr>
+          </tbody>
+        </table>
+        <!--End BTNPRTNR-->
+
+        </td>
+      <td width="6%">&nbsp;</td>
+    </tr>
+  </tbody>
+</table>
+<!--End 3COLTBL-->
+
+<table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tbody>
+          <tr>
+              <td width="4%">&nbsp;</td>
+                    <td width="46%" align="left" valign="top" style="font-size: 16px; font-family: Calibri, Arial, Helvetica, sans-serif; line-height: 22px; color: #231f20; padding: 20px 0px 20px 0px;" class="Stack"><img role="presentation" src="https://s3.amazonaws.com/emailsquareknot/HARMONY_MAIN/IMAGES/49433_bmo_stb_logotag_e.png" width="240" height="55" alt="BMO" border="0" style="vertical-align: bottom;"/></td>
+                    <td width="46%" align="right" class="Stack" style="font-size: 12px; font-family: Calibri, Arial, Helvetica, sans-serif; line-height: 16px; color: #000000">* <a href="https://s3.amazonaws.com/emailsquareknot/SPLASHPAGES/49079_bmo_sobeys_5x_terms_e.html" target="_blank" style="color: #231f20;">Terms and Conditions</a></td>
+              <td width="4%">&nbsp;</td>
+          </tr>
+      </tbody>
+</table>
+
+
+
+</main>
+<!--End MAIN-->
+<!--Begin FOOTER-->
+<footer>
+  <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0">
+    <tbody>
+      <tr>
+        <td align="center" valign="middle" style="padding: 10px 20px 0px 20px;"><img src="https://s3.amazonaws.com/emailsquareknot/HARMONY_MAIN/IMAGES/AM_Tagline_2020_RCED_EN.gif" width="560" height="73" alt="Rewarding Canadians, every day" border="0" style="vertical-align: bottom;" class="Img"/></td>
+      </tr>
+    </tbody>
+  </table>
+  <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0">
+    <tbody>
+      <tr>
+        <td width="6%" align="left" valign="top">&nbsp;</td>
+        <td align="center" style="padding: 10px 0px 20px 0px;"><br class="Hide">
+          <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tbody>
+              <tr>
+                <td align="left" valign="middle" class="Hide"><img role="presentation" src="https://s3.amazonaws.com/emailsquareknot/HARMONY_MAIN/IMAGES/AM_Button_B_E.png" alt="AIR MILES" width="95" height="95" border="0" style="vertical-align: bottom;"></td>
+                <td width="260" align="center" valign="top"><table role="presentation" border="0" cellspacing="0" cellpadding="0" class="Fullwidth">
+                    <tbody>
+                      <tr>
+                        <td align="center" valign="top"><a href="https://www.facebook.com/AirMilesCanada" target="_blank"><img src="https://s3.amazonaws.com/emailsquareknot/HARMONY_MAIN/IMAGES/TMP_icon_FB.png" width="47" height="47" alt="Facebook" border="0" style="vertical-align: bottom;"/></a></td>
+                        <td width="20" align="center" valign="top">&nbsp;</td>
+                        <td align="center" valign="top"><a href="https://twitter.com/AIRMILES" target="_blank"><img src="https://s3.amazonaws.com/emailsquareknot/HARMONY_MAIN/IMAGES/TMP_icon_TWT.png" width="47" height="47" alt="Twitter" border="0" style="vertical-align: bottom;"/></a></td>
+                        <td width="20" align="center" valign="top">&nbsp;</td>
+                        <td align="center" valign="top"><a href="https://instagram.com/airmiles_canada/" target="_blank"><img src="https://s3.amazonaws.com/emailsquareknot/HARMONY_MAIN/IMAGES/TMP_icon_INST.png" width="47" height="47" alt="Instagram" border="0" style="vertical-align: bottom;"/></a></td>
+                        <td width="20" align="center" valign="top">&nbsp;</td>
+                        <td align="center" valign="top"><a href="http://www.youtube.com/user/AIRMILESCanada" target="_blank"><img src="https://s3.amazonaws.com/emailsquareknot/HARMONY_MAIN/IMAGES/TMP_icon_YTB.png" width="47" height="47" alt="YouTube" border="0" style="vertical-align: bottom;"/></a></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <br>
+                  <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tbody>
+                      <tr>
+                        <td width="130" align="center" valign="bottom"><img role="presentation" src="https://s3.amazonaws.com/emailsquareknot/HARMONY_MAIN/IMAGES/TMP_img_AM_App_E.png" width="130" height="75" alt="" border="0" style="vertical-align: bottom;"/></td>
+                        <td><table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0">
+                            <tbody>
+                              <tr>
+                                <td align="right" class="CenterTxt"><a href="https://itunes.apple.com/ca/app/air-miles-reward-program/id388705262" target="_blank"><img src="https://s3.amazonaws.com/emailsquareknot/HARMONY_MAIN/IMAGES/TMP_badge_Apple_App_E.png" width="125" height="42" alt="iTunes - Download on the AppStore" border="0" style="vertical-align: bottom;"/></a></td>
+                              </tr>
+                              <tr>
+                                <td align="right" class="CenterTxt"><a href="https://play.google.com/store/apps/details?id=com.airmiles&hl=en" target="_blank"><img src="https://s3.amazonaws.com/emailsquareknot/HARMONY_MAIN/IMAGES/TMP_badge_Google_Play_E.png" width="125" height="49" alt="Get it on Google Play" border="0" style="vertical-align: bottom;"/></a></td>
+                              </tr>
+                            </tbody>
+                          </table></td>
+                      </tr>
+                    </tbody>
+                  </table></td>
+              </tr>
+            </tbody>
+          </table></td>
+        <td width="6%" align="left" valign="top">&nbsp;</td>
+      </tr>
+      <tr>
+        <td width="6%" align="left" valign="top">&nbsp;</td>
+        <td align="center" valign="top"><nav>
+            <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" style="font-size: 15px; font-family: 'Nunito', Calibri, Arial, Helvetica, sans-serif; color: #065ba4;">
+              <tbody>
+                <tr>
+                  <td width="60" align="center" valign="middle" class="BottomNav"><a href="https://www.airmiles.ca/arrow/PrivacyPolicy?changeLocale=en_CA" target="_blank" style="color: #065ba4; text-decoration: none;" class="WhiteLink">Privacy</a></td>
+                  <td align="center" valign="middle" class="Hide">|</td>
+                  <td width="50" align="center" valign="middle" class="BottomNav"><a href="https://www.airmiles.ca/arrow/TermsAndConditions?changeLocale=en_CA" target="_blank" style="color: #065ba4; text-decoration: none;" class="WhiteLink">Legal</a></td>
+                  <td align="center" valign="middle" class="Hide">|</td>
+                  <td width="80" align="center" valign="middle" class="BottomNav"><a href="https://www.airmiles.ca/arrow/Home?changeLocale=en_CA" target="_blank" style="color: #065ba4; text-decoration: none;" class="WhiteLink">airmiles.ca</a></td>
+                  <td align="center" valign="middle" class="Hide">|</td>
+                  <td width="110" align="center" valign="middle" class="BottomNav"><a href="https://www.airmiles.ca/arrow/SelfServe?changeLocale=en_CA" target="_blank" style="color: #065ba4; text-decoration: none;" class="WhiteLink">Update Profile</a></td>
+                  <td align="center" valign="middle" class="Hide">|</td>
+                  <td width="90" align="center" valign="middle" class="BottomNav"><a href="http://emails.airmiles.ca/PUBLISH(new_optout_en)" target="_blank" style="color: #065ba4; text-decoration: none;" class="WhiteLink">Unsubscribe</a></td>
+                </tr>
+              </tbody>
+            </table>
+          </nav></td>
+        <td width="6%" align="left" valign="top">&nbsp;</td>
+      </tr>
+      <tr>
+        <td width="6%" align="left" valign="top">&nbsp;</td>
+        <td align="left" style="font-size: 12px; font-family: Calibri, Arial, Helvetica, sans-serif; line-height: 18px; color: #065ba4; padding: 20px 0px 20px 0px;"><p class="Body" style="font-size: 18px; font-family: 'Nunito', Calibri, Arial, Helvetica, sans-serif; line-height: 22px; color: #065ba4;">Please do not reply to this email. <br>
+            If you have any questions or comments, <a href="https://www.airmiles.ca/arrow/ContactUs?changeLocale=en_CA" target="_blank" style="color: #065ba4;">contact&nbsp;us</a>.</p>
+          <p>The AIR MILES Reward Program will never ask that you provide any personal information via email. If you receive such&nbsp;an email that appears to be from the AIR MILES Reward Program, do not reply and forward the email to <a href="mailto:phishing@airmiles.ca" target="_blank" style="color: #065ba4;">phishing@airmiles.ca</a>. Never share your PIN with anyone other than those that are allowed to act on behalf of the Account. </p>
+          <p class="appleIOSFix">Address: 351 King Street East, Suite 200, Toronto, ON, M5A&nbsp;0L6</p>
+          <p>&reg;&trade; Trademarks of AM Royalties Limited Partnership used under license by LoyaltyOne,&nbsp;Co. Sponsor, Supplier and Retailer&nbsp;trademarks are owned by the respective Sponsors, Suppliers or Retailers or authorized for their use in&nbsp;Canada.</p></td>
+        <td width="6%" align="left" valign="top">&nbsp;</td>
+      </tr>
+    </tbody>
+  </table>
+</footer>
+<!--End FOOTER-->
+
+                  <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td align="center" valign="top"><img role="presentation" src="https://s3.amazonaws.com/emailsquareknot/HARMONY_MAIN/IMAGES/stopper.png" width="360" height="10" alt="stopper"></td>
+                    </tr>
+                    <tr>
+                      <td align="center" valign="top" class="Hide"><img role="presentation" src="https://s3.amazonaws.com/emailsquareknot/HARMONY_MAIN/IMAGES/stopper.png" width="600" height="10" alt="stopper" style="min-width: 600px;"></td>
+                    </tr>
+                  </table></td>
+              </tr>
+            </tbody>
+          </table>
+        <!--End CONTAINER--></td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+</html>
+

@@ -1,0 +1,385 @@
+<!--A Chua 20211008-->
+<!DOCTYPE HTML>
+<html>
+<head>
+
+<script type="text/javascript">
+//document.addEventListener("DOMContentLoaded", function(event) 
+//{
+//})
+  function go()
+    {
+      var rws = window.location.search.substr(1,1); //specify rows
+      var dock = window.location.search.substr(3,5); //specify docket number
+      var fol = window.location.search.substr(9); //specify AEM folder location
+      //sample string = ?3&61346&am-promo
+      var rev = window.location.search.substr(-2).toUpperCase();
+      var pth = "https://slack-imgs.com/?c=1&o1=ro&url=https://www.airmiles.ca/content/dam/airmiles/campaigns/" + fol + "/" + dock + "_";
+      var pos = "_OFFER";
+      var lng = document.getElementById("lang").value;
+      var regcd = document.getElementById("region").value;
+      var d = new Date();
+      var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+      var dt1 = months[d.getMonth()] + " " + d.getDate() + ", " + d.getFullYear();
+
+      document.getElementById("curdate").innerHTML = dt1;
+      document.getElementById("docknum").innerHTML = dock;
+      document.getElementById("rev").innerHTML = rev;
+      document.getElementById('imgvar1').src = pth +  regcd + pos + "1_" + lng + ".png";
+      document.getElementById('imgvar2').src = pth +  regcd + pos + "2_" + lng + ".png";
+      document.getElementById('imgvar3').src = pth +  regcd + pos + "3_" + lng + ".png";
+      document.getElementById('imgvar4').src = pth +  regcd + pos + "4_" + lng + ".png";
+      document.getElementById('imgvar5').src = pth +  regcd + pos + "5_" + lng + ".png";
+      document.getElementById('imgvar6').src = pth +  regcd + pos + "6_" + lng + ".png";
+      document.getElementById('imgvar7').src = pth +  regcd + pos + "7_" + lng + ".png";
+      document.getElementById('imgvar8').src = pth +  regcd + pos + "8_" + lng + ".png";
+      document.getElementById('imgvar9').src = pth +  regcd + pos + "9_" + lng + ".png";
+      document.getElementById('imgvar10').src = pth +  regcd + pos + "10_" + lng + ".png";
+      //var myurl = 'https://s3.amazonaws.com/emailsquareknot/SPLASHPAGES/47950_' + regcd + '_OFFER_' + lng + '.html';
+      //window.open(myurl); 
+
+      document.getElementById('row4').style.display = "none"
+      document.getElementById('row5').style.display = "none"
+
+      if (rws == '5')
+          {
+            document.getElementById('row4').style.display = "table-row";
+            document.getElementById('row5').style.display = "table-row";
+          }
+      else if (rws == '4')
+          {
+            document.getElementById('row4').style.display = "table-row";
+          }
+
+    }
+</script>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>Offers by Region</title>
+<style type="text/css">
+/*---------------------------- RESET STYLES ----------------------------*/
+table, td {
+ border-collapse: collapse;
+ mso-table-lspace: 0pt;
+ mso-table-rspace: 0pt;
+}
+.ReadMsgBody {
+ width: 100%;
+}
+.ExternalClass {
+ width: 100%;
+}
+a img {
+ border: none;
+}
+.yshortcuts, a .yshortcuts, a .yshortcuts:hover, a .yshortcuts:active, a .yshortcuts:focus {
+ background-color: transparent !important;
+ border: none !important;
+ color: inherit !important;
+}
+
+/*----- IOS LINKS FIX -----*/
+
+a[x-apple-data-detectors] {
+ color: inherit !important;
+ text-decoration: none !important;
+ font-size: inherit !important;
+ font-family: inherit !important;
+ font-weight: inherit !important;
+ line-height: inherit !important;
+}
+.appleIOSFix a {
+ color: inherit;
+ text-decoration: none;
+}
+
+/*----- WEBFONTS -----*/
+
+@media screen {
+}
+
+/*-- Insert Media Queries --*/
+/*---------------------------- MOBILE TARGETING ----------------------------*/
+
+@media only screen and (max-device-width: 480px) {
+/* TEMPLATE AND BASIC STYLES */
+
+/*----- STRUCTURE -----*/
+
+*[class=Container] {
+ max-width: 600px !important;
+ width: 100% !important;
+}
+*[class=Stack] {
+ display: table-row !important;
+ clear: both !important;
+ width: 100% !important;
+}
+*[class=TopCol] {
+ display: table-header-group !important;
+ clear: both !important;
+}
+*[class=BottomCol] {
+ display: table-footer-group !important;
+ width: 100% !important;
+}
+*[class=MidCol] {
+ display: table-row-group !important;
+ width: 100% !important;
+}
+*[class=RevStack] {
+ display: table-cell !important;
+ width: auto !important;
+}
+*[class=Fullwidth] {
+ width: 100% !important;
+}
+*[class=Halfwidth] {
+ width: 50% !important;
+ height: auto !important;
+}
+*[class=BottomNav] {
+ display: block !important;
+ clear: both !important;
+ width: auto !important;
+ font-size: 17px !important;
+ background-color: #15bef0 !important;
+ border: solid !important;
+ border-width: 2px !important;
+ border-color: #FFFFFF !important;
+ padding: 8px 8px 8px 8px !important;
+}
+*[class=CenterTbl] {
+ margin: auto !important;
+}
+/*----- CONTENT -----*/
+
+*[class=Img] {
+ max-width: 600px !important;
+ height: auto !important;
+ width: 90% !important;
+ padding-top: 10px;
+ padding-bottom: 10px;
+}
+*[class=Origsize] {
+ width: auto !important;
+ height: auto !important;
+}
+*[class=Hide] {
+ display: none !important;
+}
+*[class=LeftAlign] {
+ text-align: left !important;
+}
+*[class=CenterAlign] {
+ text-align: center !important;
+}
+*[class=RightAlign] {
+ text-align: right !important;
+}
+*[class=LetterCap] {
+ text-transform: uppercase !important;
+}
+*[class=Headline] {
+ font-size: 30px !important;
+ line-height: 32px !important;
+}
+*[class=Body] {
+ font-size: 15px !important;
+ line-height: 18px !important;
+}
+*[class=Legal] {
+ font-size: 12px !important;
+ line-height: 12px !important;
+}
+*[class=WhiteLink] {
+ color: #FFFFFF !important;
+}
+*[class=DarkLink] {
+ color: #000000 !important;
+}
+*[class=AMButton] {
+ width: 70px !important;
+ height: auto !important;
+}
+
+/* Insert ADDITIONAL STYLES here - IF REQUIRED */
+}
+
+
+                </style>
+         </head>
+<body style="margin: 0; padding: 0; -webkit-font-smoothing: antialiased; width: 100%; -webkit-text-size-adjust: none; background-color: #EFEFEF;">
+    <center>
+<!--Begin SLUGLINE-->
+  <table width="640" border="0" cellspacing="0" cellpadding="0" class="Hide">
+    <tr>
+      <td style="padding: 0px 0px 20px 0px;">
+        <table width="640" border="0" cellspacing="0" cellpadding="0" style="background-color: #FFFFFF;">
+          <tr>
+            <td width="620" height="20" align="center" style="background-color: #f4a57a;
+background-image: repeating-linear-gradient(45deg, transparent, transparent 25px, rgba(255,255,255,.5) 25px, rgba(255,255,255,.5) 50px); padding: 3px 0px 3px 0px;"><span style="font-size: 11px; font-family: Arial, Helvetica, sans-serif; font-weight: bold; color: #000000;">For internal QC only.</span></td>
+          </tr>
+        </table>
+        <table width="640" height="195" border="0" cellpadding="0" cellspacing="10" style="background-image: url(https://s3.amazonaws.com/emailsquareknot/HARMONY_MAIN/IMAGES/rebrand_slug.gif); background-position: top; background-repeat: no-repeat;">
+          <tr>
+            <td width="620" height="125" valign="top">
+              <table width="620" border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                  <td width="160" height="30">&nbsp;</td>
+                  <td width="280" height="44" align="right" style="font-size: 12px; font-family: Arial, Helvetica, sans-serif; font-weight: bold;">Bonus Boom</td>
+                  <td width="50" height="30">&nbsp;</td>
+                  <td width="130" height="44" align="right" style="font-size: 12px; font-family: Arial, Helvetica, sans-serif;">AC</td>
+                </tr>
+                <tr>
+                  <td width="160" height="18">&nbsp;</td>
+                  <td width="280" height="18" align="right" style="font-size: 12px; font-family: Arial, Helvetica, sans-serif;"><span id="docknum"></span></td>
+                  <td width="50" height="18">&nbsp;</td>
+                  <td width="130" height="18" align="right" style="font-size: 12px; font-family: Arial, Helvetica, sans-serif;"><span id="curdate"></span></td>
+                </tr>
+                <tr>
+                  <td width="160" height="30">&nbsp;</td>
+                  <td width="280" height="30" align="right" style="font-size: 12px; font-family: Arial, Helvetica, sans-serif;">Offer  versions</td>
+                  <td width="50" height="30">&nbsp;</td>
+                  <td width="130" height="30">&nbsp;</td>
+                </tr>
+                <tr>
+                  <td width="160" height="26">&nbsp;</td>
+                  <td width="280" height="26" align="right" style="font-size: 12px; font-family: Arial, Helvetica, sans-serif;"></td>
+                  <td width="50" height="26">&nbsp;</td>
+                  <td width="130" height="26">&nbsp;</td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td width="620" height="50">
+              <table width="72" height="50" border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                  <td align="center" style="font-size: 18px; font-family: Arial, Helvetica, sans-serif; font-weight: bold; color: #CD0B0E; line-height: 22px"><span id="rev"></span></td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+        <table width="640" border="0" cellspacing="0" cellpadding="0" style="background-color: #FFFFFF;">
+          <tr>
+            <td width="620" height="20" align="center" style="background-color: #f4a57a;
+background-image: repeating-linear-gradient(45deg, transparent, transparent 25px, rgba(255,255,255,.5) 25px, rgba(255,255,255,.5) 50px); padding: 3px 0px 3px 0px;"><span style="font-size: 11px; font-family: Arial, Helvetica, sans-serif; font-weight: bold; color: #000000;">For internal QC only.</span></td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+<!--End SLUGLINE-->
+
+<table width="600" border="0" cellspacing="0" cellpadding="0" class="Fullwidth">
+  <tbody>
+    <tr>
+      <td align="center">
+
+        <!--Begin Dropdown List-->
+        <table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#EFEFEF">
+          <tbody>
+            <tr>
+              <td width="8%">&nbsp;</td>
+              <td align="left" style="padding: 20px 0px 10px 0px">
+                <label for="region" style="font-size: 14px; font-family: Airal, Helvetica, sans-serif; color: #000000">Select Region:</label>
+                <select name="region" id="region">
+                  <option value="10">10 - NS</option>
+                  <option value="11">11 - PE</option>
+                  <option value="12">12 - NB</option>
+                  <option value="13">13 - NL</option>
+                  <option value="4">4 - QC</option>
+                  <option value="5">5 - QC</option>
+                  <option value="2_MET">2_MET - ON Metro</option>
+                  <option value="2_SBY">2_SBY - ON Sobeys</option>
+                  <option value="0">0 - ON (Thunder Bay)</option>
+                  <option value="1">1 - SK</option>
+                  <option value="7">7 - BC / YT</option>
+                  <option value="8">8 - AB</option>
+                  <option value="9">9 - MB / NU / NT</option>
+                </select>
+              </td>
+              <td width="8%">&nbsp;</td>
+            </tr>
+            <tr>
+              <td width="8%">&nbsp;</td>
+              <td align="left" style="padding: 10px 0px 20px 0px">
+                   <label for="lang" style="font-size: 14px; font-family: Airal, Helvetica, sans-serif; color: #000000">Select Language:</label>
+                    <select name="lang" id="lang">
+                        <option value="E">English</option>
+                        <option value="F">French</option>
+                    </select>                
+                  <button onclick="go()">Go!</button>
+              </td>
+              <td width="8%">&nbsp;</td>
+            </tr>
+          </tbody>
+        </table>
+        <!--End Dropdown List-->
+
+        <table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#F1F5F6">
+          <tbody>
+            <tr>
+              <td align="center">
+                <!--Begin CONTAINER-->
+                <table width="540" border="0" cellspacing="0" cellpadding="0" class="Fullwidth">
+                  <tbody>
+                    <tr>
+                      <td align="center" style="padding: 10px 0px 10px 0px; font-size: 14px; font-family: Airal, Helvetica, sans-serif; color: #5E5E5E">
+
+                        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                          <tbody>
+                            <tr>
+                              <td width="6%">&nbsp;</td>
+                              <td width="44%" align="center" style="padding: 10px 0px 10px 0px; border: 1px solid #CCCCCC" class="Stack"><img src="xx" id="imgvar1" width="210" height="288" border="0" alt="Offer1" style="vertical-align: bottom;" class="Img"></td>
+                              <td width="44%" align="center" style="padding: 10px 0px 10px 0px; border: 1px solid #CCCCCC" class="Stack"><img src="xx" id="imgvar2" width="210" height="288" border="0" alt="Offer2" style="vertical-align: bottom;" class="Img"></td>
+                              <td width="6%">&nbsp;</td>  
+                            </tr>
+                            <tr>
+                              <td width="6%">&nbsp;</td>
+                              <td width="44%" align="center" style="padding: 10px 0px 10px 0px; border: 1px solid #CCCCCC" class="Stack"><img src="xx" id="imgvar3" width="210" height="288" border="0" alt="Offer3" style="vertical-align: bottom;" class="Img"></td>
+                              <td width="44%" align="center" style="padding: 10px 0px 10px 0px; border: 1px solid #CCCCCC" class="Stack"><img src="xx" id="imgvar4" width="210" height="288" border="0" alt="Offer4" style="vertical-align: bottom;" class="Img"></td>
+                              <td width="6%">&nbsp;</td>  
+                            </tr>
+                            <tr>
+                              <td width="6%">&nbsp;</td>
+                              <td width="44%" align="center" style="padding: 10px 0px 10px 0px; border: 1px solid #CCCCCC" class="Stack"><img src="xx" id="imgvar5" width="210" height="288" border="0" alt="Offer5" style="vertical-align: bottom;" class="Img"></td>
+                              <td width="44%" align="center" style="padding: 10px 0px 10px 0px; border: 1px solid #CCCCCC" class="Stack"><img src="xx" id="imgvar6" width="210" height="288" border="0" alt="Offer6" style="vertical-align: bottom;" class="Img"></td>
+                              <td width="6%">&nbsp;</td>  
+                            </tr>
+                            <tr id="row4">
+                              <td width="6%">&nbsp;</td>
+                              <td width="44%" align="center" style="padding: 10px 0px 10px 0px; border: 1px solid #CCCCCC" class="Stack"><img src="xx" id="imgvar7" width="210" height="288" border="0" alt="Offer7" style="vertical-align: bottom;" class="Img"></td>
+                              <td width="44%" align="center" style="padding: 10px 0px 10px 0px; border: 1px solid #CCCCCC" class="Stack"><img src="xx" id="imgvar8" width="210" height="288" border="0" alt="Offer8" style="vertical-align: bottom;" class="Img"></td>
+                              <td width="6%">&nbsp;</td>  
+                            </tr>
+                            <tr id="row5">
+                              <td width="6%">&nbsp;</td>
+                              <td width="44%" align="center" style="padding: 10px 0px 10px 0px; border: 1px solid #CCCCCC" class="Stack"><img src="xx" id="imgvar9" width="210" height="288" border="0" alt="Offer9" style="vertical-align: bottom;" class="Img"></td>
+                              <td width="44%" align="center" style="padding: 10px 0px 10px 0px; border: 1px solid #CCCCCC" class="Stack"><img src="xx" id="imgvar10" width="210" height="288" border="0" alt="Offer10" style="vertical-align: bottom;" class="Img"></td>
+                              <td width="6%">&nbsp;</td>  
+                            </tr>
+                          </tbody>
+                        </table>
+
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+</center>
+</body>
+</html>
