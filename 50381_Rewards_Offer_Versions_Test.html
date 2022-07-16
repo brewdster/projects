@@ -1,0 +1,1506 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <script type="text/javascript">
+    //document.addEventListener("DOMContentLoaded", function(event) 
+    //{
+    //})
+    function go()
+    {
+      var pth = "https://www.airmiles.ca/content/dam/airmiles/campaigns/rewards/";
+      var dock = window.location.search.toUpperCase().substr(1,5);
+      var ver = document.getElementById("version").value;
+      var lng = document.getElementById("language").value;
+      var tier = document.getElementById("tier").value;
+      var d = new Date();
+      var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+      var dt1 = months[d.getMonth()] + " " + d.getDate() + ", " + d.getFullYear();
+      var obj = 
+           {
+              hdr: 'hdr_' + lng,
+              top: 'top_' + lng,
+              bot: 'bot_' + lng,
+              ftr: 'ftr_' + lng,
+              ofr: 'of' + ver + '_' + lng
+           };
+      document.getElementById("curdate").innerHTML = dt1;
+      document.getElementById("hdr_e").style.display = "none";
+      document.getElementById("hdr_f").style.display = "none";
+      document.getElementById("top_e").style.display = "none";
+      document.getElementById("top_f").style.display = "none";
+      document.getElementById("bot_e").style.display = "none";
+      document.getElementById("bot_f").style.display = "none";
+      document.getElementById("ftr_e").style.display = "none";
+      document.getElementById("ftr_f").style.display = "none";
+      document.getElementById("of1_e").style.display = "none";
+      document.getElementById("of1_f").style.display = "none";
+      document.getElementById("of2_e").style.display = "none";
+      document.getElementById("of2_f").style.display = "none";
+      document.getElementById("of3_e").style.display = "none";
+      document.getElementById("of3_f").style.display = "none";
+      document.getElementById("of4_e").style.display = "none";
+      document.getElementById("of4_f").style.display = "none";
+
+      document.getElementById('img1e1').src = pth + dock + '_R2R_V1_Offer1_' + tier + '_EN.png';
+      document.getElementById('img1e2').src = pth + dock + '_R2R_V1_Offer2_' + tier + '_EN.png';
+      document.getElementById('img1e3').src = pth + dock + '_R2R_V1_Offer3_' + tier + '_EN.png';
+      document.getElementById('img1e4').src = pth + dock + '_R2R_V1_Offer4_' + tier + '_EN.png';
+      document.getElementById('img1e5').src = pth + dock + '_R2R_V1_Offer5_' + tier + '_EN.png';
+      document.getElementById('img1e6').src = pth + dock + '_R2R_V1_Offer6_' + tier + '_EN.png';
+      document.getElementById('img1f1').src = pth + dock + '_R2R_V1_Offer1_' + tier + '_FR.png';
+      document.getElementById('img1f2').src = pth + dock + '_R2R_V1_Offer2_' + tier + '_FR.png';
+      document.getElementById('img1f3').src = pth + dock + '_R2R_V1_Offer3_' + tier + '_FR.png';
+      document.getElementById('img1f4').src = pth + dock + '_R2R_V1_Offer4_' + tier + '_FR.png';
+      document.getElementById('img1f5').src = pth + dock + '_R2R_V1_Offer5_' + tier + '_FR.png';
+      document.getElementById('img1f6').src = pth + dock + '_R2R_V1_Offer6_' + tier + '_FR.png';
+      document.getElementById('img2e1').src = pth + dock + '_R2R_V2_Offer1_' + tier + '_EN.png';
+      document.getElementById('img2e2').src = pth + dock + '_R2R_V2_Offer2_' + tier + '_EN.png';
+      document.getElementById('img2e3').src = pth + dock + '_R2R_V2_Offer3_' + tier + '_EN.png';
+      document.getElementById('img2e4').src = pth + dock + '_R2R_V2_Offer4_' + tier + '_EN.png';
+      document.getElementById('img2e5').src = pth + dock + '_R2R_V2_Offer5_' + tier + '_EN.png';
+      document.getElementById('img2e6').src = pth + dock + '_R2R_V2_Offer6_' + tier + '_EN.png';
+      document.getElementById('img2f1').src = pth + dock + '_R2R_V2_Offer1_' + tier + '_FR.png';
+      document.getElementById('img2f2').src = pth + dock + '_R2R_V2_Offer2_' + tier + '_FR.png';
+      document.getElementById('img2f3').src = pth + dock + '_R2R_V2_Offer3_' + tier + '_FR.png';
+      document.getElementById('img2f4').src = pth + dock + '_R2R_V2_Offer4_' + tier + '_FR.png';
+      document.getElementById('img2f5').src = pth + dock + '_R2R_V2_Offer5_' + tier + '_FR.png';
+      document.getElementById('img2f6').src = pth + dock + '_R2R_V2_Offer6_' + tier + '_FR.png';
+      document.getElementById('img3e1').src = pth + dock + '_R2R_V3_Offer1_' + tier + '_EN.png';
+      document.getElementById('img3e2').src = pth + dock + '_R2R_V3_Offer2_' + tier + '_EN.png';
+      document.getElementById('img3e3').src = pth + dock + '_R2R_V3_Offer3_' + tier + '_EN.png';
+      document.getElementById('img3e4').src = pth + dock + '_R2R_V3_Offer4_' + tier + '_EN.png';
+      document.getElementById('img3e5').src = pth + dock + '_R2R_V3_Offer5_' + tier + '_EN.png';
+      document.getElementById('img3e6').src = pth + dock + '_R2R_V3_Offer6_' + tier + '_EN.png';
+      document.getElementById('img3f1').src = pth + dock + '_R2R_V3_Offer1_' + tier + '_FR.png';
+      document.getElementById('img3f2').src = pth + dock + '_R2R_V3_Offer2_' + tier + '_FR.png';
+      document.getElementById('img3f3').src = pth + dock + '_R2R_V3_Offer3_' + tier + '_FR.png';
+      document.getElementById('img3f4').src = pth + dock + '_R2R_V3_Offer4_' + tier + '_FR.png';
+      document.getElementById('img3f5').src = pth + dock + '_R2R_V3_Offer5_' + tier + '_FR.png';
+      document.getElementById('img3f6').src = pth + dock + '_R2R_V3_Offer6_' + tier + '_FR.png';
+      document.getElementById('img4e1').src = pth + dock + '_R2R_V4_Offer1_' + tier + '_EN.png';
+      document.getElementById('img4e2').src = pth + dock + '_R2R_V4_Offer2_' + tier + '_EN.png';
+      document.getElementById('img4e3').src = pth + dock + '_R2R_V4_Offer3_' + tier + '_EN.png';
+      document.getElementById('img4e4').src = pth + dock + '_R2R_V4_Offer4_' + tier + '_EN.png';
+      document.getElementById('img4e5').src = pth + dock + '_R2R_V4_Offer5_' + tier + '_EN.png';
+      document.getElementById('img4e6').src = pth + dock + '_R2R_V4_Offer6_' + tier + '_EN.png';
+      document.getElementById('img4f1').src = pth + dock + '_R2R_V4_Offer1_' + tier + '_FR.png';
+      document.getElementById('img4f2').src = pth + dock + '_R2R_V4_Offer2_' + tier + '_FR.png';
+      document.getElementById('img4f3').src = pth + dock + '_R2R_V4_Offer3_' + tier + '_FR.png';
+      document.getElementById('img4f4').src = pth + dock + '_R2R_V4_Offer4_' + tier + '_FR.png';
+      document.getElementById('img4f5').src = pth + dock + '_R2R_V4_Offer5_' + tier + '_FR.png';
+      document.getElementById('img4f6').src = pth + dock + '_R2R_V4_Offer6_' + tier + '_FR.png';
+
+      document.getElementById(obj['hdr']).style.display = "block";
+      document.getElementById(obj['top']).style.display = "block";
+      document.getElementById(obj['bot']).style.display = "block";
+      document.getElementById(obj['ftr']).style.display = "block";
+      document.getElementById(obj['ofr']).style.display = "block";
+
+    }
+  </script>
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>50381_AM_Rewards_V1_E</title>
+<style type="text/css">
+/*---------------------------- RESET STYLES ----------------------------*/
+table, td {
+ border-collapse: collapse;
+ mso-table-lspace: 0pt;
+ mso-table-rspace: 0pt;
+}
+.ReadMsgBody {
+ width: 100%;
+}
+.ExternalClass {
+ width: 100%;
+}
+a img {
+ border: none;
+}
+.yshortcuts, a .yshortcuts, a .yshortcuts:hover, a .yshortcuts:active, a .yshortcuts:focus {
+ background-color: transparent !important;
+ border: none !important;
+ color: inherit !important;
+}
+
+/*----- IOS LINKS FIX -----*/
+
+a[x-apple-data-detectors] {
+ color: inherit !important;
+ text-decoration: none !important;
+ font-size: inherit !important;
+ font-family: inherit !important;
+ font-weight: inherit !important;
+ line-height: inherit !important;
+}
+.appleIOSFix a {
+ color: inherit;
+ text-decoration: none;
+}
+
+/*----- WEBFONTS -----*/
+
+@media screen {
+@font-face {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Nunito Regular'), local('Nunito-Regular'), url(https://fonts.gstatic.com/s/nunito/v8/6TbRXKWJjpj6V2v_WyRbMevvDin1pK8aKteLpeZ5c0A.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+}
+
+/*----- GMAIL SPECIFIC -----*/
+
+u + .body .Gmail-hide {
+display: none;
+}
+u + .body .Gmail-show {
+display: block !important;
+}
+
+/*-- Insert Media Queries --*/
+/*---------------------------- MOBILE TARGETING ----------------------------*/
+
+@media only screen and (max-device-width: 480px) {
+/* TEMPLATE AND BASIC STYLES */
+
+/*----- STRUCTURE -----*/
+
+*[class=Container] {
+ max-width: 600px !important;
+ width: 100% !important;
+}
+*[class=Stack] {
+ display: block !important;
+ clear: both !important;
+ width: 100% !important;
+}
+*[class=TopCol] {
+ display: table-header-group !important;
+ clear: both !important;
+}
+*[class=BottomCol] {
+ display: table-footer-group !important;
+ width: 100% !important;
+}
+*[class=MidCol] {
+ display: table-row-group !important;
+ width: 100% !important;
+}
+*[class=RevStack] {
+ display: table-cell !important;
+ width: auto !important;
+}
+*[class=Fullwidth] {
+ width: 100% !important;
+}
+*[class=Halfwidth] {
+ width: 50% !important;
+ height: auto !important;
+}
+*[class=BottomNav] {
+ display: block !important;
+ clear: both !important;
+ width: auto !important;
+ font-size: 16px !important;
+ font-weight: lighter !important;
+ background-color: #065ba4 !important;
+ border: solid !important;
+ border-width: 2px !important;
+ border-color: #FFFFFF !important;
+ padding: 12px 8px 12px 8px !important;
+ -moz-border-radius: 6px !important;
+ -webkit-border-radius: 6px !important;
+ border-radius: 6px !important;
+}
+*[class=AMSNav] {
+ display: block !important;
+ clear: both !important;
+ width: auto !important;
+ font-size: 16px !important;
+ font-weight: lighter !important;
+ background-color: #065ba4 !important;
+ border: solid !important;
+ border-width: 2px !important;
+ border-color: #FFFFFF !important;
+ padding: 12px 8px 12px 8px !important;
+}
+*[class=CenterTbl] {
+ margin: auto !important;
+}
+/*----- CONTENT -----*/
+
+*[class=Img] {
+ max-width: 600px !important;
+ height: auto !important;
+ width: 100% !important;
+}
+*[class=Origsize] {
+ width: auto !important;
+ height: auto !important;
+}
+*[class=Hide] {
+ display: none !important;
+}
+*[class=LeftAlign] {
+ text-align: left !important;
+}
+*[class=CenterAlign] {
+ text-align: center !important;
+}
+*[class=RightAlign] {
+ text-align: right !important;
+}
+*[class=LetterCap] {
+ text-transform: uppercase !important;
+}
+*[class=Headline] {
+ font-size: 30px !important;
+ line-height: 32px !important;
+}
+*[class=SubHdline] {
+ font-size: 24px !important;
+ line-height: 26px !important;
+}
+*[class=Body] {
+ font-size: 15px !important;
+ line-height: 18px !important;
+}
+*[class=Legal] {
+ font-size: 12px !important;
+ line-height: 12px !important;
+}
+*[class=WhiteLink] {
+ color: #FFFFFF !important;
+}
+*[class=DarkLink] {
+ color: #000000 !important;
+}
+/* Insert ADDITIONAL STYLES here - IF REQUIRED */
+
+*[class=AMButton] {
+ width: 70px !important;
+ height: auto !important;
+}
+}
+
+</style>
+</head>
+
+
+<body style="margin: 0; padding: 0; -webkit-font-smoothing: antialiased; width: 100%; -webkit-text-size-adjust: none; background-color: #EFEFEF;" class="body" >
+<table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td align="center">
+
+<!--Begin SLUGLINE-->
+  <table role="presentation" width="640" border="0" cellspacing="0" cellpadding="0" class="Hide">
+    <tr>
+      <td style="padding: 0px 0px 20px 0px;">
+        <table role="presentation" width="640" border="0" cellspacing="0" cellpadding="0" style="background-color: #FFFFFF;">
+          <tr>
+            <td width="620" height="20" align="center" style="background-color: #f4a57a;
+background-image: repeating-linear-gradient(45deg, transparent, transparent 25px, rgba(255,255,255,.5) 25px, rgba(255,255,255,.5) 50px); padding: 3px 0px 3px 0px;"><span style="font-size: 11px; font-family: Arial, Helvetica, sans-serif; font-weight: bold; color: #000000;">REMOVE BEFORE POSTING</span></td>
+          </tr>
+        </table>
+        <table role="presentation" width="640" height="195" border="0" cellpadding="0" cellspacing="10" style="background-image: url(https://s3.amazonaws.com/emailsquareknot/HARMONY_MAIN/IMAGES/TMP_email_slug_NEW.gif); background-position: top; background-repeat: no-repeat;">
+          <tr>
+            <td width="620" height="125" valign="top"><table role="presentation" width="620" border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                  <td width="160" height="30">&nbsp;</td>
+                  <td width="280" height="44" align="right" style="font-size: 12px; font-family: Arial, Helvetica, sans-serif; font-weight: bold;">Rewards</td>
+                  <td width="50" height="30">&nbsp;</td>
+                  <td width="130" height="44" align="right" style="font-size: 12px; font-family: Arial, Helvetica, sans-serif;">AC</td>
+                </tr>
+                <tr>
+                  <td width="160" height="18">&nbsp;</td>
+                  <td width="280" height="18" align="right" style="font-size: 12px; font-family: Arial, Helvetica, sans-serif;">50381</td>
+                  <td width="50" height="18">&nbsp;</td>
+                  <td width="130" height="18" align="right" style="font-size: 12px; font-family: Arial, Helvetica, sans-serif;"><span id="curdate"></span></td>
+                </tr>
+                <tr>
+                  <td width="160" height="30">&nbsp;</td>
+                  <td width="280" height="30" align="right" style="font-size: 12px; font-family: Arial, Helvetica, sans-serif;">Offer versions</td>
+                  <td width="50" height="30">&nbsp;</td>
+                  <td width="130" height="30">&nbsp;</td>
+                </tr>
+                <tr>
+                  <td width="160" height="26">&nbsp;</td>
+                  <td width="280" height="26" align="right" style="font-size: 12px; font-family: Arial, Helvetica, sans-serif;"><b>For internal QC only</b></td>
+                  <td width="50" height="26">&nbsp;</td>
+                  <td width="130" height="26">&nbsp;</td>
+                </tr>
+              </table></td>
+          </tr>
+          <tr>
+            <td width="620" height="50"><table role="presentation" width="72" height="50" border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                  <td align="center" style="font-size: 18px; font-family: Arial, Helvetica, sans-serif; font-weight: bold; color: #CD0B0E; line-height: 22px">R1</td>
+                </tr>
+              </table></td>
+          </tr>
+        </table>
+        <table role="presentation" width="640" border="0" cellspacing="0" cellpadding="0" style="background-color: #FFFFFF;">
+          <tr>
+            <td width="620" height="20" align="center" style="background-color: #f4a57a;
+background-image: repeating-linear-gradient(45deg, transparent, transparent 25px, rgba(255,255,255,.5) 25px, rgba(255,255,255,.5) 50px); padding: 3px 0px 3px 0px;"><span style="font-size: 11px; font-family: Arial, Helvetica, sans-serif; font-weight: bold; color: #000000;">REMOVE BEFORE POSTING</span></td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+<!--End SLUGLINE-->
+
+      </td>
+    </tr>
+  </tbody>
+</table>
+<table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#EFEFEF">
+    <tbody>
+      <tr>
+        <td align="center">
+          <!--Begin CONTAINER-->
+          <table role="presentation" width="600" border="0" cellspacing="0" cellpadding="0" class="Container">
+            <tbody>
+              <tr>
+                <td align="center" bgcolor="#FFFFFF">
+
+
+<!--Begin Dropdown List-->
+<table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#EFEFEF">
+  <tbody>
+    <tr>
+      <td align="left" style="padding: 20px 0px 5px 0px">
+        <label for="tier" style="font-size: 14px; font-family: Airal, Helvetica, sans-serif; color: #000000">Select tier:</label>
+        <select name="tier" id="tier">
+          <option value="B">Blue</option>
+          <option value="G">Gold</option>
+          <option value="O">Onyx</option>
+        </select>
+      </td>
+    </tr>
+    <tr>
+      <td align="left" style="padding: 5px 0px 5px 0px">
+        <label for="language" style="font-size: 14px; font-family: Airal, Helvetica, sans-serif; color: #000000">Select language:</label>
+        <select name="language" id="language">
+          <option value="e">English</option>
+          <option value="f">French</option>
+        </select>
+      </td>
+    </tr>
+    <tr>
+      <td align="left" style="padding: 5px 0px 20px 0px">
+        <label for="version" style="font-size: 14px; font-family: Airal, Helvetica, sans-serif; color: #000000">Select version:</label>
+        <select name="version" id="version">
+          <option value="1">V1</option>
+          <option value="2">V2</option>
+          <option value="3">V3</option>
+          <option value="4">V4</option>
+        </select>
+          <button onclick="go()">Show page</button>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<!--End Dropdown List-->
+
+<div id="hdr_e" style="display: none">
+<!--Begin PREHEADER-->
+<table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" class="Hide">
+  <tr>
+    <td align="left" style="font-size: 11px; font-family: Calibri, Arial, Helvetica, sans-serif; line-height: 12px; color: #666666; padding: 10px 10px 10px 10px;"></td>
+  </tr>
+</table>
+<!--End PREHEADER-->
+
+<!--Begin TEMPLATE HEADER-->
+<header>
+  <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" style="border-top: solid; border-top-width: 1px; border-top-color: #CCCCCC;">
+    <tbody>
+      <tr>
+        <td width="6%" align="left" valign="top">&nbsp;</td>
+        <td align="left" valign="top" style="padding: 20px 0px 20px 0px;"><table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tbody>
+              <tr>
+                <td width="22%" align="left" valign="middle"><img role="presentation" src="https://s3.amazonaws.com/emailsquareknot/HARMONY_MAIN/IMAGES/AM_Button_B_E.png" alt="" width="95" height="95" border="0" style="vertical-align: bottom;" class="Img"></td>
+                <td align="left" valign="top">&nbsp;</td>
+                <td width="73%" align="right" valign="middle"><table role="presentation" border="0" cellspacing="0" cellpadding="0">
+                    <tbody>
+                      <tr>
+                        <td align="left"><table role="presentation" border="0" cellspacing="0" cellpadding="0">
+                            <tbody>
+                              <tr>
+                                <td align="left" valign="top" style="font-size: 14px; font-family: 'Nunito', Calibri, Arial, Helvetica, sans-serif; line-height: 18px; color: #333333; white-space: nowrap;">Hey John! <br>
+                                  <span class="appleIOSFix">As of Month XX, 20XX</span>, you have:</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                          <table role="presentation" border="0" cellspacing="0" cellpadding="0">
+                            <tbody>
+                              <tr>
+                                <td width="140" align="left" valign="top"><table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0">
+                                    <tbody>
+                                      <tr>
+                                        <td width="10" align="left" valign="middle" style="font-size: 32px; font-family: Calibri, Arial, Helvetica, sans-serif; line-height: 32px; color: #065ba4; white-space: nowrap;"><span class="Headline">0,000&nbsp;</span></td>
+                                        <td width="70" align="left" valign="middle" style="font-size: 13px; font-family: Calibri, Arial, Helvetica, sans-serif; line-height: 13px; color: #065ba4;" class="Legal">Cash <br>
+                                          Miles</td>
+                                      </tr>
+                                    </tbody>
+                                  </table></td>
+                                <td width="20" align="center" valign="top">&nbsp;</td>
+                                <td width="140" align="left" valign="top"><table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0">
+                                    <tbody>
+                                      <tr>
+                                        <td width="10" align="left" valign="middle" style="font-size: 32px; font-family: Calibri, Arial, Helvetica, sans-serif; line-height: 32px; color: #065ba4; white-space: nowrap;"><span class="Headline">0,000&nbsp;</span></td>
+                                        <td width="70" align="left" valign="middle" style="font-size: 13px; font-family: Calibri, Arial, Helvetica, sans-serif; line-height: 13px; color: #065ba4;" class="Legal">Dream <br>
+                                          Miles</td>
+                                      </tr>
+                                    </tbody>
+                                  </table></td>
+                              </tr>
+                            </tbody>
+                          </table></td>
+                      </tr>
+                    </tbody>
+                  </table></td>
+              </tr>
+            </tbody>
+          </table></td>
+        <td width="6%" align="left" valign="top">&nbsp;</td>
+      </tr>
+    </tbody>
+  </table>
+</header>
+<!--End TEMPLATE HEADER-->
+</div>
+
+
+<div id="hdr_f" style="display: none">
+<!--Begin PREHEADER-->
+<table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" class="Hide">
+  <tr>
+    <td align="left" style="font-size: 11px; font-family: Calibri, Arial, Helvetica, sans-serif; line-height: 12px; color: #666666; padding: 10px 10px 10px 10px;"></td>
+  </tr>
+</table>
+<!--End PREHEADER-->
+
+<!--Begin TEMPLATE HEADER-->
+<header>
+  <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" style="border-top: solid; border-top-width: 1px; border-top-color: #CCCCCC;">
+    <tbody>
+      <tr>
+        <td width="6%" align="left" valign="top">&nbsp;</td>
+        <td align="left" valign="top" style="padding: 20px 0px 20px 0px;"><table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tbody>
+              <tr>
+                <td width="22%" align="left" valign="middle"><img role="presentation" src="https://s3.amazonaws.com/emailsquareknot/HARMONY_MAIN/IMAGES/AM_Button_B_F.png" alt="" width="95" height="95" border="0" style="vertical-align: bottom;" class="Img"></td>
+                <td align="left" valign="top">&nbsp;</td>
+                <td width="73%" align="right" valign="middle"><table role="presentation" border="0" cellspacing="0" cellpadding="0">
+                    <tbody>
+                      <tr>
+                        <td align="left"><table role="presentation" border="0" cellspacing="0" cellpadding="0">
+                            <tbody>
+                              <tr>
+                                <td align="left" valign="top" style="font-size: 14px; font-family: 'Nunito', Calibri, Arial, Helvetica, sans-serif; line-height: 18px; color: #333333; white-space: nowrap;">Bonjour JEAN! <br>
+                                  <span class="appleIOSFix"></span>Au XX mois 20XX, vous avez :</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                          <table role="presentation" border="0" cellspacing="0" cellpadding="0">
+                            <tbody>
+                              <tr>
+                                <td width="140" align="left" valign="top"><table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0">
+                                    <tbody>
+                                      <tr>
+                                        <td width="10" align="left" valign="middle" style="font-size: 32px; font-family: Calibri, Arial, Helvetica, sans-serif; line-height: 32px; color: #065ba4; white-space: nowrap;"><span class="Headline">0 000 </span></td>
+                                        <td width="70" align="left" valign="middle" style="font-size: 13px; font-family: Calibri, Arial, Helvetica, sans-serif; line-height: 13px; color: #065ba4;" class="Legal">Milles <br>
+                                          Argent</td>
+                                      </tr>
+                                    </tbody>
+                                  </table></td>
+                                <td width="20" align="center" valign="top">&nbsp;</td>
+                                <td width="140" align="left" valign="top"><table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0">
+                                    <tbody>
+                                      <tr>
+                                        <td width="10" align="left" valign="middle" style="font-size: 32px; font-family: Calibri, Arial, Helvetica, sans-serif; line-height: 32px; color: #065ba4; white-space: nowrap;"><span class="Headline">0 000 </span></td>
+                                        <td width="70" align="left" valign="middle" style="font-size: 13px; font-family: Calibri, Arial, Helvetica, sans-serif; line-height: 13px; color: #065ba4;" class="Legal">Milles <br>
+                                          Rêves</td>
+                                      </tr>
+                                    </tbody>
+                                  </table></td>
+                              </tr>
+                            </tbody>
+                          </table></td>
+                      </tr>
+                    </tbody>
+                  </table></td>
+              </tr>
+            </tbody>
+          </table></td>
+        <td width="6%" align="left" valign="top">&nbsp;</td>
+      </tr>
+    </tbody>
+  </table>
+</header>
+<!--End TEMPLATE HEADER-->
+</div>
+
+
+<!--Begin MAIN-->
+<main>
+
+
+<div id="top_e" style="display: none">
+<!--Begin 1COLTBL-->
+<table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#FFFFFF">
+  <tbody>
+    <tr>
+      <td align="left" style="padding: 30px 30px 30px 30px;">
+        <!--Begin IMGSML-->
+        <div><img role="presentation" src="https://www.airmiles.ca/content/dam/airmiles/campaigns/rewards/Icon_Dream_Rewards_E.png" alt="" width="161" height="22" style="vertical-align: bottom;" border="0"></div>
+        <!--End IMGSML-->
+      </td>
+    </tr>
+  </tbody>
+</table>
+<!--End 1COLTBL-->
+ 
+<!--Begin HERORSP-->
+<table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td align="center"><img src="https://www.airmiles.ca/content/dam/airmiles/campaigns/rewards/49971_RTR_Dream_email.jpg" alt="You're Reward-ready" width="600" height="397" class="Img" style="vertical-align: bottom;" border="0"><div style="width: 1px; height: 1px; overflow: hidden; white-space: nowrap; mso-hide: all; opacity: 0;"><h1 style="font-size: 0px; line-height: 0px;">You're Reward-ready</h1></div></td>
+    </tr>
+  </tbody>
+</table>
+<!--End HERORSP-->
+ 
+<!--Begin CONT1COLCTR-->
+<!--Begin 1COLTBL-->
+<table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#FFFFFF">
+  <tbody>
+    <tr>
+      <td align="center" style="padding: 0px 30px 0px 30px;">
+        <!--Begin SBHDH2CTR-->
+        <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tbody>
+            <tr>
+              <td align="center" valign="top" style="padding: 0px 0px 0px 0px;"><h2 style="font-size: 34px; font-family: 'Nunito', Calibri, Arial, Helvetica, sans-serif; line-height: 40px; color: #1790CC;"><strong>You’re Reward-ready.</strong></h2></td>
+            </tr>
+          </tbody>
+        </table>
+        <!--End SBHDH2CTR--> 
+        <!--Begin TXTCTR-->
+        <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tbody>
+            <tr>
+              <td align="center" valign="top" style="font-size: 18px; font-weight: lighter; font-family: Calibri, Arial, Helvetica, sans-serif; line-height: 28px; color: #808285; padding: 0px 0px 0px 0px;"><p>You have enough AIR&nbsp;MILES<sup style="font-size: 75%; line-height: 75%;">®</sup> Dream Miles to order one of the Rewards below. Take a look!</p></td>
+            </tr>
+          </tbody>
+        </table>
+        <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tbody>
+            <tr>
+              <td align="center" valign="top" style="padding: 0px 0px 0px 0px; font-size: 34px; font-family: 'Nunito', Calibri, Arial, Helvetica, sans-serif; line-height: 40px; color: #1790CC;">Now for the hard part: choosing.</td>
+            </tr>
+          </tbody>
+        </table>
+        <!--End TXTCTR--></td>
+    </tr>
+  </tbody>
+</table>
+<!--End 1COLTBL--> 
+<!--End CONT1COLCTR-->
+</div>
+
+
+<div id="top_f" style="display: none">
+<!--Begin 1COLTBL-->
+<table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#FFFFFF">
+  <tbody>
+    <tr>
+      <td align="left" style="padding: 30px 30px 30px 30px;">
+        <!--Begin IMGSML-->
+        <div><img role="presentation" src="https://www.airmiles.ca/content/dam/airmiles/campaigns/rewards/Icon_Dream_Rewards_F.png" alt="" width="188" height="21" style="vertical-align: bottom;" border="0"></div>
+        <!--End IMGSML-->
+      </td>
+    </tr>
+  </tbody>
+</table>
+<!--End 1COLTBL-->
+
+<!--Begin HERORSP-->
+<table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td align="center"><img src="https://www.airmiles.ca/content/dam/airmiles/campaigns/rewards/49971_RTR_Dream_email.jpg" alt="You're Reward-ready" width="600" height="397" class="Img" style="vertical-align: bottom;" border="0"><div style="width: 1px; height: 1px; overflow: hidden; white-space: nowrap; mso-hide: all; opacity: 0;"><h1 style="font-size: 0px; line-height: 0px;">Vous êtes prêt pour une récompense.</h1></div></td>
+    </tr>
+  </tbody>
+</table>
+<!--End HERORSP-->
+
+<!--Begin CONT1COLCTR-->
+<!--Begin 1COLTBL-->
+<table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#FFFFFF">
+  <tbody>
+    <tr>
+      <td align="center" style="padding: 0px 30px 0px 30px;">
+        <!--Begin SBHDH2CTR-->
+        <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tbody>
+            <tr>
+              <td align="center" valign="top" style="padding: 0px 0px 0px 0px;"><h2 style="font-size: 34px; font-family: 'Nunito', Calibri, Arial, Helvetica, sans-serif; line-height: 40px; color: #1790CC;"><strong>Vous êtes prêt pour une récompense.</strong></h2></td>
+            </tr>
+          </tbody>
+        </table>
+        <!--End SBHDH2CTR--> 
+        <!--Begin TXTCTR-->
+        <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tbody>
+            <tr>
+              <td align="center" valign="top" style="font-size: 18px; font-weight: lighter; font-family: Calibri, Arial, Helvetica, sans-serif; line-height: 28px; color: #808285; padding: 0px 0px 0px 0px;"><p>Vous avez assez de milles Rêves AIR&nbsp;MILES<sup style="font-size: 75%; line-height: 75%;">md</sup> pour commander n’importe laquelle des récompenses ci-dessous. Allez voir!</p></td>
+            </tr>
+          </tbody>
+        </table>
+        <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tbody>
+            <tr>
+              <td align="center" valign="top" style="padding: 0px 0px 0px 0px; font-size: 34px; font-family: 'Nunito', Calibri, Arial, Helvetica, sans-serif; line-height: 40px; color: #1790CC;">Le plus difficile? En choisir une.</td>
+            </tr>
+          </tbody>
+        </table>
+        <!--End TXTCTR-->
+      </td>
+    </tr>
+  </tbody>
+</table>
+<!--End 1COLTBL--> 
+<!--End CONT1COLCTR-->
+</div>
+
+
+<!--Insert offer blocks here-->
+
+
+<div id="of1_e" style="display: none">
+<!--Begin 3COLTBL-->
+<table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#FFFFFF">
+  <tbody>
+    <tr>
+      <td align="center" width="255" style="padding: 10px 0px 10px 0px">
+        <!--Begin IMGMED-->
+        <div><a href="https://rewards.airmiles.ca/merchandise/kitchen-and-dining/coffee-and-tea/breville-the-barista-express-espresso-machine/135588?locale=en_CA" target="_blank"><img src="xx" id="img1e1" alt="Breville the Barista Expresso Machine" width="255" height="345" class="Img" style="vertical-align: bottom;" border="0"></a></div>
+        <!--End IMGMED-->
+      </td>
+      <td width="30" align="center" style="padding: 20px 0px 20px 0px; font-size: 24px; font-weight: lighter; font-family: 'Nunito', Calibri, Arial, Helvetica, sans-serif; line-height: 28px; color: #808285">or</td>
+      <td align="center" width="255" style="padding: 10px 0px 10px 0px">
+        <!--Begin IMGMED-->
+        <div><a href="https://rewards.airmiles.ca/merchandise/electronics/gaming/nintendo-switch---animal-crossing-new-horizons-bundle/125908" target="_blank"><img src="xx" id="img1e2" alt="Nintento Switch - Animal Crossing Bundle" width="255" height="345" class="Img" style="vertical-align: bottom;" border="0"></a></div>
+        <!--End IMGMED-->
+      </td>
+    </tr>
+  </tbody>
+</table>
+<!--End 3COLTBL-->
+
+
+<!--Begin 3COLTBL-->
+<table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#FFFFFF">
+  <tbody>
+    <tr>
+      <td align="center" width="255" style="padding: 10px 0px 10px 0px">
+        <!--Begin IMGMED-->
+        <div><a href="https://rewards.airmiles.ca/merchandise/fashion-and-beauty/personal-care/dyson-corrale-hair-straightener---dark-nickelorfuchsia/109846" target="_blank"><img src="xx" id="img1e3" alt="Dyson Corrale Hair Straightener - Dark Nickle/Fuchsia" width="255" height="345" class="Img" style="vertical-align: bottom;" border="0"></a></div>
+        <!--End IMGMED-->
+      </td>
+      <td width="30" align="center" style="padding: 20px 0px 20px 0px; font-size: 24px; font-weight: lighter; font-family: 'Nunito', Calibri, Arial, Helvetica, sans-serif; line-height: 28px; color: #808285">or</td>
+      <td align="center" width="255" style="padding: 10px 0px 10px 0px">
+        <!--Begin IMGMED-->
+        <div><a href="https://rewards.airmiles.ca/merchandise/sports-and-fitness/sports/aqua-marina-classic-advanced-fishing-boat/136415" target="_blank"><img src="xx" id="img1e4" alt="Aqua Marina Fishing Boat" width="255" height="345" class="Img" style="vertical-align: bottom;" border="0"></a></div>
+        <!--End IMGMED-->
+      </td>
+    </tr>
+  </tbody>
+</table>
+<!--End 3COLTBL-->
+
+
+<!--Begin 3COLTBL-->
+<table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#FFFFFF">
+  <tbody>
+    <tr>
+      <td align="center" width="255" style="padding: 10px 0px 10px 0px">
+        <!--Begin IMGMED-->
+        <div><a href="https://rewards.airmiles.ca/merchandise/fashion-and-beauty/watches/citizen-mens-eco-drive-corso-diamond-two-tone-watch/114207?locale=en_CA" target="_blank"><img src="xx" id="img1e5" alt="Citizen Men's Eco-Drive Corso Diamond Two-Tone Watch" width="255" height="345" class="Img" style="vertical-align: bottom;" border="0"></a></div>
+        <!--End IMGMED-->
+      </td>
+      <td width="30" align="center" style="padding: 20px 0px 20px 0px; font-size: 24px; font-weight: lighter; font-family: 'Nunito', Calibri, Arial, Helvetica, sans-serif; line-height: 28px; color: #808285">or</td>
+      <td align="center" width="255" style="padding: 10px 0px 10px 0px">
+        <!--Begin IMGMED-->
+        <div><a href="https://rewards.airmiles.ca/merchandise/electronics/computers-and-tablets/hp-14a-na0020ca-14-chromebook---includes-hp-2-year-pickup-and-return-notebook-service/111863" target="_blank"><img src="xx" id="img1e6" alt="HP Chromebook - 14" width="255" height="345" class="Img" style="vertical-align: bottom;" border="0"></a></div>
+        <!--End IMGMED-->
+      </td>
+    </tr>
+  </tbody>
+</table>
+<!--End 3COLTBL-->
+</div>
+
+
+<div id="of1_f" style="display: none">
+<!--Begin 3COLTBL-->
+<table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#FFFFFF">
+  <tbody>
+    <tr>
+      <td align="center" width="255" style="padding: 10px 0px 10px 0px">
+        <!--Begin IMGMED-->
+        <div><a href="https://rewards.airmiles.ca/merchandise/cuisine-et-salle-%C3%A0-manger/caf%C3%A9-et-th%C3%A9/machine-%C3%A0-caf%C3%A9-espresso-barista-expressmc-de-breville/135588" target="_blank"><img src="xx" id="img1f1" alt="Machine à café espresso Barista Express de Breville" width="255" height="345" class="Img" style="vertical-align: bottom;" border="0"></a></div>
+        <!--End IMGMED-->
+      </td>
+      <td width="30" align="center" style="padding: 20px 0px 20px 0px; font-size: 24px; font-weight: lighter; font-family: 'Nunito', Calibri, Arial, Helvetica, sans-serif; line-height: 28px; color: #808285">ou</td>
+      <td align="center" width="255" style="padding: 10px 0px 10px 0px">
+        <!--Begin IMGMED-->
+        <div><a href="https://rewards.airmiles.ca/merchandise/%C3%A9lectroniques/jeux/nintendo-switch---animal-crossingmc--%C3%A9dition-new-horizons/125908?locale=fr_CA" target="_blank"><img src="xx" id="img1f2" alt="Nintendo Switch - Animal Crossing : Édition New Horizons" width="255" height="345" class="Img" style="vertical-align: bottom;" border="0"></a></div>
+        <!--End IMGMED-->
+      </td>
+    </tr>
+  </tbody>
+</table>
+<!--End 3COLTBL-->
+
+
+<!--Begin 3COLTBL-->
+<table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#FFFFFF">
+  <tbody>
+    <tr>
+      <td align="center" width="255" style="padding: 10px 0px 10px 0px">
+        <!--Begin IMGMED-->
+        <div><a href="https://rewards.airmiles.ca/merchandise/fashion-and-beauty/personal-care/dyson-corrale-hair-straightener---dark-nickelorfuchsia/109846?locale=fr_CA" target="_blank"><img src="xx" id="img1f3" alt="Fer plat Dyson CorraleMC" width="255" height="345" class="Img" style="vertical-align: bottom;" border="0"></a></div>
+        <!--End IMGMED-->
+      </td>
+      <td width="30" align="center" style="padding: 20px 0px 20px 0px; font-size: 24px; font-weight: lighter; font-family: 'Nunito', Calibri, Arial, Helvetica, sans-serif; line-height: 28px; color: #808285">ou</td>
+      <td align="center" width="255" style="padding: 10px 0px 10px 0px">
+        <!--Begin IMGMED-->
+        <div><a href="https://rewards.airmiles.ca/merchandise/sport-et-remise-en-forme/sports/bateau-de-p%C3%AAche-classic-advanced-daqua-marina/136415?locale=fr_CA" target="_blank"><img src="xx" id="img1f4" alt="Bateau de pêche Classic Advanced d’Aqua Marina" width="255" height="345" class="Img" style="vertical-align: bottom;" border="0"></a></div>
+        <!--End IMGMED-->
+      </td>
+    </tr>
+  </tbody>
+</table>
+<!--End 3COLTBL-->
+
+
+<!--Begin 3COLTBL-->
+<table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#FFFFFF">
+  <tbody>
+    <tr>
+      <td align="center" width="255" style="padding: 10px 0px 10px 0px">
+        <!--Begin IMGMED-->
+        <div><a href="https://rewards.airmiles.ca/merchandise/mode-et-beaut%C3%A9/montres/montre-corso-diamond-eco-drive-pour-hommes-de-citizen---deux-tons/114207" target="_blank"><img src="xx" id="img1f5" alt="Montre Corso Diamond Eco-Drive pour hommes de Citizen" width="255" height="345" class="Img" style="vertical-align: bottom;" border="0"></a></div>
+        <!--End IMGMED-->
+      </td>
+      <td width="30" align="center" style="padding: 20px 0px 20px 0px; font-size: 24px; font-weight: lighter; font-family: 'Nunito', Calibri, Arial, Helvetica, sans-serif; line-height: 28px; color: #808285">ou</td>
+      <td align="center" width="255" style="padding: 10px 0px 10px 0px">
+        <!--Begin IMGMED-->
+        <div><a href="https://rewards.airmiles.ca/merchandise/%C3%A9lectroniques/ordinateurs-et-tablettes/hp-chromebook-de-14-po-14a-na0020ca-avec-le-service-hp-denl%C3%A8vement-et-de-retour-pour-ordinateur-portable-2-ans/111863?locale=fr_CA" target="_blank"><img src="xx" id="img1f6" alt="HP Chromebook de 14 po 14a-na0020ca" width="255" height="345" class="Img" style="vertical-align: bottom;" border="0"></a></div>
+        <!--End IMGMED-->
+      </td>
+    </tr>
+  </tbody>
+</table>
+<!--End 3COLTBL-->
+</div>
+
+
+<div id="of2_e" style="display: none">
+<!--Begin 3COLTBL-->
+<table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#FFFFFF">
+  <tbody>
+    <tr>
+      <td align="center" width="255" style="padding: 10px 0px 10px 0px">
+        <!--Begin IMGMED-->
+        <div><a href="https://rewards.airmiles.ca/merchandise/electronics/tv-and-home-theatre/samsung-50-tu7000-smart-4k-uhd-tv/111379?locale=en_CA" target="_blank"><img src="xx" id="img2e1" alt="Samsung 50 Smark 4K UHD TV" width="255" height="345" class="Img" style="vertical-align: bottom;" border="0"></a></div>
+        <!--End IMGMED-->
+      </td>
+      <td width="30" align="center" style="padding: 20px 0px 20px 0px; font-size: 24px; font-weight: lighter; font-family: 'Nunito', Calibri, Arial, Helvetica, sans-serif; line-height: 28px; color: #808285">or</td>
+      <td align="center" width="255" style="padding: 10px 0px 10px 0px">
+        <!--Begin IMGMED-->
+        <div><a href="https://rewards.airmiles.ca/merchandise/kitchen-and-dining/cookware/le-creuset-cast-iron-cr%C3%AApe-pan---cerise/121575" target="_blank"><img src="xx" id="img2e2" alt="Le Creuset Cast Iron Crêpe Pan - Cerise" width="255" height="345" class="Img" style="vertical-align: bottom;" border="0"></a></div>
+        <!--End IMGMED-->
+      </td>
+    </tr>
+  </tbody>
+</table>
+<!--End 3COLTBL-->
+
+
+<!--Begin 3COLTBL-->
+<table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#FFFFFF">
+  <tbody>
+    <tr>
+      <td align="center" width="255" style="padding: 10px 0px 10px 0px">
+        <!--Begin IMGMED-->
+        <div><a href="https://rewards.airmiles.ca/merchandise/mode-et-beaut%C3%A9/montres/bulova-rhapsody-ladies-silver-black-dial-diamond-watch/135859?locale=en_CA" target="_blank"><img src="xx" id="img2e3" alt="Bulova Rhapsody Ladies Silver Black Dial Diamond Watch" width="255" height="345" class="Img" style="vertical-align: bottom;" border="0"></a></div>
+        <!--End IMGMED-->
+      </td>
+      <td width="30" align="center" style="padding: 20px 0px 20px 0px; font-size: 24px; font-weight: lighter; font-family: 'Nunito', Calibri, Arial, Helvetica, sans-serif; line-height: 28px; color: #808285">or</td>
+      <td align="center" width="255" style="padding: 10px 0px 10px 0px">
+        <!--Begin IMGMED-->
+        <div><a href="https://rewards.airmiles.ca/merchandise/home/tools-and-automotive/worx-40v-power-share-cordless-24-hedge-trimmer-2x20v/123013" target="_blank"><img src="xx" id="img2e4" alt="Worx 40V Power Share Cordless 24'' Hedge Trimmer (2x20V)" width="255" height="345" class="Img" style="vertical-align: bottom;" border="0"></a></div>
+        <!--End IMGMED-->
+      </td>
+    </tr>
+  </tbody>
+</table>
+<!--End 3COLTBL-->
+
+
+<!--Begin 3COLTBL-->
+<table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#FFFFFF">
+  <tbody>
+    <tr>
+      <td align="center" width="255" style="padding: 10px 0px 10px 0px">
+        <!--Begin IMGMED-->
+        <div><a href="https://rewards.airmiles.ca/merchandise/kitchen-and-dining/specialty-appliances/cuisinart-belgian-waffle-maker-with-pancake-plate/137889?locale=en_CA" target="_blank"><img src="xx" id="img2e5" alt="Cuisinart Belgian Waffle Maker with Pancake Plate" width="255" height="345" class="Img" style="vertical-align: bottom;" border="0"></a></div>
+        <!--End IMGMED-->
+      </td>
+      <td width="30" align="center" style="padding: 20px 0px 20px 0px; font-size: 24px; font-weight: lighter; font-family: 'Nunito', Calibri, Arial, Helvetica, sans-serif; line-height: 28px; color: #808285">or</td>
+      <td align="center" width="255" style="padding: 10px 0px 10px 0px">
+        <!--Begin IMGMED-->
+        <div><a href="https://rewards.airmiles.ca/merchandise/sports-and-fitness/sports/zup-you-got-this-20-water-board--doublezup-tow-handle-and-rope---blue/138123" target="_blank"><img src="xx" id="img2e6" alt="ZUP 2.0 Water Board + DoubleZUP Tow Handle and Rope - Blue" width="255" height="345" class="Img" style="vertical-align: bottom;" border="0"></a></div>
+        <!--End IMGMED-->
+      </td>
+    </tr>
+  </tbody>
+</table>
+<!--End 3COLTBL-->
+</div>
+
+
+<div id="of2_f" style="display: none">
+<!--Begin 3COLTBL-->
+<table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#FFFFFF">
+  <tbody>
+    <tr>
+      <td align="center" width="255" style="padding: 10px 0px 10px 0px">
+        <!--Begin IMGMED-->
+        <div><a href="https://rewards.airmiles.ca/merchandise/%C3%A9lectroniques/t%C3%A9l%C3%A9-et-cin%C3%A9ma-maison/t%C3%A9l%C3%A9viseur-intelligent-uhd-4k-tu7000-de-50-po-de-samsung/111379" target="_blank"><img src="xx" id="img2f1" alt="Téléviseur intelligent UHD 4K TU7000 de 50 po de Samsung" width="255" height="345" class="Img" style="vertical-align: bottom;" border="0"></a></div>
+        <!--End IMGMED-->
+      </td>
+      <td width="30" align="center" style="padding: 20px 0px 20px 0px; font-size: 24px; font-weight: lighter; font-family: 'Nunito', Calibri, Arial, Helvetica, sans-serif; line-height: 28px; color: #808285">ou</td>
+      <td align="center" width="255" style="padding: 10px 0px 10px 0px">
+        <!--Begin IMGMED-->
+        <div><a href="https://rewards.airmiles.ca/merchandise/kitchen-and-dining/cookware/le-creuset-cast-iron-cr%C3%AApe-pan---cerise/121575?locale=fr_CA" target="_blank"><img src="xx" id="img2f2" alt="Crêpière en fonte de Le CreusetMD" width="255" height="345" class="Img" style="vertical-align: bottom;" border="0"></a></div>
+        <!--End IMGMED-->
+      </td>
+    </tr>
+  </tbody>
+</table>
+<!--End 3COLTBL-->
+
+
+<!--Begin 3COLTBL-->
+<table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#FFFFFF">
+  <tbody>
+    <tr>
+      <td align="center" width="255" style="padding: 10px 0px 10px 0px">
+        <!--Begin IMGMED-->
+        <div><a href="https://rewards.airmiles.ca/merchandise/mode-et-beaut%C3%A9/montres/bulova-rhapsody-ladies-silver-black-dial-diamond-watch/135859" target="_blank"><img src="xx" id="img2f3" alt="a Rhapsody pour femme avec cadran noir et diamant" width="255" height="345" class="Img" style="vertical-align: bottom;" border="0"></a></div>
+        <!--End IMGMED-->
+      </td>
+      <td width="30" align="center" style="padding: 20px 0px 20px 0px; font-size: 24px; font-weight: lighter; font-family: 'Nunito', Calibri, Arial, Helvetica, sans-serif; line-height: 28px; color: #808285">ou</td>
+      <td align="center" width="255" style="padding: 10px 0px 10px 0px">
+        <!--Begin IMGMED-->
+        <div><a href="https://rewards.airmiles.ca/merchandise/maison/outils-et-automobile/taille-haie-2x20v-sans-fil-de-24-po-power-share-40v-de-worxmd/123013?locale=fr_CA" target="_blank"><img src="xx" id="img2f4" alt="Taille-haie sans fil de 24 po Power Share 40V de Worx" width="255" height="345" class="Img" style="vertical-align: bottom;" border="0"></a></div>
+        <!--End IMGMED-->
+      </td>
+    </tr>
+  </tbody>
+</table>
+<!--End 3COLTBL-->
+
+
+<!--Begin 3COLTBL-->
+<table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#FFFFFF">
+  <tbody>
+    <tr>
+      <td align="center" width="255" style="padding: 10px 0px 10px 0px">
+        <!--Begin IMGMED-->
+        <div><a href="https://rewards.airmiles.ca/merchandise/cuisine-et-salle-%C3%A0-manger/appareils-sp%C3%A9ciaux/gaufrier-belge-avec-plaque-%C3%A0-cr%C3%AApes-cuisinartmd/137889" target="_blank"><img src="xx" id="img2f5" alt="Gaufrier belge avec plaque à crêpes Cuisinart" width="255" height="345" class="Img" style="vertical-align: bottom;" border="0"></a></div>
+        <!--End IMGMED-->
+      </td>
+      <td width="30" align="center" style="padding: 20px 0px 20px 0px; font-size: 24px; font-weight: lighter; font-family: 'Nunito', Calibri, Arial, Helvetica, sans-serif; line-height: 28px; color: #808285">ou</td>
+      <td align="center" width="255" style="padding: 10px 0px 10px 0px">
+        <!--Begin IMGMED-->
+        <div><a href="https://rewards.airmiles.ca/merchandise/sport-et-remise-en-forme/sports/planche-sur-sillage-you-got-this-20--corde-et-poign%C3%A9e-de-remorquage-doublezup-de-zupmd/138123?locale=fr_CA" target="_blank"><img src="xx" id="img2f6" alt="Planche sur sillage + corde et poignée de remorquage ZUPMD" width="255" height="345" class="Img" style="vertical-align: bottom;" border="0"></a></div>
+        <!--End IMGMED-->
+      </td>
+    </tr>
+  </tbody>
+</table>
+<!--End 3COLTBL-->
+</div>
+
+
+<div id="of3_e" style="display: none">
+<!--Begin 3COLTBL-->
+<table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#FFFFFF">
+  <tbody>
+    <tr>
+      <td align="center" width="255" style="padding: 10px 0px 10px 0px">
+        <!--Begin IMGMED-->
+        <div><a href="https://rewards.airmiles.ca/merchandise/home/cleaning-and-laundry/karcher-sc-3-easyfix-steam-cleaner/132129?locale=en_CA" target="_blank"><img src="xx" id="img3e1" alt="Karcher SC 3 EasyFix Steam Cleaner" width="255" height="345" class="Img" style="vertical-align: bottom;" border="0"></a></div>
+        <!--End IMGMED-->
+      </td>
+      <td width="30" align="center" style="padding: 20px 0px 20px 0px; font-size: 24px; font-weight: lighter; font-family: 'Nunito', Calibri, Arial, Helvetica, sans-serif; line-height: 28px; color: #808285">or</td>
+      <td align="center" width="255" style="padding: 10px 0px 10px 0px">
+        <!--Begin IMGMED-->
+        <div><a href="https://rewards.airmiles.ca/merchandise/electronics/headphones-speakers-and-audio/jbl-tune-225tws-true-wireless-bluetooth-earbud-headphones---black/133049" target="_blank"><img src="xx" id="img3e2" alt="JBL Tune 225TWS True Wireless Bluetooth Earbud Headphones - Black" width="255" height="345" class="Img" style="vertical-align: bottom;" border="0"></a></div>
+        <!--End IMGMED-->
+      </td>
+    </tr>
+  </tbody>
+</table>
+<!--End 3COLTBL-->
+
+
+<!--Begin 3COLTBL-->
+<table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#FFFFFF">
+  <tbody>
+    <tr>
+      <td align="center" width="255" style="padding: 10px 0px 10px 0px">
+        <!--Begin IMGMED-->
+        <div><a href="https://rewards.airmiles.ca/merchandise/kitchen-and-dining/toasters-and-microwaves/breville-the-bit-more-2-slice-toaster/76387?locale=en_CA" target="_blank"><img src="xx" id="img3e3" alt="Breville the Bit More 2-Slice Toaster" width="255" height="345" class="Img" style="vertical-align: bottom;" border="0"></a></div>
+        <!--End IMGMED-->
+      </td>
+      <td width="30" align="center" style="padding: 20px 0px 20px 0px; font-size: 24px; font-weight: lighter; font-family: 'Nunito', Calibri, Arial, Helvetica, sans-serif; line-height: 28px; color: #808285">or</td>
+      <td align="center" width="255" style="padding: 10px 0px 10px 0px">
+        <!--Begin IMGMED-->
+        <div><a href="https://rewards.airmiles.ca/merchandise/fashion-and-beauty/personal-care/beurer-4-in-1-wake-up-light/133080" target="_blank"><img src="xx" id="img3e4" alt="Beurer 4-In-1 Wake Up Light" width="255" height="345" class="Img" style="vertical-align: bottom;" border="0"></a></div>
+        <!--End IMGMED-->
+      </td>
+    </tr>
+  </tbody>
+</table>
+<!--End 3COLTBL-->
+
+
+<!--Begin 3COLTBL-->
+<table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#FFFFFF">
+  <tbody>
+    <tr>
+      <td align="center" width="255" style="padding: 10px 0px 10px 0px">
+        <!--Begin IMGMED-->
+        <div><a href="https://rewards.airmiles.ca/merchandise/cuisine-et-salle-%C3%A0-manger/caf%C3%A9-et-th%C3%A9/cuisinart-perfectemp-cordless-programmable-kettle/128704" target="_blank"><img src="xx" id="img3e5" alt="Cuisinart PerfecTemp Cordless Programmable Kettle" width="255" height="345" class="Img" style="vertical-align: bottom;" border="0"></a></div>
+        <!--End IMGMED-->
+      </td>
+      <td width="30" align="center" style="padding: 20px 0px 20px 0px; font-size: 24px; font-weight: lighter; font-family: 'Nunito', Calibri, Arial, Helvetica, sans-serif; line-height: 28px; color: #808285">or</td>
+      <td align="center" width="255" style="padding: 10px 0px 10px 0px">
+        <!--Begin IMGMED-->
+        <div><a href="https://rewards.airmiles.ca/merchandise/kitchen-and-dining/coffee-and-tea/nespresso-vertuo-next-coffee-and-espresso-machine---black-with-rose-gold/115030?locale=en_CA" target="_blank"><img src="xx" id="img3e6" alt="Nespresso Vertuo Next Coffee and Espresso Machine - Black with Rose Gold" width="255" height="345" class="Img" style="vertical-align: bottom;" border="0"></a></div>
+        <!--End IMGMED-->
+      </td>
+    </tr>
+  </tbody>
+</table>
+<!--End 3COLTBL-->
+</div>
+
+
+<div id="of3_f" style="display: none">
+<!--Begin 3COLTBL-->
+<table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#FFFFFF">
+  <tbody>
+    <tr>
+      <td align="center" width="255" style="padding: 10px 0px 10px 0px">
+        <!--Begin IMGMED-->
+        <div><a href="https://rewards.airmiles.ca/merchandise/maison/lavage-et-nettoyage/nettoyeur-vapeur-sc-3-easyfix-de-karcher/132129" target="_blank"><img src="xx" id="img3f1" alt="Nettoyeur vapeur SC 3 EasyFix de Karcher" width="255" height="345" class="Img" style="vertical-align: bottom;" border="0"></a></div>
+        <!--End IMGMED-->
+      </td>
+      <td width="30" align="center" style="padding: 20px 0px 20px 0px; font-size: 24px; font-weight: lighter; font-family: 'Nunito', Calibri, Arial, Helvetica, sans-serif; line-height: 28px; color: #808285">ou</td>
+      <td align="center" width="255" style="padding: 10px 0px 10px 0px">
+        <!--Begin IMGMED-->
+        <div><a href="https://rewards.airmiles.ca/merchandise/%C3%A9lectroniques/casques-haut-parleurs-et-audio/%C3%A9couteurs-boutons-v%C3%A9ritablement-sans-fil-bluetooth-tune-225tws-de-jbl---noir/133049?locale=fr_CA" target="_blank"><img src="xx" id="img3f2" alt="Écouteurs-boutons véritablement sans fil Bluetooth Tune 225TWS de JBL" width="255" height="345" class="Img" style="vertical-align: bottom;" border="0"></a></div>
+        <!--End IMGMED-->
+      </td>
+    </tr>
+  </tbody>
+</table>
+<!--End 3COLTBL-->
+
+
+<!--Begin 3COLTBL-->
+<table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#FFFFFF">
+  <tbody>
+    <tr>
+      <td align="center" width="255" style="padding: 10px 0px 10px 0px">
+        <!--Begin IMGMED-->
+        <div><a href="https://rewards.airmiles.ca/merchandise/cuisine-et-salle-%C3%A0-manger/grille-pain-et-micro-ondes/grille-pain-bit-moremd-%C3%A0-2-tranches-de-breville/76387" target="_blank"><img src="xx" id="img3f3" alt="Grille-pain Bit MoreMD à 2 tranches de Breville" width="255" height="345" class="Img" style="vertical-align: bottom;" border="0"></a></div>
+        <!--End IMGMED-->
+      </td>
+      <td width="30" align="center" style="padding: 20px 0px 20px 0px; font-size: 24px; font-weight: lighter; font-family: 'Nunito', Calibri, Arial, Helvetica, sans-serif; line-height: 28px; color: #808285">ou</td>
+      <td align="center" width="255" style="padding: 10px 0px 10px 0px">
+        <!--Begin IMGMED-->
+        <div><a href="https://rewards.airmiles.ca/merchandise/mode-et-beaut%C3%A9/soins-personnels/r%C3%A9veil-lumineux-4-en-1-de-beurer/133080?locale=fr_CA" target="_blank"><img src="xx" id="img3f4" alt="Réveil lumineux 4 en 1 de Beurer" width="255" height="345" class="Img" style="vertical-align: bottom;" border="0"></a></div>
+        <!--End IMGMED-->
+      </td>
+    </tr>
+  </tbody>
+</table>
+<!--End 3COLTBL-->
+
+
+<!--Begin 3COLTBL-->
+<table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#FFFFFF">
+  <tbody>
+    <tr>
+      <td align="center" width="255" style="padding: 10px 0px 10px 0px">
+        <!--Begin IMGMED-->
+        <div><a href="https://rewards.airmiles.ca/merchandise/cuisine-et-salle-%C3%A0-manger/caf%C3%A9-et-th%C3%A9/cuisinart-perfectemp-cordless-programmable-kettle/128704" target="_blank"><img src="xx" id="img3f5" alt="Bouilloire Programmable Sans Fil Perfectemp du Cuisinart" width="255" height="345" class="Img" style="vertical-align: bottom;" border="0"></a></div>
+        <!--End IMGMED-->
+      </td>
+      <td width="30" align="center" style="padding: 20px 0px 20px 0px; font-size: 24px; font-weight: lighter; font-family: 'Nunito', Calibri, Arial, Helvetica, sans-serif; line-height: 28px; color: #808285">ou</td>
+      <td align="center" width="255" style="padding: 10px 0px 10px 0px">
+        <!--Begin IMGMED-->
+        <div><a href="https://rewards.airmiles.ca/merchandise/cuisine-et-salle-%C3%A0-manger/caf%C3%A9-et-th%C3%A9/machine-%C3%A0-caf%C3%A9orespresso-vertuo-next-de-nespresso---noir-avec-or-rose/115030" target="_blank"><img src="xx" id="img3f6" alt="Machine à café/espresso Vertuo Next de Nespresso" width="255" height="345" class="Img" style="vertical-align: bottom;" border="0"></a></div>
+        <!--End IMGMED-->
+      </td>
+    </tr>
+  </tbody>
+</table>
+<!--End 3COLTBL-->
+</div>
+
+
+<div id="of4_e" style="display: none">
+<!--Begin 3COLTBL-->
+<table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#FFFFFF">
+  <tbody>
+    <tr>
+      <td align="center" width="255" style="padding: 10px 0px 10px 0px">
+        <!--Begin IMGMED-->
+        <div><a href="https://rewards.airmiles.ca/merchandise/electronics/phones-and-accessories/samsung-wireless-charger-trio---black/132565" target="_blank"><img src="xx" id="img4e1" alt="Samsung Wireless Charger Trio - Black" width="255" height="345" class="Img" style="vertical-align: bottom;" border="0"></a></div>
+        <!--End IMGMED-->
+      </td>
+      <td width="30" align="center" style="padding: 20px 0px 20px 0px; font-size: 24px; font-weight: lighter; font-family: 'Nunito', Calibri, Arial, Helvetica, sans-serif; line-height: 28px; color: #808285">or</td>
+      <td align="center" width="255" style="padding: 10px 0px 10px 0px">
+        <!--Begin IMGMED-->
+        <div><a href="https://rewards.airmiles.ca/merchandise/fashion-and-beauty/jewelry-and-accessories/swarovski-ginger-set-t-bar---rose-gold/138059?locale=en_CA" target="_blank"><img src="xx" id="img4e2" alt="Swarovski Ginger Set T-Bar - Rose Gold" width="255" height="345" class="Img" style="vertical-align: bottom;" border="0"></a></div>
+        <!--End IMGMED-->
+      </td>
+    </tr>
+  </tbody>
+</table>
+<!--End 3COLTBL-->
+
+
+<!--Begin 3COLTBL-->
+<table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#FFFFFF">
+  <tbody>
+    <tr>
+      <td align="center" width="255" style="padding: 10px 0px 10px 0px">
+        <!--Begin IMGMED-->
+        <div><a href="https://rewards.airmiles.ca/merchandise/kitchen-and-dining/cookware/le-creuset-53l-round-french-oven---cerise/87154" target="_blank"><img src="xx" id="img4e3" alt="Le Creuset 5.3L Round French Oven - Cerise" width="255" height="345" class="Img" style="vertical-align: bottom;" border="0"></a></div>
+        <!--End IMGMED-->
+      </td>
+      <td width="30" align="center" style="padding: 20px 0px 20px 0px; font-size: 24px; font-weight: lighter; font-family: 'Nunito', Calibri, Arial, Helvetica, sans-serif; line-height: 28px; color: #808285">or</td>
+      <td align="center" width="255" style="padding: 10px 0px 10px 0px">
+        <!--Begin IMGMED-->
+        <div><a href="https://rewards.airmiles.ca/merchandise/electronics/computers-and-tablets/samsung-galaxy-tab-s7---mystic-black---256gb/117151?locale=en_CA" target="_blank"><img src="xx" id="img4e4" alt="Samsung Galaxy Tab S7+ - Mystic Black - 256GB" width="255" height="345" class="Img" style="vertical-align: bottom;" border="0"></a></div>
+        <!--End IMGMED-->
+      </td>
+    </tr>
+  </tbody>
+</table>
+<!--End 3COLTBL-->
+
+
+<!--Begin 3COLTBL-->
+<table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#FFFFFF">
+  <tbody>
+    <tr>
+      <td align="center" width="255" style="padding: 10px 0px 10px 0px">
+        <!--Begin IMGMED-->
+        <div><a href="https://rewards.airmiles.ca/merchandise/kitchen-and-dining/tableware/le-creuset-11cm-salt-and-pepper-mills---set-of-2---cerise/121577" target="_blank"><img src="xx" id="img4e5" alt="Le Creuset 11cm Salt & Pepper Mills - Set of 2 - Cerise" width="255" height="345" class="Img" style="vertical-align: bottom;" border="0"></a></div>
+        <!--End IMGMED-->
+      </td>
+      <td width="30" align="center" style="padding: 20px 0px 20px 0px; font-size: 24px; font-weight: lighter; font-family: 'Nunito', Calibri, Arial, Helvetica, sans-serif; line-height: 28px; color: #808285">or</td>
+      <td align="center" width="255" style="padding: 10px 0px 10px 0px">
+        <!--Begin IMGMED-->
+        <div><a href="https://rewards.airmiles.ca/merchandise/fashion-and-beauty/personal-care/foreo-issa-2-rechargeable-electric-toothbrush-sensitive-set---pearl-pink/133075?locale=en_CA" target="_blank"><img src="xx" id="img4e6" alt="Foreo ISSA 2 Rechargeable Electric Toothbrush Sensitive Set - Pearl Pink" width="255" height="345" class="Img" style="vertical-align: bottom;" border="0"></a></div>
+        <!--End IMGMED-->
+      </td>
+    </tr>
+  </tbody>
+</table>
+<!--End 3COLTBL-->
+</div>
+
+
+<div id="of4_f" style="display: none">
+<!--Begin 3COLTBL-->
+<table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#FFFFFF">
+  <tbody>
+    <tr>
+      <td align="center" width="255" style="padding: 10px 0px 10px 0px">
+        <!--Begin IMGMED-->
+        <div><a href="https://rewards.airmiles.ca/merchandise/%C3%A9lectroniques/t%C3%A9l%C3%A9phones-et-accessoires/chargeur-sans-fil-pour-trois-appareils-samsung---noir/132565?locale=fr_CA" target="_blank"><img src="xx" id="img4f1" alt="Chargeur sans fil pour trois appareils Samsung" width="255" height="345" class="Img" style="vertical-align: bottom;" border="0"></a></div>
+        <!--End IMGMED-->
+      </td>
+      <td width="30" align="center" style="padding: 20px 0px 20px 0px; font-size: 24px; font-weight: lighter; font-family: 'Nunito', Calibri, Arial, Helvetica, sans-serif; line-height: 28px; color: #808285">or</td>
+      <td align="center" width="255" style="padding: 10px 0px 10px 0px">
+        <!--Begin IMGMED-->
+        <div><a href="https://rewards.airmiles.ca/merchandise/mode-et-beaut%C3%A9/bijoux-et-accessoires/parure-ginger-t-bar-de-swarovski----m%C3%A9tal-dor%C3%A9-rose/138059" target="_blank"><img src="xx" id="img4f2" alt="Parure Ginger T Bar de Swarovski" width="255" height="345" class="Img" style="vertical-align: bottom;" border="0"></a></div>
+        <!--End IMGMED-->
+      </td>
+    </tr>
+  </tbody>
+</table>
+<!--End 3COLTBL-->
+
+
+<!--Begin 3COLTBL-->
+<table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#FFFFFF">
+  <tbody>
+    <tr>
+      <td align="center" width="255" style="padding: 10px 0px 10px 0px">
+        <!--Begin IMGMED-->
+        <div><a href="https://rewards.airmiles.ca/merchandise/cuisine-et-salle-%C3%A0-manger/batterie-de-cuisine/cocotte-ronde-couleur-cerise-de-53-l-de-le-creusetmd/87154?locale=fr_CA" target="_blank"><img src="xx" id="img4f3" alt="Cocotte ronde couleur cerise de 5,3 L de Le Creuset(MD)" width="255" height="345" class="Img" style="vertical-align: bottom;" border="0"></a></div>
+        <!--End IMGMED-->
+      </td>
+      <td width="30" align="center" style="padding: 20px 0px 20px 0px; font-size: 24px; font-weight: lighter; font-family: 'Nunito', Calibri, Arial, Helvetica, sans-serif; line-height: 28px; color: #808285">or</td>
+      <td align="center" width="255" style="padding: 10px 0px 10px 0px">
+        <!--Begin IMGMED-->
+        <div><a href="https://rewards.airmiles.ca/merchandise/%C3%A9lectroniques/ordinateurs-et-tablettes/galaxy-tab-s7-de-samsung---noir-mystique---256-go/117151" target="_blank"><img src="xx" id="img4f4" alt="Galaxy Tab S7+ de Samsung" width="255" height="345" class="Img" style="vertical-align: bottom;" border="0"></a></div>
+        <!--End IMGMED-->
+      </td>
+    </tr>
+  </tbody>
+</table>
+<!--End 3COLTBL-->
+
+
+<!--Begin 3COLTBL-->
+<table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#FFFFFF">
+  <tbody>
+    <tr>
+      <td align="center" width="255" style="padding: 10px 0px 10px 0px">
+        <!--Begin IMGMED-->
+        <div><a href="https://rewards.airmiles.ca/merchandise/kitchen-and-dining/tableware/le-creuset-11cm-salt-and-pepper-mills---set-of-2---cerise/121577?locale=fr_CA" target="_blank"><img src="xx" id="img4f5" alt="Ensemble de 2 moulins à sel et à poivre de Le CreusetMD" width="255" height="345" class="Img" style="vertical-align: bottom;" border="0"></a></div>
+        <!--End IMGMED-->
+      </td>
+      <td width="30" align="center" style="padding: 20px 0px 20px 0px; font-size: 24px; font-weight: lighter; font-family: 'Nunito', Calibri, Arial, Helvetica, sans-serif; line-height: 28px; color: #808285">or</td>
+      <td align="center" width="255" style="padding: 10px 0px 10px 0px">
+        <!--Begin IMGMED-->
+        <div><a href="https://rewards.airmiles.ca/merchandise/mode-et-beaut%C3%A9/soins-personnels/coffret-de-brosses-%C3%A0-dents-%C3%A9lectrique-rechargeable-pour-les-gencives-sensibles-issa-2-de-foreo/133075" target="_blank"><img src="xx" id="img4f6" alt="Coffret de brosses à dents électrique rechargeable ISSA 2 de Foreo" width="255" height="345" class="Img" style="vertical-align: bottom;" border="0"></a></div>
+        <!--End IMGMED-->
+      </td>
+    </tr>
+  </tbody>
+</table>
+<!--End 3COLTBL-->
+</div>
+
+
+<div id="bot_e" style="display: none">
+<!--Begin CONT1COLCTR-->
+<!--Begin 1COLTBL-->
+<table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#FFFFFF">
+  <tbody>
+    <tr>
+      <td align="center" style="padding: 0px 30px 0px 30px;">
+        <!--Begin TXTCTR-->
+        <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tbody>
+            <tr>
+              <td align="center" valign="top" style="font-size: 18px; font-weight: lighter; font-family: Calibri, Arial, Helvetica, sans-serif; line-height: 28px; color: #808285; padding: 0px 0px 0px 0px;"><p>Or, maybe something else from our Dream Catalogue?</p>
+                <!--Begin BTNAMRP-->
+                <table role="presentation" border="0" cellpadding="0" cellspacing="0" class="Fullwidth">
+                  <tbody>
+                    <tr>
+                      <td width="200" height="40" align="center" valign="middle" bgcolor="#0a6fb3" style="-moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px;"><div><a href="https://rewards.airmiles.ca/merchandise?locale=en_CA&utm_campaign=50381_rtrdreampersonalizationtest&utm_source=airmiles&utm_medium=email&utm_content=browsecatalogue-browsecataloguequadrantaen" target="_blank" style="color: #FFFFFF; display: inline-block; font-family: 'Nunito', Calibri, Arial, Helvetica, sans-serif; font-size: 18px; font-weight: lighter; line-height: 40px; text-align: center; text-decoration: none; width: 200px; -webkit-text-size-adjust: none; white-space: nowrap;" class="Fullwidth">See full Catalogue</a></div></td>
+                    </tr>
+                  </tbody>
+                </table>
+                <!--End BTNAMRP--->  
+    <br>
+    <!--Begin LGLLFT-->
+                <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0">
+                  <tbody>
+                    <tr>
+                      <td align="left" valign="top" style="font-size: 11px; font-family: Arial, Helvetica, sans-serif; line-height: 14px; color: #5e5e5e; padding: 0px 0px 0px 0px;"><p>All Rewards offered are subject to the Terms and Conditions of the AIR&nbsp;MILES Reward Program, are subject to change and may be withdrawn without notice. To use Miles for Merchandise Rewards, you must have accumulated sufficient AIR&nbsp;MILES Reward&nbsp;miles in your Dream Balance. Some restrictions may apply. Quantities may be limited. Merchandise Rewards include all taxes, shipping and handling costs. No cancellations, exchange or refunds for tickets, certificates or merchandise once booked or ordered. Manufacturers’ warranties apply to Merchandise Rewards. LoyaltyOne, Co. makes no representations or warranties, expressed or implied. For complete details, see current Program Terms and Conditions available at airmiles.ca.</p></td>
+                    </tr>
+                  </tbody>
+                </table>
+                <!--End LGLLFT--><br></td>
+            </tr>
+          </tbody>
+        </table>
+        <!--End TXTCTR--></td>
+    </tr>
+  </tbody>
+</table>
+<!--End 1COLTBL--> 
+<!--End CONT1COLCTR-->
+</div>
+
+
+<div id="bot_f" style="display: none">
+<!--Begin CONT1COLCTR-->
+<!--Begin 1COLTBL-->
+<table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#FFFFFF">
+  <tbody>
+    <tr>
+      <td align="center" style="padding: 0px 30px 0px 30px;">
+        <!--Begin TXTCTR-->
+        <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tbody>
+            <tr>
+              <td align="center" valign="top" style="font-size: 18px; font-weight: lighter; font-family: Calibri, Arial, Helvetica, sans-serif; line-height: 28px; color: #808285; padding: 0px 0px 0px 0px;"><p>Ou, vous convoitez peut-être quelque chose dans notre catalogue Rêves?</p>
+                <!--Begin BTNAMRP-->
+                <table role="presentation" border="0" cellpadding="0" cellspacing="0" class="Fullwidth">
+                  <tbody>
+                    <tr>
+                      <td width="200" height="40" align="center" valign="middle" bgcolor="#0a6fb3" style="-moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px;"><div><a href="https://rewards.airmiles.ca/merchandise?locale=fr_CA&utm_campaign=50381_rtrdreampersonalizationtest&utm_source=airmiles&utm_medium=email&utm_content=browsecatalogue-browsecataloguequadrantafr" target="_blank" style="color: #FFFFFF; display: inline-block; font-family: 'Nunito', Calibri, Arial, Helvetica, sans-serif; font-size: 18px; font-weight: lighter; line-height: 40px; text-align: center; text-decoration: none; width: 200px; -webkit-text-size-adjust: none; white-space: nowrap;" class="Fullwidth">Catalogue complet</a></div></td>
+                    </tr>
+                  </tbody>
+                </table>
+                <!--End BTNAMRP--->  
+    <br>
+    <!--Begin LGLLFT-->
+                <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0">
+                  <tbody>
+                    <tr>
+                      <td align="left" valign="top" style="font-size: 11px; font-family: Arial, Helvetica, sans-serif; line-height: 14px; color: #5e5e5e; padding: 0px 0px 0px 0px;"><p>Toutes les récompenses offertes sont soumises aux conditions générales du Programme de récompense AIR MILES et peuvent être modifiées ou retirées sans préavis. Pour obtenir des récompenses-articles divers, vous devez avoir obtenu suffisamment de milles AIR MILES dans votre compte Rêves. Des restrictions s'appliquent. Les quantités peuvent être limitées. Les récompenses-articles divers incluent les taxes, les frais de livraison et les frais de manutention. Aucune annulation. Aucun échange ou remboursement pour les billets, les certificats, ou les articles commandés ou réservés. Les garanties du fabricant s'appliquent aux récompenses-articles divers. LoyaltyOne, Co. ne fait aucune déclaration ni garantie, expresse ou implicite. Pour connaître les modalités complètes, veuillez consulter les conditions générales du programme AIR MILES en vigueur sur le site sur airmiles.ca.</p></td>
+                    </tr>
+                  </tbody>
+                </table>
+                <!--End LGLLFT--><br></td>
+            </tr>
+          </tbody>
+        </table>
+        <!--End TXTCTR--></td>
+    </tr>
+  </tbody>
+</table>
+<!--End 1COLTBL--> 
+<!--End CONT1COLCTR-->
+</div>
+
+
+</main>
+<!--End MAIN-->
+
+
+<div id="ftr_e" style="display: none">
+<!--Begin FOOTER-->
+<footer>
+  <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0">
+    <tbody>
+      <tr>
+        <td align="center" valign="middle" style="padding: 10px 20px 0px 20px;"><img src="https://s3.amazonaws.com/emailsquareknot/HARMONY_MAIN/IMAGES/AM_Tagline_2020_RCED_EN.gif" width="560" height="73" alt="Rewarding Canadians, every day™" border="0" style="vertical-align: bottom;" class="Img"/></td>
+      </tr>
+    </tbody>
+  </table>
+  <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0">
+    <tbody>
+      <tr>
+        <td width="6%" align="left" valign="top">&nbsp;</td>
+        <td align="center" style="padding: 10px 0px 20px 0px;"><br class="Hide">
+          <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tbody>
+              <tr>
+                <td align="left" valign="middle" class="Hide"><img role="presentation" src="https://s3.amazonaws.com/emailsquareknot/HARMONY_MAIN/IMAGES/AM_Button_B_E.png" alt="AIR MILES" width="95" height="95" border="0" style="vertical-align: bottom;"></td>
+                <td width="260" align="center" valign="top"><table role="presentation" border="0" cellspacing="0" cellpadding="0" class="Fullwidth">
+                    <tbody>
+                      <tr>
+                        <td align="center" valign="top"><a href="https://www.facebook.com/AirMilesCanada" target="_blank"><img src="https://s3.amazonaws.com/emailsquareknot/HARMONY_MAIN/IMAGES/TMP_icon_FB.png" width="47" height="47" alt="Facebook" border="0" style="vertical-align: bottom;"/></a></td>
+                        <td width="20" align="center" valign="top">&nbsp;</td>
+                        <td align="center" valign="top"><a href="https://twitter.com/AIRMILES" target="_blank"><img src="https://s3.amazonaws.com/emailsquareknot/HARMONY_MAIN/IMAGES/TMP_icon_TWT.png" width="47" height="47" alt="Twitter" border="0" style="vertical-align: bottom;"/></a></td>
+                        <td width="20" align="center" valign="top">&nbsp;</td>
+                        <td align="center" valign="top"><a href="https://instagram.com/airmiles_canada/" target="_blank"><img src="https://s3.amazonaws.com/emailsquareknot/HARMONY_MAIN/IMAGES/TMP_icon_INST.png" width="47" height="47" alt="Instagram" border="0" style="vertical-align: bottom;"/></a></td>
+                        <td width="20" align="center" valign="top">&nbsp;</td>
+                        <td align="center" valign="top"><a href="http://www.youtube.com/user/AIRMILESCanada" target="_blank"><img src="https://s3.amazonaws.com/emailsquareknot/HARMONY_MAIN/IMAGES/TMP_icon_YTB.png" width="47" height="47" alt="YouTube" border="0" style="vertical-align: bottom;"/></a></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <br>
+                  <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tbody>
+                      <tr>
+                        <td width="130" align="center" valign="bottom"><img role="presentation" src="https://s3.amazonaws.com/emailsquareknot/HARMONY_MAIN/IMAGES/TMP_img_AM_App_E.png" width="130" height="75" alt="" border="0" style="vertical-align: bottom;"/></td>
+                        <td><table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0">
+                            <tbody>
+                              <tr>
+                                <td align="right" class="CenterTxt"><a href="https://itunes.apple.com/ca/app/air-miles-reward-program/id388705262" target="_blank"><img src="https://s3.amazonaws.com/emailsquareknot/HARMONY_MAIN/IMAGES/TMP_badge_Apple_App_E.png" width="125" height="42" alt="iTunes - Download on the AppStore" border="0" style="vertical-align: bottom;"/></a></td>
+                              </tr>
+                              <tr>
+                                <td align="right" class="CenterTxt"><a href="https://play.google.com/store/apps/details?id=com.airmiles&hl=en" target="_blank"><img src="https://s3.amazonaws.com/emailsquareknot/HARMONY_MAIN/IMAGES/TMP_badge_Google_Play_E.png" width="125" height="49" alt="Get it on Google Play" border="0" style="vertical-align: bottom;"/></a></td>
+                              </tr>
+                            </tbody>
+                          </table></td>
+                      </tr>
+                    </tbody>
+                  </table></td>
+              </tr>
+            </tbody>
+          </table></td>
+        <td width="6%" align="left" valign="top">&nbsp;</td>
+      </tr>
+      <tr>
+        <td width="6%" align="left" valign="top">&nbsp;</td>
+        <td align="center" valign="top"><nav>
+            <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" style="font-size: 15px; font-family: 'Nunito', Calibri, Arial, Helvetica, sans-serif; color: #065ba4;">
+              <tbody>
+                <tr>
+                  <td width="60" align="center" valign="middle" class="BottomNav"><a href="https://www.airmiles.ca/arrow/PrivacyPolicy?changeLocale=en_CA" target="_blank" style="color: #065ba4; text-decoration: none;" class="WhiteLink">Privacy</a></td>
+                  <td align="center" valign="middle" class="Hide">|</td>
+                  <td width="50" align="center" valign="middle" class="BottomNav"><a href="https://www.airmiles.ca/arrow/TermsAndConditions?changeLocale=en_CA" target="_blank" style="color: #065ba4; text-decoration: none;" class="WhiteLink">Legal</a></td>
+                  <td align="center" valign="middle" class="Hide">|</td>
+                  <td width="80" align="center" valign="middle" class="BottomNav"><a href="https://www.airmiles.ca/arrow/Home?changeLocale=en_CA" target="_blank" style="color: #065ba4; text-decoration: none;" class="WhiteLink">airmiles.ca</a></td>
+                  <td align="center" valign="middle" class="Hide">|</td>
+                  <td width="110" align="center" valign="middle" class="BottomNav"><a href="https://www.airmiles.ca/arrow/SelfServe?changeLocale=en_CA" target="_blank" style="color: #065ba4; text-decoration: none;" class="WhiteLink">Update Profile</a></td>
+                  <td align="center" valign="middle" class="Hide">|</td>
+                  <td width="90" align="center" valign="middle" class="BottomNav"><a href="http://emails.airmiles.ca/PUBLISH(new_optout_en)" target="_blank" style="color: #065ba4; text-decoration: none;" class="WhiteLink">Unsubscribe</a></td>
+                </tr>
+              </tbody>
+            </table>
+          </nav></td>
+        <td width="6%" align="left" valign="top">&nbsp;</td>
+      </tr>
+      <tr>
+        <td width="6%" align="left" valign="top">&nbsp;</td>
+        <td align="left" style="font-size: 12px; font-family: Calibri, Arial, Helvetica, sans-serif; line-height: 18px; color: #065ba4; padding: 20px 0px 20px 0px;"><p class="Body" style="font-size: 18px; font-family: 'Nunito', Calibri, Arial, Helvetica, sans-serif; line-height: 22px; color: #065ba4;">Please do not reply to this email. <br>
+            If you have any questions or comments, <a href="https://www.airmiles.ca/arrow/ContactUs?changeLocale=en_CA" target="_blank" style="color: #065ba4;">contact&nbsp;us</a>.</p>
+          <p>The AIR MILES Reward Program will never ask that you provide any personal information via email. If you receive such&nbsp;an email that appears to be from the AIR MILES Reward Program, do not reply and forward the email to <a href="mailto:phishing@airmiles.ca" target="_blank" style="color: #065ba4;">phishing@airmiles.ca</a>. Never share your PIN with anyone other than those that are allowed to act on behalf of the Account. </p>
+          <p class="appleIOSFix">Address: 351 King Street East, Suite 200, Toronto, ON, M5A&nbsp;0L6</p>
+          <p>&reg;&trade; Trademarks of AM Royalties Limited Partnership used under license by LoyaltyOne,&nbsp;Co. Sponsor, Supplier and Retailer&nbsp;trademarks are owned by the respective Sponsors, Suppliers or Retailers or authorized for their use in&nbsp;Canada.</p></td>
+        <td width="6%" align="left" valign="top">&nbsp;</td>
+      </tr>
+    </tbody>
+  </table>
+</footer>
+<!--End FOOTER-->
+</div>
+
+
+<div id="ftr_f" style="display: none">
+<!--Begin FOOTER-->
+<footer>
+  <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0">
+    <tbody>
+      <tr>
+        <td align="center" valign="middle" style="padding: 10px 20px 0px 20px;"><img src="https://s3.amazonaws.com/emailsquareknot/HARMONY_MAIN/IMAGES/AM_Tagline_2020_RCED_FR.gif" width="560" height="112" alt="Nous récompensons les Canadiens au quotidien" border="0" style="vertical-align: bottom;" class="Img"/></td>
+      </tr>
+    </tbody>
+  </table>
+  <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0">
+    <tbody>
+      <tr>
+        <td width="6%" align="left" valign="top">&nbsp;</td>
+        <td align="center" style="padding: 10px 0px 20px 0px;"><br class="Hide">
+          <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tbody>
+              <tr>
+                <td align="left" valign="middle" class="Hide"><img role="presentation" src="https://s3.amazonaws.com/emailsquareknot/HARMONY_MAIN/IMAGES/AM_Button_B_F.png" alt="AIR MILES" width="95" height="95" border="0" style="vertical-align: bottom;"></td>
+                <td width="260" align="center" valign="top"><table role="presentation" border="0" cellspacing="0" cellpadding="0" class="Fullwidth">
+                    <tbody>
+                      <tr>
+                        <td align="center" valign="top"><a href="https://www.facebook.com/AirMilesCanada" target="_blank"><img src="https://s3.amazonaws.com/emailsquareknot/HARMONY_MAIN/IMAGES/TMP_icon_FB.png" width="47" height="47" alt="Facebook" border="0" style="vertical-align: bottom;"/></a></td>
+                        <td width="20" align="center" valign="top">&nbsp;</td>
+                        <td align="center" valign="top"><a href="https://twitter.com/AIRMILES" target="_blank"><img src="https://s3.amazonaws.com/emailsquareknot/HARMONY_MAIN/IMAGES/TMP_icon_TWT.png" width="47" height="47" alt="Twitter" border="0" style="vertical-align: bottom;"/></a></td>
+                        <td width="20" align="center" valign="top">&nbsp;</td>
+                        <td align="center" valign="top"><a href="https://instagram.com/airmiles_canada/" target="_blank"><img src="https://s3.amazonaws.com/emailsquareknot/HARMONY_MAIN/IMAGES/TMP_icon_INST.png" width="47" height="47" alt="Instagram" border="0" style="vertical-align: bottom;"/></a></td>
+                        <td width="20" align="center" valign="top">&nbsp;</td>
+                        <td align="center" valign="top"><a href="http://www.youtube.com/user/AIRMILESCanada" target="_blank"><img src="https://s3.amazonaws.com/emailsquareknot/HARMONY_MAIN/IMAGES/TMP_icon_YTB.png" width="47" height="47" alt="YouTube" border="0" style="vertical-align: bottom;"/></a></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <br>
+                  <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tbody>
+                      <tr>
+                        <td width="130" align="center" valign="bottom"><img role="presentation" src="https://s3.amazonaws.com/emailsquareknot/HARMONY_MAIN/IMAGES/TMP_img_AM_App_E.png" width="130" height="75" alt="" border="0" style="vertical-align: bottom;"/></td>
+                        <td><table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0">
+                            <tbody>
+                              <tr>
+                                <td align="right" class="CenterTxt"><a href="https://itunes.apple.com/ca/app/air-miles-reward-program/id388705262?l=fr" target="_blank"><img src="https://s3.amazonaws.com/emailsquareknot/HARMONY_MAIN/IMAGES/TMP_badge_Apple_App_F.png" width="125" height="42" alt="iTunes - Download on the AppStore" border="0" style="vertical-align: bottom;"/></a></td>
+                              </tr>
+                              <tr>
+                                <td align="right" class="CenterTxt"><a href="https://play.google.com/store/apps/details?id=com.airmiles&hl=fr" target="_blank"><img src="https://s3.amazonaws.com/emailsquareknot/HARMONY_MAIN/IMAGES/TMP_badge_Google_Play_F.png" width="125" height="49" alt="Get it on Google Play" border="0" style="vertical-align: bottom;"/></a></td>
+                              </tr>
+                            </tbody>
+                          </table></td>
+                      </tr>
+                    </tbody>
+                  </table></td>
+              </tr>
+            </tbody>
+          </table></td>
+        <td width="6%" align="left" valign="top">&nbsp;</td>
+      </tr>
+    </tbody>
+  </table>
+  <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0">
+    <tbody>
+      <tr>
+        <td align="center" style="padding: 0px 5px 0px 5px;"><nav>
+            <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" style="font-size: 14px; font-family: 'Nunito', Calibri, Arial, Helvetica, sans-serif; color: #065ba4;">
+              <tbody>
+                <tr>
+                  <td align="center" valign="middle" class="BottomNav"><a href="https://www.airmiles.ca/arrow/PrivacyPolicy?changeLocale=fr_FR" target="_blank" style="color: #065ba4; text-decoration: none;" class="WhiteLink">Confidentialité</a></td>
+                  <td align="center" valign="middle" class="Hide">|</td>
+                  <td align="center" valign="middle" class="BottomNav"><a href="https://www.airmiles.ca/arrow/TermsAndConditions?changeLocale=fr_FR" target="_blank" style="color: #065ba4; text-decoration: none;" class="WhiteLink">Mentions légales</a></td>
+                  <td align="center" valign="middle" class="Hide">|</td>
+                  <td align="center" valign="middle" class="BottomNav"><a href="https://www.airmiles.ca/arrow/Home?changeLocale=fr_FR" target="_blank" style="color: #065ba4; text-decoration: none;" class="WhiteLink">airmiles.ca</a></td>
+                  <td align="center" valign="middle" class="Hide">|</td>
+                  <td align="center" valign="middle" class="BottomNav"><a href="https://www.airmiles.ca/arrow/SelfServe?changeLocale=fr_FR" target="_blank" style="color: #065ba4; text-decoration: none;" class="WhiteLink">Mettre à jour le profil </a></td>
+                  <td align="center" valign="middle" class="Hide">|</td>
+                  <td align="center" valign="middle" class="BottomNav"><a href="http://emails.airmiles.ca/PUBLISH(new_optout_fr)" target="_blank" style="color: #065ba4; text-decoration: none;" class="WhiteLink">Vous désabonner</a></td>
+                </tr>
+              </tbody>
+            </table>
+          </nav></td>
+      </tr>
+    </tbody>
+  </table>
+  <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0">
+    <tbody>
+      <tr>
+        <td width="6%" align="left" valign="top">&nbsp;</td>
+        <td align="left" style="font-size: 12px; font-family: Calibri, Arial, Helvetica, sans-serif; line-height: 18px; color: #065ba4; padding: 20px 0px 20px 0px;"><p class="Body" style="font-size: 18px; font-family: 'Nunito', Calibri, Arial, Helvetica, sans-serif; line-height: 22px; color: #065ba4;">Veuillez ne pas répondre à ce courriel. <br>
+            Pour toute question, <a href="https://www.airmiles.ca/arrow/ContactUs?changeLocale=fr_FR" target="_blank" style="color: #065ba4;">communiquez avec nous</a>.</p>
+          <p>Le Programme de récompense AIR MILES ne vous enverra jamais de courriel vous demandant de fournir des renseignements personnels. Si vous recevez un tel courriel qui semble avoir été envoyé par le Programme de récompense AIR MILES, ne répondez pas et transférez le courriel à <a href="mailto:phishing@airmiles.ca" target="_blank" style="color: #065ba4;">phishing@airmiles.ca</a>. Ne communiquez jamais votre NIP à d&#39;autres personnes que celles autorisées à agir au nom du titulaire du compte. </p>
+          <p class="appleIOSFix">Adresse : 351 King Street East, Suite 200, Toronto, ON, M5A 0L6</p>
+          <p><sup style="font-size: 75%; line-height: 75%;">md/mc</sup> Marque déposée/de commerce d’AM Royalties Limited Partnership, employée en vertu d&#39;une licence par LoyaltyOne, Co. Les marques de commerce des commanditaires, fournisseurs et détaillants sont la propriété respective de ces derniers et leur usage est autorisé au Canada.</p></td>
+        <td width="6%" align="left" valign="top">&nbsp;</td>
+      </tr>
+    </tbody>
+  </table>
+</footer>
+<!--End FOOTER-->
+</div>
+
+
+                  <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td align="center" valign="top"><img role="presentation" src="https://s3.amazonaws.com/emailsquareknot/HARMONY_MAIN/IMAGES/stopper.png" width="360" height="10" alt="stopper"></td>
+                    </tr>
+                    <tr>
+                      <td align="center" valign="top" class="Hide"><img role="presentation" src="https://s3.amazonaws.com/emailsquareknot/HARMONY_MAIN/IMAGES/stopper.png" width="600" height="10" alt="stopper" style="min-width: 600px;"></td>
+                    </tr>
+                  </table></td>
+              </tr>
+            </tbody>
+          </table>
+        <!--End CONTAINER--></td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+</html>
