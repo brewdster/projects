@@ -145,7 +145,7 @@ body,li
 	CMYK: 91.53, 83.04, 2.4, 0</p></li>
 
         <li><p><span class="head1">var_city_prov_pc_cntry</span><br>
-	<span style="white-space: pre">FindandReplace(Trim(Trim(|->[CITY]) & " " & Trim(|->[PROV]) & "  " & FindandReplace(Trim(|->[PC])," "," ")),"   ","  ")
+	<span style="white-space: pre">FindandReplace(Trim(Trim(|->[CITY]) & " " & Trim(|->[PROV]) & "  " & FindandReplace(Trim(|->[PC])," ","0160")),"   ","  ")
 	&
 	if(isnullorempty(Trim(|->[COUNTRY])) or Trim(|->[COUNTRY]) = "")
 	{
