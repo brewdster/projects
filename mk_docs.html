@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!--Drewbster / 20230909-->
+<!--Drewbster / 20230910-->
 <html>
 
 <head>
@@ -54,7 +54,7 @@ body,li
               <td width="2%">&nbsp;</td>
               <td style="padding: 20px 0px 20px 0px" width="60" align="left"><a href="https://www.marketingkitchen.ca/" target="_blank"><img src="https://brewdster.github.io/homepage/images/mk_icon.png" width="50"></a></td>
               <td style="color: #AFBD21; font-size: 20px; font-weight: normal; line-height: 24px">Docs</td>
-              <td style="color: #AFBD21; font-size: 14px; font-weight: normal; line-height: 24px" align="right">2023-09-09</td>
+              <td style="color: #AFBD21; font-size: 14px; font-weight: normal; line-height: 24px" align="right">2023-09-10</td>
               <td width="2%">&nbsp;</td>
             </tr>
           </tbody>
@@ -171,11 +171,24 @@ body,li
 	  <li>GetEnv("CurRecordNumber") & SubString("**********", 0, 6 - Length(GetEnv("CurRecordNumber")))  ex: 123***</li>
 	</ol></p></li>
 
+        <li><p><span class="head1">Check record sequence</span><br>
+	<span style="white-space: pre">If(GetEnv("CurRecordNumber") <> Asnumber(Substring(Trim(|->[SEQNO]), 1)))
+	{
+	abort
+	}
+	else
+	{
+	""
+	}</span></p></li>
+
         <li><p><span class="head1">Reference url image asset</span><br>
 	Call Web.URLContentAsFile("https://brewdster.github.io/homepage/images/favicon.png")</p></li>
 
         <li><p><span class="head1">Modulus 4</span><br>
 	1 + (|->[Index] - 1) % 4</p></li>
+
+
+
 
         </ul>
       </td>
