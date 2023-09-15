@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!--Drewbster / 20230910-->
+<!--Drewbster / 20230914-->
 <html>
 
 <head>
@@ -30,6 +30,13 @@ body,li
     font-weight: 500;
   }
 
+table.datetbl
+  td
+    {
+      padding: 0px 10px 0px 10px;
+      border: 1px solid #CCCCCC;
+    }
+
 </style>
 
 </head>
@@ -54,7 +61,7 @@ body,li
               <td width="2%">&nbsp;</td>
               <td style="padding: 20px 0px 20px 0px" width="60" align="left"><a href="https://www.marketingkitchen.ca/" target="_blank"><img src="https://brewdster.github.io/homepage/images/mk_icon.png" width="50"></a></td>
               <td style="color: #AFBD21; font-size: 20px; font-weight: normal; line-height: 24px">Docs</td>
-              <td style="color: #AFBD21; font-size: 14px; font-weight: normal; line-height: 24px" align="right">2023-09-10</td>
+              <td style="color: #AFBD21; font-size: 14px; font-weight: normal; line-height: 24px" align="right">2023-09-14</td>
               <td width="2%">&nbsp;</td>
             </tr>
           </tbody>
@@ -122,9 +129,6 @@ body,li
 	<li><p><span class="head1">Runsheet Macro</span><br>
 	H:\Jun Agbayani\Programs\RunSheet_Creator_v3.xlsm!Create_Runsheet</p></li>
 
-	<li><p><span class="head1">qLingo Help</span><br>
-	<a href="https://help.xmpie.com/uPlan/v.8.2/Help/en/uPlanUserGuide/uDirectRuleEditing/uDirectRuleEditing.htm" target="_blank">https://help.xmpie.com/uPlan/v.8.2/Help/en/uPlanUserGuide/uDirectRuleEditing/uDirectRuleEditing.htm</a></p></li>
-
 	<li><p><span class="head1">Indesign template for Text_with_Style ADOR</span><br>
 	H:\Andrew Chua\Data_tools\Programmable_Text_with_Style_ADOR.indd</p></li>
 
@@ -156,6 +160,9 @@ body,li
 	  "\n" & Trim(|->[COUNTRY])
 	}</span></p></li>
 
+	<li><p><span class="head1">qLingo Help</span><br>
+	<a href="https://help.xmpie.com/uPlan/v.8.2/Help/en/uPlanUserGuide/uDirectRuleEditing/uDirectRuleEditing.htm" target="_blank">https://help.xmpie.com/uPlan/v.8.2/Help/en/uPlanUserGuide/uDirectRuleEditing/uDirectRuleEditing.htm</a></p></li>
+
         <li><p><span class="head1">XMPie DataMatrix barcode</span><br>
 	XMPBarcode("DataMatrix", Trim(|->[SEQNO]), "Color=cmyk(0%,0%,0%,100%);BackgroundColor=cmyk(0%,0%,0%,0%)")</p></li>
 
@@ -182,10 +189,178 @@ body,li
 	}</span></p></li>
 
         <li><p><span class="head1">Reference url image asset</span><br>
-	Call Web.URLContentAsFile("https://brewdster.github.io/homepage/images/favicon.png")</p></li>
+	Call Web.URLContentAsFile("https://brewdster.github.io/homepage/images/favicon.png") // Use in Graphic content object (ADOR).</p></li>
 
         <li><p><span class="head1">Modulus 4</span><br>
 	1 + (|->[Index] - 1) % 4</p></li>
+
+        <li><p><span class="head1">QLingo numeric functions</span><br>
+	<ul style="list-style-type:disc">
+	  <li>ABS(-5) = 5</li>
+	  <li>Floor(3.78) = 3</li>
+	  <li>Ceil(3.78) = 4</li>
+	  <li>FormatNumber(5000.2,"$#,###.00") = $5,000.20</li>
+	  <li>Rand(1) can equal 0.9528 (value will be < 1)</li>
+	  <li>Round(12.344, 2) = 12.34</li>
+	</ul></p></li>
+
+        <li><p><span class="head1">QLingo date functions</span><br>
+	<ul style="list-style-type:disc">
+	  <li>GetDay("14/09/2023") = 14</li>
+	  <li>GetMonth("14/09/2023") = 9</li>
+	  <li>GetYear("14/09/2023") = 2023</li>
+	  <li>GetDayOfWeek("14/09/2023") = 5</li>
+	  <li>GetHour("14/09/2023 12:57:20") = 12</li>
+	  <li>GetSecond("14/09/2023 12:57:20") = 20</li>
+	  <li>Age("21/12/1970") = 52.7315068493151 (as of Sep. 14, 2023)</li>
+	  <li>Now() = 9/14/2023 8:00:36 PM</li>
+	  <li>FormatDate(#14/09/2023#, "dddd, MMMM dd, yyyy") = "Thursday, September 14, 2023"<br>
+	    <br>
+	    <div>
+	      <table style="border-collapse: collapse" class="datetbl">
+	        <tbody>
+	          <tr>
+	            <td>d</td>
+	            <td>Displays the day as a number without a leading zero (for example, 1).</td>
+	          </tr>
+	          <tr>
+	            <td>dd</td>
+	            <td>Displays the day as a number with a leading zero (for example, 01).</td>
+	          </tr>
+	          <tr>
+	            <td>ddd</td>
+	            <td>Displays the day as an abbreviation (for example, Sun).</td>
+	          </tr>
+	          <tr>
+	            <td>dddd</td>
+	            <td>Displays the day as a full name (for example, Sunday).</td>
+	          </tr>
+	          <tr>
+	            <td>M</td>
+	            <td>Displays the month as a number without a leading zero (for example, January is represented as 1).</td>
+	          </tr>
+	          <tr>
+	            <td>MM</td>
+	            <td>Displays the month as a number with a leading zero (for example, 01/12/01).</td>
+	          </tr>
+	          <tr>
+	            <td>MMM</td>
+	            <td>Displays the month as an abbreviation (for example, Jan).</td>
+	          </tr>
+	          <tr>
+	            <td>MMMM</td>
+	            <td>Displays the month as a full month name (for example, January).</td>
+	          </tr>
+	          <tr>
+	            <td>y</td>
+	            <td>Displays the year number (0-9) without leading zeros.</td>
+	          </tr>
+	          <tr>
+	            <td>yy</td>
+	            <td>Displays the year in two-digit numeric format with a leading zero, if applicable.</td>
+	          </tr>
+	          <tr>
+	            <td>yyy</td>
+	            <td>Displays the year in three-digit numeric format.</td>
+	          </tr>
+	          <tr>
+	            <td>yyyy</td>
+	            <td>Displays the year in four-digit numeric format.</td>
+	          </tr>
+	          <tr>
+	            <td>h</td>
+	            <td>Displays the hour as a number without leading zeros using the 12-hour clock (for example, 1:15:15 PM).</td>
+	          </tr>
+	          <tr>
+	            <td>hh</td>
+	            <td>Displays the hour as a number with leading zeros using the 12-hour clock (for example, 01:15:15 PM).</td>
+	          </tr>
+	          <tr>
+	            <td>H</td>
+	            <td>Displays the hour as a number without leading zeros using the 24-hour clock (for example, 1:15:15).</td>
+	          </tr>
+	          <tr>
+	            <td>HH</td>
+	            <td>Displays the hour as a number with leading zeros using the 24-hour clock (for example, 01:15:15).</td>
+	          </tr>
+	          <tr>
+	            <td>m</td>
+	            <td>Displays the minute as a number without leading zeros (for example, 12:1:15).</td>
+	          </tr>
+	          <tr>
+	            <td>mm</td>
+	            <td>Displays the minute as a number with leading zeros (for example, 12:01:15).</td>
+	          </tr>
+	          <tr>
+	            <td>s</td>
+	            <td>Displays the second as a number without leading zeros (for example, 12:15:5).</td>
+	          </tr>
+	          <tr>
+	            <td>ss</td>
+	            <td>Displays the second as a number with leading zeros (for example, 12:15:05).</td>
+	          </tr>
+	          <tr>
+	            <td>T</td>
+	            <td>Displays an uppercase 'A' for any hour before noon; displays an uppercase 'P' for any hour between noon and 11:59 P.M.</td>
+	          </tr>
+	          <tr>
+	            <td>TT</td>
+	            <td>Displays an uppercase 'AM' for any hour before noon; displays an uppercase 'PM' for any hour between noon and 11:59 P.M.</td>
+	          </tr>
+	          <tr>
+	            <td>t</td>
+	            <td>Displays an lowercase 'a' for any hour before noon; displays an lowercase 'p' for any hour between noon and 11:59 P.M.</td>
+	          </tr>
+	          <tr>
+	            <td>tt</td>
+	            <td>Displays an lowercase 'am' for any hour before noon; displays an lowercase 'pm' for any hour between noon and 11:59 P.M.</td>
+	          </tr>
+	          <tr>
+	            <td>Any other</td>
+	            <td>Display as is.</td>
+	          </tr>
+	        </tbody>
+	      </table>
+	    <br>
+	    </div>
+	  </li>
+	</ul></p></li>
+
+        <li><p><span class="head1">QLingo string functions</span><br>
+	<ul style="list-style-type:disc">
+	  <li>Lcase("HELLO") = "hello"</li>
+	  <li>Tcase("hello world") = "Hello World"</li>
+	  <li>UCase("hello") = "HELLO"</li>
+	  <li>Length("abc") = 3</li>
+	  <li>IsNullOrEmpty(|->[field]) = true or false</li>
+	  <li>SubString("hello",1,2) = "el"</li>
+	  <li>Trim("  Hello World  ") = "Hello World"</li>
+	  <li>LTrim("  Hello World  ") = "Hello World  "</li>
+	  <li>RTrim("  Hello World  ") = "  Hello World"</li>
+	  <li>Find("Hello World", "o", 5) = 7 // returns -1 if value not found</li>
+	  <li>Replace("Hello World", "old w", 6, 1) = "Hello old world"</li>
+	  <li>FindAndReplace("Hello World", "World", "Earth") = "Hello Earth"</li>
+	  <li>FindAndReplaceChars("A1B2C3D4E5", "12345", "*") = "A*B*C*D*E*"</li>
+	  <li>"Hello" + HexToUnicode("0020") + "World" = "Hello World" // 0020 = 'space'; 0009 = 'tab'</li>
+	</ul></p></li>
+
+        <li><p><span class="head1">QLingo conversion functions</span><br>
+	<ul style="list-style-type:disc">
+	  <li>AsBoolean // Null value is false regardless of data type. For 'numbers', 0 is false. Empty 'string' is false. Date is always true.</li>
+	  <li>AsDate("14/09/2023") = 09/14/2023 (date value)</li>
+	  <li>AsString(123) = "123" (text value)</li>
+	  <li>AsNumber("myvar") = 0</li>
+	  <li>AsNumber("+0123abc") = 123</li>
+	</ul></p></li>
+
+        <li><p><span class="head1">QLingo system functions</span><br>
+	<ul style="list-style-type:disc">
+	  <li>GetEnv("CurRecordNumber") // Gets record number or current record.</li>
+	  <li>abort // Used in If/Else or Switch statements. Prompts an error.</li>
+	  <li>skip // Used in If/Else or Switch statements. Skips current record.</li>
+	  <li>GetPDFAssetPageCount("file1.pdf") // Gets total pages in pdf.</li>
+	  <li>"file1.pdf:3" // Pulls page 3 from file1.pdf into Graphic content object.</li>
+	</ul></p></li>
 
         </ul>
       </td>
