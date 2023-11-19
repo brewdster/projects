@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!--Drewbster / 20231116-->
+<!--Drewbster / 20231119-->
 <html>
 
 <head>
@@ -21,7 +21,7 @@
 
 body,li
   {
-    font-family: 'Poppins', Arial, Calibri, sans-serif;
+    font-family: 'Poppins', 'DM Sans', Arial, sans-serif;
   }
 
 .head1
@@ -61,7 +61,7 @@ table.datetbl
               <td width="2%">&nbsp;</td>
               <td style="padding: 20px 0px 20px 0px" width="60" align="left"><a href="https://www.marketingkitchen.ca/" target="_blank"><img src="https://brewdster.github.io/homepage/images/mk_icon.png" width="50"></a></td>
               <td style="color: #AFBD21; font-size: 20px; font-weight: normal; line-height: 24px">Docs</td>
-              <td style="color: #AFBD21; font-size: 14px; font-weight: normal; line-height: 24px" align="right">2023-11-16</td>
+              <td style="color: #AFBD21; font-size: 14px; font-weight: normal; line-height: 24px" align="right">2023-11-19</td>
               <td width="2%">&nbsp;</td>
             </tr>
           </tbody>
@@ -144,30 +144,12 @@ table.datetbl
 	<img src="https://brewdster.github.io/homepage/images/dupe_purge.png" width="800">
 	</p></li>
 
-        <li><p><span class="head1">Reflex Blue for script NAB</span><br>
-	LAB: 33.333, 14, -48<br>
-	CMYK: 91.53, 83.04, 2.4, 0</p></li>
-
-        <li><p><span class="head1">var_city_prov_pc_cntry</span><br>
-	<span style="white-space: pre">FindandReplace(Trim(Trim(|->[CITY]) & " " & Trim(|->[PROV]) & "  " & FindandReplace(Trim(|->[PC])," ","<span style="color: #0000FF; font-weight: 500">Alt-0160</span>")),"   ","  ")
-	&
-	if(isnullorempty(Trim(|->[COUNTRY])) or Trim(|->[COUNTRY]) = "")
-	{
-	  ""
-	}
-	else
-	{
-	  "\r" & Trim(|->[COUNTRY])
-	}</span></p></li>
-
 	<li><p><span class="head1">qLingo Help</span><br>
 	<a href="https://help.xmpie.com/uPlan/v.8.2/Help/en/uPlanUserGuide/uDirectRuleEditing/uDirectRuleEditing.htm" target="_blank">https://help.xmpie.com/uPlan/v.8.2/Help/en/uPlanUserGuide/uDirectRuleEditing/uDirectRuleEditing.htm</a></p></li>
 
-        <li><p><span class="head1">XMPie DataMatrix barcode</span><br>
-	XMPBarcode("DataMatrix", Trim(|->[SEQNO]), "Color=cmyk(0%,0%,0%,100%);BackgroundColor=cmyk(0%,0%,0%,0%)")</p></li>
-
-        <li><p><span class="head1">XMPie Code128 barcode</span><br>
-	XMPBarcode("Code128", Trim(|->[SEQNO]), "ModuleWidth=413;Height=12;Color=cmyk(0%,0%,0%,100%);BackgroundColor=cmyk(0%,0%,0%,0%);FontColor=cmyk(0%,100%,100%,0%);HideReadableText=true")</p></li>
+        <li><p><span class="head1">Reflex Blue for script NAB</span><br>
+	LAB: 33.333, 14, -48<br>
+	CMYK: 91.53, 83.04, 2.4, 0</p></li>
 
         <li><p><span class="head1">Creating sequence nos.</span><br>
 	<ol>
@@ -188,11 +170,79 @@ table.datetbl
 	GetEnv("CurRecordNumber")
 	}</span></p></li>
 
-        <li><p><span class="head1">Reference url image asset</span><br>
-	Call Web.URLContentAsFile("https://brewdster.github.io/homepage/images/favicon.png") // Use in Graphic content object (ADOR).</p></li>
+        <li><p><span class="head1">Create [var_city_prov_pc_cntry] ADOR</span><br>
+	<span style="white-space: pre">FindandReplace(Trim(Trim(|->[CITY]) & " " & Trim(|->[PROV]) & "  " & FindandReplace(Trim(|->[PC])," ","<span style="color: #0000FF; font-weight: 500">Alt-0160</span>")),"   ","  ")
+	&
+	if(isnullorempty(Trim(|->[COUNTRY])) or Trim(|->[COUNTRY]) = "")
+	{
+	  ""
+	}
+	else
+	{
+	  "\r" & Trim(|->[COUNTRY])
+	}</span></p></li>
 
-        <li><p><span class="head1">Modulus 4</span><br>
-	1 + (|->[Index] - 1) % 4</p></li>
+        <li><p><span class="head1">Create [var_askline] variable</span><br>
+	<span style="white-space: pre">if(IsNullOrEmpty(Trim(|->[ASK1])) or Trim(|->[ASK1]) = "")
+	{
+	"prt_0ask"
+	}
+	else if(IsNullOrEmpty(Trim(|->[ASK2])) or Trim(|->[ASK2]) = "")
+	{
+	"prt_1ask"
+	}
+	else if(IsNullOrEmpty(Trim(|->[ASK3])) or Trim(|->[ASK3]) = "")
+	{
+	"prt_2asks"
+	}
+	else
+	{
+	"prt_3asks"
+	}</span></p></li>
+
+        <li><p><span class="head1">Create [var_lang] variable</span><br>
+	<span style="white-space: pre">Switch(Substring(Trim(|->[SEQNO]), 0, 1))
+	{
+	Case "1": "E"
+	Case "2": "F"
+	Case "3": "E"
+	Case "4": "F"
+	default: abort
+	}</span></p></li>
+
+        <li><p><span class="head1">English & French currencies</span><br>
+	<span style="white-space: pre">Switch(@{var_lang})
+	{
+	Case "E": FormatNumber(Trim(|->[ASK1]), "$###,###,###")
+	Case "F": FormatNumber(Trim(|->[ASK1]), "###-###-###-$") // Replace hyphens with non-breaking space.
+	}</span></p></li>
+
+        <li><p><span class="head1">QLingo graphic functions</span><br>
+	<ul style="list-style-type:disc">
+	  <li>Rectangle(C##, M##, Y##, K##) // Graphic ADOR; fills object with variable colour.</li>
+	  <li>XMPBarcode("DataMatrix", Trim(|->[SEQNO]), "Color=cmyk(0%,0%,0%,100%);BackgroundColor=cmyk(0%,0%,0%,0%)")</li>
+	  <li>XMPBarcode("Code128", Trim(|->[SEQNO]), "ModuleWidth=413;Height=12;Color=cmyk(0%,0%,0%,100%);BackgroundColor=cmyk(0%,0%,0%,0%);FontColor=cmyk(0%,100%,100%,0%);HideReadableText=true")</li>
+	  <li>Call Web.URLContentAsFile("https://brewdster.github.io/homepage/images/favicon.png") // Graphic ADOR; reference url image asset.</li>
+	</ul></p></li>
+
+        <li><p><span class="head1">QLingo string functions</span><br>
+	<ul style="list-style-type:disc">
+	  <li>Lcase("HELLO") = "hello"</li>
+	  <li>Tcase("hello world") = "Hello World"</li>
+	  <li>UCase("hello") = "HELLO"</li>
+	  <li>Length("abc") = 3</li>
+	  <li>IsNullOrEmpty(|->[field]) = true or false</li>
+	  <li>SubString("hello",1,2) = "el"</li>
+	  <li>Trim("  Hello World  ") = "Hello World"</li>
+	  <li>LTrim("  Hello World  ") = "Hello World  "</li>
+	  <li>RTrim("  Hello World  ") = "  Hello World"</li>
+	  <li>Find("Hello World", "o", 5) = 7 // returns -1 if value not found</li>
+	  <li>Replace("Hello World", "old w", 6, 1) = "Hello old world"</li>
+	  <li>FindAndReplace("Hello World", "World", "Earth") = "Hello Earth"</li>
+	  <li>FindAndReplaceChars("A1B2C3D4E5", "12345", "*") = "A*B*C*D*E*"</li>
+	  <li>CleanNumber("A1B2!3@4?5") = "12345"</li>
+	  <li>"Hello" + HexToUnicode("0020") + "World" = "Hello World" // 0020 = 'space'; 0009 = 'tab'</li>
+	</ul></p></li>
 
         <li><p><span class="head1">QLingo numeric functions</span><br>
 	<ul style="list-style-type:disc">
@@ -202,6 +252,7 @@ table.datetbl
 	  <li>FormatNumber(5000.2,"$#,###.00") = $5,000.20</li>
 	  <li>Rand(1) can equal 0.9528 (value will be < 1)</li>
 	  <li>Round(12.344, 2) = 12.34</li>
+	  <li>1 + (|->[Index] - 1) % 4 // Modulus 4</li>
 	</ul></p></li>
 
         <li><p><span class="head1">QLingo date functions</span><br>
@@ -326,25 +377,6 @@ table.datetbl
 	  </li>
 	</ul></p></li>
 
-        <li><p><span class="head1">QLingo string functions</span><br>
-	<ul style="list-style-type:disc">
-	  <li>Lcase("HELLO") = "hello"</li>
-	  <li>Tcase("hello world") = "Hello World"</li>
-	  <li>UCase("hello") = "HELLO"</li>
-	  <li>Length("abc") = 3</li>
-	  <li>IsNullOrEmpty(|->[field]) = true or false</li>
-	  <li>SubString("hello",1,2) = "el"</li>
-	  <li>Trim("  Hello World  ") = "Hello World"</li>
-	  <li>LTrim("  Hello World  ") = "Hello World  "</li>
-	  <li>RTrim("  Hello World  ") = "  Hello World"</li>
-	  <li>Find("Hello World", "o", 5) = 7 // returns -1 if value not found</li>
-	  <li>Replace("Hello World", "old w", 6, 1) = "Hello old world"</li>
-	  <li>FindAndReplace("Hello World", "World", "Earth") = "Hello Earth"</li>
-	  <li>FindAndReplaceChars("A1B2C3D4E5", "12345", "*") = "A*B*C*D*E*"</li>
-	  <li>CleanNumber("A1B2!3@4?5") = "12345"</li>
-	  <li>"Hello" + HexToUnicode("0020") + "World" = "Hello World" // 0020 = 'space'; 0009 = 'tab'</li>
-	</ul></p></li>
-
         <li><p><span class="head1">QLingo conversion functions</span><br>
 	<ul style="list-style-type:disc">
 	  <li>AsBoolean // Null value is false regardless of data type. For 'numbers', 0 is false. Empty 'string' is false. Date is always true.</li>
@@ -359,11 +391,11 @@ table.datetbl
 	  <li>GetEnv("CurRecordNumber") // Gets record number or current record.</li>
 	  <li>abort // Used in If/Else or Switch statements. Prompts an error.</li>
 	  <li>skip // Used in If/Else or Switch statements. Skips current record.</li>
-	  <li>ReportMessage("Custom error message") // Shows custom messaging.</li>
 	  <li>GetPDFAssetPageCount("file1.pdf") // Gets total pages in pdf.</li>
 	  <li>"file1.pdf:3" // Pulls page 3 from file1.pdf into Graphic content object. Need to set "Assets" folder location.</li>
 	  <li>IsAssetExist("Pic1", 3) // Checks if asset exist; 3 = image, 8 = pdf</li>
-	  <li>IsFileExist("C:\\myfile.txt") // Checks if file path/URL exists (True/False)/li>
+	  <li>IsFileExist("C:\\myfile.txt") // Checks if file path/URL exists (True/False)</li>
+	  <li>ReportMessage("Custom message") // Shows custom message during production; must be followed by <em>expression</em> (i.e. Skip)</li>
 	</ul></p></li>
 
 	<li><p><span class="head1">Sample uProduce query code for selecting records</span><br>
