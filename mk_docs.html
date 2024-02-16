@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!--Drewbster / 20240202-->
+<!--Drewbster / 20240215-->
 <html>
 
 <head>
@@ -61,7 +61,7 @@ table.datetbl
               <td width="2%">&nbsp;</td>
               <td style="padding: 20px 0px 20px 0px" width="60" align="left"><a href="https://www.marketingkitchen.ca/" target="_blank"><img src="https://brewdster.github.io/homepage/images/mk_icon.png" width="50"></a></td>
               <td style="color: #AFBD21; font-size: 20px; font-weight: normal; line-height: 24px">Docs</td>
-              <td style="color: #AFBD21; font-size: 12px; font-weight: normal; line-height: 18px" align="right">Updated 2024-02-02</td>
+              <td style="color: #AFBD21; font-size: 12px; font-weight: normal; line-height: 18px" align="right">Updated 2024-02-15</td>
               <td style="padding: 20px 0px 20px 0px" width="90" align="right"><img src="https://brewdster.github.io/homepage/images/ElliefanV.svg" width="75"></td>
               <td width="2%">&nbsp;</td>
             </tr>
@@ -344,6 +344,17 @@ table.datetbl
 	<li><p><span class="head1">Create dynamic styles in XMPie video tutorial</span><br><br>
 	<iframe width="560" height="315" src="https://www.youtube.com/embed/JdtXnY_MnvU?si=DxcyJcVeyJ9mSSxd" title="Create dynamic styles in XMPie" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 	</p></li>
+
+        <li><p><span class="head1">Steps to re-create local SQLDB</span><br>
+	<ol>
+	  <li>Run CMD.</li>
+	  <li>Type "SQLLocalDB info" to confirm that <b>MSSQLLocalDB</b> is installed.</li>
+	  <li>SQLLocalDB <em>stop</em> MSSQLLocalDB</li>
+	  <li>SQLLocalDB <em>delete</em> MSSQLLocalDB</li>
+	  <li>Go to "C:\users\[name]" folder (<b>"%UserProfile%"</b>) and delete all files with .ldf and .mdf extensions, if they exist.</li>
+	  <li>SQLLocalDB <em>create</em> MSSQLLocalDB</li>
+	  <li>SQLLocalDB <em>start</em> MSSQLLocalDB</li>
+	</ol></p></li>
 
 	<li><p><span class="head1">MK FTP (Secure ftp; need Joe to setup profile)</span><br>
 	<a href="https://transfer.marketingkitchen.ca/login" target="_blank">https://transfer.marketingkitchen.ca/login</a></p></li>
