@@ -115,7 +115,7 @@ table.datetbl
         <li><p><span class="head1">Create [var_city_prov_pc_cntry] ADOR</span><br>
 	<span style="white-space: pre">FindandReplace(Trim(Trim(|->[CITY]) & " " & Trim(|->[PROV]) & "  " & FindandReplace(Trim(|->[PC])," ","<span style="color: #0000FF; font-weight: 500">Alt-0160</span>")),"   ","  ")
 	&
-	if(isnullorempty(Trim(|->[COUNTRY])) or Trim(|->[COUNTRY]) = "")
+	if(IsNullOrEmpty(Trim(|->[COUNTRY])) or Trim(|->[COUNTRY]) = "")
 	{
 	  ""
 	}
