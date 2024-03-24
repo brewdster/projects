@@ -15,13 +15,13 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com/">
 <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,700;1,9..40,400;1,9..40,500;1,9..40,700&family=Poppins:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Poppins:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet">
 
 <style type="text/css">
 
 body,li
   {
-    font-family: 'Poppins', 'DM Sans', Arial, sans-serif;
+    font-family: 'Poppins', 'Inter', Arial, sans-serif;
   }
 
 .head1
@@ -88,10 +88,6 @@ table.datetbl
 
 	<li><p><span class="head1">qLingo Help</span><br>
 	<a href="https://help.xmpie.com/uPlan/v.8.2/Help/en/uPlanUserGuide/uDirectRuleEditing/uDirectRuleEditing.htm" target="_blank">https://help.xmpie.com/uPlan/v.8.2/Help/en/uPlanUserGuide/uDirectRuleEditing/uDirectRuleEditing.htm</a></p></li>
-
-        <li><p><span class="head1">Reflex Blue for script NAB</span><br>
-	LAB: 33.333, 14, -48<br>
-	CMYK: 91.53, 83.04, 2.4, 0</p></li>
 
         <li><p><span class="head1">Creating sequence nos.</span><br>
 	<ol>
@@ -346,7 +342,8 @@ table.datetbl
 	  <li>"file1.pdf:3" // Pulls page 3 from file1.pdf into Graphic content object. Need to set "Assets" folder location.</li>
 	  <li>IsAssetExist("Pic1", 3) // Checks if asset exist; 3 = image, 8 = pdf</li>
 	  <li>IsFileExist("C:\\myfile.txt") // Checks if file path/URL exists (True/False)</li>
-	  <li>ReportMessage("Custom message") // Shows custom message during production; must be followed by <em>expression</em> (i.e. Skip)</li>
+	  <li>ReportMessage("Custom message") // Shows custom message during production; must be followed by <em>expression</em> (e.g. Skip or Abort)<br>
+	  ex: ReportMessage("Error in record " & GetEnv("CurRecordNumber") & ".")abort</li>
 	</ul></p></li>
 
 	<li><p><span class="head1">Sample uProduce query code for selecting records</span><br>
@@ -368,6 +365,10 @@ table.datetbl
 	  <li>SQLLocalDB <em>create</em> MSSQLLocalDB</li>
 	  <li>SQLLocalDB <em>start</em> MSSQLLocalDB</li>
 	</ol></p></li>
+
+        <li><p><span class="head1">Reflex Blue for script NAB</span><br>
+	LAB: 33.333, 14, -48<br>
+	CMYK: 91.53, 83.04, 2.4, 0</p></li>
 
 	<li><p><span class="head1">SFTP (Secure ftp; need Joe to setup profile)</span><br>
 	<a href="https://transfer.marketingkitchen.ca/login" target="_blank">https://transfer.marketingkitchen.ca/login</a></p></li>
