@@ -171,9 +171,9 @@ else
 &quot;&lt;cTypeface:<b>Regular</b>&gt;&lt;cSize:<b>12.000000</b>&gt;&lt;cUnderline:0&gt;&lt;cPosition:&gt;&lt;cFont:<b>Georgia</b>&gt;&quot; or<br>
 &quot;&lt;cTypeface:<b>Bold</b>&gt;&lt;cSize:<b>14.000000</b>&gt;&lt;cUnderline:1&gt;&lt;cPosition:&gt;&lt;cFont:<b>Poppins</b>&gt;&quot;</li>
 	    <li>Notes:<br>
-	      <ul>
+	      <ul style="list-style-type:disc">
 	        <li>Include quotes in the code.</li>
-	        <li>The font typeface (Bold, Regular, etc.), size, underline (0 or 1), and name (Georgia, Poppins, etc.) can be substituted with variables (i.e. <b>|->[font_name]</b>).</li>
+	        <li>The font typeface (Bold, Regular, etc.), size, underline (0 or 1), and name (Georgia, Poppins, etc.) can be substituted with variables:<br>ex: <span style="color: #0000FF; font-weight: 500">&quot;&lt;cTypeface:&quot; & |-&gt;[style1] & &quot;&gt;&lt;cSize:16.000000&gt;&lt;cUnderline:0&gt;&lt;cPosition:&gt;&lt;cColor:&quot; & @{var_col1} & &quot;&gt;&lt;cFont:&quot; & |-&gt;[font_name] & &quot;&gt;&quot;</span></li>
 	        <li>For additional style properties (i.e. &lt;cPosition:Superscript&gt;, &lt;cColor:C=0 M=0 Y=0 K=100&gt;, etc.), highlight sample text and export to “Adobe tagged text” or refer to the following <a href="https://brewdster.github.io/projects/XMPie_QLingo_TaggedTextCS.pdf" target="_blank">manual</a>.</li>
 	        <li>Start the Qlingo statement in your TwS ADOR with the following example:<br>
 @{fs} & @{Geor_R12} & &quot;My paragraph text...&quot;</li>
@@ -211,6 +211,15 @@ else
 {
   __PrivateInternalTextWithStyle(abort, "")
 }</span></p></li>
+
+        <li><p><span class="head1">About <b>Text File</b> content object</span><br>
+          <ul style="list-style-type:disc">
+            <li>You can use either Word RTF, XMPie XNIP or Adobe Tagged Text as assets.</li>
+            <li>Use double curly brackets to reference variable field names in Adobe tagged texts. (ex. <span style="color: #0000FF; font-weight: 500">{{NAME1}}</span>)</li>
+            <li>Asset folder needs to be set.</li>
+            <li><span style="color: #0000FF; font-weight: 500">"Enable Nested Composition"</span> needs to be checked for content object.</li>
+          </ul>
+        </span></p></li>
 
         <li><p><span class="head1">QLingo graphic functions</span><br>
 	<ul style="list-style-type:disc">
