@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!--Drewbster / 20240403-->
+<!--Drewbster / 20240407-->
 <html>
 
 <head>
@@ -61,7 +61,7 @@ table.datetbl
               <td width="2%">&nbsp;</td>
               <td style="padding: 20px 0px 20px 0px" width="60" align="left"><a href="https://www.marketingkitchen.ca/" target="_blank"><img src="https://brewdster.github.io/homepage/images/mk_icon.png" width="50"></a></td>
               <td style="color: #AFBD21; font-size: 20px; font-weight: normal; line-height: 24px">Docs</td>
-              <td style="color: #AFBD21; font-size: 12px; font-weight: normal; line-height: 18px" align="right">Updated 2024-04-03</td>
+              <td style="color: #AFBD21; font-size: 12px; font-weight: normal; line-height: 18px" align="right">Updated 2024-04-07</td>
               <td style="padding: 20px 0px 20px 0px" width="90" align="right"><img src="https://brewdster.github.io/homepage/images/ElliefanV_H&G2.svg" width="70"></td>
               <td width="2%">&nbsp;</td>
             </tr>
@@ -163,15 +163,34 @@ else
   Case "F": FormatNumber(Trim(|->[ASK1]), "###-###-###-$") // Replace hyphens with <span style="color: #0000FF; font-weight: 500">Alt-0160</span>.
 }</span></p></li>
 
-        <li><p><span class="head1">Combined <b>If</b> and <b>Switch</b> controls in <b>Text-with-Style</b> content object</span><br>
+        <li><p><span class="head1">Scripts for <b>Text-with-Style</b> variables<br>
+	  <ol>
+	    <li>Font script (ex: <b>@{fs}</b>)<br>
+	    &quot;&lt;UNICODE-WIN&gt;\r\n&lt;Version:17.2&gt;&lt;FeatureSet:InDesign-Roman&gt;&lt;ParaStyle:NormalParagraphStyle&gt;&lt;pHyphenation:0&gt;&lt;ColorTable:=&lt;Black:COLOR:CMYK:Process:0,0,0,1&gt;&gt;&quot;</li>
+	    <li>Font styles (ex: <b>@{Geor_R12}</b> or <b>@{Pop_B14}</b>)<br>
+&quot;&lt;cTypeface:<b>Regular</b>&gt;&lt;cSize:<b>12.000000</b>&gt;&lt;cUnderline:0&gt;&lt;cPosition:&gt;&lt;cFont:<b>Georgia</b>&gt;&quot; or<br>
+&quot;&lt;cTypeface:<b>Bold</b>&gt;&lt;cSize:<b>14.000000</b>&gt;&lt;cUnderline:1&gt;&lt;cPosition:&gt;&lt;cFont:<b>Poppins</b>&gt;&quot;</li>
+	    <li>Notes:<br>
+	      <ul>
+	        <li>Include quotes in the code.</li>
+	        <li>The font typeface (Bold, Regular, etc.), size, underline (0 or 1), and name (Georgia, Poppins, etc.) can be substituted with variables (i.e. <b>|->[font_name]</b>).</li>
+	        <li>For additional style properties (i.e. &lt;cPosition:Superscript&gt;, &lt;cColor:C=0 M=0 Y=0 K=100&gt;, etc.), highlight sample text and export to “Adobe tagged text” or refer to the following <a href="https://brewdster.github.io/projects/XMPie_QLingo_TaggedTextCS.pdf" target="_blank">manual</a>.</li>
+	        <li>Start the Qlingo statement in your TwS ADOR with the following example:<br>
+@{fs} & @{Geor_R12} & &quot;My paragraph text...&quot;</li>
+	      </ul>
+	    </li>
+	  </ol>
+        </p></li>
+
+        <li><p><span class="head1">Combined <b>If</b> and <b>Switch</b> controls in <b>Text-with-Style</b> content object (ADOR)</span><br>
 	<span style="white-space: pre">if(Ucase(Trim(|->[LANG])) = "E")
 {
   __PrivateInternalTextWithStyle(Switch(Trim(UCase(|->[PARACALL])))
     {
       Case "A":
-        @{fs} & @{Georgia_R12} & @{var_sal1} & " you for your " & @{Georgia_B12} & "continued support" & @{Georgia_R12} & @{var_years} & "."
+        @{fs} & @{Geor_R12} & @{var_sal1} & " you for your " & @{Geor_B12} & "continued support" & @{Geor_R12} & @{var_years} & "."
       Case "B":
-        @{fs} & @{Georgia_R12} & "We couldn\'t have done it without you" & @{var_sal2} & @{Georgia_R12} & "."
+        @{fs} & @{Geor_R12} & "We couldn\'t have done it without you" & @{var_sal2} & @{Geor_R12} & "."
       default:
         abort
     }, "")
@@ -181,9 +200,9 @@ else if(Ucase(Trim(|->[LANG])) = "F")
   __PrivateInternalTextWithStyle(Switch(Trim(UCase(|->[PARACALL])))
     {
       Case "A":
-        @{fs} & @{Georgia_R12} & "Merci pour votre " & @{Georgia_B12} & "soutien continu" & @{var_sal3} & "."
+        @{fs} & @{Geor_R12} & "Merci pour votre " & @{Geor_B12} & "soutien continu" & @{var_sal3} & "."
       Case "B":
-        @{fs} & @{Georgia_R12} & @{var_sal4} & " n\'aurions pas pu le faire sans vous."
+        @{fs} & @{Geor_R12} & @{var_sal4} & " n\'aurions pas pu le faire sans vous."
       default:
         abort
     }, "")
