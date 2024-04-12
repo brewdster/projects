@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!--Drewbster / 20240407-->
+<!--Drewbster / 20240412-->
 <html>
 
 <head>
@@ -61,7 +61,7 @@ table.datetbl
               <td width="2%">&nbsp;</td>
               <td style="padding: 20px 0px 20px 0px" width="60" align="left"><a href="https://www.marketingkitchen.ca/" target="_blank"><img src="https://brewdster.github.io/homepage/images/mk_icon.png" width="50"></a></td>
               <td style="color: #AFBD21; font-size: 20px; font-weight: normal; line-height: 24px">Docs</td>
-              <td style="color: #AFBD21; font-size: 12px; font-weight: normal; line-height: 18px" align="right">Updated 2024-04-07</td>
+              <td style="color: #AFBD21; font-size: 12px; font-weight: normal; line-height: 18px" align="right">Updated 2024-04-12</td>
               <td style="padding: 20px 0px 20px 0px" width="90" align="right"><img src="https://brewdster.github.io/homepage/images/ElliefanV_H&G2.svg" width="70"></td>
               <td width="2%">&nbsp;</td>
             </tr>
@@ -192,7 +192,7 @@ else
       Case "B":
         @{fs} & @{Geor_R12} & "We couldn\'t have done it without you" & @{var_sal2} & @{Geor_R12} & "."
       default:
-        abort
+        ReportMessage("Invalid PARACALL [" & Trim(UCase(|->[PARACALL])) & "] in record " & GetEnv("CurRecordNumber") & ".")abort
     }, "")
 }
 else if(Ucase(Trim(|->[LANG])) = "F")
@@ -204,12 +204,12 @@ else if(Ucase(Trim(|->[LANG])) = "F")
       Case "B":
         @{fs} & @{Geor_R12} & @{var_sal4} & " n\'aurions pas pu le faire sans vous."
       default:
-        abort
+        ReportMessage("Invalid PARACALL [" & Trim(UCase(|->[PARACALL])) & "] in record " & GetEnv("CurRecordNumber") & ".")abort
     }, "")
 }
 else
 {
-  __PrivateInternalTextWithStyle(abort, "")
+  __PrivateInternalTextWithStyle(ReportMessage("Invalid LANGUAGE assigned for record " & GetEnv("CurRecordNumber") & ".")abort, "")
 }</span></p></li>
 
         <li><p><span class="head1">About <b>Text File</b> content object</span><br>
