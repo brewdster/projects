@@ -405,6 +405,40 @@ else
 	  ex: ReportMessage("Error in record " & GetEnv("CurRecordNumber") & ".")abort</li>
 	</ul></p></li>
 
+	<li><p><span class="head1">How to create custom functions in uPlan</span><br>
+	<a href="https://help.xmpie.com/uPlan/Latest/Help/en/QLingo/Custom_User-Defined_Functions.htm" target="_blank">https://help.xmpie.com/uPlan/Latest/Help/en/QLingo/Custom_User-Defined_Functions.htm</a></p></li>
+
+	<li><p><span class="head1">UV2STR (user view to string) function</span><br>
+	<span style="white-space: pre">Syntax: <b>UV2STR([my_view],"line prefix","line suffix","separator",true or false*)</b><br>* include header<br>
+Example 1 creates a CSV table from Orders user view:<br><span style="color: #0000FF; font-weight: 500">UV2STR([Orders],"","\r\n",",",true)</span><br>
+Result:
+customer id,order id,order date,product id,product name,qty,unit_price,total_price
+A10025,1001,2024-02-29,0085,Highliter-Yellow,2,$1.50,$3.00
+A10025,1005,2024-04-12,0011,Sticky Notes-small,5,$1.00,$5.00<br>
+Example 2 creates an HTML table from Orders user view:
+<span style="color: #0000FF; font-weight: 500">&quot;&lt;table&gt;\r\n&lt;tbody&gt;\r\n&quot; &amp;
+UV2STR([Orders],"\t&lt;tr&gt;\r\n\t\t&lt;td&gt;","&lt;/td&gt;\r\n\t&lt;/tr&gt;\r\n","&lt;/td&gt;\r\n\t\t&lt;td&gt;",false) &
+"&lt;/tbody&gt;\r\n&lt;/table&gt;"</span><br>
+Result:
+&lt;table&gt;
+&lt;tbody&gt;
+  &lt;tr&gt;
+    &lt;td&gt;A10025&lt;/td&gt;
+    &lt;td&gt;1001&lt;/td&gt;
+    &lt;td&gt;2024-02-29&lt;/td&gt;
+    &lt;td&gt;0085&lt;/td&gt;
+    &lt;td&gt;Highliter-Yellow&lt;/td&gt;
+    &lt;td&gt;2&lt;/td&gt;
+    &lt;td&gt;$1.50&lt;/td&gt;
+    &lt;td&gt;$3.00&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+  ...
+  &lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;</span><br><br>
+Note: Can also be used to create complex Adobe Tagged Text table ADORs.</p></li>
+
 	<li><p><span class="head1">Sample uProduce query code for selecting records</span><br>
 	SELECT * FROM @[Sheet1] WHERE @[Sheet1].[FORMCALL] = 'SWK' ORDER BY @[Sheet1].[FORMCALL]<br>
 	<img src="https://brewdster.github.io/homepage/images/How_to_select_records_in_uProduce_using_queries.png" width="800"><br>
