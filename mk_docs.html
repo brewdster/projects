@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!--Drewbster / 20240412-->
+<!--Drewbster / 20240416-->
 <html>
 
 <head>
@@ -28,6 +28,12 @@ body,li
   {
     color: #C80815;
     font-weight: 500;
+  }
+
+.hlt
+  {
+    color: #0000FF;
+    font-weight: 500
   }
 
 table.datetbl
@@ -61,7 +67,7 @@ table.datetbl
               <td width="2%">&nbsp;</td>
               <td style="padding: 20px 0px 20px 0px" width="60" align="left"><a href="https://www.marketingkitchen.ca/" target="_blank"><img src="https://brewdster.github.io/homepage/images/mk_icon.png" width="50"></a></td>
               <td style="color: #AFBD21; font-size: 20px; font-weight: normal; line-height: 24px">Docs</td>
-              <td style="color: #AFBD21; font-size: 12px; font-weight: normal; line-height: 18px" align="right">Updated 2024-04-12</td>
+              <td style="color: #AFBD21; font-size: 12px; font-weight: normal; line-height: 18px" align="right">Updated 2024-04-16</td>
               <td style="padding: 20px 0px 20px 0px" width="90" align="right"><img src="https://brewdster.github.io/homepage/images/ElliefanV_H&G2.svg" width="70"></td>
               <td width="2%">&nbsp;</td>
             </tr>
@@ -109,7 +115,7 @@ else
 }</span></p></li>
 
         <li><p><span class="head1">Create [var_city_prov_pc_cntry] content object (ADOR)</span><br>
-	<span style="white-space: pre">FindandReplace(Trim(Trim(|->[CITY]) & " " & Trim(|->[PROV]) & "  " & FindandReplace(Trim(|->[PC])," ","<span style="color: #0000FF; font-weight: 500">Alt-0160</span>")),"   ","  ")
+	<span style="white-space: pre">FindandReplace(Trim(Trim(|->[CITY]) & " " & Trim(|->[PROV]) & "  " & FindandReplace(Trim(|->[PC])," ","<span class="hlt">Alt-0160</span>")),"   ","  ")
 &
 If(IsNullOrEmpty(Trim(|->[Country])) or Trim(|->[Country]) = "")
 {
@@ -160,7 +166,7 @@ else
 	<span style="white-space: pre">Switch(@{var_lang})
 {
   Case "E": FormatNumber(Trim(|->[ASK1]), "$###,###,###")
-  Case "F": FormatNumber(Trim(|->[ASK1]), "###-###-###-$") // Replace hyphens with <span style="color: #0000FF; font-weight: 500">Alt-0160</span>.
+  Case "F": FormatNumber(Trim(|->[ASK1]), "###-###-###-$") // Replace hyphens with <span class="hlt">Alt-0160</span>.
 }</span></p></li>
 
         <li><p><span class="head1">Scripts for <b>Text-with-Style</b> variables<br>
@@ -173,10 +179,12 @@ else
 	    <li>Notes:<br>
 	      <ul style="list-style-type:disc">
 	        <li>Include quotes in the code.</li>
-	        <li>The font typeface (Bold, Regular, etc.), size, underline (0 or 1), and name (Georgia, Poppins, etc.) can be substituted with variables:<br>ex: <span style="color: #0000FF; font-weight: 500">&quot;&lt;cTypeface:&quot; & |-&gt;[style1] & &quot;&gt;&lt;cSize:16.000000&gt;&lt;cUnderline:0&gt;&lt;cPosition:&gt;&lt;cColor:&quot; & @{var_col1} & &quot;&gt;&lt;cFont:&quot; & |-&gt;[font_name] & &quot;&gt;&quot;</span></li>
+	        <li>The font typeface (Bold, Regular, etc.), size, underline (0 or 1), and name (Georgia, Poppins, etc.) can be substituted with variables:<br>ex: <span class="hlt">&quot;&lt;cTypeface:&quot; & |-&gt;[style1] & &quot;&gt;&lt;cSize:16.000000&gt;&lt;cUnderline:0&gt;&lt;cPosition:&gt;&lt;cColor:&quot; & @{var_col1} & &quot;&gt;&lt;cFont:&quot; & |-&gt;[font_name] & &quot;&gt;&quot;</span></li>
 	        <li>For additional style properties (i.e. &lt;cPosition:Superscript&gt;, &lt;cColor:C=0 M=0 Y=0 K=100&gt;, etc.), highlight sample text and export to “Adobe tagged text” or refer to the following <a href="https://brewdster.github.io/projects/XMPie_QLingo_TaggedTextCS.pdf" target="_blank">manual</a>.</li>
 	        <li>Start the Qlingo statement in your TwS ADOR with the following example:<br>
 @{fs} & @{Geor_R12} & &quot;My paragraph text...&quot;</li>
+	        <li>Specify gaps between paragraph breaks with &lt;pSpaceAfter:<span class="hlt">4.5</span>00000&gt; in font scripts or styles, where point size equals inches multiplied by 72 (e.g. 0.0625 * 72 = 4.5).</li>
+	        <li>Specify line spacing (leading) with &lt;cLeading:15.000000&gt; in font scripts or styles. "Auto" is used when this parameter is ommitted.</li>
 	      </ul>
 	    </li>
 	  </ol>
@@ -216,7 +224,7 @@ else
           <ul style="list-style-type:disc">
             <li>You can use either Word RTF, XMPie XNIP or Adobe Tagged Text as assets.</li>
             <li>Asset folder needs to be set.</li>
-            <li>Use double curly brackets to reference variable field names in Adobe tagged text assets. (ex. <span style="color: #0000FF; font-weight: 500">{{NAME1}}</span>)</li>
+            <li>Use double curly brackets to reference variable field names in Adobe tagged text assets. (ex. <span class="hlt">{{NAME1}}</span>)</li>
             <li>To enable variables in Text File, "<b>Enable Nested Composition</b>" needs to be checked for content object.</li>
           </ul>
         </span></p></li>
@@ -410,13 +418,13 @@ else
 
 	<li><p><span class="head1">UV2STR (user view to string) function</span><br>
 	<span style="white-space: pre">Syntax: <b>UV2STR([my_view],"line prefix","line suffix","separator",true or false*)</b><br>* include header<br>
-Example 1 creates a CSV table from Orders user view:<br><span style="color: #0000FF; font-weight: 500">UV2STR([Orders],"","\r\n",",",true)</span><br>
+Example 1 creates a CSV table from Orders user view:<br><span class="hlt">UV2STR([Orders],"","\r\n",",",true)</span><br>
 Result:
 customer id,order id,order date,product id,product name,qty,unit_price,total_price
 A10025,1001,2024-02-29,0085,Highliter-Yellow,2,$1.50,$3.00
 A10025,1005,2024-04-12,0011,Sticky Notes-small,5,$1.00,$5.00<br>
 Example 2 creates an HTML table from Orders user view:
-<span style="color: #0000FF; font-weight: 500">&quot;&lt;table&gt;\r\n&lt;tbody&gt;\r\n&quot; &amp;
+<span class="hlt">&quot;&lt;table&gt;\r\n&lt;tbody&gt;\r\n&quot; &amp;
 UV2STR([Orders],"\t&lt;tr&gt;\r\n\t\t&lt;td&gt;","&lt;/td&gt;\r\n\t&lt;/tr&gt;\r\n","&lt;/td&gt;\r\n\t\t&lt;td&gt;",false) &
 "&lt;/tbody&gt;\r\n&lt;/table&gt;"</span><br>
 Result:
