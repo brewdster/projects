@@ -6,6 +6,41 @@ lang="en" xml:lang="en">
 
 <head>
 
+<script type="text/javascript">
+  function go()
+  {
+    var city = document.getElementById("city").value;
+    var obj = {cty: city};
+    //alert (obj['cty']);
+    if (city == 'allc')
+      {
+        document.getElementById("mark").style.display="block";
+        document.getElementById("newm").style.display="block";
+        document.getElementById("toro").style.display="block";
+        document.getElementById("ajax").style.display="block";
+        document.getElementById("bram").style.display="block";
+        document.getElementById("brad").style.display="block";
+        document.getElementById("barr").style.display="block";
+        document.getElementById("pick").style.display="block";
+        document.getElementById("stou").style.display="block";
+      }
+    else
+      {
+        document.getElementById("mark").style.display="none";
+        document.getElementById("newm").style.display="none";
+        document.getElementById("toro").style.display="none";
+        document.getElementById("ajax").style.display="none";
+        document.getElementById("bram").style.display="none";
+        document.getElementById("brad").style.display="none";
+        document.getElementById("barr").style.display="none";
+        document.getElementById("pick").style.display="none";
+        document.getElementById("stou").style.display="none";
+
+        document.getElementById(obj['cty']).style.display = "block";
+      }
+  }
+</script>
+
 <!-- add icon link -->
 <link rel = "icon" href = "https://brewdster.github.io/homepage/images/favicon.png" type = "image/x-icon">
 
@@ -221,6 +256,8 @@ a[x-apple-data-detectors] {
 <body style="margin: 0; padding: 0; -webkit-font-smoothing: antialiased; width: 100%; -webkit-text-size-adjust: none" class="body">
 
   <!--Begin Container-->
+
+
   <table role="presentation" width="1000" border="0" cellspacing="0" cellpadding="0" class="Container">
     <tbody>
       <tr>
@@ -234,17 +271,39 @@ a[x-apple-data-detectors] {
               <tbody>
                 <tr>
                   <td width="6%">&nbsp;</td>
-                  <td align="center"><h1>3-bedroom Rental Listings</h1></td>
-                  <td width="6%">&nbsp;</td>
-                </tr>
-                <tr>
-                  <td width="6%">&nbsp;</td>
-                  <td align="center"><h3>Updated April 30, 2024</h3></td>
-                  <td width="6%">&nbsp;</td>
-                </tr>
-                <tr>
-                  <td width="6%">&nbsp;</td>
-                  <td align="left" style="font-size: 13px">📌 = directions</td>
+                  <td align="left">
+                    <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0">
+                      <tbody>
+                        <tr>
+                          <td align="center"><h1>3-bedroom Rental Listings</h1></td>
+                        </tr>
+                        <tr>
+                          <td align="center"><h3>Updated April 30, 2024</h3></td>
+                        </tr>
+                        <tr>
+                          <td align="left" style="font-size: 14px">📌 = directions</td>
+                        </tr>
+                        <tr>
+                          <td align="left" style="padding: 10px 0px 10px 0px">
+                            <label for="city" style="font-size: 14px"><b>Filter by city:</b>  </label>
+                            <select name="city" id="city">
+                              <option value="allc">All cities</option>
+                              <option value="mark">Markham</option>
+                              <option value="newm">Newmarket</option>
+                              <option value="toro">Toronto</option>
+                              <option value="ajax">Ajax</option>
+                              <option value="bram">Brampton</option>
+                              <option value="brad">Bradford W. G.</option>
+                              <option value="barr">Barrie</option>
+                              <option value="pick">Pickering</option>
+                              <option value="stou">W. Stouffville</option>
+                            </select>
+                            <button onclick="go()">Go!</button>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </td>
                   <td width="6%">&nbsp;</td>
                 </tr>
               </tbody>
@@ -256,6 +315,7 @@ a[x-apple-data-detectors] {
           <!--Begin Main-->
           <main>
 
+<div id="mark">
             <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0">
               <tbody>
                 <tr>
@@ -282,7 +342,9 @@ a[x-apple-data-detectors] {
                 </tr>
               </tbody>
             </table>
+</div>
 
+<div id="newm">
             <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0">
               <tbody>
                 <tr>
@@ -310,7 +372,9 @@ a[x-apple-data-detectors] {
                 </tr>
               </tbody>
             </table>
+</div>
 
+<div id="toro">
             <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0">
               <tbody>
                 <tr>
@@ -337,7 +401,9 @@ a[x-apple-data-detectors] {
                 </tr>
               </tbody>
             </table>
+</div>
 
+<div id="ajax">
             <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0">
               <tbody>
                 <tr>
@@ -362,7 +428,9 @@ a[x-apple-data-detectors] {
                 </tr>
               </tbody>
             </table>
+</div>
 
+<div id="bram">
             <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0">
               <tbody>
                 <tr>
@@ -387,7 +455,9 @@ a[x-apple-data-detectors] {
                 </tr>
               </tbody>
             </table>
+</div>
 
+<div id="brad">
             <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0">
               <tbody>
                 <tr>
@@ -411,7 +481,9 @@ a[x-apple-data-detectors] {
                 </tr>
               </tbody>
             </table>
+</div>
 
+<div id="barr">
             <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0">
               <tbody>
                 <tr>
@@ -438,7 +510,9 @@ a[x-apple-data-detectors] {
                 </tr>
               </tbody>
             </table>
+</div>
 
+<div id="pick">
             <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0">
               <tbody>
                 <tr>
@@ -462,7 +536,9 @@ a[x-apple-data-detectors] {
                 </tr>
               </tbody>
             </table>
+</div>
 
+<div id="stou">
             <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0">
               <tbody>
                 <tr>
@@ -486,6 +562,7 @@ a[x-apple-data-detectors] {
                 </tr>
               </tbody>
             </table>
+</div>
 
           </main>
           <!--End Main-->
@@ -496,7 +573,7 @@ a[x-apple-data-detectors] {
             <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0">
               <tbody>
                 <tr>
-                  <td align="left" style="padding: 0px 0px 0px 0px; font-size: 14px; line-height: 18px; color: #000000; font-weight: normal" class=""></td>
+                  <td align="left" style="padding: 10px 0px 10px 0px; font-size: 14px; line-height: 18px; color: #000000; font-weight: normal" class=""></td>
                 </tr>
               </tbody>
             </table>
