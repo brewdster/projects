@@ -23,6 +23,7 @@ lang="en" xml:lang="en">
         document.getElementById("barr").style.display="block";
         document.getElementById("pick").style.display="block";
         document.getElementById("stou").style.display="block";
+        document.getElementById("ftr").style.display="none";
       }
     else
       {
@@ -37,7 +38,22 @@ lang="en" xml:lang="en">
         document.getElementById("stou").style.display="none";
 
         document.getElementById(obj['cty']).style.display = "block";
+        document.getElementById("ftr").style.display="block";
       }
+  }
+
+  function reset()
+  {
+        document.getElementById("mark").style.display="block";
+        document.getElementById("newm").style.display="block";
+        document.getElementById("toro").style.display="block";
+        document.getElementById("ajax").style.display="block";
+        document.getElementById("bram").style.display="block";
+        document.getElementById("brad").style.display="block";
+        document.getElementById("barr").style.display="block";
+        document.getElementById("pick").style.display="block";
+        document.getElementById("stou").style.display="block";
+        document.getElementById("ftr").style.display="none";
   }
 </script>
 
@@ -566,19 +582,23 @@ a[x-apple-data-detectors] {
             </table>
 </div>
 
+<br>
+<br>
           </main>
           <!--End Main-->
 
           <!--Begin Footer-->
           <footer>
 
+<div id="ftr" style="display: none">
             <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0">
               <tbody>
                 <tr>
-                  <td align="right" style="padding: 10px 0px 10px 0px"></td>
+                  <td align="center" style="font-size: 30px"><a href="#" onclick="reset()" style="color: #E30022; text-decoration: none"><b>&#8634;</b></a></td>
                 </tr>
               </tbody>
             </table>
+</div>
 
           </footer>
           <!--End Footer-->
