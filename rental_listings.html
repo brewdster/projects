@@ -26,6 +26,7 @@ lang="en" xml:lang="en">
         document.getElementById("pick").style.display="block";
         document.getElementById("stou").style.display="block";
         document.getElementById("list").style.display="none";
+        document.getElementById("high").style.display="none";
         document.getElementById("ftr").style.display="none";
       }
     else
@@ -42,6 +43,7 @@ lang="en" xml:lang="en">
         document.getElementById("pick").style.display="none";
         document.getElementById("stou").style.display="none";
         document.getElementById("list").style.display="none";
+        document.getElementById("high").style.display="none";
 
         document.getElementById(obj['cty']).style.display = "block";
         document.getElementById("ftr").style.display="block";
@@ -62,6 +64,7 @@ lang="en" xml:lang="en">
         document.getElementById("pick").style.display="block";
         document.getElementById("stou").style.display="block";
         document.getElementById("list").style.display="none";
+        document.getElementById("high").style.display="none";
         document.getElementById("ftr").style.display="none";
   }
 </script>
@@ -323,10 +326,11 @@ a[x-apple-data-detectors] {
                         </tr>
                         <tr>
                           <td align="center" style="padding: 10px 0px 10px 0px; font-size: 15px; font-family: 'DM Sans'">
-                            <label for="city"><b>Filter by city:</b>  </label>
+                            <label for="city"><b>Filter by:</b>  </label>
                             <select name="city" id="city">
                               <option value="allc">All cities</option>
                               <option value="list">Latest listings</option>
+                              <option value="high">Highlights</option>
                               <option value="mark">Markham</option>
                               <option value="rich">Richmond Hill</option>
                               <option value="auro">Aurora</option>
@@ -683,6 +687,35 @@ a[x-apple-data-detectors] {
                       <li><p>$1,600 / mon.- <a href="https://www.facebook.com/marketplace/item/448186284412236/?ref=category_feed&referral_code=null&referral_story_type=post" target="_blank">399 Lynett Cres., Richmond Hill</a>  [5/1]  <a href="https://www.google.com/maps/dir/399+Lynett+Crescent,+Richmond+Hill,+ON+L4C+2V6/498+Markland+Street,+Markham,+ON/@43.8893072,-79.4177528,14z/data=!3m1!4b1!4m13!4m12!1m5!1m1!1s0x882b2af4f09a6a83:0xddcf59a8d9e7ec24!2m2!1d-79.4218382!2d43.8876038!1m5!1m1!1s0x89d4d5314481a14d:0x4f14b46f675e459a!2m2!1d-79.3738343!2d43.8796274?entry=ttu" target="_blank" style="text-decoration: none">📌</a>    <span style="color: #008000; font-weight: 500">*** Affordable ***</span></p></li>
                       <li><p>$2,500 / mon.- <a href="https://www.realtor.ca/real-estate/26779317/bsmt-28-spring-farm-rd-aurora-bayview-northeast" target="_blank">Bsmt.-28 Spring Farm Rd., Aurora</a>  [5/1]  <a href="https://www.google.com/maps/dir/10+Davidson+Rd,+Aurora,+ON+L4G+2B1/498+Markland+Street,+Markham,+ON/@43.9385404,-79.5051804,12z/data=!3m1!4b1!4m13!4m12!1m5!1m1!1s0x882ad6a9a12d427b:0x15319164ec776f9e!2m2!1d-79.4729679!2d43.9825298!1m5!1m1!1s0x89d4d5314481a14d:0x4f14b46f675e459a!2m2!1d-79.3738343!2d43.8796274?entry=ttu" target="_blank" style="text-decoration: none">📌</a></p></li>
                       <li><p>$2,850 / mon.- <a href="https://www.realtor.ca/real-estate/26678623/4-12637-tenth-line-whitchurch-stouffville-stouffville" target="_blank">#4-12637 Tenth Line, Whitchurch-Stouffville</a>  [5/1]  <a href="https://www.google.com/maps/dir/12637+Tenth+Line,+Whitchurch-Stouffville,+ON+L4A+7X3/498+Markland+Street,+Markham,+ON/@43.9362975,-79.3877241,12z/data=!3m1!4b1!4m13!4m12!1m5!1m1!1s0x89d52f17d877bc0b:0x515b2d1dfc9a9877!2m2!1d-79.2318103!2d43.9849696!1m5!1m1!1s0x89d4d5314481a14d:0x4f14b46f675e459a!2m2!1d-79.3738343!2d43.8796274?entry=ttu" target="_blank" style="text-decoration: none">📌</a></p></li>
+                    </ul>
+                  </td>
+                  <td width="6%">&nbsp;</td>
+                </tr>
+              </tbody>
+            </table>
+</div>
+
+<div id="high" style="display: none">
+            <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tbody>
+                <tr>
+                  <td width="6%">&nbsp;</td>
+                  <td align="left" style="padding: 10px 0px 0px 0px"><h2>Highlights</h2></td>
+                  <td width="6%">&nbsp;</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tbody>
+                <tr>
+                  <td width="6%">&nbsp;</td>
+                  <td align="left">
+                    <ul>
+                      <li><p>$1,600 / mon.- <a href="https://www.facebook.com/marketplace/item/448186284412236/?ref=category_feed&referral_code=null&referral_story_type=post" target="_blank">399 Lynett Cres., Richmond Hill</a>  [5/1]  <a href="https://www.google.com/maps/dir/399+Lynett+Crescent,+Richmond+Hill,+ON+L4C+2V6/498+Markland+Street,+Markham,+ON/@43.8893072,-79.4177528,14z/data=!3m1!4b1!4m13!4m12!1m5!1m1!1s0x882b2af4f09a6a83:0xddcf59a8d9e7ec24!2m2!1d-79.4218382!2d43.8876038!1m5!1m1!1s0x89d4d5314481a14d:0x4f14b46f675e459a!2m2!1d-79.3738343!2d43.8796274?entry=ttu" target="_blank" style="text-decoration: none">📌</a>    <span style="color: #008000; font-weight: 500">*** Affordable ***</span></p></li>
+                      <li><p>$2,200 / mon.- <a href="https://www.apartments.com/5-hacienda-dr-richmond-hill-on/2q6vns9/" target="_blank">5 Hacienda Dr., Richmond Hill</a>  [4/30]  <a href="https://www.google.com/maps/dir/5+Hacienda+Dr,+Richmond+Hill,+ON+L4E+3X1/498+Markland+Street,+Markham,+ON/@43.9189102,-79.4514607,13z/data=!3m1!4b1!4m13!4m12!1m5!1m1!1s0x882ad44825cc4cfb:0x209454842dcc4411!2m2!1d-79.4474902!2d43.9564578!1m5!1m1!1s0x89d4d5314481a14d:0x4f14b46f675e459a!2m2!1d-79.3738343!2d43.8796274?entry=ttu" target="_blank" style="text-decoration: none">📌</a>    <span style="color: #008000; font-weight: 500">*** Must see ***</span></p></li>
+                      <li><p>$2,099 / mon.- <a href="https://rentals.ca/aurora/10-davidson-road-1" target="_blank">10 Davidson Rd., Aurora</a>  [4/30]  <a href="https://www.google.com/maps/dir/10+Davidson+Rd,+Aurora,+ON+L4G+2B1/498+Markland+Street,+Markham,+ON/@43.9385404,-79.5051804,12z/data=!3m1!4b1!4m13!4m12!1m5!1m1!1s0x882ad6a9a12d427b:0x15319164ec776f9e!2m2!1d-79.4729679!2d43.9825298!1m5!1m1!1s0x89d4d5314481a14d:0x4f14b46f675e459a!2m2!1d-79.3738343!2d43.8796274?entry=ttu" target="_blank" style="text-decoration: none">📌</a>    <span style="color: #008000; font-weight: 500">*** Must see ***</span></p></li>
+                      <li><p>$35,000 / mon.- <a href="https://www.apartments.com/34-fifeshire-rd-toronto-on/0y4rm51/" target="_blank">34 Fifeshire Rd., Toronto</a>  [4/30]  <a href="https://www.google.com/maps/dir/34+Fifeshire+Rd,+North+York,+ON+M2L+2G6/498+Markland+Street,+Markham,+ON/@43.819125,-79.4475113,12z/data=!3m1!4b1!4m13!4m12!1m5!1m1!1s0x882b32a7fb7e0557:0x4b08a930592c1137!2m2!1d-79.3919349!2d43.7539418!1m5!1m1!1s0x89d4d5314481a14d:0x4f14b46f675e459a!2m2!1d-79.3738343!2d43.8796274?entry=ttu" target="_blank" style="text-decoration: none">📌</a>    <span style="color: #008000; font-weight: 500">j/k</span> 😂</p></li>
                     </ul>
                   </td>
                   <td width="6%">&nbsp;</td>
