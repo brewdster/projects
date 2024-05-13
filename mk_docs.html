@@ -169,7 +169,7 @@ else
   Case "F": FormatNumber(Trim(|->[ASK1]), "###-###-###-$") // Replace hyphens with <span class="hlt">Alt-0160</span>.
 }</span></p></li>
 
-        <li><p><span class="head1">Scripts for <b>Text-with-Style</b> variables<br>
+        <li><p><span class="head1">Adobe tagged-text scripts for <b>Text ADOR with programmable styles</b><br>
 	  <ol>
 	    <li>Font script (ex: <b>@{fs}</b>)<br>
 	    &quot;&lt;UNICODE-WIN&gt;\r\n&lt;Version:17.2&gt;&lt;FeatureSet:InDesign-Roman&gt;&lt;ParaStyle:NormalParagraphStyle&gt;&lt;pHyphenation:0&gt;&lt;ColorTable:=&lt;Black:COLOR:CMYK:Process:0,0,0,1&gt;&gt;&quot;</li>
@@ -218,7 +218,9 @@ else if(Ucase(Trim(|->[LANG])) = "F")
 else
 {
   __PrivateInternalTextWithStyle(ReportMessage("Invalid LANGUAGE assigned for record " & GetEnv("CurRecordNumber") & ".")abort, "")
-}</span></p></li>
+}
+
+Note: Tagged-text scripts can also be used in <b>Text</b> ADORs. It does not need to be primarily used in <b>Text-with-Style</b> ADORs.</span></p></li>
 
         <li><p><span class="head1">About <b>Text File</b> content object</span><br>
           <ul style="list-style-type:disc">
