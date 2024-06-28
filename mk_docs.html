@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!--Drewbster / 20240610-->
+<!--Drewbster / 20240627-->
 <html>
 
 <head>
@@ -49,7 +49,7 @@ table.datetbl
 
 <body bgcolor="#FFFFFF">
 
-<table width="100%" cellspacing="0" cellpadding="0" border="0">
+<table id="top" width="100%" cellspacing="0" cellpadding="0" border="0">
   <tbody>
     <tr>
       <td>
@@ -67,7 +67,7 @@ table.datetbl
               <td width="2%">&nbsp;</td>
               <td width="60" align="left"><a href="https://www.marketingkitchen.ca/" target="_blank"><img src="https://brewdster.github.io/homepage/images/mk_icon.png" width="50" border="0" style="vertical-align: bottom"></a></td>
               <td style="color: #AFBD21; font-size: 20px; font-weight: normal; line-height: 24px">Docs</td>
-              <td style="padding: 0px 12px 0px 0px; color: #AFBD21; font-size: 12px; font-weight: normal; line-height: 18px" align="right">Updated 2024-06-10</td>
+              <td style="padding: 0px 12px 0px 0px; color: #AFBD21; font-size: 12px; font-weight: normal; line-height: 18px" align="right">Updated 2024-06-27</td>
               <td style="padding: 16px 4px 16px 4px; background-color: #AFBD21" width="90" align="center"><img src="https://brewdster.github.io/homepage/images/ElliefanV_H&G2.svg" width="80" border="0" style="vertical-align: bottom"></td>
               <td width="2%">&nbsp;</td>
             </tr>
@@ -85,37 +85,48 @@ table.datetbl
     </tr>
 
     <tr>
+      <td>
+        <table width="100%" cellspacing="0" cellpadding="0" border="0">
+          <tbody>
+            <tr>
+              <td width="50%" align="left" style="padding: 20px 0px 0px 0px; font-size: 16px; font-family: 'Poppins', sans-serif; line-height: 20px; color: #000000; font-weight: normal"><b>Page index</b>
+                <ul style="list-style-type: none; padding: 0px">
+                  <li><a href="#freq">Frequently-used qLingo</a></li>
+                  <li><a href="#seq_chk">Sequencing & record-checking</a></li>
+                  <li><a href="#tagtxt">Adobe tagged-text scripts for Text ADOR with programmable styles</a></li>
+                  <li><a href="#if_switch">Combined If and Switch controls in Text-with-Style ADOR</a></li>
+                  <li><a href="#txtfil">Text File content object</a></li>
+                  <li><a href="#graphic">QLingo graphic functions</a></li>
+                  <li><a href="#string">QLingo string functions</a></li>
+                  <li><a href="#numeric">QLingo numeric functions</a></li>
+                  <li><a href="#date">QLingo date functions</a></li>
+                  <li><a href="#conversion">QLingo conversion functions</a></li>
+                  <li><a href="#system">QLingo system functions</a></li>
+                  <li><a href="#custom">Custom & other uPlan functions</a></li>
+                  <li><a href="#query">Sample uProduce query code for selecting records</a></li>
+                  <li><a href="#styles">Create dynamic styles in XMPie video tutorial</a></li>
+                  <li><a href="#sqldb">Steps to re-create local SQLDB</a></li>
+                  <li><a href="#misc">Miscellaneous MK info</a></li>
+                </ul>
+              </td>
+              <td width="50%" style="color: #000000; font-size: 16px; font-weight: normal; line-height: 20px"><p><span class="head1">Lo-fi hip-hop music - chill beats for work and study 😊</span></p>
+              <div><iframe width="580" src="https://www.youtube.com/embed/jfKfPfyJRdk?si=bzZGSNDRvHUX57a7" title="Lo-fi chill out music for work and study" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </td>
+    </tr>
+
+    <tr>
       <td style="padding: 0px 0px 0px 0px; color: #000000; font-size: 16px; font-weight: normal; line-height: 20px">
         <ul>
 
-	<li><p><span class="head1">Lo-fi hip-hop music - chill beats for work and study 😊</span><br><br>
-	<iframe width="560" src="https://www.youtube.com/embed/jfKfPfyJRdk?si=bzZGSNDRvHUX57a7" title="Lo-fi chill out music for work and study" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-	</p></li>
+	  <li><p><span class="head1">qLingo online Help</span><br>
+	  <a href="https://help.xmpie.com/uPlan/v.8.2/Help/en/uPlanUserGuide/uDirectRuleEditing/uDirectRuleEditing.htm" target="_blank">https://help.xmpie.com/uPlan/v.8.2/Help/en/uPlanUserGuide/uDirectRuleEditing/uDirectRuleEditing.htm</a></p></li>
 
-	<li><p><span class="head1">qLingo Help</span><br>
-	<a href="https://help.xmpie.com/uPlan/v.8.2/Help/en/uPlanUserGuide/uDirectRuleEditing/uDirectRuleEditing.htm" target="_blank">https://help.xmpie.com/uPlan/v.8.2/Help/en/uPlanUserGuide/uDirectRuleEditing/uDirectRuleEditing.htm</a></p></li>
-
-        <li><p><span class="head1">Creating sequence nos.</span><br>
-	<ol>
-	  <li>SubString(AsString(GetEnv("CurRecordNumber") + 100000), 1)  ex: 00123</li>
-	  <li>AsString(GetEnv("CurRecordNumber") + 10000)  ex: 10123</li>
-	  <li>"2" & FormatNumber(GetEnv("CurRecordNumber"), "0000")  ex: 20123</li>
-	  <li>SubString("##########", 0, 6 - Length(GetEnv("CurRecordNumber"))) & GetEnv("CurRecordNumber")  ex: ###123</li>
-	  <li>GetEnv("CurRecordNumber") & SubString("**********", 0, 6 - Length(GetEnv("CurRecordNumber")))  ex: 123***</li>
-	</ol></p></li>
-
-        <li><p><span class="head1">Check record sequence</span><br>
-	<span style="white-space: pre">If(GetEnv("CurRecordNumber") <> Asnumber(Substring(Trim(|->[SEQNO]), 1)))
-{
-  abort
-}
-else
-{
-  GetEnv("CurRecordNumber")
-}</span></p></li>
-
-        <li><p><span class="head1">Create [var_city_prov_pc_cntry] content object (ADOR)</span><br>
-	<span style="white-space: pre">FindandReplace(Trim(Trim(|->[CITY]) & " " & Trim(|->[PROV]) & "  " & FindandReplace(Trim(|->[PC])," ","<span class="hlt">Alt-0160</span>")),"   ","  ")
+          <li><p id="freq"><span class="head1">Create [var_city_prov_pc_cntry] content object (ADOR) <a href="#top" style="text-decoration: none"><b>&#8634;</b></a></span><br>
+	  <span style="white-space: pre">FindandReplace(Trim(Trim(|->[CITY]) & " " & Trim(|->[PROV]) & "  " & FindandReplace(Trim(|->[PC])," ","<span class="hlt">Alt-0160</span>")),"   ","  ")
 &
 If(IsNullOrEmpty(Trim(|->[Country])) or Trim(|->[Country]) = "")
 {
@@ -134,8 +145,8 @@ else
   & Trim(|->[Country])
 }</span></p></li>
 
-        <li><p><span class="head1">Create [var_askline] visibility ADOR</span><br>
-	<span style="white-space: pre">if(IsNullOrEmpty(Trim(|->[ASK1])) or Trim(|->[ASK1]) = "")
+          <li><p><span class="head1">Create [var_askline] visibility ADOR</span><br>
+          <span style="white-space: pre">if(IsNullOrEmpty(Trim(|->[ASK1])) or Trim(|->[ASK1]) = "")
 {
   "prt_0ask"
 }
@@ -152,8 +163,8 @@ else
   "prt_3asks"
 }</span></p></li>
 
-        <li><p><span class="head1">Create [var_lang] variable</span><br>
-	<span style="white-space: pre">Switch(Substring(Trim(|->[SEQNO]), 0, 1))
+          <li><p><span class="head1">Create [var_lang] variable</span><br>
+          <span style="white-space: pre">Switch(Substring(Trim(|->[SEQNO]), 0, 1))
 {
   Case "1": "E"
   Case "2": "F"
@@ -162,14 +173,33 @@ else
   default: abort
 }</span></p></li>
 
-        <li><p><span class="head1">English & French currencies</span><br>
-	<span style="white-space: pre">Switch(@{var_lang})
+          <li><p><span class="head1">English & French currencies</span><br>
+	  <span style="white-space: pre">Switch(@{var_lang})
 {
   Case "E": FormatNumber(Trim(|->[ASK1]), "$###,###,###")
   Case "F": FormatNumber(Trim(|->[ASK1]), "###-###-###-$") // Replace hyphens with <span class="hlt">Alt-0160</span>.
 }</span></p></li>
 
-        <li><p><span class="head1">Adobe tagged-text scripts for <b>Text ADOR with programmable styles</b></span><br>
+        <li><p><span class="head1" id="seq_chk">Creating sequence nos. <a href="#top" style="text-decoration: none"><b>&#8634;</b></a></span><br>
+	<ol>
+	  <li>SubString(AsString(GetEnv("CurRecordNumber") + 100000), 1)  ex: 00123</li>
+	  <li>AsString(GetEnv("CurRecordNumber") + 10000)  ex: 10123</li>
+	  <li>"2" & FormatNumber(GetEnv("CurRecordNumber"), "0000")  ex: 20123</li>
+	  <li>SubString("##########", 0, 6 - Length(GetEnv("CurRecordNumber"))) & GetEnv("CurRecordNumber")  ex: ###123</li>
+	  <li>GetEnv("CurRecordNumber") & SubString("**********", 0, 6 - Length(GetEnv("CurRecordNumber")))  ex: 123***</li>
+	</ol></p></li>
+
+        <li><p><span class="head1">Check record sequence</span><br>
+	<span style="white-space: pre">If(GetEnv("CurRecordNumber") <> Asnumber(Substring(Trim(|->[SEQNO]), 1)))
+{
+  abort
+}
+else
+{
+  GetEnv("CurRecordNumber")
+}</span></p></li>
+
+        <li><p id="tagtxt"><span class="head1">Adobe tagged-text scripts for <b>Text ADOR with programmable styles</b> <a href="#top" style="text-decoration: none"><b>&#8634;</b></a></span><br>
 	  <ol>
 	    <li>Font script (ex: <b>@{fs}</b>)<br>
 	    &quot;&lt;UNICODE-WIN&gt;\r\n&lt;Version:17.2&gt;&lt;FeatureSet:InDesign-Roman&gt;&lt;ParaStyle:NormalParagraphStyle&gt;&lt;pHyphenation:0&gt;&lt;ColorTable:=&lt;Black:COLOR:CMYK:Process:0,0,0,1&gt;&gt;&quot;</li>
@@ -221,7 +251,7 @@ Switch(Trim(UCase(|->[PARACALL])))
 	  </ol>
         </p></li>
 
-        <li><p><span class="head1">Combined <b>If</b> and <b>Switch</b> controls in <b>Text-with-Style</b> ADOR</span><br>
+        <li><p><span class="head1" id="if_switch">Combined <b>If</b> and <b>Switch</b> controls in <b>Text-with-Style</b> ADOR <a href="#top" style="text-decoration: none"><b>&#8634;</b></a></span><br>
 	<span style="white-space: pre">If(Ucase(Trim(|->[LANG])) = "E")
 {
   __PrivateInternalTextWithStyle(Switch(Trim(UCase(|->[PARACALL])))
@@ -253,7 +283,7 @@ else
 
 <b>Note:</b> Tagged-text scripts can also be used in <span class="hlt">Text</span> ADORs. It does not need to be primarily used in <span class="hlt">Text-with-Style</span> ADORs.</span></p></li>
 
-        <li><p><span class="head1">About <b>Text File</b> content object</span><br>
+        <li><p><span class="head1" id="txtfil">About <b>Text File</b> content object <a href="#top" style="text-decoration: none"><b>&#8634;</b></a></span><br>
           <ul style="list-style-type:disc">
             <li>You can use either Word RTF, XMPie XNIP or Adobe Tagged Text as assets.</li>
             <li>Asset folder needs to be set.</li>
@@ -262,7 +292,7 @@ else
           </ul>
         </span></p></li>
 
-        <li><p><span class="head1">QLingo graphic functions</span><br>
+        <li><p><span class="head1" id="graphic">QLingo graphic functions <a href="#top" style="text-decoration: none"><b>&#8634;</b></a></span><br>
 	<ul style="list-style-type:disc">
 	  <li>Rectangle(C##, M##, Y##, K##) // Graphic ADOR; fills object with variable colour.</li>
 	  <li>XMPBarcode("DataMatrix", Trim(|->[SEQNO]), "Color=cmyk(0%,0%,0%,100%);BackgroundColor=cmyk(0%,0%,0%,0%)")</li>
@@ -270,7 +300,7 @@ else
 	  <li>Call Web.URLContentAsFile("https://brewdster.github.io/homepage/images/favicon.png") // Graphic ADOR; reference url image asset.</li>
 	</ul></p></li>
 
-        <li><p><span class="head1">QLingo string functions</span><br>
+        <li><p><span class="head1" id="string">QLingo string functions <a href="#top" style="text-decoration: none"><b>&#8634;</b></a></span><br>
 	<ul style="list-style-type:disc">
 	  <li>Lcase("HELLO") = "hello"</li>
 	  <li>Tcase("hello world") = "Hello World"</li>
@@ -289,7 +319,7 @@ else
 	  <li>"Hello" + HexToUnicode("0020") + "World" = "Hello World" // 0020 = 'space'; 0009 = 'tab'</li>
 	</ul></p></li>
 
-        <li><p><span class="head1">QLingo numeric functions</span><br>
+        <li><p><span class="head1" id="numeric">QLingo numeric functions <a href="#top" style="text-decoration: none"><b>&#8634;</b></a></span><br>
 	<ul style="list-style-type:disc">
 	  <li>ABS(-5) = 5</li>
 	  <li>Floor(3.78) = 3</li>
@@ -302,7 +332,7 @@ else
 	  <li>5 div 2 = 2 // Normal division but drops the decimals and returns whole number</li>
 	</ul></p></li>
 
-        <li><p><span class="head1">QLingo date functions</span><br>
+        <li><p><span class="head1" id="date">QLingo date functions <a href="#top" style="text-decoration: none"><b>&#8634;</b></a></span><br>
 	<ul style="list-style-type:disc">
 	  <li>GetDay("14/09/2023") = 14</li>
 	  <li>GetMonth("14/09/2023") = 9</li>
@@ -424,7 +454,7 @@ else
 	  </li>
 	</ul></p></li>
 
-        <li><p><span class="head1">QLingo conversion functions</span><br>
+        <li><p><span class="head1" id="conversion">QLingo conversion functions <a href="#top" style="text-decoration: none"><b>&#8634;</b></a></span><br>
 	<ul style="list-style-type:disc">
 	  <li>AsBoolean // Null value is false regardless of data type. For 'numbers', 0 is false. Empty 'string' is false. Date is always true.</li>
 	  <li>AsDate("14/09/2023") = 09/14/2023 (date value)</li>
@@ -433,7 +463,7 @@ else
 	  <li>AsNumber("+0123abc") = 123</li>
 	</ul></p></li>
 
-        <li><p><span class="head1">QLingo system functions</span><br>
+        <li><p><span class="head1" id="system">QLingo system functions <a href="#top" style="text-decoration: none"><b>&#8634;</b></a></span><br>
 	<ul style="list-style-type:disc">
 	  <li>GetEnv("CurRecordNumber") // Gets record number or current record.</li>
 	  <li>abort // Used in If/Else or Switch statements. Prompts an error.</li>
@@ -446,7 +476,7 @@ else
 	  ex: ReportMessage("Error in record " & GetEnv("CurRecordNumber") & ".")abort</li>
 	</ul></p></li>
 
-	<li><p><span class="head1">How to create custom functions in uPlan</span><br>
+	<li><p><span class="head1" id="custom">How to create custom functions in uPlan <a href="#top" style="text-decoration: none"><b>&#8634;</b></a></span><br>
 	<a href="https://help.xmpie.com/uPlan/Latest/Help/en/QLingo/Custom_User-Defined_Functions.htm" target="_blank">https://help.xmpie.com/uPlan/Latest/Help/en/QLingo/Custom_User-Defined_Functions.htm</a></p></li>
 
 	<li><p><span class="head1">UV2STR (user view to string) function</span><br>
@@ -480,16 +510,16 @@ Result:
 &lt;/table&gt;</span><br><br>
 Note: Can also be used to create complex Adobe Tagged Text table ADORs.</p></li>
 
-	<li><p><span class="head1">Sample uProduce query code for selecting records</span><br>
+	<li><p><span class="head1" id="query">Sample uProduce query code for selecting records <a href="#top" style="text-decoration: none"><b>&#8634;</b></a></span><br>
 	SELECT * FROM @[Sheet1] WHERE @[Sheet1].[FORMCALL] = 'SWK' ORDER BY @[Sheet1].[FORMCALL]<br>
 	<img src="https://brewdster.github.io/homepage/images/How_to_select_records_in_uProduce_using_queries.png" width="800"></p>
 	<p><b>Note:</b> To dynamically assign a specific output file name for each output batch file, use the <span class="hlt">ADOR</span> parameter under the <span class="hlt">Output File Name</span> options in the <b>Production and Deployment</b> section.</p></li>
 
-	<li><p><span class="head1">Create dynamic styles in XMPie video tutorial</span><br><br>
+	<li><p><span class="head1" id="styles">Create dynamic styles in XMPie video tutorial <a href="#top" style="text-decoration: none"><b>&#8634;</b></a></span><br><br>
 	<iframe width="800" height="450" src="https://www.youtube.com/embed/JdtXnY_MnvU?si=DxcyJcVeyJ9mSSxd" title="Create dynamic styles in XMPie" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 	</p></li>
 
-        <li><p><span class="head1">Steps to re-create local SQLDB</span><br>
+        <li><p><span class="head1" id="sqldb">Steps to re-create local SQLDB <a href="#top" style="text-decoration: none"><b>&#8634;</b></a></span><br>
 	<ol>
 	  <li>Run CMD.</li>
 	  <li>Type "SQLLocalDB info" to confirm that <b>MSSQLLocalDB</b> is installed.</li>
@@ -500,7 +530,7 @@ Note: Can also be used to create complex Adobe Tagged Text table ADORs.</p></li>
 	  <li>SQLLocalDB <em>start</em> MSSQLLocalDB</li>
 	</ol></p></li>
 
-        <li><p><span class="head1">Reflex Blue for script NAB</span><br>
+        <li><p><span class="head1" id="misc">Reflex Blue for script NAB <a href="#top" style="text-decoration: none"><b>&#8634;</b></a></span><br>
 	LAB: 33.333, 14, -48<br>
 	CMYK: 91.53, 83.04, 2.4, 0</p></li>
 
