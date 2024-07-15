@@ -128,7 +128,7 @@ table.datetbl
         <table width="100%" cellspacing="0" cellpadding="0" border="0">
           <tbody>
             <tr>
-              <td width="50%" align="left" style="padding: 20px 0px 20px 27px; font-size: 16px; font-family: 'Poppins', sans-serif; line-height: 22px; color: #000000; font-weight: normal"><b>Page index</b>
+              <td width="50%" align="left" valign="top" style="padding: 20px 0px 20px 27px; font-size: 16px; font-family: 'Poppins', sans-serif; line-height: 22px; color: #000000; font-weight: normal"><span class="head1">Page index</span>
                 <ul style="list-style-type: none; padding: 0px">
                   <li><a href="#freq">Frequently-used qLingo</a></li>
                   <li><a href="#seq_chk">Sequencing & record-checking</a></li>
@@ -153,15 +153,40 @@ table.datetbl
                 <table width="100%" cellspacing="0" cellpadding="0" border="0">
                   <tbody>
                     <tr>
-                      <td style="padding: 0px 0px 20px 0px; color: #000000; font-size: 16px; font-weight: normal; line-height: 20px">
+                      <td style="font-size: 16px; line-height: 20px">
                         <p><span class="head1"><span id="curdate"></span> (7-day weather forecast)</span></p>
                         <div><a class="weatherwidget-io" href="https://forecast7.com/en/43d86n79d34/markham/" data-label_1="Markham" data-label_2="Ontario" data-font="Roboto" data-icons="Climacons Animated" data-theme="weather_one" >Markham, ON Weather</a></div>
                       </td>
                     </tr>
                     <tr>
                       <td style="color: #000000; font-size: 16px; font-weight: normal; line-height: 20px">
+                        <p><span class="head1">Market indices</span></p>
+                        <!--https://www.tradingview.com/widget/#charts-->
+                        <div class="tradingview-widget-container">
+                          <div class="tradingview-widget-container__widget"></div>
+                          <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-tickers.js" async>
+                            {
+                              "symbols":
+                              [
+                                {"proName": "FOREXCOM:SPXUSD", "title": "S&P 500 Index"},
+                                {"description": "Nasdaq","proName": "NASDAQ:IXIC"},
+                                {"description": "Dow Jones","proName": "SPREADEX:DJI"},
+                                {"description": "Gold U$/oz.","proName": "TVC:GOLD"},
+                                {"description": "Bitcoin","proName": "BITSTAMP:BTCUSD"},
+                                {"description": "WTI Crude U$","proName": "EASYMARKETS:OILUSD"},
+                                {"description": "Nvidia","proName": "NASDAQ:NVDA"},
+                                {"description": "Tesla","proName": "NASDAQ:TSLA"}
+                              ],
+                              "isTransparent": false,"showSymbolLogo": true,"colorTheme": "dark","locale": "en"
+                            }
+                          </script>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td style="font-size: 16px; line-height: 20px">
                         <p><span class="head1">Lo-fi hip-hop music - chill beats for work and study 😊</span></p>
-                        <div><iframe width="100%" src="https://www.youtube.com/embed/jfKfPfyJRdk?si=bzZGSNDRvHUX57a7" title="Lo-fi chill out music for work and study" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+                        <div><iframe width="100%" height="120" src="https://www.youtube.com/embed/jfKfPfyJRdk?si=bzZGSNDRvHUX57a7" title="Lo-fi chill out music for work and study" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
                       </td>
                     </tr>
                   </tbody>
