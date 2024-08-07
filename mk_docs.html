@@ -168,7 +168,7 @@ table.datetbl
                             {
                               "symbols":
                               [
-                                {"proName": "FOREXCOM:SPXUSD", "title": "S&P 500"},
+                                {"proName": "FOREXCOM:SPXUSD", "title": "S&P 500 Index"},
                                 {"description": "Nasdaq","proName": "NASDAQ:IXIC"},
                                 {"description": "Dow Jones","proName": "SPREADEX:DJI"},
                                 {"description": "Gold U$/oz.","proName": "TVC:GOLD"},
@@ -374,7 +374,7 @@ else
 
         <li><p><span class="head1" id="graphic">QLingo graphic functions <a href="#top" style="text-decoration: none"><b>&#8634;</b></a></span><br>
 	<ul style="list-style-type:disc">
-	  <li>Rectangle(C##, M##, Y##, K##) // Graphic ADOR; fills object with variable colour.</li>
+	  <li>Rectangle(<span style="color: #00FFFF">###</span>,<span style="color: #FF00FF">###</span>,<span style="color: #EFCC00">###</span>,<span style="color: #000000">###</span>) // Graphic ADOR; fills object with variable colour. CMYK values are from 0 to 100.</li>
 	  <li>XMPBarcode("DataMatrix", Trim(|->[SEQNO]), "Color=cmyk(0%,0%,0%,100%);BackgroundColor=cmyk(0%,0%,0%,0%)")</li>
 	  <li>XMPBarcode("Code128", Trim(|->[SEQNO]), "ModuleWidth=413;Height=12;Color=cmyk(0%,0%,0%,100%);BackgroundColor=cmyk(0%,0%,0%,0%);FontColor=cmyk(0%,100%,100%,0%);HideReadableText=true")</li>
 	  <li>Call Web.URLContentAsFile("https://brewdster.github.io/homepage/images/favicon.png") // Graphic ADOR; reference url image asset.</li>
