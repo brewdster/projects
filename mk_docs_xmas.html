@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!--Drewbster / 20240915-->
+<!--Drewbster / 20240922-->
 <html>
 
 <head>
@@ -146,6 +146,7 @@ table.datetbl
                   <li><a href="#styles">Create dynamic styles in XMPie video tutorial</a></li>
                   <li><a href="#sqldb">Steps to re-create local SQLDB</a></li>
                   <li><a href="#adobe">File locations of Adobe settings</a></li>
+                  <li><a href="#ind_java">Sample Indesign Javascript code</a></li>
                   <li><a href="#misc">Miscellaneous MK info</a></li>
                 </ul>
                 <p><span class="head1">🎄 Classic Christmas Carols 🎄</span></p>
@@ -594,6 +595,20 @@ Note: Can also be used to create complex Adobe Tagged Text table ADORs.</p></li>
 	Indesign presets -> C:\Users\{Name}\AppData\Roaming\Adobe\Adobe PDF\Settings<br>
 	Acrobat actions -> C:\Users\{Name}\AppData\Roaming\Adobe\Acrobat\DC\Sequences<br>
 	Distiller user fonts -> C:\Users\{Name}\AppData\Local\Microsoft\Windows\Fonts</p></li>
+
+	<li><p><span class="head1" id="ind_java">Sample Indesign Javascript code <a href="#top" style="text-decoration: none"><b>&#8634;</b></a></span><br>
+	<span style="white-space: pre">var doc = app.activeDocument;
+var myLayer = doc.layers.item(prompt("Enter name of Layer","Source"));
+for (var i = myLayer.pageItems.length-1; i > -1; i--)
+  {
+    var lyr = myLayer.pageItems[i].name;
+    var newLayer = doc.layers.add({name:lyr, layerColor: UIColors.LIGHT_OLIVE});
+    myLayer.pageItems[i].itemLayer = newLayer;
+  }
+myLayer.remove();
+alert("Process complete!");
+
+<b>Note:</b> Above code moves all objects under a specified layer into their own layers under the same names as the objects.</span>
 
         <li><p><span class="head1" id="misc">Reflex Blue for script NAB <a href="#top" style="text-decoration: none"><b>&#8634;</b></a></span><br>
 	LAB: 33.333, 14, -48<br>

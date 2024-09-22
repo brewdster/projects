@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!--Drewbster / 20240714-->
+<!--Drewbster / 20240922-->
 <html>
 
 <head>
@@ -90,7 +90,7 @@ table.datetbl
               <td width="2%">&nbsp;</td>
               <td width="60" align="left"><a href="https://www.marketingkitchen.ca/" target="_blank"><img src="https://brewdster.github.io/homepage/images/mk_icon.png" width="50" border="0" style="vertical-align: bottom"></a></td>
               <td style="color: #AFBD21; font-size: 20px; font-weight: normal; line-height: 24px">Docs</td>
-              <td style="color: #AFBD21; font-size: 12px; font-weight: normal; line-height: 18px" align="right">Updated 2024-07-14</td>
+              <td style="color: #AFBD21; font-size: 12px; font-weight: normal; line-height: 18px" align="right">Updated 2024-09-22</td>
               <td width="105" align="right" style="padding: 10px 0px 10px 0px">
                 <table width="90" height="90" border="0" cellspacing="0" cellpadding="0">
                   <tbody>
@@ -146,6 +146,7 @@ table.datetbl
                   <li><a href="#styles">Create dynamic styles in XMPie video tutorial</a></li>
                   <li><a href="#sqldb">Steps to re-create local SQLDB</a></li>
                   <li><a href="#adobe">File locations of Adobe settings</a></li>
+                  <li><a href="#ind_java">Sample Indesign Javascript code</a></li>
                   <li><a href="#misc">Miscellaneous MK info</a></li>
                 </ul>
               </td>
@@ -282,7 +283,7 @@ else
         <li><p id="tagtxt"><span class="head1">Adobe tagged-text scripts for <b>Text ADOR with programmable styles</b> <a href="#top" style="text-decoration: none"><b>&#8634;</b></a></span><br>
 	  <ol>
 	    <li>Font script (ex: <b>@{fs}</b>)<br>
-	    &quot;&lt;UNICODE-WIN&gt;\r\n&lt;Version:19.1&gt;&lt;FeatureSet:InDesign-Roman&gt;&lt;ParaStyle:NormalParagraphStyle&gt;&lt;pHyphenation:0&gt;&lt;ColorTable:=&lt;Black:COLOR:CMYK:Process:0,0,0,1&gt;&gt;&quot;</li>
+	    &quot;&lt;UNICODE-WIN&gt;\r\n&lt;Version:17.2&gt;&lt;FeatureSet:InDesign-Roman&gt;&lt;ParaStyle:NormalParagraphStyle&gt;&lt;pHyphenation:0&gt;&lt;ColorTable:=&lt;Black:COLOR:CMYK:Process:0,0,0,1&gt;&gt;&quot;</li>
 	    <li>Font styles (ex: <b>@{Geor_R12}</b> or <b>@{Pop_B14}</b>)<br>
 &quot;&lt;cTypeface:<b>Regular</b>&gt;&lt;cSize:<b>12.000000</b>&gt;&lt;cUnderline:0&gt;&lt;cPosition:&gt;&lt;cFont:<b>Georgia</b>&gt;&quot;  // Georgia Regular 12 pt.
 <br>or<br>
@@ -588,7 +589,7 @@ Result:
     &lt;/tr&gt;
   &lt;/tbody&gt;
 &lt;/table&gt;</span><br><br>
-Note: Can also be used to create complex Adobe Tagged Text table ADORs.</p></li>
+<b>Note:</b> Can also be used to create complex Adobe Tagged Text table ADORs.</p></li>
 
 	<li><p><span class="head1" id="query">Sample uProduce query code for selecting records <a href="#top" style="text-decoration: none"><b>&#8634;</b></a></span><br>
 	SELECT * FROM @[Sheet1] WHERE @[Sheet1].[FORMCALL] = 'SWK' ORDER BY @[Sheet1].[FORMCALL]<br>
@@ -615,6 +616,20 @@ Note: Can also be used to create complex Adobe Tagged Text table ADORs.</p></li>
 	Indesign presets -> C:\Users\{Name}\AppData\Roaming\Adobe\Adobe PDF\Settings<br>
 	Acrobat actions -> C:\Users\{Name}\AppData\Roaming\Adobe\Acrobat\DC\Sequences<br>
 	Distiller user fonts -> C:\Users\{Name}\AppData\Local\Microsoft\Windows\Fonts</p></li>
+
+	<li><p><span class="head1" id="ind_java">Sample Indesign Javascript code <a href="#top" style="text-decoration: none"><b>&#8634;</b></a></span><br>
+	<span style="white-space: pre">var doc = app.activeDocument;
+var myLayer = doc.layers.item(prompt("Enter name of Layer","Source"));
+for (var i = myLayer.pageItems.length-1; i > -1; i--)
+  {
+    var lyr = myLayer.pageItems[i].name;
+    var newLayer = doc.layers.add({name:lyr, layerColor: UIColors.LIGHT_OLIVE});
+    myLayer.pageItems[i].itemLayer = newLayer;
+  }
+myLayer.remove();
+alert("Process complete!");
+
+<b>Note:</b> Above code moves all objects under a specified layer into their own layers under the same names as the objects.</span>
 
         <li><p><span class="head1" id="misc">Reflex Blue for script NAB <a href="#top" style="text-decoration: none"><b>&#8634;</b></a></span><br>
 	LAB: 33.333, 14, -48<br>
