@@ -622,8 +622,7 @@ Result:
 var myLayer = doc.layers.item(prompt("Enter name of Layer","Source"));
 for (var i = myLayer.pageItems.length-1; i > -1; i--)
   {
-    var newLayer = doc.layers.add({name:myLayer.pageItems[i].name, layerColor: UIColors.LIGHT_OLIVE});
-    myLayer.pageItems[i].itemLayer = newLayer;
+    myLayer.pageItems[i].itemLayer = doc.layers.add({name:myLayer.pageItems[i].name, layerColor: UIColors.LIGHT_OLIVE});
   }
 myLayer.remove();
 alert("Process complete!");
