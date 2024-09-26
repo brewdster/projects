@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root_group>
+	<group display_name="MK Phonebook" />
+	<group display_name="Blacklist" />
+</root_group>
+<root_contact>
+	<contact display_name="Arthur Parm" office_number="237" mobile_number="" other_number="" line="-1" ring="Auto" default_photo="Config:Contact.png" selected_photo="0" group_id_name="MK Phonebook" />
+	<contact display_name="Anie Than" office_number="245" mobile_number="" other_number="" line="-1" ring="Auto" default_photo="Config:Contact.png" selected_photo="0" group_id_name="MK Phonebook" />
+	<contact display_name="Audrey Jamieson" office_number="222" mobile_number="" other_number="" line="-1" ring="Auto" default_photo="Config:Audrey.png" selected_photo="0" group_id_name="MK Phonebook" />
+	<contact display_name="Beth Hamilton" office_number="240" mobile_number="" other_number="" line="-1" ring="Auto" default_photo="Config:Contact.png" selected_photo="0" group_id_name="MK Phonebook" />
+	<contact display_name="Brian Ramharack" office_number="235" mobile_number="" other_number="" line="-1" ring="Auto" default_photo="Config:Contact.png" selected_photo="0" group_id_name="MK Phonebook" />
+	<contact display_name="Brooke Johnson" office_number="249" mobile_number="" other_number="" line="-1" ring="Auto" default_photo="Config:Brooke.png" selected_photo="0" group_id_name="MK Phonebook" />
+	<contact display_name="Dawn Williams " office_number="233" mobile_number="" other_number="" line="-1" ring="Auto" default_photo="Config:Contact.png" selected_photo="0" group_id_name="MK Phonebook" />
+	<contact display_name="Dustin Flewitt" office_number="225" mobile_number="" other_number="" line="-1" ring="Auto" default_photo="Config:dustin.png" selected_photo="0" group_id_name="MK Phonebook" />
+	<contact display_name="Genevieve Prempeh" office_number="223" mobile_number="" other_number="" line="-1" ring="Auto" default_photo="Config:Contact.png" selected_photo="0" group_id_name="MK Phonebook" />
+	<contact display_name="Jane Herrera" office_number="229" mobile_number="" other_number="" line="-1" ring="Auto" default_photo="Config:Contact.png" selected_photo="0" group_id_name="MK Phonebook" />
+	<contact display_name="Janice Dumphie" office_number="230" mobile_number="" other_number="" line="-1" ring="Auto" default_photo="Config:Contact.png" selected_photo="0" group_id_name="MK Phonebook" />
+	<contact display_name="Jennifer Davey" office_number="244" mobile_number="" other_number="" line="-1" ring="Auto" default_photo="Config:Contact.png" selected_photo="0" group_id_name="MK Phonebook" />
+	<contact display_name="Jennifer Pratt" office_number="242" mobile_number="" other_number="" line="-1" ring="Auto" default_photo="Config:Contact.png" selected_photo="0" group_id_name="MK Phonebook" />
+	<contact display_name="Jill Noordhuis  " office_number="226" mobile_number="" other_number="" line="-1" ring="Auto" default_photo="Config:Contact.png" selected_photo="0" group_id_name="MK Phonebook" />
+	<contact display_name="Joe Chimienti" office_number="236" mobile_number="" other_number="" line="-1" ring="Auto" default_photo="Config:joe.png" selected_photo="0" group_id_name="MK Phonebook" />
+	<contact display_name="Jun Agbayani" office_number="234" mobile_number="" other_number="" line="-1" ring="Auto" default_photo="Config:Jun.png" selected_photo="0" group_id_name="MK Phonebook" />
+	<contact display_name="Kassandra Scharnhorst" office_number="247" mobile_number="" other_number="" line="-1" ring="Auto" default_photo="Config:Contact.png" selected_photo="0" group_id_name="MK Phonebook" />
+	<contact display_name="Katerina Kerr" office_number="227" mobile_number="" other_number="" line="-1" ring="Auto" default_photo="Config:Contact.png" selected_photo="0" group_id_name="MK Phonebook" />
+	<contact display_name="Kitty Patel" office_number="228" mobile_number="" other_number="" line="-1" ring="Auto" default_photo="Config:Contact.png" selected_photo="0" group_id_name="MK Phonebook" />
+	<contact display_name="Liz Lakatos" office_number="239" mobile_number="" other_number="" line="-1" ring="Auto" default_photo="Config:Contact.png" selected_photo="0" group_id_name="MK Phonebook" />
+	<contact display_name="Michelle Howard" office_number="238" mobile_number="" other_number="" line="-1" ring="Auto" default_photo="Config:Contact.png" selected_photo="0" group_id_name="MK Phonebook" />
+	<contact display_name="Nikki Sgro" office_number="250" mobile_number="" other_number="" line="-1" ring="Auto" default_photo="Config:Contact.png" selected_photo="0" group_id_name="MK Phonebook" />
+	<contact display_name="Qian Ren" office_number="224" mobile_number="" other_number="" line="-1" ring="Auto" default_photo="Config:Contact.png" selected_photo="0" group_id_name="MK Phonebook" />
+	<contact display_name="Savita Best" office_number="246" mobile_number="" other_number="" line="-1" ring="Auto" default_photo="Config:Contact.png" selected_photo="0" group_id_name="MK Phonebook" />
+	<contact display_name="Susan Jeanes" office_number="232" mobile_number="" other_number="" line="-1" ring="Auto" default_photo="Config:Contact.png" selected_photo="0" group_id_name="MK Phonebook" />
+	<contact display_name="Vania Dale" office_number="221" mobile_number="" other_number="" line="-1" ring="Auto" default_photo="Config:Contact.png" selected_photo="0" group_id_name="MK Phonebook" />
+	<contact display_name="Zarmen Bekmezian" office_number="231" mobile_number="" other_number="" line="-1" ring="Auto" default_photo="Config:Contact.png" selected_photo="0" group_id_name="MK Phonebook" />
+</root_contact>
