@@ -624,14 +624,19 @@ Result:
 	<li><p><span class="head1" id="ind_java">Sample Indesign Javascript code <a href="#top" style="text-decoration: none"><b>&#8634;</b></a></span><br>
 	<span style="white-space: pre">var doc = app.activeDocument;
 var myLayer = doc.layers.item(prompt("Enter name of Layer","Source"));
-for (var i = myLayer.pageItems.length-1; i > -1; i--)
+var cnt = myLayer.pageItems.length-1;
+for (i = cnt; i > -1; i--)
   {
-    myLayer.pageItems[i].itemLayer = doc.layers.add({name:myLayer.pageItems[i].name, layerColor: UIColors.LIGHT_OLIVE});
+    var lyr = myLayer.pageItems[i].name;
+    myLayer.pageItems[i].itemLayer = doc.layers.add({name:lyr, layerColor: UIColors.LIGHT_OLIVE});
+    doc.layers.itemByName(lyr).groups.itemByName(lyr).ungroup();
   }
 myLayer.remove();
+doc.layers.everyItem().ignoreWrap = true;
 alert("Process complete!");
 
-<b>Note:</b> Above code moves all objects under a specified layer into their own layers under the same names as the objects.</span>
+<b>Note:</b> Above code moves all objects under a specified layer into their own layers under the same names as the objects.
+<b>Important:</b> For the ungroup step to function properly, the "Ungroup Remembers Layers" option must be TURNED OFF in the Layers panel menu.</span>
 
         <li><p><span class="head1" id="misc">Reflex Blue for script NAB <a href="#top" style="text-decoration: none"><b>&#8634;</b></a></span><br>
 	LAB: 33.333, 14, -48<br>
