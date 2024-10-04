@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!--Drewbster / 20241001-->
+<!--Drewbster / 20241003-->
 <html>
 
 <head>
@@ -225,9 +225,9 @@ else
 
 <span class="hlt">OR</span>
 
-if(IsNullOrEmpty(Trim(|->[ASK1]))) {0} else {1} +
-  if(IsNullOrEmpty(Trim(|->[ASK2]))) {0} else {1} +
-    if(IsNullOrEmpty(Trim(|->[ASK3]))) {0} else {1}
+"prt_" & if(IsNullOrEmpty(Trim(|->[ASK1]))) {0} else {1} +
+         if(IsNullOrEmpty(Trim(|->[ASK2]))) {0} else {1} +
+         if(IsNullOrEmpty(Trim(|->[ASK3]))) {0} else {1} & "ask"
 </span></p></li>
 
           <li><p><span class="head1">Create [var_lang] variable</span><br>
