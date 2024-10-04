@@ -242,7 +242,14 @@ else if(IsNullOrEmpty(Trim(|->[ASK3])) or Trim(|->[ASK3]) = "")
 else
 {
   "prt_3asks"
-}</span></p></li>
+}
+
+<span class="hlt">OR</span>
+
+if(IsNullOrEmpty(Trim(|->[ASK1]))) {0} else {1} +
+  if(IsNullOrEmpty(Trim(|->[ASK2]))) {0} else {1} +
+    if(IsNullOrEmpty(Trim(|->[ASK3]))) {0} else {1}
+</span></p></li>
 
           <li><p><span class="head1">Create [var_lang] variable</span><br>
           <span style="white-space: pre">Switch(Substring(Trim(|->[SEQNO]), 0, 1))
