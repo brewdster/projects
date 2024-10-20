@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!--Drewbster / 20241017-->
+<!--Drewbster / 20241020-->
 <html>
 
 <head>
@@ -363,7 +363,7 @@ else
 	<ul style="list-style-type:disc">
 	  <li>Rectangle(<span style="color: #00FFFF">0.00</span>,<span style="color: #FF00FF">0.00</span>,<span style="color: #EFCC00">0.00</span>,<span style="color: #000000">0.00</span>) // Graphic ADOR; fills object with variable colour. CMYK values are from 0.00 to 100. See <a href="https://colordesigner.io/convert/cmyktorgb" target="_blank">Color Designer</a> for color reference.</li>
 	  <li>XMPBarcode("DataMatrix", Trim(|->[SEQNO]), "Color=cmyk(0%,0%,0%,100%);BackgroundColor=cmyk(0%,0%,0%,0%)")</li>
-	  <li>XMPBarcode("QRCode", "https://brewdster.github.io/homepage/startpage.html")</li>
+	  <li>XMPBarcode("QRCode", "https://brewdster.github.io/homepage/startpage", "Color=cmyk(0%,0%,0%,100%);BackgroundColor=cmyk(0%,0%,0%,0%)")</li>
 	  <li>XMPBarcode("Code128", Trim(|->[SEQNO]), "ModuleWidth=413;Height=12;Color=cmyk(0%,0%,0%,100%);BackgroundColor=cmyk(0%,0%,0%,0%);FontColor=cmyk(0%,100%,100%,0%);HideReadableText=true")</li>
 	  <li>Call Web.URLContentAsFile("https://brewdster.github.io/homepage/images/favicon.png") // Graphic ADOR; reference url image asset.</li>
 	</ul></p></li>
