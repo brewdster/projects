@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!--Drewbster / 20241107-->
+<!--Drewbster / 20241111-->
 <html>
 
 <head>
@@ -90,7 +90,7 @@ table.datetbl
               <td width="2%">&nbsp;</td>
               <td width="60" align="left"><a href="https://www.marketingkitchen.ca/" target="_blank"><img src="https://brewdster.github.io/homepage/images/mk_icon.png" width="50" border="0" style="vertical-align: bottom"></a></td>
               <td style="color: #AFBD21; font-size: 20px; font-weight: normal; line-height: 24px">Docs</td>
-              <td style="color: #AFBD21; font-size: 12px; font-weight: normal; line-height: 18px" align="right">Updated 2024-11-07</td>
+              <td style="color: #AFBD21; font-size: 12px; font-weight: normal; line-height: 18px" align="right">Updated 2024-11-11</td>
               <td width="105" align="right" style="padding: 10px 0px 10px 0px">
                 <table width="90" height="90" border="0" cellspacing="0" cellpadding="0">
                   <tbody>
@@ -290,7 +290,7 @@ else
         <li><p id="tagtxt"><span class="head1">Adobe tagged-text scripts for <b>Text ADOR with programmable styles</b> <a href="#top" style="text-decoration: none"><b>&#8634;</b></a></span><br>
 	  <ol>
 	    <li>Font script (ex: <b>@{fs}</b>)<br>
-	    &quot;&lt;UNICODE-WIN&gt;\r\n&lt;Version:17.2&gt;&lt;FeatureSet:InDesign-Roman&gt;&lt;ParaStyle:NormalParagraphStyle&gt;&lt;pHyphenation:0&gt;&lt;pSpaceAfter:4.500000&gt;&lt;ColorTable:=&lt;Black:COLOR:CMYK:Process:0,0,0,1&gt;&gt;&quot;</li>
+	    &quot;&lt;UNICODE-WIN&gt;\r\n&lt;Version:17.2&gt;&lt;FeatureSet:InDesign-Roman&gt;&lt;ParaStyle:NormalParagraphStyle&gt;&lt;pFirstLineIndent:0.000000&gt;&lt;pHyphenation:0&gt;&lt;pSpaceAfter:4.500000&gt;&lt;ColorTable:=&lt;Black:COLOR:CMYK:Process:0,0,0,1&gt;&gt;&quot;</li>
 	    <li>Font styles (ex: <b>@{Geor_R12}</b> or <b>@{Pop_B14}</b>)<br>
 &quot;&lt;cTypeface:<b>Regular</b>&gt;&lt;cSize:<b>12.000000</b>&gt;&lt;cLeading:<b>14.000000</b>&gt;&lt;cUnderline:0&gt;&lt;cPosition:&gt;&lt;cFont:<b>Georgia</b>&gt;&quot;  // Georgia Regular 12 pt. with 14 pt. leading
 <br>or<br>
@@ -302,6 +302,7 @@ else
 @{fs} & @{Geor_R12} & &quot;My paragraph text...&quot;</li>
 	        <li>The font typeface (Bold, Regular, etc.), size, underline (0 or 1), and name (Georgia, Poppins, etc.) can be substituted with variables:<br>ex: <span class="hlt">&quot;&lt;cTypeface:&quot; & |-&gt;[style1] & &quot;&gt;&lt;cSize:&quot; & |-&gt;[size] & &quot;&gt;&lt;cUnderline:0&gt;&lt;cPosition:&gt;&lt;cColor:&quot; & @{var_col1} & &quot;&gt;&lt;cFont:&quot; & |-&gt;[font_name] & &quot;&gt;&quot;</span></li>
 	        <li>Specify gaps between paragraph breaks with &lt;pSpaceAfter:<span class="hlt">4.5</span>00000&gt; in font scripts or styles, where point size equals inches multiplied by 72 (e.g. 0.0625 * 72 = 4.5).</li>
+	        <li>Specify first-line indentation with &lt;pFirstLineIndent:<span class="hlt">18</span>.000000&gt; in font scripts, where point size equals inches multiplied by 72 (e.g. 0.25 * 72 = 18).</li>
 	        <li>Specify line spacing (leading) with &lt;cLeading:15.000000&gt; in font scripts or styles. "Auto" is used when this parameter is ommitted.</li>
 	        <li>For additional style properties (i.e. &lt;cPosition:Superscript&gt;, &lt;cColor:C=0 M=0 Y=0 K=100&gt;, etc.), highlight sample text and export to “Adobe tagged text” or refer to the following <a href="https://brewdster.github.io/projects/XMPie_QLingo_TaggedTextCS.pdf" target="_blank">manual</a>.</li>
 	      </ul>
