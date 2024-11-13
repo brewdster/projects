@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!--Drewbster / 20241111-->
+<!--Drewbster / 20241112-->
 <html>
 
 <head>
@@ -245,6 +245,29 @@ else
 {
   Case "E": FormatNumber(Trim(|->[ASK1]), "$###,###,###")
   Case "F": FormatNumber(Trim(|->[ASK1]), "###-###-###-$") // Replace hyphens with <span class="hlt">Alt-0160</span>.
+}</span></p></li>
+
+          <li><p><span class="head1">Split long names</span><br>
+	  <span style="white-space: pre">if(Length(Trim(|->[NAME1])) > 35)
+{
+    if(Find(Trim(|->[NAME1]), " & ", Length(Trim(|->[NAME1])) / 2 - 3) > -1)
+    {
+        Trim(Substring(Trim(|->[NAME1]), 0, Find(Trim(|->[NAME1]), " & ", Length(Trim(|->[NAME1])) / 2 - 3) + 2)) & "\r" &
+        Trim(Substring(Trim(|->[NAME1]), Find(Trim(|->[NAME1]), " & ", Length(Trim(|->[NAME1])) / 2 - 3) + 2, Length(Trim(|->[NAME1]))))
+    }
+    else if(Find(Trim(|->[NAME1]), " and ", Length(Trim(|->[NAME1])) / 2 - 5) > -1)
+    {
+        Trim(Substring(Trim(|->[NAME1]), 0, Find(Trim(|->[NAME1]), " and ", Length(Trim(|->[NAME1])) / 2 - 5) + 4)) & "\r" &
+        Trim(Substring(Trim(|->[NAME1]), Find(Trim(|->[NAME1]), " and ", Length(Trim(|->[NAME1])) / 2 - 5) + 4, Length(Trim(|->[NAME1]))))
+    }
+    else
+    {
+        Trim(|->[NAME1])
+    }
+}
+else
+{
+    Trim(|->[NAME1])
 }</span></p></li>
 
         <li><p><span class="head1" id="seq_chk">Creating sequence nos. <a href="#top" style="text-decoration: none"><b>&#8634;</b></a></span><br>
