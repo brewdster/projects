@@ -247,7 +247,7 @@ else
   Case "F": FormatNumber(Trim(|->[ASK1]), "###-###-###-$") // Replace hyphens with <span class="hlt">Alt-0160</span>.
 }</span></p></li>
 
-          <li><p><span class="head1">Split long names</span><br>
+          <li><p><span class="head1">Split long names at " & " or " and "</span><br>
 	  <span style="white-space: pre">if(Length(Trim(|->[NAME1])) > 35)
 {
     if(Find(Trim(|->[NAME1]), " & ", Length(Trim(|->[NAME1])) / 2 - 3) > -1)
