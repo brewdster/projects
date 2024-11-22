@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!--Drewbster / 20241117-->
+<!--Drewbster / 20241122-->
 <html>
 
 <head>
@@ -90,7 +90,7 @@ table.datetbl
               <td width="2%">&nbsp;</td>
               <td width="60" align="left"><a href="https://www.marketingkitchen.ca/" target="_blank"><img src="https://brewdster.github.io/homepage/images/mk_icon.png" width="50" border="0" style="vertical-align: bottom"></a></td>
               <td style="color: #AFBD21; font-size: 20px; font-weight: normal; line-height: 24px">Docs</td>
-              <td style="color: #AFBD21; font-size: 12px; font-weight: normal; line-height: 18px" align="right">Updated 2024-11-17</td>
+              <td style="color: #AFBD21; font-size: 12px; font-weight: normal; line-height: 18px" align="right">Updated 2024-11-22</td>
               <td width="105" align="right" style="padding: 10px 0px 10px 0px">
                 <table width="90" height="90" border="0" cellspacing="0" cellpadding="0">
                   <tbody>
@@ -329,6 +329,8 @@ else
 	        <li>Specify first-line indentation with &lt;pFirstLineIndent:<span class="hlt">18</span>.000000&gt; in font scripts, where point size equals inches multiplied by 72 (e.g. 0.25 * 72 = 18).</li>
 	        <li>Specify line spacing (leading) with &lt;cLeading:15.000000&gt; in font scripts or styles. "Auto" is used when this parameter is ommitted.</li>
 	        <li>For additional style properties (i.e. &lt;cPosition:Superscript&gt;, &lt;cColor:C=0 M=0 Y=0 K=100&gt;, etc.), highlight sample text and export to “Adobe tagged text” or refer to the following <a href="https://brewdster.github.io/projects/XMPie_QLingo_TaggedTextCS.pdf" target="_blank">manual</a>.</li>
+		<li>To variably encode emojis in your paragraph, use the following sample script (inserts Noto Color Emoji SVG font heart emoji):<br>
+		"<cTypeface:Regular><cFont:Noto Color Emoji SVG><span class="hlt"><cOTFContAlt:0>❤<cFont:><cOTFContAlt:><cTypeface:></span>"</li>
 	      </ul>
 	    </li>
 	    <li>Examples:<br>
