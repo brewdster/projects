@@ -329,8 +329,8 @@ else
 	        <li>Specify first-line indentation with &lt;pFirstLineIndent:<span class="hlt">18</span>.000000&gt; in font scripts, where point size equals inches multiplied by 72 (e.g. 0.25 * 72 = 18).</li>
 	        <li>Specify line spacing (leading) with &lt;cLeading:15.000000&gt; in font scripts or styles. "Auto" is used when this parameter is ommitted.</li>
 	        <li>For additional style properties (i.e. &lt;cPosition:Superscript&gt;, &lt;cColor:C=0 M=0 Y=0 K=100&gt;, etc.), highlight sample text and export to “Adobe tagged text” or refer to the following <a href="https://brewdster.github.io/projects/XMPie_QLingo_TaggedTextCS.pdf" target="_blank">manual</a>.</li>
-		<li>To variably encode emojis in your paragraph, use the following sample script (inserts Noto Color Emoji SVG font heart emoji):<br>
-		"&lt;cTypeface:Regular>&lt;cFont:Noto Color Emoji SVG&gt;<span class="hlt">&lt;cOTFContAlt:0&gt;❤&lt;cFont:&gt;&lt;cOTFContAlt:&gt;&lt;cTypeface:&gt;</span>"<br>
+		<li>To variably encode emojis in your paragraph, use the following sample script (inserts Noto Color Emoji SVG font ❤️ emoji):<br>
+		"&lt;cTypeface:Regular>&lt;cFont:Noto Color Emoji SVG&gt;&lt;cOTFContAlt:0&gt;❤&lt;cFont:&gt;&lt;cOTFContAlt:&gt;&lt;cTypeface:&gt;"<br>
 		<span style="font-weight: 500"><em>* Note: Remember to specify the regular font style after the emoji style if regular copy comes after.</em></span></li>
 	      </ul>
 	    </li>
