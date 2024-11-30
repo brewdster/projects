@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!--Drewbster / 20241123-->
+<!--Drewbster / 20241130-->
 <html>
 
 <head>
@@ -251,15 +251,15 @@ else
           <li><p><span class="head1">Split long names at " & " or " and "</span><br>
 	  <span style="white-space: pre">if(Length(Trim(|->[NAME1])) > 35)
 {
-    if(Find(Trim(|->[NAME1]), " & ", Length(Trim(|->[NAME1])) / 2 - 3) > -1)
+    if(Find(Trim(|->[NAME1]), " & ", <span class="hlt">Length(Trim(|->[NAME1])) / 2 - 3</span>) > -1)
     {
-        Trim(Substring(Trim(|->[NAME1]), 0, Find(Trim(|->[NAME1]), " & ", Length(Trim(|->[NAME1])) / 2 - 3) + 2)) & "\r" &
-        Trim(Substring(Trim(|->[NAME1]), Find(Trim(|->[NAME1]), " & ", Length(Trim(|->[NAME1])) / 2 - 3) + 2, Length(Trim(|->[NAME1]))))
+        Trim(Substring(Trim(|->[NAME1]), 0, Find(Trim(|->[NAME1]), " & ", <span class="hlt">Length(Trim(|->[NAME1])) / 2 - 3</span>) + 2)) & "\r" &
+        Trim(Substring(Trim(|->[NAME1]), Find(Trim(|->[NAME1]), " & ", <span class="hlt">Length(Trim(|->[NAME1])) / 2 - 3</span>) + 2, Length(Trim(|->[NAME1]))))
     }
-    else if(Find(Trim(|->[NAME1]), " and ", Length(Trim(|->[NAME1])) / 2 - 5) > -1)
+    else if(Find(Trim(|->[NAME1]), " and ", <span class="hlt">Length(Trim(|->[NAME1])) / 2 - 5</span>) > -1)
     {
-        Trim(Substring(Trim(|->[NAME1]), 0, Find(Trim(|->[NAME1]), " and ", Length(Trim(|->[NAME1])) / 2 - 5) + 4)) & "\r" &
-        Trim(Substring(Trim(|->[NAME1]), Find(Trim(|->[NAME1]), " and ", Length(Trim(|->[NAME1])) / 2 - 5) + 4, Length(Trim(|->[NAME1]))))
+        Trim(Substring(Trim(|->[NAME1]), 0, Find(Trim(|->[NAME1]), " and ", <span class="hlt">Length(Trim(|->[NAME1])) / 2 - 5</span>) + 4)) & "\r" &
+        Trim(Substring(Trim(|->[NAME1]), Find(Trim(|->[NAME1]), " and ", <span class="hlt">Length(Trim(|->[NAME1])) / 2 - 5</span>) + 4, Length(Trim(|->[NAME1]))))
     }
     else
     {
@@ -269,7 +269,9 @@ else
 else
 {
     Trim(|->[NAME1])
-}</span></p></li>
+}
+
+<b>Note:</b> Highlighted code can be substituted with <span class="hlt">12</span> or <span class="hlt">14</span> (start position of the search).</span></p></li>
 
         <li><p><span class="head1" id="seq_chk">Creating sequence nos. <a href="#top" style="text-decoration: none"><b>&#8634;</b></a></span><br>
 	<ol>
