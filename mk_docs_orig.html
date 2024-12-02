@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <!--Drewbster / 20241130-->
 <html>
 
@@ -84,22 +84,22 @@ table.datetbl
           </tbody>
         </table>
 
-        <table width="100%" cellspacing="0" cellpadding="0" border="0" bgcolor="#2B2B2B" style="background-image: url(https://brewdster.github.io/homepage/images/xmas-banner2.jpg); background-repeat: repeat-x; background-size: contain">
+        <table width="100%" cellspacing="0" cellpadding="0" border="0" bgcolor="#2B2B2B">
           <tbody>
             <tr>
               <td width="2%">&nbsp;</td>
-              <td width="80" align="left"><a href="https://www.marketingkitchen.ca/" target="_blank"><img src="https://brewdster.github.io/homepage/images/mk_icon.png" width="67" border="0" style="vertical-align: bottom"></a></td>
-              <td style="color: #FFFFFF; font-size: 24px; font-weight: 700; line-height: 26px; text-shadow: 3px 3px 6px #000000">Happy Holidays to the entire <span style="font-size: 36px; color: #AFBD21">Marketing</span> <span style="font-size: 36px; color: #6A747C">Kitchen</span></span> family! 🎄</td>
-              <td style="color: #FFFFFF; font-size: 16px; font-weight: 700; line-height: 18px; text-shadow: 3px 3px 6px #000000" align="right">Updated 2024-12-02</td>
+              <td width="60" align="left"><a href="https://www.marketingkitchen.ca/" target="_blank"><img src="https://brewdster.github.io/homepage/images/mk_icon.png" width="50" border="0" style="vertical-align: bottom"></a></td>
+              <td style="color: #AFBD21; font-size: 20px; font-weight: normal; line-height: 24px">Docs</td>
+              <td style="color: #AFBD21; font-size: 12px; font-weight: normal; line-height: 18px" align="right">Updated 2024-11-30</td>
               <td width="105" align="right" style="padding: 10px 0px 10px 0px">
                 <table width="90" height="90" border="0" cellspacing="0" cellpadding="0">
                   <tbody>
                     <tr>
-                      <td valign="middle" style="-moz-border-radius: 45px; -webkit-border-radius: 45px; border-radius: 45px; background-color: #AFBD21; border-bottom: solid; border-right: solid; border-width: 4px; border-color: #7E7E7E; background-color: #FFFFFF">
+                      <td valign="middle" style="-moz-border-radius: 45px; -webkit-border-radius: 45px; border-radius: 45px; background-color: #AFBD21; border-bottom: solid; border-right: solid; border-width: 4px; border-color: #7E7E7E">
                         <table width="100%" border="0" cellspacing="0" cellpadding="0">
                           <tbody>
                             <tr>
-                              <td align="center" style="padding: 0px 0px 0px 2px"><img src="https://brewdster.github.io/homepage/images/ElliefanIX_Xmas.svg" width="67"></td>
+                              <td align="center" style="padding: 5px 0px 0px 3px"><img src="https://brewdster.github.io/homepage/images/ElliefanIX.svg" width="66"></td>
                             </tr>
                           </tbody>
                         </table>
@@ -125,7 +125,7 @@ table.datetbl
 
     <tr>
       <td>
-        <table width="100%" cellspacing="0" cellpadding="0" border="0" bgcolor="#E6FFDB">
+        <table width="100%" cellspacing="0" cellpadding="0" border="0">
           <tbody>
             <tr>
               <td width="50%" align="left" valign="top" style="padding: 20px 0px 20px 27px; font-size: 16px; font-family: 'Poppins', sans-serif; line-height: 22px; color: #000000; font-weight: normal"><span class="head1">Page index</span>
@@ -150,11 +150,7 @@ table.datetbl
                   <li><a href="#ind_java">Sample Indesign Javascript code</a></li>
                   <li><a href="#misc">Miscellaneous MK info</a></li>
                 </ul>
-                <p><span class="head1">🎄 Classic Christmas Carols 🎄</span></p>
-                  <div><iframe width="90%" height="148" src="https://www.youtube.com/embed/_j37WnwmzSI?si=vpjdkNlzN37dL2r-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
-                  <!--<iframe width="90%" height="148" src="https://www.youtube.com/embed/UsLZ3OFdu3o?si=HNf7N1zuG8Fz4DPQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>-->
               </td>
-
               <td width="50%" valign="top" style="padding: 5px 0px 0px 0px">
                 <table width="100%" cellspacing="0" cellpadding="0" border="0">
                   <tbody>
@@ -165,9 +161,34 @@ table.datetbl
                       </td>
                     </tr>
                     <tr>
+                      <td style="color: #000000; font-size: 16px; font-weight: normal; line-height: 20px">
+                        <p><span class="head1">Market indices</span></p>
+                        <!--https://www.tradingview.com/widget/#charts-->
+                        <div class="tradingview-widget-container">
+                          <div class="tradingview-widget-container__widget"></div>
+                          <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-tickers.js" async>
+                            {
+                              "symbols":
+                              [
+                                {"proName": "FOREXCOM:SPXUSD", "title": "S&P 500 Index"},
+                                {"description": "Nasdaq","proName": "NASDAQ:IXIC"},
+                                {"description": "Dow Jones","proName": "SPREADEX:DJI"},
+                                {"description": "Gold U$/oz.","proName": "TVC:GOLD"},
+                                {"description": "Bitcoin","proName": "BITSTAMP:BTCUSD"},
+                                {"description": "WTI Crude U$","proName": "EASYMARKETS:OILUSD"},
+                                {"description": "Nvidia","proName": "NASDAQ:NVDA"},
+                                {"description": "Tesla","proName": "NASDAQ:TSLA"}
+                              ],
+                              "isTransparent": false,"showSymbolLogo": true,"colorTheme": "dark","locale": "en"
+                            }
+                          </script>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
                       <td style="font-size: 16px; line-height: 20px">
-                        <p><span class="head1">🎄 A Christmas Carol by Charles Dickens 🎄</span></p>
-                        <div><iframe width="736" height="414" src="https://www.youtube.com/embed/Fd31WpkEi_8?si=Jgg8NqUzrJdZUIFM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+                        <p><span class="head1">Lo-fi hip-hop music - chill beats for work and study 😊</span></p>
+                        <div><iframe width="100%" height="120" src="https://www.youtube.com/embed/jfKfPfyJRdk?si=bzZGSNDRvHUX57a7" title="Lo-fi chill out music for work and study" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
                       </td>
                     </tr>
                   </tbody>
@@ -642,7 +663,7 @@ Result:
 	Indesign scripts -> C:\Users\{Name}\AppData\Roaming\Adobe\InDesign\Version {XX.0}\en_US\Scripts\Scripts Panel<br>
 	Online manual for <a href="https://www.indesignjs.de/extendscriptAPI/indesign8/" target="_blank">Indesign ExtendScript API</a><br>
 	Acrobat actions -> C:\Users\{Name}\AppData\Roaming\Adobe\Acrobat\DC\Sequences<br>
-	Distiller user fonts -> C:\Users\{Name}\AppData\Local\Microsoft\Windows\Fonts</p></li>
+	Distiller user fonts -> C:\Users\{Name}\AppData\Local\Microsoft\Windows\Fonts<br></p></li>
 
 	<li><p><span class="head1" id="ind_java">Sample Indesign Javascript code <a href="#top" style="text-decoration: none"><b>&#8634;</b></a></span><br>
 	<span style="white-space: pre">var doc = app.activeDocument;
@@ -658,7 +679,7 @@ myLayer.remove();
 doc.layers.everyItem().ignoreWrap = true;
 alert("Process complete!");</span><br>
 <br>
-<span class="hlt">Note:</span> Sample code moves all grouped objects under a specified layer into their own layers with the same names as the grouped objects.<br>Also ungroups them and "<em>turns off wrapping when layers are hidden</em>."<br>
+<span class="hlt">Note:</span> Sample code moves all grouped objects under a specified layer into their own layers with the same names as the grouped objects.<br>Also ungroups them and turns off wrapping when layers are hidden.<br>
 <span class="hlt">Important:</span> For the ungroup step to function properly, the <span class="hlt">"Ungroup Remembers Layers"</span> option must be TURNED OFF in the Layers panel menu.
 
         <li><p><span class="head1" id="misc">Reflex Blue for script NAB <a href="#top" style="text-decoration: none"><b>&#8634;</b></a></span><br>
