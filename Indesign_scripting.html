@@ -1,0 +1,190 @@
+﻿<!DOCTYPE html>
+<!--Drewbster / 20241211-->
+<html>
+
+<head>
+
+<script type="text/javascript">
+  var d = new Date();
+  var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+  var wkdays = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
+  var dt1 = wkdays[d.getDay()] + ", " + months[d.getMonth()] + " " + d.getDate() + ", " + d.getFullYear();
+  document.addEventListener("DOMContentLoaded",function(event)
+    {
+      document.getElementById("curdate").innerHTML = dt1;
+    })
+</script>
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, user-scalable=yes">
+<!--<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">-->
+
+<title>Indesign scripts collection</title>
+
+<!-- add icon link -->
+<link rel="icon" href="https://brewdster.github.io/homepage/images/ElliefanIX.png" type="image/x-icon">
+
+<link rel="preconnect" href="https://fonts.googleapis.com/">
+<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Poppins:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet">
+
+<style type="text/css">
+
+body,li
+  {
+    font-family: 'Poppins', 'Inter', Arial, sans-serif;
+  }
+
+.head1
+  {
+    color: #C80815;
+    font-weight: 500;
+  }
+
+.hlt
+  {
+    color: #0000FF;
+    font-weight: 500
+  }
+
+table.datetbl
+  td
+    {
+      padding: 0px 10px 0px 10px;
+      border: 1px solid #CCCCCC;
+    }
+
+</style>
+
+</head>
+
+<body bgcolor="#FFFFFF">
+
+<table id="top" width="100%" cellspacing="0" cellpadding="0" border="0">
+  <tbody>
+    <tr>
+      <td>
+        <table width="100%" cellspacing="0" cellpadding="0" border="0" bgcolor="#3E3E3E">
+          <tbody>
+            <tr>
+              <td width="100%" height="10"></td>
+            </tr>
+          </tbody>
+        </table>
+
+        <table width="100%" cellspacing="0" cellpadding="0" border="0" bgcolor="#1E5CA4">
+          <tbody>
+            <tr style="color: #FFFFFF; text-shadow: 1px 1px 6px #000000">
+              <td width="2%">&nbsp;</td>
+              <td style="padding: 20px 0px 20px 0px" width="90" align="left"><img src="https://brewdster.github.io/homepage/images/andrew.png" width="75" border="0" style="vertical-align: bottom"></td>
+              <td style="font-size: 20px; font-weight: 500; line-height: 24px" class="Reduct">Indesign Scripts Collection</td>
+              <td style="font-size: 14px; font-weight: normal; line-height: 18px" align="right">Updated 2024-11-18</td>
+              <td width="2%">&nbsp;</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <table width="100%" cellspacing="0" cellpadding="0" border="0" bgcolor="#FFAE20">
+          <tbody>
+            <tr>
+              <td width="100%" height="10"></td>
+            </tr>
+          </tbody>
+        </table>
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        <table width="100%" cellspacing="0" cellpadding="0" border="0">
+          <tbody>
+            <tr>
+              <td align="left" valign="top" style="padding: 20px 0px 10px 27px; font-size: 16px; font-family: 'Poppins', sans-serif; line-height: 22px; color: #000000; font-weight: normal"><span class="head1">Page index</span>
+                <ul style="list-style-type: none; padding: 0px">
+                  <li><a href="#ungrp">Ungroup all objects</a></li>
+                  <li><a href="#ignorewrap">Ignore wrap - all layers</a></li>
+                  <li><a href="#moveobj">Move & ungroup objects to new layers</a></li>
+                  <li><a href="#ligahyph">Turn off all ligatures and hyphenation</a></li>
+                  <li><a href="#resource">Additional resources</a></li>
+                </ul>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </td>
+    </tr>
+
+    <tr>
+      <td style="padding: 0px 0px 0px 0px; color: #000000; font-size: 16px; font-weight: normal; line-height: 20px">
+        <ul>
+
+          <li><p id="ungrp"><span class="head1">Ungroup all objects <a href="#top" style="text-decoration: none"><b>&#8634;</b></a></span><br>
+	  <span style="white-space: pre">var doc = app.activeDocument;
+with(doc)
+  {
+    while (groups.length != 0)
+      {
+        groups.everyItem().ungroup();
+      }
+  }
+alert("Process complete!");</span></p></li>
+
+          <li><p id="ignorewrap"><span class="head1">Ignore wrap - all layers</b> <a href="#top" style="text-decoration: none"><b>&#8634;</b></a></span><br>
+	  <span style="white-space: pre">var doc = app.activeDocument;
+doc.layers.everyItem().ignoreWrap = true;
+alert("Process complete!");</span></p></li>
+
+          <li><p id="moveobj"><span class="head1">Move & ungroup objects to new layers</b> <a href="#top" style="text-decoration: none"><b>&#8634;</b></a></span><br>
+	  <span style="white-space: pre">var doc = app.activeDocument;
+var myLayer = doc.layers.item(prompt("Enter name of Layer","Source"));
+for (i = 0; i < myLayer.pageItems.length; i++)
+{
+  var lyr = myLayer.pageItems[i].name;
+  myLayer.pageItems[i].itemLayer = doc.layers.add({name:myLayer.pageItems[i].name, layerColor: UIColors.LIGHT_OLIVE});
+  doc.layers.item(lyr).groups.item(lyr).ungroup();
+  i = i - 1;
+}
+myLayer.remove();
+doc.layers.everyItem().ignoreWrap = true;
+alert("Process complete!");
+
+<span class="hlt">Note:</span> Sample code moves all grouped objects under a specified layer into their own layers with the same names as the grouped objects.
+Also ungroups them and turns off wrapping when layers are hidden.
+<span class="hlt">Important:</span> For the ungroup step to function properly, the <span class="hlt">"Ungroup Remembers Layers"</span> option must be TURNED OFF in the Layers panel menu.</span></p></li>
+
+          <li><p id="ligahyph"><span class="head1">Turn off all ligatures and hyphenation</b> <a href="#top" style="text-decoration: none"><b>&#8634;</b></a></span><br>
+	  <span style="white-space: pre">var doc = app.activeDocument;
+var stories = doc.stories.everyItem().getElements();
+var pargs = doc.paragraphStyles;
+for (i = 0; i < stories.length; i++)
+  {
+    stories[i].paragraphs.everyItem().ligatures = false;
+    stories[i].paragraphs.everyItem().hyphenation = false;
+  }
+for (j = 1; j < pargs.length; j++)
+  {
+    pargs[j].ligatures = false;
+    pargs[j].hyphenation = false;
+  }
+alert("Process complete!");</span></p></li>
+
+          <li><p id="resource"><span class="head1">Additional resources</b> <a href="#top" style="text-decoration: none"><b>&#8634;</b></a></span><br>
+<a href="https://brewdster.github.io/projects/Adobe_InDesign_CS6_Scripting_Guide_JSEN_3768967468.pdf" target="_blank">Adobe Indesign CS6 Scripting Guide: JavaScript</a><br><a href="https://www.indesignjs.de/extendscriptAPI/indesign-latest/" target="_blank">Adobe InDesign ExtendScript API Object Model</a></p></li>
+
+        </ul>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td align="left" style="padding: 10px 0px 10px 0px"><p></p></td>
+    </tr>
+  </tbody>
+</table>
+
+</body>
+
+</html>
