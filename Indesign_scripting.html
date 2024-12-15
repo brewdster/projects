@@ -1,5 +1,5 @@
 ﻿<!DOCTYPE html>
-<!--Drewbster / 20241211-->
+<!--Drewbster / 20241215-->
 <html>
 
 <head>
@@ -78,7 +78,7 @@ table.datetbl
               <td width="2%">&nbsp;</td>
               <td style="padding: 20px 0px 20px 0px" width="90" align="left"><img src="https://brewdster.github.io/homepage/images/andrew.png" width="75" border="0" style="vertical-align: bottom"></td>
               <td style="font-size: 20px; font-weight: 500; line-height: 24px" class="Reduct">Indesign Scripts Collection</td>
-              <td style="font-size: 14px; font-weight: normal; line-height: 18px" align="right">Updated 2024-12-11</td>
+              <td style="font-size: 14px; font-weight: normal; line-height: 18px" align="right">Updated 2024-12-15</td>
               <td width="2%">&nbsp;</td>
             </tr>
           </tbody>
@@ -105,6 +105,7 @@ table.datetbl
                   <li><a href="#ignorewrap">Ignore wrap - all layers</a></li>
                   <li><a href="#moveobj">Move & ungroup objects to new layers</a></li>
                   <li><a href="#ligahyph">Turn off all ligatures and hyphenation</a></li>
+                  <li><a href="#swatch">Create new swatch</a></li>
                   <li><a href="#resource">Additional resources</a></li>
                 </ul>
               </td>
@@ -167,6 +168,20 @@ for (j = 1; j < pargs.length; j++)
     pargs[j].hyphenation = false;
   }
 alert("Process complete!");</span></p></li>
+
+          <li><p id="swatch"><span class="head1">Create new swatch</b> <a href="#top" style="text-decoration: none"><b>&#8634;</b></a></span><br>
+	  <span style="white-space: pre">var myDoc = app.activeDocument;
+try
+{
+  mycol = myDoc.colors.add({name:"Laser"});
+  mycol.model = ColorModel.PROCESS;
+  mycol.space = ColorSpace.CMYK;
+  mycol.colorValue = [Number(0),Number(100),Number(0),Number(0)];
+}
+catch(err)
+{
+  ""
+}</span></p></li>
 
           <li><p id="resource"><span class="head1">Additional resources</b> <a href="#top" style="text-decoration: none"><b>&#8634;</b></a></span><br>
 <a href="https://brewdster.github.io/projects/Adobe_InDesign_CS6_Scripting_Guide_JSEN_3768967468.pdf" target="_blank">Adobe Indesign CS6 Scripting Guide: JavaScript</a><br><a href="https://www.indesignjs.de/extendscriptAPI/indesign-latest/" target="_blank">Adobe InDesign ExtendScript API Object Model</a></p></li>
