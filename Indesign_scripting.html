@@ -1,5 +1,5 @@
 ﻿<!DOCTYPE html>
-<!--Drewbster / 20241215-->
+<!--Drewbster / 20241224-->
 <html>
 
 <head>
@@ -78,7 +78,7 @@ table.datetbl
               <td width="2%">&nbsp;</td>
               <td style="padding: 20px 0px 20px 0px" width="90" align="left"><img src="https://brewdster.github.io/homepage/images/andrew.png" width="75" border="0" style="vertical-align: bottom"></td>
               <td style="font-size: 20px; font-weight: 500; line-height: 24px" class="Reduct">Indesign Scripts Collection</td>
-              <td style="font-size: 14px; font-weight: normal; line-height: 18px" align="right">Updated 2024-12-15</td>
+              <td style="font-size: 14px; font-weight: normal; line-height: 18px" align="right">Updated 2024-12-24</td>
               <td width="2%">&nbsp;</td>
             </tr>
           </tbody>
@@ -108,6 +108,7 @@ table.datetbl
                   <li><a href="#swatch">Create new swatch</a></li>
                   <li><a href="#tf_rect">Create text frame with specific properties and a simple rectangle object</a></li>
                   <li><a href="#box_stroke">Create a rectangle with stroke and fill</a></li>
+                  <li><a href="#cleanup">Cleanup: delete all guides plus remove slug, margins & unused swatches in entire document</a></li>
                   <li><a href="#resource">Additional resources</a></li>
                 </ul>
               </td>
@@ -212,12 +213,26 @@ frame = myDoc.rectangles.add ({geometricBounds:[3,5,5,3], contentType:ContentTyp
 frame.fillColor  = "Black";
 frame.strokeWeight = "2.5pt";
 frame.strokeType = "Dashed";
-frame.strokeColor = "Black";</p></li>
+frame.strokeColor = "Black";</span></p></li>
+
+          <li><p id="cleanup"><span class="head1">Cleanup: delete all guides plus remove slug, margins & unused swatches in entire document</b> <a href="#top" style="text-decoration: none"><b>&#8634;</b></a></span><br>
+	  <span style="white-space: pre">var myDoc = app.activeDocument;
+myDoc.guides.everyItem().remove();
+myDoc.pages.everyItem().properties = {marginPreferences:{left:0, right:0, top:0, bottom:0}};
+var sw=myDoc.unusedSwatches
+for (i = sw.length-1; i > -1; i--)
+{
+  sw[i].remove();
+}
+myDoc.documentPreferences.documentSlugUniformSize = true;
+myDoc.documentPreferences.slugTopOffset = 0;</span></p></li>
 
           <li><p id="resource"><span class="head1">Additional resources</b> <a href="#top" style="text-decoration: none"><b>&#8634;</b></a></span><br>
 <a href="https://brewdster.github.io/projects/Adobe_InDesign_CS6_Scripting_Guide_JSEN_3768967468.pdf" target="_blank">Adobe Indesign CS6 Scripting Guide: JavaScript</a><br>
 <a href="https://www.indesignjs.de/extendscriptAPI/indesign-latest/" target="_blank">Adobe InDesign ExtendScript API Object Model</a><br>
 <a href="https://indisnip.wordpress.com/category/indesign-scripts/" target="_blank">IndiSnip [InDesign® Snippets]</a></p></li>
+<a href="https://brewdster.github.io/projects/InDesign_GREP_chart_v3-1_2024.pdf" target="_blank">InDesign GREP quick reference sheet</a></p></li>
+<a href="https://brewdster.github.io/projects/Erica_Gamets_GREP_Cheat_Sheet.pdf" target="_blank">Erica Gamet's GREP cheat sheet</a></p></li>
 
         </ul>
       </td>
