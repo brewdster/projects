@@ -109,6 +109,7 @@ table.datetbl
                   <li><a href="#tf_rect">Create text frame with specific properties and a simple rectangle object</a></li>
                   <li><a href="#box_stroke">Create a rectangle with stroke and fill</a></li>
                   <li><a href="#cleanup">Cleanup: delete all guides plus remove slug, margins & unused swatches in entire document</a></li>
+                  <li><a href="#grep_1">GREP: Target word after and before specific words</a></li>
                   <li><a href="#resource">Additional resources</a></li>
                 </ul>
               </td>
@@ -133,12 +134,12 @@ with(doc)
   }
 alert("Process complete!");</span></p></li>
 
-          <li><p id="ignorewrap"><span class="head1">Ignore wrap - all layers</b> <a href="#top" style="text-decoration: none"><b>&#8634;</b></a></span><br>
+          <li><p id="ignorewrap"><span class="head1">Ignore wrap - all layers <a href="#top" style="text-decoration: none"><b>&#8634;</b></a></span><br>
 	  <span style="white-space: pre">var doc = app.activeDocument;
 doc.layers.everyItem().ignoreWrap = true;
 alert("Process complete!");</span></p></li>
 
-          <li><p id="moveobj"><span class="head1">Move & ungroup objects to new layers</b> <a href="#top" style="text-decoration: none"><b>&#8634;</b></a></span><br>
+          <li><p id="moveobj"><span class="head1">Move & ungroup objects to new layers <a href="#top" style="text-decoration: none"><b>&#8634;</b></a></span><br>
 	  <span style="white-space: pre">var doc = app.activeDocument;
 var myLayer = doc.layers.item(prompt("Enter name of Layer","Source"));
 for (i = 0; i < myLayer.pageItems.length; i++)
@@ -156,7 +157,7 @@ alert("Process complete!");
 Also ungroups them and turns off wrapping when layers are hidden.
 <span class="hlt">Important:</span> For the ungroup step to function properly, the <span class="hlt">"Ungroup Remembers Layers"</span> option must be TURNED OFF in the Layers panel menu.</span></p></li>
 
-          <li><p id="ligahyph"><span class="head1">Turn off all ligatures and hyphenation</b> <a href="#top" style="text-decoration: none"><b>&#8634;</b></a></span><br>
+          <li><p id="ligahyph"><span class="head1">Turn off all ligatures and hyphenation <a href="#top" style="text-decoration: none"><b>&#8634;</b></a></span><br>
 	  <span style="white-space: pre">var doc = app.activeDocument;
 var stories = doc.stories.everyItem().getElements();
 var pargs = doc.paragraphStyles;
@@ -172,7 +173,7 @@ for (j = 1; j < pargs.length; j++)
   }
 alert("Process complete!");</span></p></li>
 
-          <li><p id="swatch"><span class="head1">Create new swatch</b> <a href="#top" style="text-decoration: none"><b>&#8634;</b></a></span><br>
+          <li><p id="swatch"><span class="head1">Create new swatch <a href="#top" style="text-decoration: none"><b>&#8634;</b></a></span><br>
 	  <span style="white-space: pre">var myDoc = app.activeDocument;
 try
 {
@@ -186,7 +187,7 @@ catch(err)
   ""
 }</span></p></li>
 
-          <li><p id="tf_rect"><span class="head1">Create text frame with specific properties and a simple rectangle object</b> <a href="#top" style="text-decoration: none"><b>&#8634;</b></a></span><br>
+          <li><p id="tf_rect"><span class="head1">Create text frame with specific properties and a simple rectangle object <a href="#top" style="text-decoration: none"><b>&#8634;</b></a></span><br>
 	  <span style="white-space: pre">var myDoc = app.activeDocument;
 var ntf = myDoc.pages[0].textFrames.add();
 ntf.texts[0].hyphenation = false;
@@ -207,7 +208,7 @@ var rect =myDoc.rectangles.add({geometricBounds : <span class="hlt">[3,5,5,3]</s
 
 <p><span class="hlt">Note:</span> [3,5,5,3] represents the x/y vectors of a 2x2-inch square at vector x=3 and y=3, with the 4 corners starting from the upper-left corner in a clockwise direction, where 3 = y position, 5 = x pos., 5 = y pos., 3 = x pos.</p></li>
 
-          <li><p id="box_stroke"><span class="head1">Create a rectangle with stroke and fill</b> <a href="#top" style="text-decoration: none"><b>&#8634;</b></a></span><br>
+          <li><p id="box_stroke"><span class="head1">Create a rectangle with stroke and fill <a href="#top" style="text-decoration: none"><b>&#8634;</b></a></span><br>
 	  <span style="white-space: pre">var myDoc = app.activeDocument;
 frame = myDoc.rectangles.add ({geometricBounds:[3,5,5,3], contentType:ContentType.GRAPHIC_TYPE});
 frame.fillColor  = "Black";
@@ -215,7 +216,7 @@ frame.strokeWeight = "2.5pt";
 frame.strokeType = "Dashed";
 frame.strokeColor = "Black";</span></p></li>
 
-          <li><p id="cleanup"><span class="head1">Cleanup: delete all guides plus remove slug, margins & unused swatches in entire document</b> <a href="#top" style="text-decoration: none"><b>&#8634;</b></a></span><br>
+          <li><p id="cleanup"><span class="head1">Cleanup: delete all guides plus remove slug, margins & unused swatches in entire document <a href="#top" style="text-decoration: none"><b>&#8634;</b></a></span><br>
 	  <span style="white-space: pre">var myDoc = app.activeDocument;
 myDoc.guides.everyItem().remove();
 myDoc.pages.everyItem().properties = {marginPreferences:{left:0, right:0, top:0, bottom:0}};
@@ -227,11 +228,20 @@ for (i = sw.length-1; i > -1; i--)
 myDoc.documentPreferences.documentSlugUniformSize = true;
 myDoc.documentPreferences.slugTopOffset = 0;</span></p></li>
 
-          <li><p id="resource"><span class="head1">Additional resources</b> <a href="#top" style="text-decoration: none"><b>&#8634;</b></a></span><br>
+          <li><p id="grep_1"><span class="head1">GREP: Target word after and before specific words <a href="#top" style="text-decoration: none"><b>&#8634;</b></a></span><br>GREP code: <span class="hlt">(?i)(?<=the ).+?(?= dog)</span><br>Example: The <b style="text-decoration: underline">cute</b> dog ate its dogfood quickly.<br>
+            <ul style="list-style-type: disc">
+              <li><span class="hlt">(?i)</span> makes search term case insensitive.</li>
+              <li><span class="hlt">(?<=the)</span>, also called a Positive Lookbehind, specifies the word "the" as the required before criteria, meaning the string searched for must be preceded by "the".</li>
+              <li><span class="hlt">.+</span> applies GREP style to any and all characters in-between the 2 criteria specified in the example, as long as both criteria exist.</li>
+              <li><span class="hlt">?(?= dog)</span>, also called a Positive Lookahead, specifies a space plus the word "dog" as the required after criteria, meaning the string searched for must be followed by " dog". <b>Note:</b> The preceeding "?" before the opening parenthesis denotes only the first match is considered (non-greedy); otherwise, the match will be extended to the second "dog" in "dogfood". This can also be replaced with <span class="hlt">(?= \bdog\b)</span> where "\b" or "word boundary" indicates a full-word search.</li>
+            </ul>
+          </p></li>
+
+          <li><p id="resource"><span class="head1">Additional resources <a href="#top" style="text-decoration: none"><b>&#8634;</b></a></span><br>
 <a href="https://brewdster.github.io/projects/Adobe_InDesign_CS6_Scripting_Guide_JSEN_3768967468.pdf" target="_blank">Adobe Indesign CS6 Scripting Guide: JavaScript</a><br>
 <a href="https://www.indesignjs.de/extendscriptAPI/indesign-latest/" target="_blank">Adobe InDesign ExtendScript API Object Model</a><br>
-<a href="https://indisnip.wordpress.com/category/indesign-scripts/" target="_blank">IndiSnip [InDesign® Snippets]</a></p></li>
-<a href="https://brewdster.github.io/projects/InDesign_GREP_chart_v3-1_2024.pdf" target="_blank">InDesign GREP quick reference sheet</a></p></li>
+<a href="https://indisnip.wordpress.com/category/indesign-scripts/" target="_blank">IndiSnip [InDesign® Snippets]</a><br>
+<a href="https://brewdster.github.io/projects/InDesign_GREP_chart_v3-1_2024.pdf" target="_blank">InDesign GREP quick reference sheet</a><br>
 <a href="https://brewdster.github.io/projects/Erica_Gamets_GREP_Cheat_Sheet.pdf" target="_blank">Erica Gamet's GREP cheat sheet</a></p></li>
 
         </ul>
