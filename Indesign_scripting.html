@@ -230,10 +230,16 @@ myDoc.documentPreferences.slugTopOffset = 0;</span></p></li>
 
           <li><p id="grep_1"><span class="head1">GREP: Target word after and before specific words <a href="#top" style="text-decoration: none"><b>&#8634;</b></a></span><br>GREP code: <span class="hlt">(?i)(?<=the ).+?(?= dog)</span><br>Example: The <b style="text-decoration: underline">cute</b> dog ate its dogfood quickly.<br>
             <ul style="list-style-type: disc">
-              <li><span class="hlt">(?i)</span> makes search term case insensitive.</li>
+              <li><span class="hlt">(?i)</span> makes search term case-insensitive.</li>
               <li><span class="hlt">(?<=the)</span>, also called a Positive Lookbehind, specifies the word "the" as the required before criteria, meaning the string searched for must be preceded by "the".</li>
               <li><span class="hlt">.+</span> applies GREP style to any and all characters in-between the 2 criteria specified in the example, as long as both criteria exist.</li>
               <li><span class="hlt">?(?= dog)</span>, also called a Positive Lookahead, specifies a space plus the word "dog" as the required after criteria, meaning the string searched for must be followed by " dog". <b>Note:</b> The preceeding "?" before the opening parenthesis denotes only the first match is considered (non-greedy); otherwise, the match will be extended to the second "dog" in "dogfood". This can also be replaced with <span class="hlt">(?= \bdog\b)</span> where "\b" or "word boundary" indicates a full-word search.</li>
+            </ul></p>
+          <p>
+            Another option is <span class="hlt">^(?i)[^d]+\K(cute)</span> where<br>
+            <ul style="list-style-type: disc">
+              <li><span class="hlt">^(?i)[^d]</span> establishes the search range from the start of the paragraph "^" to the first "d" character, case-insensitive.</li>
+              <li><span class="hlt">+\K(cute)</span> is an inclusive LookBehind search for the word "cute" in the established range from the previous step.</li>
             </ul>
           </p></li>
 
