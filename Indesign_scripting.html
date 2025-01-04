@@ -250,7 +250,8 @@ myDoc.documentPreferences.slugTopOffset = 0;</span></p></li>
               <li><span class="hlt">(?i)</span> makes search term case-insensitive.</li>
               <li><span class="hlt">(?<=the)</span>, also called a Positive Lookbehind, specifies the word "the" as the required before criteria, meaning the string searched for must be preceded by "the".</li>
               <li><span class="hlt">.+</span> applies GREP style to any and all characters in-between the 2 criteria specified in the example, as long as both criteria exist.</li>
-              <li><span class="hlt">?(?= dog)</span>, also called a Positive Lookahead, specifies a space plus the word "dog" as the required after criteria, meaning the string searched for must be followed by " dog". <b>Note:</b> The preceeding "?" before the opening parenthesis denotes only the first match is considered (non-greedy); otherwise, the GREP style will be applied to the second "dog" in "dogfood".<br>
+              <li><span class="hlt">?(?= dog)</span>, also called a Positive Lookahead, specifies a space plus the word "dog" as the required after criteria, meaning the string searched for must be followed by " dog".<br>
+                <b>Note:</b> The preceeding "?" before the opening parenthesis denotes only the first match is considered (non-greedy); otherwise, the criteria will be applied to the second "dog" in "dogfood".<br>
                 This criteria can also be expressed as <span class="hlt">(?= \bdog\b)</span>, where "\b" or "word boundary" indicates a full-word search. This will apply the criteria to " dog " but not to "dogfood".</li>
             </ul></p>
           <p>
