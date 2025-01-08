@@ -1,5 +1,5 @@
-<!DOCTYPE html>
-<!--Drewbster / 20250101-->
+﻿<!DOCTYPE html>
+<!--Drewbster / 20250108-->
 <html>
 
 <head>
@@ -59,6 +59,31 @@ body,li
     font-weight: 500
   }
 
+.sticky
+  {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+
+.content
+  {
+    padding: 0px;
+  }
+
+.sticky + .content
+  {
+    padding-top: 0px;
+  }
+
+.anchor
+  {
+    display: block;
+    position: relative;
+    top: -350px;
+    visibility: hidden;
+  }
+
 table.datetbl
   td
     {
@@ -70,11 +95,10 @@ table.datetbl
 
 </head>
 
-<body bgcolor="#EEEEEE">
+<body width="100%" bgcolor="#EEEEEE" style="margin: 0px; padding: 0px">
 
-<table id="top" width="100%" cellspacing="0" cellpadding="0" border="0">
+<table id="banner" width="100%" cellspacing="0" cellpadding="0" border="0">
   <tbody>
-
     <tr>
       <td>
         <table width="100%" cellspacing="0" cellpadding="0" border="0" bgcolor="#AFBD21">
@@ -107,7 +131,11 @@ table.datetbl
         </table>
       </td>
     </tr>
+  </tbody>
+</table>
 
+<table id="top" class="content" width="100%" cellspacing="0" cellpadding="0" border="0">
+  <tbody>
     <tr>
       <td>
         <table width="100%" cellspacing="0" cellpadding="0" border="0">
@@ -171,7 +199,8 @@ table.datetbl
 	  <li><p><span class="head1">qLingo online Help</span><br>
 	  <a href="https://help.xmpie.com/uPlan/v.8.2/Help/en/uPlanUserGuide/uDirectRuleEditing/uDirectRuleEditing.htm" target="_blank">https://help.xmpie.com/uPlan/v.8.2/Help/en/uPlanUserGuide/uDirectRuleEditing/uDirectRuleEditing.htm</a></p></li>
 
-          <li><p id="freq"><span class="head1">Create [var_city_prov_pc_cntry] content object (ADOR) <a href="#top" style="text-decoration: none"><b>&#8634;</b></a></span><br>
+          <a class="anchor" name="freq"></a>
+          <li><p><span class="head1">Create [var_city_prov_pc_cntry] content object (ADOR) <a href="#top" style="text-decoration: none"><b>&#8634;</b></a></span><br>
 	  <span style="white-space: pre">FindandReplace(Trim(Trim(|->[CITY]) & " " & Trim(|->[PROV]) & "  " & FindandReplace(Trim(|->[PC])," ","<span class="hlt">Alt-0160</span>")),"   ","  ")
 &
 If(IsNullOrEmpty(Trim(|->[Country])) or Trim(|->[Country]) = "")
@@ -258,17 +287,18 @@ else
 
 <span class="hlt">Note:</span> Highlighted code can be substituted with <span class="hlt">12</span> or <span class="hlt">14</span> (start position of the search, instead of at the mid-point).</span></p></li>
 
-        <li><p><span class="head1" id="seq_chk">Creating sequence nos. <a href="#top" style="text-decoration: none"><b>&#8634;</b></a></span><br>
-	<ol>
-	  <li>SubString(AsString(GetEnv("CurRecordNumber") + 100000), 1)  ex: 00123</li>
-	  <li>AsString(GetEnv("CurRecordNumber") + 10000)  ex: 10123</li>
-	  <li>"2" & FormatNumber(GetEnv("CurRecordNumber"), "0000")  ex: 20123</li>
-	  <li>SubString("##########", 0, 6 - Length(GetEnv("CurRecordNumber"))) & GetEnv("CurRecordNumber")  ex: ###123</li>
-	  <li>GetEnv("CurRecordNumber") & SubString("**********", 0, 6 - Length(GetEnv("CurRecordNumber")))  ex: 123***</li>
-	</ol></p></li>
+          <a class="anchor" name="seq_chk"></a>
+          <li><p><span class="head1">Creating sequence nos. <a href="#top" style="text-decoration: none"><b>&#8634;</b></a></span><br>
+	  <ol>
+	    <li>SubString(AsString(GetEnv("CurRecordNumber") + 100000), 1)  ex: 00123</li>
+	    <li>AsString(GetEnv("CurRecordNumber") + 10000)  ex: 10123</li>
+	    <li>"2" & FormatNumber(GetEnv("CurRecordNumber"), "0000")  ex: 20123</li>
+	    <li>SubString("##########", 0, 6 - Length(GetEnv("CurRecordNumber"))) & GetEnv("CurRecordNumber")  ex: ###123</li>
+	    <li>GetEnv("CurRecordNumber") & SubString("**********", 0, 6 - Length(GetEnv("CurRecordNumber")))  ex: 123***</li>
+	  </ol></p></li>
 
-        <li><p><span class="head1">Check record sequence</span><br>
-	<span style="white-space: pre">If(GetEnv("CurRecordNumber") <> Asnumber(Substring(Trim(|->[SEQNO]), 1)))
+          <li><p><span class="head1">Check record sequence</span><br>
+          <span style="white-space: pre">If(GetEnv("CurRecordNumber") <> Asnumber(Substring(Trim(|->[SEQNO]), 1)))
 {
   abort
 }
@@ -277,7 +307,8 @@ else
   GetEnv("CurRecordNumber")
 }</span></p></li>
 
-        <li><p id="tagtxt"><span class="head1">Adobe tagged-text scripts for <b>Text ADOR with programmable styles</b> <a href="#top" style="text-decoration: none"><b>&#8634;</b></a></span><br>
+        <a class="anchor" name="tagtxt"></a>
+        <li><p><span class="head1">Adobe tagged-text scripts for <b>Text ADOR with programmable styles</b> <a href="#top" style="text-decoration: none"><b>&#8634;</b></a></span><br>
 	  <ol>
 	    <li>Font script (ex: <span class="hlt">@{fs}</span>)<br>
 	    &quot;&lt;UNICODE-WIN&gt;\r\n&lt;Version:17.2&gt;&lt;FeatureSet:InDesign-Roman&gt;&lt;ParaStyle:NormalParagraphStyle&gt;&lt;pFirstLineIndent:0.000000&gt;&lt;pHyphenation:0&gt;&lt;pSpaceAfter:4.500000&gt;&lt;ColorTable:=&lt;Black:COLOR:CMYK:Process:0,0,0,1&gt;&gt;&quot;</li>
@@ -333,7 +364,8 @@ Switch(Trim(UCase(|->[PARACALL])))
 	  </ol>
         </p></li>
 
-        <li><p><span class="head1" id="if_switch">Combined <b>If</b> and <b>Switch</b> controls in <b>Text-with-Style</b> ADOR <a href="#top" style="text-decoration: none"><b>&#8634;</b></a></span><br>
+        <a class="anchor" name="if_switch"></a>
+        <li><p><span class="head1">Combined <b>If</b> and <b>Switch</b> controls in <b>Text-with-Style</b> ADOR <a href="#top" style="text-decoration: none"><b>&#8634;</b></a></span><br>
 	<span style="white-space: pre">If(Ucase(Trim(|->[LANG])) = "E")
 {
   __PrivateInternalTextWithStyle(Switch(Trim(UCase(|->[PARACALL])))
@@ -365,7 +397,8 @@ else
 
 <span class="hlt">Note:</span> Tagged-text scripts can also be used in <span class="hlt">Text</span> ADORs. It does not need to be primarily used in <span class="hlt">Text-with-Style</span> ADORs.</span></p></li>
 
-        <li><p><span class="head1" id="txtfil">About <b>Text File</b> content object <a href="#top" style="text-decoration: none"><b>&#8634;</b></a></span><br>
+        <a class="anchor" name="txtfil"></a>
+        <li><p><span class="head1">About <b>Text File</b> content object <a href="#top" style="text-decoration: none"><b>&#8634;</b></a></span><br>
           <ul style="list-style-type:disc">
             <li>You can use either Word RTF, XMPie XNIP or Adobe Tagged Text as assets.</li>
             <li>Asset folder needs to be set.</li>
@@ -374,14 +407,8 @@ else
           </ul>
         </span></p></li>
 
-        <li><p><span class="head1" id="grep">Applying dynamic paragraph & character styles using <b>GREP</b><a href="#top" style="text-decoration: none"><b>&#8634;</b></a></span><br>
-          <ul style="list-style-type:disc">
-            <li>Apply multiple character styles in variable copy using GREP in paragraph styles.</li>
-            <li>Download the following <a href="https://brewdster.github.io/projects/Applying_Styles_with_GREP.indd">Indesign file</a> for sample illustrations.</li>
-          </ul>
-        </span></p></li>
-
-        <li><p><span class="head1" id="graphic">QLingo graphic functions <a href="#top" style="text-decoration: none"><b>&#8634;</b></a></span><br>
+        <a class="anchor" name="graphic"></a>
+        <li><p><span class="head1">QLingo graphic functions <a href="#top" style="text-decoration: none"><b>&#8634;</b></a></span><br>
 	<ul style="list-style-type:disc">
 	  <li>Rectangle(<span style="color: #00FFFF">0.00</span>,<span style="color: #FF00FF">0.00</span>,<span style="color: #EFCC00">0.00</span>,<span style="color: #000000">0.00</span>) // Graphic ADOR; fills object with variable colour. CMYK values are from 0.00 to 100. See <a href="https://colordesigner.io/convert/cmyktorgb" target="_blank">Color Designer</a> for color reference.</li>
 	  <li>XMPBarcode("DataMatrix", Trim(|->[SEQNO]), "Color=cmyk(0%,0%,0%,100%);BackgroundColor=cmyk(0%,0%,0%,0%)")</li>
@@ -390,7 +417,8 @@ else
 	  <li>Call Web.URLContentAsFile("https://brewdster.github.io/homepage/images/favicon.png") // Graphic ADOR; reference url image asset.</li>
 	</ul></p></li>
 
-        <li><p><span class="head1" id="string">QLingo string functions <a href="#top" style="text-decoration: none"><b>&#8634;</b></a></span><br>
+        <a class="anchor" name="string"></a>
+        <li><p><span class="head1">QLingo string functions <a href="#top" style="text-decoration: none"><b>&#8634;</b></a></span><br>
 	<ul style="list-style-type:disc">
 	  <li>Lcase("HELLO") = "hello"</li>
 	  <li>Tcase("hello world") = "Hello World"</li>
@@ -410,7 +438,8 @@ else
 	  <li>"Hello" + HexToUnicode("0020") + "World" = "Hello World" // 0020 = 'space'; 0009 = 'tab'</li>
 	</ul></p></li>
 
-        <li><p><span class="head1" id="numeric">QLingo numeric functions <a href="#top" style="text-decoration: none"><b>&#8634;</b></a></span><br>
+        <a class="anchor" name="numeric"></a>
+        <li><p><span class="head1">QLingo numeric functions <a href="#top" style="text-decoration: none"><b>&#8634;</b></a></span><br>
 	<ul style="list-style-type:disc">
 	  <li>ABS(-5) = 5</li>
 	  <li>Floor(3.78) = 3</li>
@@ -423,7 +452,8 @@ else
 	  <li>5 div 2 = 2 // Normal division but drops the decimals and returns whole number</li>
 	</ul></p></li>
 
-        <li><p><span class="head1" id="date">QLingo date functions <a href="#top" style="text-decoration: none"><b>&#8634;</b></a></span><br>
+        <a class="anchor" name="date"></a>
+        <li><p><span class="head1">QLingo date functions <a href="#top" style="text-decoration: none"><b>&#8634;</b></a></span><br>
 	<ul style="list-style-type:disc">
 	  <li>GetDay("14/09/2023") = 14</li>
 	  <li>GetMonth("14/09/2023") = 9</li>
@@ -545,7 +575,8 @@ else
 	  </li>
 	</ul></p></li>
 
-        <li><p><span class="head1" id="conversion">QLingo conversion functions <a href="#top" style="text-decoration: none"><b>&#8634;</b></a></span><br>
+        <a class="anchor" name="conversion"></a>
+        <li><p><span class="head1">QLingo conversion functions <a href="#top" style="text-decoration: none"><b>&#8634;</b></a></span><br>
 	<ul style="list-style-type:disc">
 	  <li>AsBoolean // Null value is false regardless of data type. For 'numbers', 0 is false. Empty 'string' is false. Date is always true.</li>
 	  <li>AsDate("14/09/2023") = 09/14/2023 (date value)</li>
@@ -554,7 +585,8 @@ else
 	  <li>AsNumber("+0123abc") = 123</li>
 	</ul></p></li>
 
-        <li><p><span class="head1" id="system">QLingo system functions <a href="#top" style="text-decoration: none"><b>&#8634;</b></a></span><br>
+        <a class="anchor" name="system"></a>
+        <li><p><span class="head1">QLingo system functions <a href="#top" style="text-decoration: none"><b>&#8634;</b></a></span><br>
 	<ul style="list-style-type:disc">
 	  <li>GetEnv("CurRecordNumber") // Gets record number or current record.</li>
 	  <li>abort // Used in If/Else or Switch statements. Prompts an error.</li>
@@ -567,7 +599,8 @@ else
 	  ex: ReportMessage("Error in record " & GetEnv("CurRecordNumber") & ".")abort</li>
 	</ul></p></li>
 
-	<li><p><span class="head1" id="custom">How to create custom functions in uPlan <a href="#top" style="text-decoration: none"><b>&#8634;</b></a></span><br>
+        <a class="anchor" name="custom"></a>
+	<li><p><span class="head1">How to create custom functions in uPlan <a href="#top" style="text-decoration: none"><b>&#8634;</b></a></span><br>
 	<a href="https://help.xmpie.com/uPlan/Latest/Help/en/QLingo/Custom_User-Defined_Functions.htm" target="_blank">https://help.xmpie.com/uPlan/Latest/Help/en/QLingo/Custom_User-Defined_Functions.htm</a></p></li>
 
 	<li><p><span class="head1">UV2STR (user view to string) function</span><br>
@@ -601,16 +634,19 @@ Result:
 &lt;/table&gt;</span><br><br>
 <span class="hlt">Note:</span> Can also be used to create complex Adobe Tagged Text table ADORs.</p></li>
 
-	<li><p><span class="head1" id="query">Sample uProduce query code for selecting records <a href="#top" style="text-decoration: none"><b>&#8634;</b></a></span><br>
+        <a class="anchor" name="query"></a>
+	<li><p><span class="head1">Sample uProduce query code for selecting records <a href="#top" style="text-decoration: none"><b>&#8634;</b></a></span><br>
 	SELECT * FROM @[Sheet1] WHERE @[Sheet1].[FORMCALL] = 'SWK' ORDER BY @[Sheet1].[FORMCALL]<br>
 	<img src="https://brewdster.github.io/homepage/images/How_to_select_records_in_uProduce_using_queries.png" width="800"></p>
 	<p><span class="hlt">Note:</span> To dynamically assign a specific output file name for each output batch file, use the <span class="hlt">ADOR</span> parameter under the <span class="hlt">Output File Name</span> options in the <span class="hlt">Production&nbsp;and&nbsp;Deployment</span> section.</p></li>
 
-	<li><p><span class="head1" id="styles">Create dynamic styles in XMPie video tutorial <a href="#top" style="text-decoration: none"><b>&#8634;</b></a></span><br><br>
+        <a class="anchor" name="styles"></a>
+	<li><p><span class="head1">Create dynamic styles in XMPie video tutorial <a href="#top" style="text-decoration: none"><b>&#8634;</b></a></span><br><br>
 	<iframe width="800" height="450" src="https://www.youtube.com/embed/JdtXnY_MnvU?si=DxcyJcVeyJ9mSSxd" title="Create dynamic styles in XMPie" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 	</p></li>
 
-        <li><p><span class="head1" id="sqldb">Steps to re-create local SQLDB <a href="#top" style="text-decoration: none"><b>&#8634;</b></a></span><br>
+        <a class="anchor" name="sqldb"></a>
+        <li><p><span class="head1">Steps to re-create local SQLDB <a href="#top" style="text-decoration: none"><b>&#8634;</b></a></span><br>
 	<ol>
 	  <li>Run CMD.</li>
 	  <li>Type "SQLLocalDB info" to confirm that <span class="hlt">MSSQLLocalDB</span> is installed.</li>
@@ -621,15 +657,25 @@ Result:
 	  <li>SQLLocalDB <em>start</em> MSSQLLocalDB</li>
 	</ol></p></li>
 
-	<li><p><span class="head1" id="adobe">Adobe CC tips <a href="#top" style="text-decoration: none"><b>&#8634;</b></a></span><br>
+        <a class="anchor" name="adobe"></a>
+	<li><p><span class="head1">Adobe CC tips <a href="#top" style="text-decoration: none"><b>&#8634;</b></a></span><br>
 	Indesign work spaces -> C:\Users\{Name}\AppData\Roaming\Adobe\InDesign\Version {XX.0}\en_US\Workspaces<br>
 	Indesign presets -> C:\Users\{Name}\AppData\Roaming\Adobe\Adobe PDF\Settings<br>
 	Indesign scripts -> C:\Users\{Name}\AppData\Roaming\Adobe\InDesign\Version {XX.0}\en_US\Scripts\Scripts Panel<br>
 	Online manual for <a href="https://www.indesignjs.de/extendscriptAPI/indesign8/" target="_blank">Indesign ExtendScript API</a><br>
 	Acrobat actions -> C:\Users\{Name}\AppData\Roaming\Adobe\Acrobat\DC\Sequences<br>
-	Distiller user fonts -> C:\Users\{Name}\AppData\Local\Microsoft\Windows\Fonts</p></li>
+	Distiller user fonts -> C:\Users\{Name}\AppData\Local\Microsoft\Windows\Fonts<br></p></li>
 
-	<li><p><span class="head1" id="ind_java">Sample Indesign Javascript code <a href="#top" style="text-decoration: none"><b>&#8634;</b></a></span><br>
+        <a class="anchor" name="grep"></a>
+        <li><p><span class="head1">Applying dynamic paragraph & character styles using <b>GREP</b><a href="#top" style="text-decoration: none"><b>&#8634;</b></a></span><br>
+          <ul style="list-style-type:disc">
+            <li>Apply multiple character styles in variable copy using GREP in paragraph styles.</li>
+            <li>Download the following <a href="https://brewdster.github.io/projects/Applying_Styles_with_GREP.indd">Indesign file</a> for sample illustrations.</li>
+          </ul>
+        </span></p></li>
+
+        <a class="anchor" name="ind_java"></a>
+	<li><p><span class="head1">Sample Indesign Javascript code <a href="#top" style="text-decoration: none"><b>&#8634;</b></a></span><br>
 	<span style="white-space: pre">var doc = app.activeDocument;
 var myLayer = doc.layers.item(prompt("Enter name of Layer","Source"));
 var cnt = myLayer.pageItems.length-1;
@@ -648,9 +694,10 @@ alert("Process complete!");
 <span class="hlt">Additional resources:</span>
 <a href="https://brewdster.github.io/projects/Adobe_InDesign_CS6_Scripting_Guide_JSEN_3768967468.pdf" target="_blank">Adobe Indesign CS6 Scripting Guide: JavaScript</a>
 <a href="https://www.indesignjs.de/extendscriptAPI/indesign-latest/" target="_blank">Adobe InDesign ExtendScript API Object Model</a>
-<a href="https://brewdster.github.io/projects/Indesign_scripting.html" target="_blank">My Indesign Scripts & GREP Collection</a></span></p></li></span></p></li>
+<a href="https://brewdster.github.io/projects/Indesign_scripting.html" target="_blank">My Indesign Scripts & GREP Collection</a></span></p></li>
 
-        <li><p><span class="head1" id="misc">Reflex Blue for script NAB <a href="#top" style="text-decoration: none"><b>&#8634;</b></a></span><br>
+        <a class="anchor" name="misc"></a>
+        <li><p><span class="head1">Reflex Blue for script NAB <a href="#top" style="text-decoration: none"><b>&#8634;</b></a></span><br>
 	LAB: 33.333, 14, -48<br>
 	CMYK: 91.53, 83.04, 2.4, 0</p></li>
 
@@ -719,6 +766,27 @@ alert("Process complete!");
     </tr>
   </tbody>
 </table>
+
+<script>
+  window.onscroll = function()
+  {
+    freeze()
+  };
+  var banner = document.getElementById("banner");
+  var sticky = banner.offsetTop;
+
+  function freeze()
+  {
+    if (window.pageYOffset > sticky)
+      {
+        banner.classList.add("sticky");
+      }
+    else
+      {
+        banner.classList.remove("sticky");
+      }
+  }
+</script>
 
 </body>
 
