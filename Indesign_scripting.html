@@ -1,5 +1,5 @@
 ﻿<!DOCTYPE html>
-<!--Drewbster / 20250104-->
+<!--Drewbster / 20250108-->
 <html>
 
 <head>
@@ -47,20 +47,38 @@ body,li
     font-weight: 500
   }
 
-table.datetbl
-  td
-    {
-      padding: 0px 10px 0px 10px;
-      border: 1px solid #CCCCCC;
-    }
+.sticky
+  {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+
+.content
+  {
+    padding: 0px;
+  }
+
+.sticky + .content
+  {
+    padding-top: 0px;
+  }
+
+.anchor
+  {
+    display: block;
+    position: relative;
+    top: -310px;
+    visibility: hidden;
+  }
 
 </style>
 
 </head>
 
-<body bgcolor="#FFFFFF">
+<body width="100%" bgcolor="#FFFFFF" style="margin: 0px; padding: 0px">
 
-<table id="top" width="100%" cellspacing="0" cellpadding="0" border="0">
+<table id="banner" width="100%" cellspacing="0" cellpadding="0" border="0">
   <tbody>
     <tr>
       <td>
@@ -94,8 +112,8 @@ table.datetbl
                 </table>
               </td>
               <td style="font-size: 20px; font-weight: 500; line-height: 24px" class="Reduct">My Indesign Scripts & GREP Collection</td>
-              <td style="font-size: 14px; font-weight: normal; line-height: 18px" align="right">Updated 2025-01-04</td>
-              <td width="92" align="right" valign="middle"><iframe border="0" style="padding: 0px 1px 1px 5px; vertical-align: bottom" src="https://free.timeanddate.com/clock/i9pce7fe/n250/szw80/szh80/hocc9fefe/hbw3/hfcc9fefe/cf100/hnc9edbff/fas24/fdi64/mqcf00/mqs3/mql13/mqw4/mqd94/mhcfff/mhs3/mhl13/mhw4/mhd94/mmc000/mml5/mmw1/mmd94/hwm2/hhs2/hhb18/hms2/hml80/hmb18/hmr7/hss1/hsl90/hsw2/hsr8" frameborder="0" width="80" height="80"></iframe></td>
+              <td style="font-size: 14px; font-weight: normal; line-height: 18px" align="right">Updated 2025-01-08</td>
+              <td width="92" align="right" valign="middle"><iframe border="0" style="padding: 0px 1px 1px 5px; vertical-align: bottom" src="https://free.timeanddate.com/clock/i9pce7fe/n250/szw80/szh80/hocc9fefe/hbw3/hfcc9fefe/cf100/hnc9edbff/fas24/fdi64/mqcf00/mqs3/mql13/mqw4/mqd94/mhcfff/mhs3/mhl13/mhw4/mhd94/mmc000/mml5/mmw1/mmd94/hwm2/hhs2/hhb18/hms2/hml80/hmb18/hmr7/hss1/hsl90/hsw2/hsr8" frameborder="0" width="81" height="81"></iframe></td>
               <td width="2%">&nbsp;</td>
             </tr>
           </tbody>
@@ -110,7 +128,11 @@ table.datetbl
         </table>
       </td>
     </tr>
+  </tbody>
+</table>
 
+<table id="top" class="content" width="100%" cellspacing="0" cellpadding="0" border="0">
+  <tbody>
     <tr>
       <td>
         <table width="100%" cellspacing="0" cellpadding="0" border="0">
@@ -140,7 +162,8 @@ table.datetbl
       <td style="padding: 0px 0px 0px 0px; color: #000000; font-size: 16px; font-weight: normal; line-height: 20px">
         <ul>
 
-          <li><p id="ungrp"><span class="head1">Ungroup all objects <a href="#top" style="text-decoration: none"><b>&#8634;</b></a></span><br>
+          <a class="anchor" name="ungrp"></a>
+          <li><p><span class="head1">Ungroup all objects <a href="#top" style="text-decoration: none"><b>&#8634;</b></a></span><br>
 	  <span style="white-space: pre">var doc = app.activeDocument;
 with(doc)
   {
@@ -151,12 +174,14 @@ with(doc)
   }
 alert("Process complete!");</span></p></li>
 
-          <li><p id="ignorewrap"><span class="head1">Ignore wrap - all layers <a href="#top" style="text-decoration: none"><b>&#8634;</b></a></span><br>
+          <a class="anchor" name="ignorewrap"></a>
+          <li><p><span class="head1">Ignore wrap - all layers <a href="#top" style="text-decoration: none"><b>&#8634;</b></a></span><br>
 	  <span style="white-space: pre">var doc = app.activeDocument;
 doc.layers.everyItem().ignoreWrap = true;
 alert("Process complete!");</span></p></li>
 
-          <li><p id="moveobj"><span class="head1">Move & ungroup objects to new layers <a href="#top" style="text-decoration: none"><b>&#8634;</b></a></span><br>
+          <a class="anchor" name="moveobj"></a>
+          <li><p><span class="head1">Move & ungroup objects to new layers <a href="#top" style="text-decoration: none"><b>&#8634;</b></a></span><br>
 	  <span style="white-space: pre">var doc = app.activeDocument;
 var myLayer = doc.layers.item(prompt("Enter name of Layer","Source"));
 for (i = 0; i < myLayer.pageItems.length; i++)
@@ -174,7 +199,8 @@ alert("Process complete!");
 Also ungroups them and turns off wrapping when layers are hidden.
 <span class="hlt">Important:</span> For the ungroup step to function properly, the <span class="hlt">"Ungroup Remembers Layers"</span> option must be TURNED OFF in the Layers panel menu.</span></p></li>
 
-          <li><p id="ligahyph"><span class="head1">Turn off all ligatures and hyphenation <a href="#top" style="text-decoration: none"><b>&#8634;</b></a></span><br>
+          <a class="anchor" name="ligahyph"></a>
+          <li><p><span class="head1">Turn off all ligatures and hyphenation <a href="#top" style="text-decoration: none"><b>&#8634;</b></a></span><br>
 	  <span style="white-space: pre">var doc = app.activeDocument;
 var stories = doc.stories.everyItem().getElements();
 var pargs = doc.paragraphStyles;
@@ -190,7 +216,8 @@ for (j = 1; j < pargs.length; j++)
   }
 alert("Process complete!");</span></p></li>
 
-          <li><p id="swatch"><span class="head1">Create new swatch <a href="#top" style="text-decoration: none"><b>&#8634;</b></a></span><br>
+          <a class="anchor" name="swatch"></a>
+          <li><p><span class="head1">Create new swatch <a href="#top" style="text-decoration: none"><b>&#8634;</b></a></span><br>
 	  <span style="white-space: pre">var myDoc = app.activeDocument;
 try
 {
@@ -204,7 +231,8 @@ catch(err)
   ""
 }</span></p></li>
 
-          <li><p id="tf_rect"><span class="head1">Create text frame with specific properties and a simple rectangle object <a href="#top" style="text-decoration: none"><b>&#8634;</b></a></span><br>
+          <a class="anchor" name="tf_rect"></a>
+          <li><p><span class="head1">Create text frame with specific properties and a simple rectangle object <a href="#top" style="text-decoration: none"><b>&#8634;</b></a></span><br>
 	  <span style="white-space: pre">var myDoc = app.activeDocument;
 var ntf = myDoc.pages[0].textFrames.add();
 ntf.texts[0].hyphenation = false;
@@ -225,7 +253,8 @@ var rect =myDoc.rectangles.add({geometricBounds : <span class="hlt">[3,5,5,3]</s
 
 <p><span class="hlt">Note:</span> [3,5,5,3] represents the x/y vectors of a 2x2-inch square at vector x=3 and y=3, with the 4 corners starting from the upper-left corner in a clockwise direction, where 3 = y position, 5 = x pos., 5 = y pos., 3 = x pos.</p></li>
 
-          <li><p id="box_stroke"><span class="head1">Create a rectangle with stroke and fill <a href="#top" style="text-decoration: none"><b>&#8634;</b></a></span><br>
+          <a class="anchor" name="box_stroke"></a>
+          <li><p><span class="head1">Create a rectangle with stroke and fill <a href="#top" style="text-decoration: none"><b>&#8634;</b></a></span><br>
 	  <span style="white-space: pre">var myDoc = app.activeDocument;
 frame = myDoc.rectangles.add ({geometricBounds:[3,5,5,3], contentType:ContentType.GRAPHIC_TYPE});
 frame.fillColor  = "Black";
@@ -233,7 +262,8 @@ frame.strokeWeight = "2.5pt";
 frame.strokeType = "Dashed";
 frame.strokeColor = "Black";</span></p></li>
 
-          <li><p id="cleanup"><span class="head1">Cleanup: delete all guides plus remove slug, margins & unused swatches in entire document <a href="#top" style="text-decoration: none"><b>&#8634;</b></a></span><br>
+          <a class="anchor" name="cleanup"></a>
+          <li><p><span class="head1">Cleanup: delete all guides plus remove slug, margins & unused swatches in entire document <a href="#top" style="text-decoration: none"><b>&#8634;</b></a></span><br>
 	  <span style="white-space: pre">var myDoc = app.activeDocument;
 myDoc.guides.everyItem().remove();
 myDoc.pages.everyItem().properties = {marginPreferences:{left:0, right:0, top:0, bottom:0}};
@@ -245,7 +275,8 @@ for (i = sw.length-1; i > -1; i--)
 myDoc.documentPreferences.documentSlugUniformSize = true;
 myDoc.documentPreferences.slugTopOffset = 0;</span></p></li>
 
-          <li><p id="grep_1"><span class="head1">GREP: Target word(s) after and before specific word(s) <a href="#top" style="text-decoration: none"><b>&#8634;</b></a></span><br>GREP code: <span class="hlt">(?i)(?<=the ).+?(?= dog)</span><br>Example: The <b style="text-decoration: underline">cute</b> dog ate its dogfood quickly.<br>
+          <a class="anchor" name="grep_1"></a>
+          <li><p><span class="head1">GREP: Target word(s) after and before specific word(s) <a href="#top" style="text-decoration: none"><b>&#8634;</b></a></span><br>GREP code: <span class="hlt">(?i)(?<=the ).+?(?= dog)</span><br>Example: The <b style="text-decoration: underline">cute</b> dog ate its dogfood quickly.<br>
             <ul style="list-style-type: disc">
               <li><span class="hlt">(?i)</span> makes search term case-insensitive.</li>
               <li><span class="hlt">(?<=the)</span>, also called a Positive Lookbehind, specifies the word "the" as the required before criteria, meaning the string searched for must be preceded by "the".</li>
@@ -262,7 +293,8 @@ myDoc.documentPreferences.slugTopOffset = 0;</span></p></li>
             </ul>
           </p></li>
 
-          <li><p id="resource"><span class="head1">Additional resources <a href="#top" style="text-decoration: none"><b>&#8634;</b></a></span><br>
+          <a class="anchor" name="resource"></a>
+          <li><p><span class="head1">Additional resources <a href="#top" style="text-decoration: none"><b>&#8634;</b></a></span><br>
 <a href="https://brewdster.github.io/projects/Adobe_InDesign_CS6_Scripting_Guide_JSEN_3768967468.pdf" target="_blank">Adobe Indesign CS6 Scripting Guide: JavaScript</a><br>
 <a href="https://www.indesignjs.de/extendscriptAPI/indesign-latest/" target="_blank">Adobe InDesign ExtendScript API Object Model</a><br>
 <a href="https://indisnip.wordpress.com/category/indesign-scripts/" target="_blank">IndiSnip [InDesign® Snippets]</a><br>
@@ -283,6 +315,27 @@ myDoc.documentPreferences.slugTopOffset = 0;</span></p></li>
     </tr>
   </tbody>
 </table>
+
+<script>
+  window.onscroll = function()
+  {
+    freeze()
+  };
+  var banner = document.getElementById("banner");
+  var sticky = banner.offsetTop;
+
+  function freeze()
+  {
+    if (window.pageYOffset > sticky)
+      {
+        banner.classList.add("sticky");
+      }
+    else
+      {
+        banner.classList.remove("sticky");
+      }
+  }
+</script>
 
 </body>
 
