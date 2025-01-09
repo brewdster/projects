@@ -67,6 +67,7 @@ lang="en" xml:lang="en">
         document.getElementById("high").style.display="none";
         document.getElementById("ftr").style.display="none";
   }
+
 </script>
 
 <!-- add icon link -->
@@ -152,6 +153,30 @@ sup
     font-size: 65%;
     line-height: 65%;
   }
+
+.sticky
+  {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+  }
+
+.anchor
+  {
+    display: block;
+    position: relative;
+    visibility: hidden;
+  }
+
+.hlin
+{
+   width: 100%;
+   height: 2px;
+   margin-left: auto;
+   margin-right: auto;
+   background-color: #0062D7;
+   box-shadow: 1px 1px 2px 1px #BEBEBE;
+}
 
 /*----- IOS LINKS FIX -----*/
 
@@ -266,9 +291,15 @@ a[x-apple-data-detectors] {
 
 /* Insert ADDITIONAL STYLES here - IF REQUIRED */
 
-*[class=Width_70P] {
- width: 70% !important;
- height: auto !important;
+*[class=Width_70P]
+{
+  width: 70% !important;
+  height: auto !important;
+}
+
+*[class=mshow]
+{
+  display: inline !important;
 }
 
 }
@@ -276,91 +307,88 @@ a[x-apple-data-detectors] {
 </style>
 </head>
 
-<body style="margin: 0; padding: 0; -webkit-font-smoothing: antialiased; width: 100%; -webkit-text-size-adjust: none" class="body">
+<body style="margin: 0; padding: 0; -webkit-font-smoothing: antialiased; width: 1000; -webkit-text-size-adjust: none" class="body">
 
-  <!--Begin Container-->
+<!--Begin Header-->
+<header>
 
-  <table role="presentation" width="1000" border="0" cellspacing="0" cellpadding="0" class="Container">
-    <tbody>
-      <tr>
-        <td width="6%">&nbsp;</td>
-        <td>
+<table id="banner" role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#FFFFFF">
+  <tbody>
+    <tr>
+      <td width="6%">&nbsp;</td>
+      <td>
+        <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tbody>
+            <tr>
+              <td align="center" style="padding: 10px 0px 0px 0px">
+                <table width="100" height="100" border="0" cellspacing="0" cellpadding="0">
+                  <tbody>
+                    <tr>
+                      <td valign="middle" style="-moz-border-radius: 50px; -webkit-border-radius: 50px; border-radius: 50px; background-color: #FFAE20; border-bottom: solid; border-right: solid; border-width: 4px; border-color: #7E7E7E">
+                        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                          <tbody>
+                            <tr>
+                              <td align="center" style="padding: 4px 0px 0px 4px"><img src="https://brewdster.github.io/homepage/images/ElliefanIX.svg" width="70" border="0" style="vertical-align: bottom"></td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td align="center"><h1>3-bedroom Rental Listings</h1></td>
+            </tr>
+            <tr>
+              <td align="center"><h3>Updated May 12, 2024</h3></td>
+            </tr>
+            <tr>
+              <td align="center" style="padding: 10px 0px 0px 0px; font-family: 'DM Sans'; font-size: 14px; font-weight: 500; line-height: 20px">📌 = distance to MK</td>
+            </tr>
+            <tr>
+              <td align="center" style="padding: 10px 0px 10px 0px; font-family: 'DM Sans'; font-size: 15px">
+                <label for="city"><b>Filter by:</b>  </label>
+                <select name="city" id="city">
+                  <option value="allc">All cities</option>
+                  <option value="list">Latest listings</option>
+                  <option value="high">Highlights</option>
+                  <option value="mark">Markham</option>
+                  <option value="rich">Richmond Hill</option>
+                  <option value="auro">Aurora</option>
+                  <option value="newm">Newmarket</option>
+                  <option value="toro">Toronto</option>
+                  <option value="ajax">Ajax</option>
+                  <option value="bram">Brampton</option>
+                  <option value="brad">Bradford West Gwillimbury</option>
+                  <option value="barr">Barrie</option>
+                  <option value="pick">Pickering</option>
+                  <option value="stou">Whitchurch-Stouffville</option>
+                </select>
+                <button onclick="go()">Go!</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </td>
+      <td width="6%">&nbsp;</td>
+    </tr>
+    <tr>
+      <td width="6%"></td>
+      <td style="padding: 10px 0px 10px 0px"><div class="hlin"></div></td>
+      <td width="6%"></td>
+    </tr>
+  </tbody>
+</table>
 
-          <!--Begin Header-->
-          <header>
+</header>
+<!--End Header-->
 
-            <table align="center" role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0">
-              <tbody>
-                <tr>
-                  <td width="6%">&nbsp;</td>
-                  <td>
-                    <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0">
-                      <tbody>
-                        <tr>
-                          <td align="center" style="padding: 20px 0px 0px 0px">
-                            <table width="130" height="130" border="0" cellspacing="0" cellpadding="0">
-                              <tbody>
-                                <tr>
-                                  <td valign="middle" style="-moz-border-radius: 65px; -webkit-border-radius: 65px; border-radius: 65px; background-color: #FFAE20; border-bottom: solid; border-right: solid; border-width: 4px; border-color: #7E7E7E">
-                                    <table width="100%" border="0" cellspacing="0" cellpadding="0">
-                                      <tbody>
-                                        <tr>
-                                          <td align="center" style="padding: 1px 0px 0px 6px"><img src="https://brewdster.github.io/homepage/images/ElliefanIX.svg" width="95" border="0" style="vertical-align: bottom"></td>
-                                        </tr>
-                                      </tbody>
-                                    </table>
-                                  </td>
-                                </tr>
-                              </tbody>
-                            </table>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td align="center"><h1>3-bedroom Rental Listings</h1></td>
-                        </tr>
-                        <tr>
-                          <td align="center"><h3>Updated May 12, 2024</h3></td>
-                        </tr>
-                        <tr>
-                          <td align="center" style="padding: 10px 0px 0px 0px; font-family: 'DM Sans'; font-size: 14px; font-weight: 500; line-height: 20px">📌 = distance to MK</td>
-                        </tr>
-                        <tr>
-                          <td align="center" style="padding: 10px 0px 10px 0px; font-family: 'DM Sans'; font-size: 15px">
-                            <label for="city"><b>Filter by:</b>  </label>
-                            <select name="city" id="city">
-                              <option value="allc">All cities</option>
-                              <option value="list">Latest listings</option>
-                              <option value="high">Highlights</option>
-                              <option value="mark">Markham</option>
-                              <option value="rich">Richmond Hill</option>
-                              <option value="auro">Aurora</option>
-                              <option value="newm">Newmarket</option>
-                              <option value="toro">Toronto</option>
-                              <option value="ajax">Ajax</option>
-                              <option value="bram">Brampton</option>
-                              <option value="brad">Bradford West Gwillimbury</option>
-                              <option value="barr">Barrie</option>
-                              <option value="pick">Pickering</option>
-                              <option value="stou">Whitchurch-Stouffville</option>
-                            </select>
-                            <button onclick="go()">Go!</button>
-                          </td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </td>
-                  <td width="6%">&nbsp;</td>
-                </tr>
-              </tbody>
-            </table>
+<!--Begin Main-->
+<main>
 
-          </header>
-          <!--End Header-->
-
-          <!--Begin Main-->
-          <main>
-
-<div id="mark">
+          <div id="mark">
             <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0">
               <tbody>
                 <tr>
@@ -400,9 +428,9 @@ a[x-apple-data-detectors] {
                 </tr>
               </tbody>
             </table>
-</div>
+          </div>
 
-<div id="rich">
+          <div id="rich">
             <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0">
               <tbody>
                 <tr>
@@ -426,9 +454,9 @@ a[x-apple-data-detectors] {
                 </tr>
               </tbody>
             </table>
-</div>
+          </div>
 
-<div id="auro">
+          <div id="auro">
             <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0">
               <tbody>
                 <tr>
@@ -454,9 +482,9 @@ a[x-apple-data-detectors] {
                 </tr>
               </tbody>
             </table>
-</div>
+          </div>
 
-<div id="newm">
+          <div id="newm">
             <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0">
               <tbody>
                 <tr>
@@ -481,9 +509,9 @@ a[x-apple-data-detectors] {
                 </tr>
               </tbody>
             </table>
-</div>
+          </div>
 
-<div id="toro">
+          <div id="toro">
             <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0">
               <tbody>
                 <tr>
@@ -500,16 +528,16 @@ a[x-apple-data-detectors] {
                   <td width="6%">&nbsp;</td>
                   <td align="left">
                     <ul>
-
+                      <li><p>No listings</li></p>
                     </ul>
                   </td>
                   <td width="6%">&nbsp;</td>
                 </tr>
               </tbody>
             </table>
-</div>
+          </div>
 
-<div id="ajax">
+          <div id="ajax">
             <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0">
               <tbody>
                 <tr>
@@ -533,9 +561,9 @@ a[x-apple-data-detectors] {
                 </tr>
               </tbody>
             </table>
-</div>
+          </div>
 
-<div id="bram">
+          <div id="bram">
             <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0">
               <tbody>
                 <tr>
@@ -560,9 +588,9 @@ a[x-apple-data-detectors] {
                 </tr>
               </tbody>
             </table>
-</div>
+          </div>
 
-<div id="brad">
+          <div id="brad">
             <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0">
               <tbody>
                 <tr>
@@ -579,16 +607,16 @@ a[x-apple-data-detectors] {
                   <td width="6%">&nbsp;</td>
                   <td align="left">
                     <ul>
-
+                      <li><p>No listings</li></p>
                     </ul>
                   </td>
                   <td width="6%">&nbsp;</td>
                 </tr>
               </tbody>
             </table>
-</div>
+          </div>
 
-<div id="barr">
+          <div id="barr">
             <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0">
               <tbody>
                 <tr>
@@ -614,9 +642,9 @@ a[x-apple-data-detectors] {
                 </tr>
               </tbody>
             </table>
-</div>
+          </div>
 
-<div id="pick">
+          <div id="pick">
             <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0">
               <tbody>
                 <tr>
@@ -640,9 +668,9 @@ a[x-apple-data-detectors] {
                 </tr>
               </tbody>
             </table>
-</div>
+          </div>
 
-<div id="stou">
+          <div id="stou">
             <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0">
               <tbody>
                 <tr>
@@ -666,9 +694,9 @@ a[x-apple-data-detectors] {
                 </tr>
               </tbody>
             </table>
-</div>
+          </div>
 
-<div id="list" style="display: none">
+          <div id="list" style="display: none">
             <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0">
               <tbody>
                 <tr>
@@ -696,9 +724,9 @@ a[x-apple-data-detectors] {
                 </tr>
               </tbody>
             </table>
-</div>
+          </div>
 
-<div id="high" style="display: none">
+          <div id="high" style="display: none">
             <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0">
               <tbody>
                 <tr>
@@ -715,49 +743,73 @@ a[x-apple-data-detectors] {
                   <td width="6%">&nbsp;</td>
                   <td align="left">
                     <ul>
-                      <li><p>$2,400 / mon.- <a href="https://www.realtor.ca/real-estate/26866304/bsmt-41-blackwell-crt-markham-buttonville" target="_blank">#BSMT-41 Blackwell Crt., Markham</a>  [5/12]  <a href="https://www.google.com/maps/dir/41+Blackwell+Ct,+Markham,+ON+L3R+0C5/498+Markland+Street,+Markham,+ON/@43.8666484,-79.3686514,14.58z/data=!4m16!4m15!1m5!1m1!1s0x89d4d4eee6c5e2f1:0xbc056247af50dad9!2m2!1d-79.35056!2d43.8518647!1m5!1m1!1s0x89d4d5314481a14d:0x4f14b46f675e459a!2m2!1d-79.3738343!2d43.8796274!2m1!2b1!3e0?entry=ttu" target="_blank" style="text-decoration: none">📌</a>   <span style="color: #008000; font-size: 14px; font-weight: 500">** 8 mins., large deck/backyard</span></p></li>
-                      <li><p>$2,100 / mon.- <a href="https://www.realtor.ca/real-estate/26803727/bsmt-44-karma-rd-markham-markville" target="_blank">#Bsmt.-44 Karma Rd., Markham</a>  [5/6]  <a href="https://www.google.com/maps/dir/44+Karma+Rd,+Unionville,+ON+L3R+4Y2/498+Markland+Street,+Markham,+ON/@43.8801423,-79.3532254,13.58z/data=!4m13!4m12!1m5!1m1!1s0x89d4d5d9f076e7a3:0x6357ce6b7fe6aa86!2m2!1d-79.2952547!2d43.8688573!1m5!1m1!1s0x89d4d5314481a14d:0x4f14b46f675e459a!2m2!1d-79.3738343!2d43.8796274?entry=ttu" target="_blank" style="text-decoration: none">📌</a>   <span style="color: #008000; font-size: 14px; font-weight: 500">** Steps from Markville Mall</span></p></li>
                       <li><p>$2,000 / mon.- <a href="https://www.apartments.com/22-lehman-crescent-markham-on/lrv7h0g/" target="_blank">#Bsmt.-22 Lehman Cres., Markham</a>  [5/3]  <a href="https://www.google.com/maps/dir/22+Lehman+Crescent,+Markham,+ON+L3P+5X1/498+Markland+Street,+Markham,+ON/@43.8816123,-79.3521283,13z/data=!3m1!4b1!4m16!4m15!1m5!1m1!1s0x89d529d45bd2af11:0xc47e8d791ca36509!2m2!1d-79.2483967!2d43.8952626!1m5!1m1!1s0x89d4d5314481a14d:0x4f14b46f675e459a!2m2!1d-79.3738343!2d43.8796274!2m1!2b1!3e0?entry=ttu" target="_blank" style="text-decoration: none">📌</a>   <span style="color: #008000; font-size: 14px; font-weight: 500">** Big kitchen, 40% utilities</span></p></li>
-                      <li><p>$2,280 / mon.- <a href="https://www.apartments.com/95-major-buttons-dr-markham-on/xgvjzem/" target="_blank">#Bsmt.-95 Major Buttons Dr., Markham</a>  [5/3]  <a href="https://www.google.com/maps/dir/95+Major+Buttons+Dr,+Markham,+ON+L3P+3X4/498+Markland+Street,+Markham,+ON/@43.8673478,-79.3455723,13z/data=!4m16!4m15!1m5!1m1!1s0x89d4d7b511d77277:0xc1af2a4623a47cdb!2m2!1d-79.2430445!2d43.8711648!1m5!1m1!1s0x89d4d5314481a14d:0x4f14b46f675e459a!2m2!1d-79.3738343!2d43.8796274!2m1!2b1!3e0?entry=ttu" target="_blank" style="text-decoration: none">📌</a>   <span style="color: #008000; font-size: 14px; font-weight: 500">** Huge: 1,800 sq. ft.</span></p></li>
+                      <li><p>$2,100 / mon.- <a href="https://www.realtor.ca/real-estate/26803727/bsmt-44-karma-rd-markham-markville" target="_blank">#Bsmt.-44 Karma Rd., Markham</a>  [5/6]  <a href="https://www.google.com/maps/dir/44+Karma+Rd,+Unionville,+ON+L3R+4Y2/498+Markland+Street,+Markham,+ON/@43.8801423,-79.3532254,13.58z/data=!4m13!4m12!1m5!1m1!1s0x89d4d5d9f076e7a3:0x6357ce6b7fe6aa86!2m2!1d-79.2952547!2d43.8688573!1m5!1m1!1s0x89d4d5314481a14d:0x4f14b46f675e459a!2m2!1d-79.3738343!2d43.8796274?entry=ttu" target="_blank" style="text-decoration: none">📌</a>   <span style="color: #008000; font-size: 14px; font-weight: 500">** Steps from Markville Mall</span></p></li>
                       <li><p>$2,100 / mon.- <a href="https://www.realtor.ca/real-estate/26831201/bsmt-10-clifton-crt-markham-middlefield" target="_blank">#Bsmt.-10 Clifton Crt., Markham</a>  [5/2]  <a href="https://www.google.com/maps/dir/10+Clifton+Ct,+Markham,+ON+L3S+4J1/498+Markland+Street,+Markham,+ON/@43.8723786,-79.3587793,13.29z/data=!4m16!4m15!1m5!1m1!1s0x89d4d68c58bed083:0xce35cbf8ce019c78!2m2!1d-79.2705955!2d43.850212!1m5!1m1!1s0x89d4d5314481a14d:0x4f14b46f675e459a!2m2!1d-79.3738343!2d43.8796274!2m1!2b1!3e0?entry=ttu" target="_blank" style="text-decoration: none">📌</a>   <span style="color: #008000; font-size: 14px; font-weight: 500">** Spacious, 40% utilities</span></p></li>
+                      <li><p>$2,400 / mon.- <a href="https://www.realtor.ca/real-estate/26866304/bsmt-41-blackwell-crt-markham-buttonville" target="_blank">#BSMT-41 Blackwell Crt., Markham</a>  [5/12]  <a href="https://www.google.com/maps/dir/41+Blackwell+Ct,+Markham,+ON+L3R+0C5/498+Markland+Street,+Markham,+ON/@43.8666484,-79.3686514,14.58z/data=!4m16!4m15!1m5!1m1!1s0x89d4d4eee6c5e2f1:0xbc056247af50dad9!2m2!1d-79.35056!2d43.8518647!1m5!1m1!1s0x89d4d5314481a14d:0x4f14b46f675e459a!2m2!1d-79.3738343!2d43.8796274!2m1!2b1!3e0?entry=ttu" target="_blank" style="text-decoration: none">📌</a>   <span style="color: #008000; font-size: 14px; font-weight: 500">** 8 mins., large deck/backyard</span></p></li>
+                      <li><p>$2,280 / mon.- <a href="https://www.apartments.com/95-major-buttons-dr-markham-on/xgvjzem/" target="_blank">#Bsmt.-95 Major Buttons Dr., Markham</a>  [5/3]  <a href="https://www.google.com/maps/dir/95+Major+Buttons+Dr,+Markham,+ON+L3P+3X4/498+Markland+Street,+Markham,+ON/@43.8673478,-79.3455723,13z/data=!4m16!4m15!1m5!1m1!1s0x89d4d7b511d77277:0xc1af2a4623a47cdb!2m2!1d-79.2430445!2d43.8711648!1m5!1m1!1s0x89d4d5314481a14d:0x4f14b46f675e459a!2m2!1d-79.3738343!2d43.8796274!2m1!2b1!3e0?entry=ttu" target="_blank" style="text-decoration: none">📌</a>   <span style="color: #008000; font-size: 14px; font-weight: 500">** Huge: 1,800 sq. ft.</span></p></li>
                       <li><p>$2,300 / mon.- <a href="https://www.realtor.ca/real-estate/26832664/33-hughson-dr-markham-buttonville" target="_blank">33 Hughson Dr., Markham</a>  [5/2]  <a href="https://www.google.com/maps/dir/33+Hughson+Dr,+Markham,+ON+L3R+2T7/498+Markland+Street,+Markham,+ON/@43.8650557,-79.3721793,14.58z/data=!4m13!4m12!1m5!1m1!1s0x89d4d4e903bfa473:0xb56a3d74c65913ad!2m2!1d-79.3545421!2d43.8523679!1m5!1m1!1s0x89d4d5314481a14d:0x4f14b46f675e459a!2m2!1d-79.3738343!2d43.8796274?entry=ttu" target="_blank" style="text-decoration: none">📌</a>   <span style="color: #008000; font-size: 14px; font-weight: 500">** 6 mins., utilities included</span></p></li>
                       <li><p>$2,400 / mon.- <a href="https://www.realtor.ca/real-estate/26753239/bsmnt-8-foxleigh-crt-markham-milliken-mills-east" target="_blank">#Bsmt.-8 Foxleigh Crt., Markham</a>  [5/2]  <a href="https://www.google.com/maps/dir/8+Foxleigh+Ct,+Markham,+ON+L3R+8S9/498+Markland+Street,+Markham,+ON/@43.8556616,-79.3744918,13z/data=!3m1!4b1!4m16!4m15!1m5!1m1!1s0x89d4d4219e83eb6d:0xd36230cb5f7df1c8!2m2!1d-79.2947704!2d43.8420498!1m5!1m1!1s0x89d4d5314481a14d:0x4f14b46f675e459a!2m2!1d-79.3738343!2d43.8796274!2m1!2b1!3e0?entry=ttu" target="_blank" style="text-decoration: none">📌</a>   <span style="color: #008000; font-size: 14px; font-weight: 500">** Open concept, 3 beds/3 baths</span></p></li>
                       <li><p>$2,200 / mon.- <a href="https://www.apartments.com/5-hacienda-dr-richmond-hill-on/2q6vns9/" target="_blank">5 Hacienda Dr., Richmond Hill</a>  [4/30]  <a href="https://www.google.com/maps/dir/5+Hacienda+Dr,+Richmond+Hill,+ON+L4E+3X1/498+Markland+Street,+Markham,+ON/@43.9189102,-79.4514607,13z/data=!3m1!4b1!4m13!4m12!1m5!1m1!1s0x882ad44825cc4cfb:0x209454842dcc4411!2m2!1d-79.4474902!2d43.9564578!1m5!1m1!1s0x89d4d5314481a14d:0x4f14b46f675e459a!2m2!1d-79.3738343!2d43.8796274?entry=ttu" target="_blank" style="text-decoration: none">📌</a>   <span style="color: #008000; font-size: 14px; font-weight: 500">** Must see</span></p></li>
                     </ul>
+                    <br style="display: none" class="mshow">
+                    <br style="display: none" class="mshow">
+                    <br style="display: none" class="mshow">
+                    <br style="display: none" class="mshow">
+                    <br style="display: none" class="mshow">
+                    <br style="display: none" class="mshow">
+                    <br style="display: none" class="mshow">
+                    <br style="display: none" class="mshow">
+                    <br style="display: none" class="mshow">
                   </td>
                   <td width="6%">&nbsp;</td>
                 </tr>
               </tbody>
             </table>
-</div>
+          </div>
 
-<br>
-<br>
           </main>
           <!--End Main-->
+<br>
+<br>
 
           <!--Begin Footer-->
           <footer>
 
-<div id="ftr" style="display: none">
-            <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0">
-              <tbody>
-                <tr>
-                  <td align="center" style="font-size: 30px"><a href="#" onclick="reset()" style="color: #E30022; text-decoration: none"><b>&#8634;</b></a></td>
-                </tr>
-              </tbody>
-            </table>
-</div>
+            <div id="ftr" style="display: none">
+              <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0">
+                <tbody>
+                  <tr>
+                    <td align="center" style="font-size: 30px"><a href="#" onclick="reset()" style="color: #E30022; text-decoration: none"><b>&#8634;</b></a></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
 
           </footer>
           <!--End Footer-->
 
-        <td width="6%">&nbsp;</td>
-        </td>
-      </tr>
-    </tbody>
-  </table>
-  <!--End Container-->
+<script>
+  window.onscroll = function()
+  {
+    freeze()
+  };
+  var banner = document.getElementById("banner");
+  var sticky = banner.offsetTop;
+
+  function freeze()
+  {
+    if (window.pageYOffset > sticky)
+      {
+        banner.classList.add("sticky");
+      }
+    else
+      {
+        banner.classList.remove("sticky");
+      }
+  }
+</script>
+
 </body>
 
 </html>
