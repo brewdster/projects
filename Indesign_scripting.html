@@ -148,6 +148,8 @@ body,li
                   <li><a href="#tf_rect">Create text frame with specific properties and a simple rectangle object</a></li>
                   <li><a href="#box_stroke">Create a rectangle with stroke and fill</a></li>
                   <li><a href="#cleanup">Cleanup: delete all guides plus remove slug, margins & unused swatches in entire document</a></li>
+                  <li><a href="#pg_size">Get page width & height</a></li>
+                  <li><a href="#doc_size">Get document width & height</a></li>
                   <li><a href="#grep_1">GREP: Target word after and before specific words</a></li>
                   <li><a href="#resource">Additional resources</a></li>
                 </ul>
@@ -274,6 +276,22 @@ for (i = sw.length-1; i > -1; i--)
 }
 myDoc.documentPreferences.documentSlugUniformSize = true;
 myDoc.documentPreferences.slugTopOffset = 0;</span></p></li>
+
+          <a class="anchor" name="pg_size"></a>
+          <li><p><span class="head1">Get page width & height <a href="#top" style="text-decoration: none"><b>&#8634;</b></a></span><br>
+	  <span style="white-space: pre">var doc = app.activeDocument;
+doc.viewPreferences.horizontalMeasurementUnits = MeasurementUnits.INCHES;
+doc.viewPreferences.verticalMeasurementUnits = MeasurementUnits.INCHES;
+alert("Page Width : " +  doc.pages[0].bounds[3] + "\rPage Height : " + doc.pages[0].bounds[2]);</span></p></li>
+
+          <a class="anchor" name="doc_size"></a>
+          <li><p><span class="head1">Get document width & height <a href="#top" style="text-decoration: none"><b>&#8634;</b></a></span><br>
+	  <span style="white-space: pre">var doc = app.activeDocument;
+doc.viewPreferences.horizontalMeasurementUnits = MeasurementUnits.INCHES;
+doc.viewPreferences.verticalMeasurementUnits = MeasurementUnits.INCHES;
+var pw = doc.documentPreferences.pageWidth, ph = doc.documentPreferences.pageHeight; 
+alert("Page Width : " +  pw + " in\rPage Height : " + ph + " in");<br>
+<span class="hlt">Note:</span> Click <a href="https://www.indesignjs.de/extendscriptAPI/indesign-latest/#ViewPreference.html" target="_blank">here</a> for additional [viewPreferences] properties.</span></p></li>
 
           <a class="anchor" name="grep_1"></a>
           <li><p><span class="head1">GREP: Target word(s) after and before specific word(s) <a href="#top" style="text-decoration: none"><b>&#8634;</b></a></span><br>GREP code: <span class="hlt">(?i)(?<=the ).+?(?= dog)</span><br>Example: The <b style="text-decoration: underline">cute</b> dog ate its dogfood quickly.<br>
