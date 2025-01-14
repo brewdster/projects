@@ -1,0 +1,833 @@
+﻿<!DOCTYPE html>
+<!--Drewbster / 20250108-->
+<html>
+
+<head>
+
+<script type="text/javascript">
+  var d = new Date();
+  var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+  var wkdays = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
+  var dt1 = wkdays[d.getDay()] + ", " + months[d.getMonth()] + " " + d.getDate() + ", " + d.getFullYear();
+  !function(d,s,id)
+    {
+      var js,fjs=d.getElementsByTagName(s)[0];
+      if(!d.getElementById(id))
+        {
+          js=d.createElement(s);
+          js.id=id;
+          js.src='https://weatherwidget.io/js/widget.min.js';
+          fjs.parentNode.insertBefore(js,fjs);
+        }
+    }
+  (document,'script','weatherwidget-io-js');
+  document.addEventListener("DOMContentLoaded",function(event)
+    {
+      document.getElementById("curdate").innerHTML = dt1;
+    })
+</script>
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, user-scalable=yes">
+<!--<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">-->
+
+<title>MK Docs</title>
+
+<!-- add icon link -->
+<link rel="icon" href="https://brewdster.github.io/homepage/images/mk_icon.png" type="image/x-icon">
+
+<link rel="preconnect" href="https://fonts.googleapis.com/">
+<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Poppins:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet">
+
+<style type="text/css">
+
+body,li
+  {
+    font-family: 'Poppins', 'Inter', Arial, sans-serif;
+  }
+
+.head1
+  {
+    color: #C80815;
+    font-weight: 500;
+  }
+
+.hlt
+  {
+    color: #0000FF;
+    font-weight: 500
+  }
+
+.sticky
+  {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+
+.content
+  {
+    padding: 0px;
+  }
+
+.sticky + .content
+  {
+    padding-top: 175px;
+  }
+
+.anchor
+  {
+    display: block;
+    position: relative;
+    top: -175px;
+    visibility: hidden;
+  }
+
+table.datetbl
+  td
+    {
+      padding: 0px 10px 0px 10px;
+      border: 1px solid #CCCCCC;
+    }
+
+.hlin
+{
+   width: 100%;
+   height: 1px;
+   margin-left: auto;
+   margin-right: auto;
+   background-color: #EE3F68;
+   box-shadow: 1px 1px 2px 1px #BEBEBE;
+}
+
+</style>
+
+</head>
+
+<body width="100%" bgcolor="#EEEEEE" style="margin: 0px; padding: 0px">
+
+<table id="banner" width="100%" cellspacing="0" cellpadding="0" border="0">
+  <tbody>
+    <tr>
+      <td>
+        <table width="100%" cellspacing="0" cellpadding="0" border="0" bgcolor="#AFBD21">
+          <tbody>
+            <tr>
+              <td width="100%" height="10"></td>
+            </tr>
+          </tbody>
+        </table>
+
+        <table width="100%" cellspacing="0" cellpadding="0" border="0" bgcolor="#2B2B2B" style="background-image: url(https://brewdster.github.io/homepage/images/valentines_gradient.png); background-repeat: space; background-size: initial">
+          <tbody>
+            <tr>
+              <td width="2%">&nbsp;</td>
+              <td width="18%" align="left"><a href="https://www.marketingkitchen.ca/" target="_blank"><img src="https://images.squarespace-cdn.com/content/v1/5ee1154df277631be99f1546/1591820203674-G7B0Z15FKRWGWI4XDAVN/MarketingKitchen_PMS.png" width="175" border="0" style="vertical-align: bottom"></a></td>
+              <td width="60%" height="150" align="center"><div><img src="https://brewdster.github.io/homepage/images/valentines_banner.png" alt="" height="150" style="vertical-align: bottom;" border="0"></div></td>
+              <td width="13%" style="color: #F3D686; font-size: 14px; font-weight: 700; line-height: 18px; text-shadow: 3px 3px 6px #000000" align="center">Updated 2025-01-29</td>
+              <td width="5%" align="right" valign="middle"><iframe style="vertical-align: bottom" src="https://free.timeanddate.com/clock/i9pce7fe/n250/szw108/szh108/hoc888/hbw2/cf100/hncffae20/fas26/fdi64/mqcf00/mqs3/mql13/mqw4/mqd94/mhcfff/mhs3/mhl13/mhw4/mhd94/mmc000/mml5/mmw1/mmd94/hwm2/hhs2/hhb18/hms2/hml80/hmb18/hmr7/hss1/hsl90/hsw2/hsr8" frameborder="0" width="110" height="110"></iframe></td>
+              <td width="2%">&nbsp;</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <table width="100%" cellspacing="0" cellpadding="0" border="0" bgcolor="#6A747C">
+          <tbody>
+            <tr>
+              <td width="100%" height="10"></td>
+            </tr>
+          </tbody>
+        </table>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table id="top" class="content" width="100%" cellspacing="0" cellpadding="0" border="0">
+  <tbody>
+    <tr>
+      <td>
+        <table width="100%" cellspacing="0" cellpadding="0" border="0">
+          <tbody>
+            <tr>
+              <td width="50%" align="left" valign="top" style="padding: 20px 0px 20px 27px; font-size: 16px; font-family: 'Poppins', sans-serif; line-height: 22px; color: #000000; font-weight: normal"><span class="head1">Page index</span>
+                <ul style="list-style-type: none; padding: 0px">
+                  <li><a href="#freq">Frequently-used qLingo</a></li>
+                  <li><a href="#seq_chk">Sequencing & record-checking</a></li>
+                  <li><a href="#tagtxt">Adobe tagged-text scripts for Text ADOR with programmable styles</a></li>
+                  <li><a href="#if_switch">Combined If and Switch controls in Text-with-Style ADOR</a></li>
+                  <li><a href="#txtfil">Text File content object</a></li>
+                  <li><a href="#grep">Applying dynamic paragraph & character styles using GREP</a></li>
+                  <li><a href="#graphic">QLingo graphic functions</a></li>
+                  <li><a href="#string">QLingo string functions</a></li>
+                  <li><a href="#numeric">QLingo numeric functions</a></li>
+                  <li><a href="#date">QLingo date functions</a></li>
+                  <li><a href="#conversion">QLingo conversion functions</a></li>
+                  <li><a href="#system">QLingo system functions</a></li>
+                  <li><a href="#custom">Custom & other uPlan functions</a></li>
+                  <li><a href="#query">Sample uProduce query code for selecting records</a></li>
+                  <li><a href="#styles">Create dynamic styles in XMPie video tutorial</a></li>
+                  <li><a href="#sqldb">Steps to re-create local SQLDB</a></li>
+                  <li><a href="#adobe">Adobe CC tips</a></li>
+                  <li><a href="#ind_java">Sample Indesign Javascript code</a></li>
+                  <li><a href="#misc">Miscellaneous MK info</a></li>
+                </ul>
+              </td>
+
+              <td width="50%" valign="top" style="padding: 5px 0px 0px 0px">
+                <table width="100%" cellspacing="0" cellpadding="0" border="0">
+                  <tbody>
+                    <tr>
+                      <td style="font-size: 16px; line-height: 20px">
+                        <p><span class="head1"><span id="curdate"></span> (7-day weather forecast)</span></p>
+                        <div><a class="weatherwidget-io" href="https://forecast7.com/en/43d86n79d34/markham/" data-label_1="Markham" data-label_2="Ontario" data-font="Roboto" data-icons="Climacons Animated" data-theme="weather_one" >Markham, ON Weather</a></div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td style="color: #000000; font-size: 16px; font-weight: normal; line-height: 20px">
+                        <p><span class="head1">Market indices</span></p>
+                        <!--https://www.tradingview.com/widget/#charts-->
+                        <div class="tradingview-widget-container">
+                          <div class="tradingview-widget-container__widget"></div>
+                          <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-tickers.js" async>
+                            {
+                              "symbols":
+                              [
+                                {"proName": "FOREXCOM:SPXUSD", "title": "S&P 500 Index"},
+                                {"description": "Nasdaq","proName": "NASDAQ:IXIC"},
+                                {"description": "Dow Jones","proName": "SPREADEX:DJI"},
+                                {"description": "Gold U$/oz.","proName": "TVC:GOLD"},
+                                {"description": "Bitcoin","proName": "BITSTAMP:BTCUSD"},
+                                {"description": "WTI Crude U$","proName": "EASYMARKETS:OILUSD"},
+                                {"description": "Nvidia","proName": "NASDAQ:NVDA"},
+                                {"description": "Tesla","proName": "NASDAQ:TSLA"}
+                              ],
+                              "isTransparent": false,"showSymbolLogo": true,"colorTheme": "dark","locale": "en"
+                            }
+                          </script>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td style="font-size: 16px; line-height: 20px">
+                        <p><span class="head1">Deep focus music for programming / coding / relaxing 😊</span></p>
+                        <div>
+                          <iframe width="100%" height="130" src="https://www.youtube.com/embed/xAR6N9N8e6U?si=Bc3-lSMIPs5qOin5" title="Deep focus coding music 😊" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<!--<iframe width="100%" height="130" src="https://www.youtube.com/embed/t8OZPJfpcTM?si=-89cNNQLnyxyKbil" title="Lo-fi beats for programming / coding / relaxing 😊" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>-->
+<!--<iframe width="100%" height="130" src="https://www.youtube.com/embed/jfKfPfyJRdk?si=bzZGSNDRvHUX57a7" title="Lo-fi chill out music for work and study" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>-->
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </td>
+    </tr>
+
+    <tr>
+      <td width="100%" style="padding: 10px 0px 20px 0px"><div class="hlin"></div></td>
+    </tr>
+
+    <tr>
+      <td style="padding: 0px 0px 0px 0px; color: #000000; font-size: 16px; font-weight: normal; line-height: 20px">
+        <ul>
+
+	  <li><p><span class="head1">qLingo online Help</span><br>
+	  <a href="https://help.xmpie.com/uPlan/v.8.2/Help/en/uPlanUserGuide/uDirectRuleEditing/uDirectRuleEditing.htm" target="_blank">https://help.xmpie.com/uPlan/v.8.2/Help/en/uPlanUserGuide/uDirectRuleEditing/uDirectRuleEditing.htm</a></p></li>
+
+          <a class="anchor" name="freq"></a>
+          <li><p><span class="head1">Create [var_city_prov_pc_cntry] content object (ADOR) <a href="#top" style="text-decoration: none"><b>&#8634;</b></a></span><br>
+	  <span style="white-space: pre">FindandReplace(Trim(Trim(|->[CITY]) & " " & Trim(|->[PROV]) & "  " & FindandReplace(Trim(|->[PC])," ","<span class="hlt">Alt-0160</span>")),"   ","  ")
+&
+If(IsNullOrEmpty(Trim(|->[Country])) or Trim(|->[Country]) = "")
+{
+  ""
+}
+else
+{
+  If(IsNullOrEmpty(Trim(|->[CITY]) & Trim(|->[PROV]) & Trim(|->[PC])))
+    {
+      ""
+    }
+  else
+    {
+      "\r"
+    }
+  & Trim(|->[Country])
+}</span></p></li>
+
+          <li><p><span class="head1">Create [vis_askline] visibility ADOR</span><br>
+          <span style="white-space: pre">if(IsNullOrEmpty(Trim(|->[ASK1])) or Trim(|->[ASK1]) = "")
+{
+  "var_0ask"
+}
+else if(IsNullOrEmpty(Trim(|->[ASK2])) or Trim(|->[ASK2]) = "")
+{
+  "var_1ask"
+}
+else if(IsNullOrEmpty(Trim(|->[ASK3])) or Trim(|->[ASK3]) = "")
+{
+  "var_2ask"
+}
+else
+{
+  "var_3ask"
+}
+
+<span class="hlt">OR</span>
+
+"var_" & if(IsNullOrEmpty(Trim(|->[ASK1]))) {0} else {1} +
+         if(IsNullOrEmpty(Trim(|->[ASK2]))) {0} else {1} +
+         if(IsNullOrEmpty(Trim(|->[ASK3]))) {0} else {1} & "ask"
+</span></p></li>
+
+          <li><p><span class="head1">Create [var_lang] variable</span><br>
+          <span style="white-space: pre">Switch(Substring(Trim(|->[SEQNO]), 0, 1))
+{
+  Case "1": "E"
+  Case "2": "F"
+  Case "3": "E"
+  Case "4": "F"
+  default: abort
+}</span></p></li>
+
+          <li><p><span class="head1">English & French currencies</span><br>
+	  <span style="white-space: pre">Switch(@{var_lang})
+{
+  Case "E": FormatNumber(Trim(|->[ASK1]), "$###,###,###")
+  Case "F": FormatNumber(Trim(|->[ASK1]), "###-###-###-$") // Replace hyphens with <span class="hlt">Alt-0160</span>.
+}</span></p></li>
+
+          <li><p><span class="head1">Split long names at " & " or " and "</span><br>
+	  <span style="white-space: pre">if(Length(Trim(|->[NAME1])) > 35)
+{
+    if(Find(Trim(|->[NAME1]), " & ", <span class="hlt">Length(Trim(|->[NAME1])) / 2 - 3</span>) > -1)
+    {
+        Trim(Substring(Trim(|->[NAME1]), 0, Find(Trim(|->[NAME1]), " & ", <span class="hlt">Length(Trim(|->[NAME1])) / 2 - 3</span>) + 2)) & "\r" &
+        Trim(Substring(Trim(|->[NAME1]), Find(Trim(|->[NAME1]), " & ", <span class="hlt">Length(Trim(|->[NAME1])) / 2 - 3</span>) + 2, Length(Trim(|->[NAME1]))))
+    }
+    else if(Find(Trim(|->[NAME1]), " and ", <span class="hlt">Length(Trim(|->[NAME1])) / 2 - 5</span>) > -1)
+    {
+        Trim(Substring(Trim(|->[NAME1]), 0, Find(Trim(|->[NAME1]), " and ", <span class="hlt">Length(Trim(|->[NAME1])) / 2 - 5</span>) + 4)) & "\r" &
+        Trim(Substring(Trim(|->[NAME1]), Find(Trim(|->[NAME1]), " and ", <span class="hlt">Length(Trim(|->[NAME1])) / 2 - 5</span>) + 4, Length(Trim(|->[NAME1]))))
+    }
+    else
+    {
+        Trim(|->[NAME1])
+    }
+}
+else
+{
+    Trim(|->[NAME1])
+}
+
+<span class="hlt">Note:</span> Highlighted code can be substituted with <span class="hlt">12</span> or <span class="hlt">14</span> (start position of the search, instead of at the mid-point).</span></p></li>
+
+          <a class="anchor" name="seq_chk"></a>
+          <li><p><span class="head1">Creating sequence nos. <a href="#top" style="text-decoration: none"><b>&#8634;</b></a></span><br>
+	  <ol>
+	    <li>SubString(AsString(GetEnv("CurRecordNumber") + 100000), 1)  ex: 00123</li>
+	    <li>AsString(GetEnv("CurRecordNumber") + 10000)  ex: 10123</li>
+	    <li>"2" & FormatNumber(GetEnv("CurRecordNumber"), "0000")  ex: 20123</li>
+	    <li>SubString("##########", 0, 6 - Length(GetEnv("CurRecordNumber"))) & GetEnv("CurRecordNumber")  ex: ###123</li>
+	    <li>GetEnv("CurRecordNumber") & SubString("**********", 0, 6 - Length(GetEnv("CurRecordNumber")))  ex: 123***</li>
+	  </ol></p></li>
+
+          <li><p><span class="head1">Check record sequence</span><br>
+          <span style="white-space: pre">If(GetEnv("CurRecordNumber") <> Asnumber(Substring(Trim(|->[SEQNO]), 1)))
+{
+  abort
+}
+else
+{
+  GetEnv("CurRecordNumber")
+}</span></p></li>
+
+        <a class="anchor" name="tagtxt"></a>
+        <li><p><span class="head1">Adobe tagged-text scripts for <b>Text ADOR with programmable styles</b> <a href="#top" style="text-decoration: none"><b>&#8634;</b></a></span><br>
+	  <ol>
+	    <li>Font script (ex: <span class="hlt">@{fs}</span>)<br>
+	    &quot;&lt;UNICODE-WIN&gt;\r\n&lt;Version:17.2&gt;&lt;FeatureSet:InDesign-Roman&gt;&lt;ParaStyle:NormalParagraphStyle&gt;&lt;pFirstLineIndent:0.000000&gt;&lt;pHyphenation:0&gt;&lt;pSpaceAfter:4.500000&gt;&lt;ColorTable:=&lt;Black:COLOR:CMYK:Process:0,0,0,1&gt;&gt;&quot;</li>
+	    <li>Font styles (ex: <span class="hlt">@{Geor_R12}</span> or <span class="hlt">@{Pop_B14}</span>)<br>
+&quot;&lt;cTypeface:<span class="hlt">Regular</span>&gt;&lt;cSize:<span class="hlt">12.000000</span>&gt;&lt;cLeading:<span class="hlt">14.000000</span>&gt;&lt;cUnderline:0&gt;&lt;cPosition:&gt;&lt;cFont:<span class="hlt">Georgia</span>&gt;&quot;  // Georgia Regular 12 pt. with 14 pt. leading
+<br>or<br>
+&quot;&lt;cTypeface:<span class="hlt">Bold</span>&gt;&lt;cSize:<span class="hlt">14.000000</span>&gt;&lt;cLeading:<span class="hlt">16.000000</span>&gt;&lt;cUnderline:<span class="hlt">1</span>&gt;&lt;cPosition:&gt;&lt;cFont:<span class="hlt">Poppins</span>&gt;&quot;  // Poppins Bold Underlined 14 pt. with 16 pt. leading
+<br><span style="font-weight: 500"><em>* Include the quotes in code.</em></span></li>
+	    <li>Notes:<br>
+	      <ul style="list-style-type:disc">
+	        <li>Start the Qlingo statement in your Text ADOR with the following example:<br>
+@{fs} & @{Geor_R12} & &quot;My paragraph text...&quot;</li>
+	        <li>The font typeface (Bold, Regular, etc.), size, underline (0 or 1), and name (Georgia, Poppins, etc.) can be substituted with variables:<br>ex: <span class="hlt">&quot;&lt;cTypeface:&quot; & |-&gt;[style1] & &quot;&gt;&lt;cSize:&quot; & |-&gt;[size] & &quot;&gt;&lt;cUnderline:0&gt;&lt;cPosition:&gt;&lt;cColor:&quot; & @{var_col1} & &quot;&gt;&lt;cFont:&quot; & |-&gt;[font_name] & &quot;&gt;&quot;</span></li>
+	        <li>Specify gaps between paragraph breaks with &lt;pSpaceAfter:<span class="hlt">4.5</span>00000&gt; in font scripts or styles, where point size equals inches multiplied by 72 (e.g. 0.0625 * 72 = 4.5).</li>
+	        <li>Specify first-line indentation with &lt;pFirstLineIndent:<span class="hlt">18</span>.000000&gt; in font scripts, where point size equals inches multiplied by 72 (e.g. 0.25 * 72 = 18).</li>
+	        <li>Specify line spacing (leading) with &lt;cLeading:15.000000&gt; in font scripts or styles. "Auto" is used when this parameter is ommitted.</li>
+	        <li>For additional style properties (i.e. &lt;cPosition:Superscript&gt;, &lt;cColor:Black&gt;, etc.), highlight sample text and export to “Adobe tagged text” or refer to the following <a href="https://brewdster.github.io/projects/XMPie_QLingo_TaggedTextCS.pdf" target="_blank">manual</a>.</li>
+	        <li>To variably encode emojis in your paragraph, use the following sample script (inserts Noto Color Emoji SVG font ❤️ emoji):<br>
+		"&lt;cTypeface:Regular>&lt;cFont:Noto Color Emoji SVG&gt;&lt;cOTFContAlt:0&gt;❤&lt;cFont:&gt;&lt;cOTFContAlt:&gt;&lt;cTypeface:&gt;"<br>
+		<em><span class="hlt">* Important:</span> Remember to specify the regular font style after the emoji style if regular copy follows. Download demo <a href="https://brewdster.github.io/projects/Using emojis with fs, text assets and GREP.zip">Indesign file</a>.</em></li>
+	      </ul>
+	    </li>
+	    <li>Examples:<br>
+	      <ul style="list-style-type:disc">
+	        <li><span style="white-space: pre"><span class="hlt">If control</span>
+@{fs} &
+If(Ucase(Trim(|->[LANG])) = "E")
+{
+  @{Geor_R12} & @{var_sal1} & " you for your " & @{Geor_B12} & "continued support" & @{Geor_R12} & @{var_years} & "."
+}
+Else If(Ucase(Trim(|->[LANG])) = "F")
+{
+  @{Geor_R12} & "Merci pour votre " & @{Geor_B12} & "soutien continu" & @{var_sal3} & "."
+}
+Else
+{
+  ReportMessage("Invalid PARACALL [" & Trim(UCase(|->[PARACALL])) & "] in record " & GetEnv("CurRecordNumber") & ".")abort
+}</span></li>
+
+	        <li><span style="white-space: pre"><span class="hlt">Switch control</span>
+@{fs} &
+Switch(Trim(UCase(|->[PARACALL])))
+    {
+      Case "A":
+        @{Geor_R12} & @{var_sal1} & " you for your " & @{Geor_B12} & "continued support" & @{Geor_R12} & @{var_years} & "."
+      Case "B":
+        @{Geor_R12} & "We couldn\'t have done it without you" & @{var_sal2} & @{Geor_R12} & "."
+      default:
+        ReportMessage("Invalid PARACALL [" & Trim(UCase(|->[PARACALL])) & "] in record " & GetEnv("CurRecordNumber") & ".")abort
+    }</span></li>
+	      </ul>
+	    </li>
+	  </ol>
+        </p></li>
+
+        <a class="anchor" name="if_switch"></a>
+        <li><p><span class="head1">Combined <b>If</b> and <b>Switch</b> controls in <b>Text-with-Style</b> ADOR <a href="#top" style="text-decoration: none"><b>&#8634;</b></a></span><br>
+	<span style="white-space: pre">If(Ucase(Trim(|->[LANG])) = "E")
+{
+  __PrivateInternalTextWithStyle(Switch(Trim(UCase(|->[PARACALL])))
+    {
+      Case "A":
+        @{fs} & @{Geor_R12} & @{var_sal1} & " you for your " & @{Geor_B12} & "continued support" & @{Geor_R12} & @{var_years} & "."
+      Case "B":
+        @{fs} & @{Geor_R12} & "We couldn\'t have done it without you" & @{var_sal2} & @{Geor_R12} & "."
+      default:
+        ReportMessage("Invalid PARACALL [" & Trim(UCase(|->[PARACALL])) & "] in record " & GetEnv("CurRecordNumber") & ".")abort
+    }, "")
+}
+else if(Ucase(Trim(|->[LANG])) = "F")
+{
+  __PrivateInternalTextWithStyle(Switch(Trim(UCase(|->[PARACALL])))
+    {
+      Case "A":
+        @{fs} & @{Geor_R12} & "Merci pour votre " & @{Geor_B12} & "soutien continu" & @{var_sal3} & "."
+      Case "B":
+        @{fs} & @{Geor_R12} & @{var_sal4} & " n\'aurions pas pu le faire sans vous."
+      default:
+        ReportMessage("Invalid PARACALL [" & Trim(UCase(|->[PARACALL])) & "] in record " & GetEnv("CurRecordNumber") & ".")abort
+    }, "")
+}
+else
+{
+  __PrivateInternalTextWithStyle(ReportMessage("Invalid LANGUAGE assigned for record " & GetEnv("CurRecordNumber") & ".")abort, "")
+}
+
+<span class="hlt">Note:</span> Tagged-text scripts can also be used in <span class="hlt">Text</span> ADORs. It does not need to be primarily used in <span class="hlt">Text-with-Style</span> ADORs.</span></p></li>
+
+        <a class="anchor" name="txtfil"></a>
+        <li><p><span class="head1">About <b>Text File</b> content object <a href="#top" style="text-decoration: none"><b>&#8634;</b></a></span><br>
+          <ul style="list-style-type:disc">
+            <li>You can use either Word RTF, XMPie XNIP or Adobe Tagged Text as assets.</li>
+            <li>Asset folder needs to be set.</li>
+            <li>Use double curly brackets to reference variable field names in Adobe tagged text assets. (ex. <span class="hlt">{{NAME1}}</span>)</li>
+            <li>To enable variables in Text File, "<span class="hlt">Enable Nested Composition</span>" needs to be checked for content object.</li>
+          </ul>
+        </span></p></li>
+
+        <a class="anchor" name="graphic"></a>
+        <li><p><span class="head1">QLingo graphic functions <a href="#top" style="text-decoration: none"><b>&#8634;</b></a></span><br>
+	<ul style="list-style-type:disc">
+	  <li>Rectangle(<span style="color: #00FFFF">0.00</span>,<span style="color: #FF00FF">0.00</span>,<span style="color: #EFCC00">0.00</span>,<span style="color: #000000">0.00</span>) // Graphic ADOR; fills object with variable colour. CMYK values are from 0.00 to 100. See <a href="https://colordesigner.io/convert/cmyktorgb" target="_blank">Color Designer</a> for color reference.</li>
+	  <li>XMPBarcode("DataMatrix", Trim(|->[SEQNO]), "Color=cmyk(0%,0%,0%,100%);BackgroundColor=cmyk(0%,0%,0%,0%)")</li>
+	  <li>XMPBarcode("QRCode", "https://brewdster.github.io/homepage/startpage", "Color=cmyk(0%,0%,0%,100%);BackgroundColor=cmyk(0%,0%,0%,0%)")</li>
+	  <li>XMPBarcode("Code128", Trim(|->[SEQNO]), "ModuleWidth=413;Height=12;Color=cmyk(0%,0%,0%,100%);BackgroundColor=none;FontColor=cmyk(0%,100%,100%,0%);HideReadableText=false") // Generates a black C128 barcode over a transparent background with red HRT.</li>
+	  <li>Call Web.URLContentAsFile("https://brewdster.github.io/homepage/images/favicon.png") // Graphic ADOR; reference url image asset.</li>
+	</ul></p></li>
+
+        <a class="anchor" name="string"></a>
+        <li><p><span class="head1">QLingo string functions <a href="#top" style="text-decoration: none"><b>&#8634;</b></a></span><br>
+	<ul style="list-style-type:disc">
+	  <li>Lcase("HELLO") = "hello"</li>
+	  <li>Tcase("hello world") = "Hello World"</li>
+	  <li>UCase("hello") = "HELLO"</li>
+	  <li>Length("abc") = 3</li>
+	  <li>IsNullOrEmpty(|->[field]) = true or false</li>
+	  <li>SubString("hello",1,2) = "el"</li>
+	  <li>Trim("  Hello World  ") = "Hello World"</li>
+	  <li>LTrim("  Hello World  ") = "Hello World  "</li>
+	  <li>RTrim("  Hello World  ") = "  Hello World"</li>
+	  <li>Find("Hello World", "o", 5) = 7 // returns -1 if value not found</li>
+	  <li>Replace("Hello World", "old w", 6, 1) = "Hello old world"</li>
+	  <li>FindAndReplace("Hello World", "World", "Earth") = "Hello Earth"</li>
+	  <li>FindAndReplace(TCase(FindAndReplace("MARIE-JOSEE","-","- ")),"- ","-") = "Marie-Josee"</li>
+	  <li>FindAndReplaceChars("A1B2C3D4E5", "12345", "*") = "A*B*C*D*E*"</li>
+	  <li>CleanNumber("A1B2!3@4?5") = "12345"</li>
+	  <li>"Hello" + HexToUnicode("0020") + "World" = "Hello World" // 0020 = 'space'; 0009 = 'tab'</li>
+	</ul></p></li>
+
+        <a class="anchor" name="numeric"></a>
+        <li><p><span class="head1">QLingo numeric functions <a href="#top" style="text-decoration: none"><b>&#8634;</b></a></span><br>
+	<ul style="list-style-type:disc">
+	  <li>ABS(-5) = 5</li>
+	  <li>Floor(3.78) = 3</li>
+	  <li>Ceil(3.78) = 4</li>
+	  <li>Ceil(82/5)*5 = 85 (rounding up to nearest 5)</li>
+	  <li>FormatNumber(5000.2,"$#,###.00") = $5,000.20</li>
+	  <li>Rand(1) can equal 0.9528 (value will be < 1)</li>
+	  <li>Round(12.344, 2) = 12.34</li>
+	  <li>1 + (|->[Index] - 1) % 4 // Modulus 4</li>
+	  <li>5 div 2 = 2 // Normal division but drops the decimals and returns whole number</li>
+	</ul></p></li>
+
+        <a class="anchor" name="date"></a>
+        <li><p><span class="head1">QLingo date functions <a href="#top" style="text-decoration: none"><b>&#8634;</b></a></span><br>
+	<ul style="list-style-type:disc">
+	  <li>GetDay("14/09/2023") = 14</li>
+	  <li>GetMonth("14/09/2023") = 9</li>
+	  <li>GetYear("14/09/2023") = 2023</li>
+	  <li>GetDayOfWeek("14/09/2023") = 5</li>
+	  <li>GetHour("14/09/2023 12:57:20") = 12</li>
+	  <li>GetSecond("14/09/2023 12:57:20") = 20</li>
+	  <li>Age("21/12/1970") = 52.7315068493151 (as of Sep. 14, 2023)</li>
+	  <li>Now() = 9/14/2023 8:00:36 PM</li>
+	  <li>FormatDate(#14/09/2023#, "dddd, MMMM dd, yyyy") = "Thursday, September 14, 2023"<br>
+	    <br>
+	    <div>
+	      <table style="border-collapse: collapse" class="datetbl">
+	        <tbody>
+	          <tr>
+	            <td>d</td>
+	            <td>Displays the day as a number without a leading zero (for example, 1).</td>
+	          </tr>
+	          <tr>
+	            <td>dd</td>
+	            <td>Displays the day as a number with a leading zero (for example, 01).</td>
+	          </tr>
+	          <tr>
+	            <td>ddd</td>
+	            <td>Displays the day as an abbreviation (for example, Sun).</td>
+	          </tr>
+	          <tr>
+	            <td>dddd</td>
+	            <td>Displays the day as a full name (for example, Sunday).</td>
+	          </tr>
+	          <tr>
+	            <td>M</td>
+	            <td>Displays the month as a number without a leading zero (for example, January is represented as 1).</td>
+	          </tr>
+	          <tr>
+	            <td>MM</td>
+	            <td>Displays the month as a number with a leading zero (for example, 01/12/01).</td>
+	          </tr>
+	          <tr>
+	            <td>MMM</td>
+	            <td>Displays the month as an abbreviation (for example, Jan).</td>
+	          </tr>
+	          <tr>
+	            <td>MMMM</td>
+	            <td>Displays the month as a full month name (for example, January).</td>
+	          </tr>
+	          <tr>
+	            <td>y</td>
+	            <td>Displays the year number (0-9) without leading zeros.</td>
+	          </tr>
+	          <tr>
+	            <td>yy</td>
+	            <td>Displays the year in two-digit numeric format with a leading zero, if applicable.</td>
+	          </tr>
+	          <tr>
+	            <td>yyy</td>
+	            <td>Displays the year in three-digit numeric format.</td>
+	          </tr>
+	          <tr>
+	            <td>yyyy</td>
+	            <td>Displays the year in four-digit numeric format.</td>
+	          </tr>
+	          <tr>
+	            <td>h</td>
+	            <td>Displays the hour as a number without leading zeros using the 12-hour clock (for example, 1:15:15 PM).</td>
+	          </tr>
+	          <tr>
+	            <td>hh</td>
+	            <td>Displays the hour as a number with leading zeros using the 12-hour clock (for example, 01:15:15 PM).</td>
+	          </tr>
+	          <tr>
+	            <td>H</td>
+	            <td>Displays the hour as a number without leading zeros using the 24-hour clock (for example, 1:15:15).</td>
+	          </tr>
+	          <tr>
+	            <td>HH</td>
+	            <td>Displays the hour as a number with leading zeros using the 24-hour clock (for example, 01:15:15).</td>
+	          </tr>
+	          <tr>
+	            <td>m</td>
+	            <td>Displays the minute as a number without leading zeros (for example, 12:1:15).</td>
+	          </tr>
+	          <tr>
+	            <td>mm</td>
+	            <td>Displays the minute as a number with leading zeros (for example, 12:01:15).</td>
+	          </tr>
+	          <tr>
+	            <td>s</td>
+	            <td>Displays the second as a number without leading zeros (for example, 12:15:5).</td>
+	          </tr>
+	          <tr>
+	            <td>ss</td>
+	            <td>Displays the second as a number with leading zeros (for example, 12:15:05).</td>
+	          </tr>
+	          <tr>
+	            <td>T</td>
+	            <td>Displays an uppercase 'A' for any hour before noon; displays an uppercase 'P' for any hour between noon and 11:59 P.M.</td>
+	          </tr>
+	          <tr>
+	            <td>TT</td>
+	            <td>Displays an uppercase 'AM' for any hour before noon; displays an uppercase 'PM' for any hour between noon and 11:59 P.M.</td>
+	          </tr>
+	          <tr>
+	            <td>t</td>
+	            <td>Displays an lowercase 'a' for any hour before noon; displays an lowercase 'p' for any hour between noon and 11:59 P.M.</td>
+	          </tr>
+	          <tr>
+	            <td>tt</td>
+	            <td>Displays an lowercase 'am' for any hour before noon; displays an lowercase 'pm' for any hour between noon and 11:59 P.M.</td>
+	          </tr>
+	          <tr>
+	            <td>Any other</td>
+	            <td>Display as is.</td>
+	          </tr>
+	        </tbody>
+	      </table>
+	    <br>
+	    </div>
+	  </li>
+	</ul></p></li>
+
+        <a class="anchor" name="conversion"></a>
+        <li><p><span class="head1">QLingo conversion functions <a href="#top" style="text-decoration: none"><b>&#8634;</b></a></span><br>
+	<ul style="list-style-type:disc">
+	  <li>AsBoolean // Null value is false regardless of data type. For 'numbers', 0 is false. Empty 'string' is false. Date is always true.</li>
+	  <li>AsDate("14/09/2023") = 09/14/2023 (date value)</li>
+	  <li>AsString(123) = "123" (text value)</li>
+	  <li>AsNumber("myvar") = 0</li>
+	  <li>AsNumber("+0123abc") = 123</li>
+	</ul></p></li>
+
+        <a class="anchor" name="system"></a>
+        <li><p><span class="head1">QLingo system functions <a href="#top" style="text-decoration: none"><b>&#8634;</b></a></span><br>
+	<ul style="list-style-type:disc">
+	  <li>GetEnv("CurRecordNumber") // Gets record number or current record.</li>
+	  <li>abort // Used in If/Else or Switch statements. Prompts an error.</li>
+	  <li>skip // Used in If/Else or Switch statements. Skips current record.</li>
+	  <li>GetPDFAssetPageCount("file1.pdf") // Gets total pages in pdf.</li>
+	  <li>"file1.pdf:3" // Pulls page 3 from file1.pdf into Graphic content object. Need to set "Assets" folder location.</li>
+	  <li>IsAssetExist("Pic1", 3) // Checks if asset exist; 3 = image, 8 = pdf</li>
+	  <li>IsFileExist("C:\\myfile.txt") // Checks if file path/URL exists (True/False)</li>
+	  <li>ReportMessage("Custom message") // Shows custom message during production; must be followed by <em>expression</em> (e.g. Skip or Abort)<br>
+	  ex: ReportMessage("Error in record " & GetEnv("CurRecordNumber") & ".")abort</li>
+	</ul></p></li>
+
+        <a class="anchor" name="custom"></a>
+	<li><p><span class="head1">How to create custom functions in uPlan <a href="#top" style="text-decoration: none"><b>&#8634;</b></a></span><br>
+	<a href="https://help.xmpie.com/uPlan/Latest/Help/en/QLingo/Custom_User-Defined_Functions.htm" target="_blank">https://help.xmpie.com/uPlan/Latest/Help/en/QLingo/Custom_User-Defined_Functions.htm</a></p></li>
+
+	<li><p><span class="head1">UV2STR (user view to string) function</span><br>
+	<span style="white-space: pre">Syntax: <span class="hlt">UV2STR([my_view],"line prefix","line suffix","separator",true or false*)</span><br>* include header<br>
+Example 1 creates a CSV table from Orders user view:<br><span class="hlt">UV2STR([Orders],"","\r\n",",",true)</span><br>
+Result:
+customer id,order id,order date,product id,product name,qty,unit_price,total_price
+A10025,1001,2024-02-29,0085,Highliter-Yellow,2,$1.50,$3.00
+A10025,1005,2024-04-12,0011,Sticky Notes-small,5,$1.00,$5.00<br>
+Example 2 creates an HTML table from Orders user view:
+<span class="hlt">&quot;&lt;table&gt;\r\n&lt;tbody&gt;\r\n&quot; &amp;
+UV2STR([Orders],"\t&lt;tr&gt;\r\n\t\t&lt;td&gt;","&lt;/td&gt;\r\n\t&lt;/tr&gt;\r\n","&lt;/td&gt;\r\n\t\t&lt;td&gt;",false) &
+"&lt;/tbody&gt;\r\n&lt;/table&gt;"</span><br>
+Result:
+&lt;table&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;A10025&lt;/td&gt;
+      &lt;td&gt;1001&lt;/td&gt;
+      &lt;td&gt;2024-02-29&lt;/td&gt;
+      &lt;td&gt;0085&lt;/td&gt;
+      &lt;td&gt;Highliter-Yellow&lt;/td&gt;
+      &lt;td&gt;2&lt;/td&gt;
+      &lt;td&gt;$1.50&lt;/td&gt;
+      &lt;td&gt;$3.00&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      ...
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;</span><br><br>
+<span class="hlt">Note:</span> Can also be used to create complex Adobe Tagged Text table ADORs.</p></li>
+
+        <a class="anchor" name="query"></a>
+	<li><p><span class="head1">Sample uProduce query code for selecting records <a href="#top" style="text-decoration: none"><b>&#8634;</b></a></span><br>
+	SELECT * FROM @[Sheet1] WHERE @[Sheet1].[FORMCALL] = 'SWK' ORDER BY @[Sheet1].[FORMCALL]<br>
+	<img src="https://brewdster.github.io/homepage/images/How_to_select_records_in_uProduce_using_queries.png" width="800"></p>
+	<p><span class="hlt">Note:</span> To dynamically assign a specific output file name for each output batch file, use the <span class="hlt">ADOR</span> parameter under the <span class="hlt">Output File Name</span> options in the <span class="hlt">Production&nbsp;and&nbsp;Deployment</span> section.</p></li>
+
+        <a class="anchor" name="styles"></a>
+	<li><p><span class="head1">Create dynamic styles in XMPie video tutorial <a href="#top" style="text-decoration: none"><b>&#8634;</b></a></span><br><br>
+	<iframe width="800" height="450" src="https://www.youtube.com/embed/JdtXnY_MnvU?si=DxcyJcVeyJ9mSSxd" title="Create dynamic styles in XMPie" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+	</p></li>
+
+        <a class="anchor" name="sqldb"></a>
+        <li><p><span class="head1">Steps to re-create local SQLDB <a href="#top" style="text-decoration: none"><b>&#8634;</b></a></span><br>
+	<ol>
+	  <li>Run CMD.</li>
+	  <li>Type "SQLLocalDB info" to confirm that <span class="hlt">MSSQLLocalDB</span> is installed.</li>
+	  <li>SQLLocalDB <em>stop</em> MSSQLLocalDB</li>
+	  <li>SQLLocalDB <em>delete</em> MSSQLLocalDB</li>
+	  <li>Go to "C:\users\[name]" folder (<span class="hlt">"%UserProfile%"</span>) and delete all files with .ldf and .mdf extensions, if they exist.</li>
+	  <li>SQLLocalDB <em>create</em> MSSQLLocalDB</li>
+	  <li>SQLLocalDB <em>start</em> MSSQLLocalDB</li>
+	</ol></p></li>
+
+        <a class="anchor" name="adobe"></a>
+	<li><p><span class="head1">Adobe CC tips <a href="#top" style="text-decoration: none"><b>&#8634;</b></a></span><br>
+	Indesign work spaces -> C:\Users\{Name}\AppData\Roaming\Adobe\InDesign\Version {XX.0}\en_US\Workspaces<br>
+	Indesign presets -> C:\Users\{Name}\AppData\Roaming\Adobe\Adobe PDF\Settings<br>
+	Indesign scripts -> C:\Users\{Name}\AppData\Roaming\Adobe\InDesign\Version {XX.0}\en_US\Scripts\Scripts Panel<br>
+	Online manual for <a href="https://www.indesignjs.de/extendscriptAPI/indesign8/" target="_blank">Indesign ExtendScript API</a><br>
+	Acrobat actions -> C:\Users\{Name}\AppData\Roaming\Adobe\Acrobat\DC\Sequences<br>
+	Distiller user fonts -> C:\Users\{Name}\AppData\Local\Microsoft\Windows\Fonts<br></p></li>
+
+        <a class="anchor" name="grep"></a>
+        <li><p><span class="head1">Applying dynamic paragraph & character styles using <b>GREP</b><a href="#top" style="text-decoration: none"><b>&#8634;</b></a></span><br>
+          <ul style="list-style-type:disc">
+            <li>Apply multiple character styles in variable copy using GREP in paragraph styles.</li>
+            <li>Download the following <a href="https://brewdster.github.io/projects/Applying_Styles_with_GREP.indd">Indesign file</a> for sample illustrations.</li>
+          </ul>
+        </span></p></li>
+
+        <a class="anchor" name="ind_java"></a>
+	<li><p><span class="head1">Sample Indesign Javascript code <a href="#top" style="text-decoration: none"><b>&#8634;</b></a></span><br>
+	<span style="white-space: pre">var doc = app.activeDocument;
+var myLayer = doc.layers.item(prompt("Enter name of Layer","Source"));
+var cnt = myLayer.pageItems.length-1;
+for (i = cnt; i > -1; i--)
+  {
+    var lyr = myLayer.pageItems[i].name;
+    myLayer.pageItems[i].itemLayer = doc.layers.add({name:lyr, layerColor: UIColors.LIGHT_OLIVE});
+    doc.layers.itemByName(lyr).groups.itemByName(lyr).ungroup();
+  }
+myLayer.remove();
+doc.layers.everyItem().ignoreWrap = true;
+alert("Process complete!");
+
+<span class="hlt">Note:</span> Sample code moves all grouped objects under a specified layer into their own layers with the same names as the grouped objects.<br>Also ungroups them and turns off wrapping when layers are hidden.
+<span class="hlt">Important:</span> For the ungroup step to function properly, the <span class="hlt">"Ungroup Remembers Layers"</span> option must be TURNED OFF in the Layers panel menu.
+<span class="hlt">Additional resources:</span>
+<a href="https://brewdster.github.io/projects/Adobe_InDesign_CS6_Scripting_Guide_JSEN_3768967468.pdf" target="_blank">Adobe Indesign CS6 Scripting Guide: JavaScript</a>
+<a href="https://www.indesignjs.de/extendscriptAPI/indesign-latest/" target="_blank">Adobe InDesign ExtendScript API Object Model</a>
+<a href="https://brewdster.github.io/projects/Indesign_scripting.html" target="_blank">My Indesign Scripts & GREP Collection</a></span></p></li>
+
+        <a class="anchor" name="misc"></a>
+        <li><p><span class="head1">Reflex Blue for script NAB <a href="#top" style="text-decoration: none"><b>&#8634;</b></a></span><br>
+	LAB: 33.333, 14, -48<br>
+	CMYK: 91.53, 83.04, 2.4, 0</p></li>
+
+	<li><p><span class="head1">SFTP (Secure ftp; need Joe to setup profile)</span><br>
+	<a href="https://transfer.marketingkitchen.ca/login" target="_blank">https://transfer.marketingkitchen.ca/login</a></p></li>
+
+	<li><p><span class="head1">Midnight (for docket info and tracking time; need Zarmen to setup id)</span><br>
+	<a href="https://marketingkitchen.vsmidnight.com/Logon.aspx" target="_blank">https://marketingkitchen.vsmidnight.com/Logon.aspx</a></p></li>
+
+	<li><p><span class="head1">uProduce (must be on VPN)</span><br>
+	<a href="http://mk-xmpie.mk.local/XMPieDashboard/Account/AccountList.aspx" target="_blank">http://mk-xmpie.mk.local/XMPieDashboard/Account/AccountList.aspx</a></p></li>
+
+	<li><p><span class="head1">KM-1 (job portal; Colour; media size: 23" x 29"; must be on VPN)</span><br>
+	<a href="http://192.168.15.38/" target="_blank">http://192.168.15.38/</a></p></li>
+
+	<li><p><span class="head1">uProduce server(must be on VPN)</span><br>
+	<a href="http://192.168.15.3/XMPieDashboard/Login.aspx" target="_blank">http://192.168.15.3/XMPieDashboard/Login.aspx</a></p></li>
+
+	<li><p><span class="head1">Fiery Workstation (program for submitting jobs to Marley [6100] &amp; Spike [6085]; Colour; 11x17, 12x18, 13x19; must be on VPN)</span><br>
+	Install from H:\+SHARED+\forms - Softwares\Fiery-Software-Manager 6.7.exe</p></li>
+
+	<li><p><span class="head1">Lassie (Nuvera) (B/W) using Windows Explorer</span><br>
+	\\192.168.15.51</p></li>
+
+	<li><p><span class="head1">Cujo (B/W) using Windows Explorer</span><br>
+	\\192.168.15.32</p></li>
+
+	<li><p><span class="head1">Old Lassie (B/W) using Windows Explorer</span><br>
+	\\192.168.15.40</p></li>
+
+	<li><p><span class="head1">Production meeting link (M/W/F 9:45 am)</span><br>
+	<a href="https://us04web.zoom.us/j/78451225936?pwd=EIZGYIHidbPWWXnl6EgHI74_CCstpl.1#success" target="_blank">https://us04web.zoom.us/j/78451225936?pwd=EIZGYIHidbPWWXnl6EgHI74_CCstpl.1#success</a></p></li>
+
+	<li><p><span class="head1">On-going jobs report</span><br>
+	<a href="https://marketingkitchen.vsmidnight.com/Reports/ReportView.aspx?ReportId=314" target="_blank">https://marketingkitchen.vsmidnight.com/Reports/ReportView.aspx?ReportId=314</a></p></li>
+
+	<li><p><span class="head1">Employee WFH status</span><br>
+	<a href="https://docs.google.com/spreadsheets/d/1S6N6t9KOceP6uCwyStHB39_dgdg0lazIqnYPBZsiXys/edit?usp=sharing_eil&amp;invite=CIeZo2U&amp;ts=60057be5" target="_blank">https://docs.google.com/spreadsheets/d/1S6N6t9KOceP6uCwyStHB39_dgdg0lazIqnYPBZsiXys/edit?usp=sharing_eil&amp;invite=CIeZo2U&amp;ts=60057be5</a></p></li>
+
+	<li><p><span class="head1">Sonicwall VPN (authentication portal for Remote Desktop; different password from network login; need Avi to setup)</span><br>
+	<a href="https://login.marketingkitchen.ca/sonicui/7/login/#/" target="_blank">https://login.marketingkitchen.ca/sonicui/7/login/#/</a></p></li>
+
+	<li><p><span class="head1">Virtual Desktop RDP (must be on VPN)</span><br>
+	remote2.marketingkitchen.ca:9000</p></li>
+
+	<li><p><span class="head1">MK-XMPIE RDP (must be on VPN)</span><br>
+	remote3.marketingkitchen.ca:9002</p></li>
+
+	<li><p><span class="head1">Runsheet Macro</span><br>
+	H:\Jun Agbayani\Programs\RunSheet_Creator_v3.xlsm!Create_Runsheet</p></li>
+
+	<li><p><span class="head1">Indesign template for Text_with_Style ADOR</span><br>
+	H:\Andrew Chua\Data_tools\Programmable_Text_with_Style_ADOR.indd</p></li>
+
+	<li><p><span class="head1">iAddress configs</span><br>
+	Address correction<br>
+	<img src="https://brewdster.github.io/homepage/images/address_correction.png" width="800"><br>
+	Case conversion<br>
+	<img src="https://brewdster.github.io/homepage/images/case_conversion.png" width="800"><br>
+	Duplicate purge<br>
+	<img src="https://brewdster.github.io/homepage/images/dupe_purge.png" width="800">
+	</p></li>
+
+	</ul>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<script>
+  window.onscroll = function()
+  {
+    freeze()
+  };
+  var banner = document.getElementById("banner");
+  var sticky = banner.offsetTop;
+
+  function freeze()
+  {
+    if (window.pageYOffset > sticky)
+      {
+        banner.classList.add("sticky");
+      }
+    else
+      {
+        banner.classList.remove("sticky");
+      }
+  }
+</script>
+
+</body>
+
+</html>
