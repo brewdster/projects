@@ -1,0 +1,293 @@
+﻿<!DOCTYPE html>
+<!--Drewbster / 20250119-->
+<html>
+
+<head>
+
+<script type="text/javascript">
+  var d = new Date();
+  var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+  var wkdays = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
+  var dt1 = wkdays[d.getDay()] + ", " + months[d.getMonth()] + " " + d.getDate() + ", " + d.getFullYear();
+  document.addEventListener("DOMContentLoaded",function(event)
+    {
+      document.getElementById("curdate").innerHTML = dt1;
+    })
+</script>
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, user-scalable=yes">
+<!--<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">-->
+
+<title>Firefox Tweaks & Tips</title>
+
+<!-- add icon link -->
+<link rel="icon" href="https://brewdster.github.io/homepage/images/ElliefanIX.png" type="image/x-icon">
+
+<link rel="preconnect" href="https://fonts.googleapis.com/">
+<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Poppins:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet">
+
+<style type="text/css">
+
+body,li
+  {
+    font-family: 'Poppins', 'Inter', Arial, sans-serif;
+  }
+
+.head1
+  {
+    color: #C80815;
+    font-weight: 500;
+  }
+
+.hlt
+  {
+    color: #0000FF;
+    font-weight: 500
+  }
+
+.sticky
+  {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+
+.content
+  {
+    padding: 0px;
+  }
+
+.sticky + .content
+  {
+    padding-top: 153px;
+  }
+
+.anchor
+  {
+    display: block;
+    position: relative;
+    top: -157px;
+    visibility: hidden;
+  }
+
+</style>
+
+</head>
+
+<body width="100%" bgcolor="#FFFFFF" style="margin: 0px; padding: 0px">
+
+<table id="banner" width="100%" cellspacing="0" cellpadding="0" border="0">
+  <tbody>
+    <tr>
+      <td>
+        <table width="100%" cellspacing="0" cellpadding="0" border="0" bgcolor="#3E3E3E">
+          <tbody>
+            <tr>
+              <td width="100%" height="10"></td>
+            </tr>
+          </tbody>
+        </table>
+
+        <table width="100%" cellspacing="0" cellpadding="0" border="0" bgcolor="#1E5CA4">
+          <tbody>
+            <tr style="color: #FFFFFF; text-shadow: 1px 1px 6px #000000">
+              <td width="2%">&nbsp;</td>
+              <td style="padding: 20px 10px 20px 0px" width="90" align="left">
+                <table width="92" height="92" border="0" cellspacing="0" cellpadding="0">
+                  <tbody>
+                    <tr>
+                      <td valign="middle" style="background-color: #9EDBFF; -moz-border-radius: 45px; -webkit-border-radius: 45px; border-radius: 45px; border: 3px solid #C9FEFE">
+                        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                          <tbody>
+                            <tr>
+                              <td style="padding: 20px 0px 20px 0px" width="90" align="center"><img src="https://brewdster.github.io/homepage/images/ElliefanIX_H+G.svg" width="65" border="0" style="vertical-align: bottom"></td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </td>
+              <td style="font-size: 20px; font-weight: 500; line-height: 24px" class="Reduct">My Firefox Tweaks & Tips</td>
+              <td style="font-size: 14px; font-weight: normal; line-height: 18px" align="right">Updated 2025-01-19</td>
+              <td width="92" align="right" valign="middle"><iframe border="0" style="padding: 0px 1px 1px 5px; vertical-align: bottom" src="https://free.timeanddate.com/clock/i9pce7fe/n250/szw80/szh80/hocc9fefe/hbw3/hfcc9fefe/cf100/hnc9edbff/fas24/fdi64/mqcf00/mqs3/mql13/mqw4/mqd94/mhcfff/mhs3/mhl13/mhw4/mhd94/mmc000/mml5/mmw1/mmd94/hwm2/hhs2/hhb18/hms2/hml80/hmb18/hmr7/hss1/hsl90/hsw2/hsr8" frameborder="0" width="81" height="81"></iframe></td>
+              <td width="2%">&nbsp;</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <table width="100%" cellspacing="0" cellpadding="0" border="0" bgcolor="#808080">
+          <tbody>
+            <tr>
+              <td width="100%" height="10"></td>
+            </tr>
+          </tbody>
+        </table>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table id="top" class="content" width="100%" cellspacing="0" cellpadding="0" border="0">
+  <tbody>
+    <tr>
+      <td style="padding: 0px 10px 0px 10px">
+        <table width="100%" cellspacing="0" cellpadding="0" border="0">
+          <tbody>
+            <tr>
+              <td align="left" valign="top" style="padding: 20px 0px 10px 27px; font-size: 16px; font-family: 'Poppins', sans-serif; line-height: 22px; color: #000000; font-weight: normal"><span class="head1">Page index</span>
+                <ul style="list-style-type: none; padding: 0px">
+                  <li><a href="#autoplay">Autoplay config</a></li>
+                  <li><a href="#zoom">Change default zoom levels</a></li>
+                  <li><a href="#popup1">Re-enable popup notification</a></li>
+                  <li><a href="#popup2">Change “Allowed Pop-up” events</a></li>
+                  <li><a href="#compact">Change toolbar size to compact mode</a></li>
+                  <li><a href="#dialogs">Disable prompt “Prevent this page from creating additional dialogs”</a></li>
+                  <li><a href="#screenshot">How to take screenshots using console</a></li>
+                  <li><a href="#stylesheet">Create default user stylesheet that applies to all websites</a></li>
+                </ul>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </td>
+    </tr>
+
+    <tr>
+      <td style="padding: 0px 0px 0px 0px; color: #000000; font-size: 16px; font-weight: normal; line-height: 20px">
+        <ul>
+
+          <a class="anchor" name="autoplay"></a>
+          <li><p><span class="head1">Autoplay config <a href="#top" style="text-decoration: none"><b>&#8634;</b></a></span><br>
+	    <ol>
+	      <li>about:config</li>
+	      <li>media.autoplay.default = 5 [0:allow;1:blockAudible;2:Prompt;5:blockAll]</li>
+	      <li>media.autoplay.blocking_policy = 2</li>
+	      <li>media.autoplay.allow-extension-background-pages = false</li>
+	      <li>media.autoplay.block-event.enabled = true</li>
+	    </ol>
+	  </p></li>
+
+          <a class="anchor" name="zoom"></a>
+          <li><p><span class="head1">Change default zoom levels <a href="#top" style="text-decoration: none"><b>&#8634;</b></a></span><br>
+	    <ol>
+	      <li>about:config</li>
+	      <li>toolkit.zoomManager.zoomValues</li>
+	      <li>modify with: <b>.3,.5,.67,.8,.9,<span class="hlt">.92,.95,</span>1,1.1,1.2,1.33,1.5,1.7,2,2.4,3,4,5</b> (adds 92% and 95%)</li>
+	    </ol>	  
+	  </p></li>
+
+          <a class="anchor" name="popup1"></a>
+          <li><p><span class="head1">Re-enable popup notification <a href="#top" style="text-decoration: none"><b>&#8634;</b></a></span><br>
+	    <ol>
+	      <li>about:config</li>
+	      <li>privacy.popups.showBrowserMessage  (set to true)</li>
+	      <li>browser.tabs.warnOnOpen (set to true)</li>
+	      <li>browser.tabs.maxOpenBeforeWarn (optional)</li>
+	    </ol>
+	  </p></li>
+
+          <a class="anchor" name="popup2"></a>
+          <li><p><span class="head1">Change allowed pop-up events <a href="#top" style="text-decoration: none"><b>&#8634;</b></a></span><br>
+	    <ol>
+	      <li>about:config</li>
+	      <li>dom.popup_allowed_events (leave this parameter blank to disable all types of pop-up allowable events)</li>
+	    </ol>
+	    <br>
+	    <span class="hlt">Note:</span> original= change click dblclick auxclick mousedown mouseup pointerdown pointerup notificationclick reset submit touchend contextmenu
+	  </p></li>
+
+          <a class="anchor" name="compact"></a>
+          <li><p><span class="head1">Change toolbar size to compact mode <a href="#top" style="text-decoration: none"><b>&#8634;</b></a></span><br>
+	    <ol>
+	      <li>about:config</li>
+	      <li>browser.compactmode.show (set to true)</li>
+	    </ol>
+	  </p></li>
+
+          <a class="anchor" name="dialogs"></a>
+          <li><p><span class="head1">Disable prompt "Prevent this page from creating additional dialogs" <a href="#top" style="text-decoration: none"><b>&#8634;</b></a></span><br>
+	    <ol>
+	      <li>about:config</li>
+	      <li>Create a new "dom.successive_dialog_time_limit" parameter in Number format.</li>
+	      <li>Set to 0 (seconds) or 2 (recommended), which will set the number of seconds between successive prompts for safety reasons.</li>
+	    </ol>
+	  </p></li>
+
+          <a class="anchor" name="screenshot"></a>
+          <li><p><span class="head1">How to take screenshots using console<a href="#top" style="text-decoration: none"><b>&#8634;</b></a></span><br>
+	    <ol>
+	      <li>Enable console with Ctrl-Shift-K (Windows) or Cmd-K (Mac)</li>
+	      <li>Enter the following sample command:<br><span class="hlt">:screenshot --dpr 3 --fullpage --filename C:\Temp\Test.png</span></li>
+	    </ol>
+	    <br>
+	    Click <a href="https://firefox-source-docs.mozilla.org/devtools-user/taking_screenshots/index.html#taking-screenshots-with-the-web-console" target="_blank">here</a> for info on additional parameters.
+	  </p></li>
+
+          <a class="anchor" name="stylesheet"></a>
+          <li><p><span class="head1">Create default user stylesheet that applies to all websites<sup>&dagger;</sup> <a href="#top" style="text-decoration: none"><b>&#8634;</b></a></span><br>
+            <ol>
+	      <li>Locate profile folder in Windows Explorer:
+	        <ul style="list-style-type:lower-alpha">
+                  <li>about:support</li>
+                  <li>Profile Folder -> Open Folder</li>
+	        </ul>
+	      </li>
+	      <li>Create a "chrome" directory within the designated profile folder.</li>
+	      <li>Add a "userContent.css" file in this directory.</li>
+	      <li>Specify CSS styles in userContent.css, which will be applied to all websites.<br>
+	      <span style="white-space: pre"><span class="hlt">Example:</span>
+body
+  {
+    font-family: 'Poppins' !important;
+    font-size: 16px !important;
+    line-height: 20px !important;
+    margin-bottom: 14px !important;
+  }</span>
+	      </li>
+	    </ol>
+	    <br>
+	    <span style="font-size: 12px"><sup>&dagger;</sup> <em>May not be supported in all versions.</em></span>
+	  </p></li>
+
+        </ul>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td align="left" style="padding: 10px 0px 10px 0px"><p></p></td>
+    </tr>
+  </tbody>
+</table>
+
+<script>
+  window.onscroll = function()
+  {
+    freeze()
+  };
+  var banner = document.getElementById("banner");
+  var sticky = banner.offsetTop;
+
+  function freeze()
+  {
+    if (window.pageYOffset > sticky)
+      {
+        banner.classList.add("sticky");
+      }
+    else
+      {
+        banner.classList.remove("sticky");
+      }
+  }
+</script>
+
+</body>
+
+</html>
