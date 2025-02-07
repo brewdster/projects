@@ -1,5 +1,5 @@
 ﻿<!DOCTYPE html>
-<!--Drewbster / 20250206-->
+<!--Drewbster / 20250207-->
 <html>
 
 <head>
@@ -122,7 +122,7 @@ body,li
                 </table>
               </td>
               <td style="font-size: 20px; font-weight: 500; line-height: 24px" class="Reduct">My Indesign Scripts & GREP Collection</td>
-              <td style="font-size: 14px; font-weight: normal; line-height: 18px" align="right">Updated 2025-02-06</td>
+              <td style="font-size: 14px; font-weight: normal; line-height: 18px" align="right">Updated 2025-02-07</td>
               <td width="92" align="right" valign="middle"><iframe border="0" style="padding: 0px 1px 1px 5px; vertical-align: bottom" src="https://free.timeanddate.com/clock/i9pce7fe/n250/szw80/szh80/hocc9fefe/hbw3/hfcc9fefe/cf100/hnc9edbff/fas24/fdi64/mqcf00/mqs3/mql13/mqw4/mqd94/mhcfff/mhs3/mhl13/mhw4/mhd94/mmc000/mml5/mmw1/mmd94/hwm2/hhs2/hhb18/hms2/hml80/hmb18/hmr7/hss1/hsl90/hsw2/hsr8" frameborder="0" width="81" height="81"></iframe></td>
               <td width="2%">&nbsp;</td>
             </tr>
@@ -160,7 +160,7 @@ body,li
                   <li><a href="#cleanup">Cleanup: delete all guides plus remove slug, margins & unused swatches in entire document</a></li>
                   <li><a href="#pg_size">Get page width & height</a></li>
                   <li><a href="#doc_size">Get document width & height</a></li>
-                  <li><a href="#grep_1">GREP: Target word after and before specific words</a></li>
+                  <li><a href="#grep_1">GREP: Target phrase before and after specific words</a></li>
                   <li><a href="#resource">Additional resources</a></li>
                 </ul>
               </td>
@@ -318,20 +318,20 @@ alert("Page Width : " +  pw + " in\rPage Height : " + ph + " in");<br>
 <span class="hlt">Note:</span> Click <a href="https://www.indesignjs.de/extendscriptAPI/indesign-latest/#ViewPreference.html" target="_blank">here</a> for additional [viewPreferences] properties.</span></p></li>
 
           <a class="anchor" name="grep_1"></a>
-          <li><p><span class="head1">GREP: Target word(s) after and before specific word(s) <a href="#top" style="text-decoration: none"><b>&#8634;</b></a></span><br>GREP code: <span class="hlt">(?i)(?<=the ).+?(?= dog)</span><br>Example: The <b style="text-decoration: underline">cute</b> dog ate its dogfood quickly.<br>
+          <li><p><span class="head1">GREP: Target phrase before and after specific word(s) <a href="#top" style="text-decoration: none"><b>&#8634;</b></a></span><br>GREP code: <span class="hlt">(?i)(?<=</span><b>the </b></span><span class="hlt">).+?(?=</span><b> dog</b><span class="hlt">)</span><br>Result: The <b style="text-decoration: underline">cute</b> dog ate its dogfood quickly.<br>
             <ul style="list-style-type: disc">
               <li><span class="hlt">(?i)</span> makes search term case-insensitive.</li>
-              <li><span class="hlt">(?<=the)</span>, also called a Positive Lookbehind, specifies the word "the" as the required before criteria, meaning the string searched for must be preceded by "the".</li>
-              <li><span class="hlt">.+</span> applies GREP style to any and all characters in-between the 2 criteria specified in the example, as long as both criteria exist.</li>
-              <li><span class="hlt">?(?= dog)</span>, also called a Positive Lookahead, specifies a space plus the word "dog" as the required after criteria, meaning the string searched for must be followed by " dog".<br>
-                <b>Note:</b> The preceeding "?" before the opening parenthesis denotes only the first match is considered (non-greedy); otherwise, the criteria will be applied to the second "dog" in "dogfood".<br>
-                This criteria can also be expressed as <span class="hlt">(?= \bdog\b)</span>, where "\b" or "word boundary" indicates a full-word search. This will apply the criteria to " dog " but not to "dogfood".</li>
+              <li><span class="hlt">(?<=</span><b>the </b><span class="hlt">)</span>, also called a <em>Positive Lookbehind</em>, specifies the phrase <b>"the "</b> (note the <b><em>space</em></b> after "the") as the required before criteria, meaning the string searched for must be preceded by <b>"the "</b>.</li>
+              <li><span class="hlt">.+</span> applies GREP style to any and all characters in-between the 2 criteria specified in the example, so long as both criteria exist.</li>
+              <li><span class="hlt">?(?=</span><b> dog</b><span class="hlt">)</span>, also called a <em>Positive Lookahead</em>, specifies the phrase <b>" dog"</b> (note the <b><em>space</em></b> before "dog") as the required after criteria, meaning the string searched for must be followed by <b>" dog"</b>.<br>
+                <b>Note:</b> The preceeding "?" before the opening parenthesis denotes only the first match is considered (<em>non-greedy</em>); otherwise, the criteria will be applied to the second "dog" in "dogfood".<br>
+                This criteria can also be expressed as <span class="hlt">(?= \b</span><b>dog</b><span class="hlt">\b)</span>, where "\b" or "<em>word boundary</em>" indicates a full-word search. This will apply the criteria to " dog " but not to "dogfood".</li>
             </ul></p>
           <p>
-            Another option is <span class="hlt">^(?i)[^d]+\K(cute)</span> where:<br>
+            Another option is <span class="hlt">^(?i)[^d]+\K(</span><b>cute</b><span class="hlt">)</span> where:<br>
             <ul style="list-style-type: disc">
-              <li><span class="hlt">^(?i)[^d]</span> establishes the search range from the start of the paragraph "^" to the first "d" character, case-insensitive.</li>
-              <li><span class="hlt">+\K(cute)</span> is an inclusive LookBehind search for the word "cute" in the established range from the previous step.</li>
+              <li><span class="hlt">^(?i)[^d]</span> establishes the search range from the start of the paragraph "^" to the first <b>"d"</b> character, case-insensitive.</li>
+              <li><span class="hlt">+\K(</span><b>cute</b><span class="hlt">)</span> is an inclusive LookBehind search for the word <b>"cute"</b> in the established range from the previous step.</li>
             </ul>
           </p></li>
 
