@@ -155,7 +155,8 @@ body,li
                   <li><a href="#moveobj">Move & ungroup objects to new layers</a></li>
                   <li><a href="#ligahyph">Turn off all ligatures and hyphenation</a></li>
                   <li><a href="#swatch">Create new swatch</a></li>
-                  <li><a href="#tf_rect">Create text frame with specific properties and a simple rectangle object</a></li>
+                  <li><a href="#tf_rect1">Create a simple rectangle object</a></li>
+                  <li><a href="#tf_rect2">Create text frame with specific properties</a></li>
                   <li><a href="#box_stroke">Create a rectangle with stroke and fill</a></li>
                   <li><a href="#cleanup">Cleanup: delete all guides plus remove slug, margins & unused swatches in entire document</a></li>
                   <li><a href="#pg_size">Get page width & height</a></li>
@@ -257,8 +258,15 @@ catch(err)
   ""
 }</span></p></li>
 
-          <a class="anchor" name="tf_rect"></a>
-          <li><p><span class="head1">Create text frame with specific properties and a simple rectangle object <a href="#top" style="text-decoration: none"><b>&#8634;</b></a></span><br>
+          <a class="anchor" name="tf_rect1"></a>
+          <li><p><span class="head1">Create a simple rectangle object <a href="#top" style="text-decoration: none"><b>&#8634;</b></a></span><br>
+	  <span style="white-space: pre">var myDoc = app.activeDocument;
+var rect =myDoc.rectangles.add({geometricBounds : <span class="hlt">[3,5,5,3]</span> ,fillColor : myDoc.colors.itemByName("Black")});</span></p>
+
+<p><span class="hlt">Note:</span> [3,5,5,3] represents the x/y vectors of a 2x2-inch square at vector x=3 and y=3, with the 4 corners starting from the upper-left corner in a clockwise direction, where 3 = y position, 5 = x pos., 5 = y pos., 3 = x pos.</p></li>
+
+          <a class="anchor" name="tf_rect2"></a>
+          <li><p><span class="head1">Create text frame with specific properties <a href="#top" style="text-decoration: none"><b>&#8634;</b></a></span><br>
 	  <span style="white-space: pre">var myDoc = app.activeDocument;
 var ntf = myDoc.pages[0].textFrames.add();
 ntf.texts[0].hyphenation = false;
@@ -273,11 +281,7 @@ ntf.textFramePreferences.verticalJustification = VerticalJustification.BOTTOM_AL
 ntf.textFramePreferences.ignoreWrap = true;
 ntf.parentStory.appliedFont = "Arial";
 ntf.parentStory.pointSize = 12;
-ntf.parentStory.leading = 13; 
-
-var rect =myDoc.rectangles.add({geometricBounds : <span class="hlt">[3,5,5,3]</span> ,fillColor : myDoc.colors.itemByName("Black")});</span></p>
-
-<p><span class="hlt">Note:</span> [3,5,5,3] represents the x/y vectors of a 2x2-inch square at vector x=3 and y=3, with the 4 corners starting from the upper-left corner in a clockwise direction, where 3 = y position, 5 = x pos., 5 = y pos., 3 = x pos.</p></li>
+ntf.parentStory.leading = 13;</p></li>
 
           <a class="anchor" name="box_stroke"></a>
           <li><p><span class="head1">Create a rectangle with stroke and fill <a href="#top" style="text-decoration: none"><b>&#8634;</b></a></span><br>
@@ -353,7 +357,7 @@ alert("Page Width : " +  pw + " in\rPage Height : " + ph + " in");<br>
 <table width="100%" border="0" cellspacing="0" cellpadding="0">
   <tbody>
     <tr>
-      <td align="left" style="padding: 10px 0px 10px 0px"><p></p></td>
+      <td align="left" style="padding: 10px 0px 650px 0px"><p></p></td>
     </tr>
   </tbody>
 </table>
