@@ -13,6 +13,24 @@
     {
       document.getElementById("curdate").innerHTML = dt1;
     })
+
+  !function(d,s,id)
+    {
+      var js,fjs=d.getElementsByTagName(s)[0];
+      if(!d.getElementById(id))
+        {
+          js=d.createElement(s);
+          js.id=id;
+          js.src='https://weatherwidget.io/js/widget.min.js';
+          fjs.parentNode.insertBefore(js,fjs);
+        }
+    }
+  (document,'script','weatherwidget-io-js');
+  document.addEventListener("DOMContentLoaded",function(event)
+    {
+      document.getElementById("curdate").innerHTML = dt1;
+    })
+
 </script>
 
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
@@ -61,14 +79,14 @@ body,li
 
 .sticky + .content
   {
-    padding-top: 490px;
+    padding-top: 491px;
   }
 
 .anchor
   {
     display: block;
     position: relative;
-    top: -495px;
+    top: -497px;
     visibility: hidden;
   }
 
@@ -144,7 +162,7 @@ body,li
         <table width="100%" cellspacing="0" cellpadding="0" border="0">
           <tbody>
             <tr>
-              <td align="left" valign="top" style="padding: 20px 0px 10px 27px; font-size: 14px; font-family: 'Poppins', sans-serif; line-height: 18px; color: #000000; font-weight: normal"><span class="head1">Page index</span>
+              <td width="50%" align="left" valign="top" style="padding: 16px 0px 10px 27px; font-size: 14px; font-family: 'Poppins', sans-serif; line-height: 18px; color: #000000; font-weight: normal"><span class="head1">Page index</span>
                 <ul style="list-style-type: none; padding: 0px">
                   <li><a href="#ungrp">Ungroup all objects</a></li>
                   <li><a href="#ignorewrap">Ignore wrap - all layers</a></li>
@@ -161,6 +179,47 @@ body,li
                   <li><a href="#resource">Additional resources</a></li>
                 </ul>
               </td>
+
+              <td width="50%" valign="top">
+                <table width="100%" cellspacing="0" cellpadding="0" border="0">
+                  <tbody>
+                    <tr>
+                      <td style="padding: 0px 10px 0px 0px; font-size: 15px; line-height: 19px">
+                        <p><span class="head1">7-day weather forecast : <span id="curdate"></span>,
+                          <iframe style="vertical-align: top" src="https://free.timeanddate.com/clock/i9r42t6e/n250/fn6/fs15/fcc80815/tct/pct/ahl/avb/ftb/pl0/pr0/pt0/pb0/ta1" frameborder="0" width="160" height="20" allowtransparency="true"></iframe></span>
+                        </p>
+                        <div><a class="weatherwidget-io" href="https://forecast7.com/en/43d86n79d34/markham/" data-label_1="Markham" data-label_2="Ontario" data-font="Roboto" data-icons="Climacons Animated" data-theme="weather_one" >Markham, ON Weather</a></div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td style="padding: 0px 10px 0px 0px; color: #000000; font-size: 14px; font-weight: normal; line-height: 18px">
+                        <p><span class="head1">Market indices</span></p>
+                        <!--https://www.tradingview.com/widget/#charts-->
+                        <div class="tradingview-widget-container">
+                          <div class="tradingview-widget-container__widget"></div>
+                          <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-tickers.js" async>
+                            {
+                              "symbols":
+                              [
+                                {"proName": "FOREXCOM:SPXUSD", "title": "S&P 500 Index"},
+                                {"description": "Nasdaq","proName": "NASDAQ:IXIC"},
+                                {"description": "Dow Jones","proName": "SPREADEX:DJI"},
+                                {"description": "Gold U$/oz.","proName": "TVC:GOLD"},
+                                {"description": "Bitcoin","proName": "BITSTAMP:BTCUSD"},
+                                {"description": "WTI Crude U$","proName": "EASYMARKETS:OILUSD"},
+                                {"description": "Nvidia","proName": "NASDAQ:NVDA"},
+                                {"description": "Tesla","proName": "NASDAQ:TSLA"}
+                              ],
+                              "isTransparent": false,"showSymbolLogo": true,"colorTheme": "dark","locale": "en"
+                            }
+                          </script>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </td>
+
             </tr>
           </tbody>
         </table>
@@ -190,7 +249,7 @@ body,li
         <ul>
 
           <a class="anchor" name="ungrp"></a>
-          <li><p><span class="head1">Ungroup all objects <a href="#top" style="text-decoration: none"><b>&#8634;</b></a></span><br>
+          <li><p><span class="head1">Ungroup all objects</span><br>
 	  <span style="white-space: pre">var doc = app.activeDocument;
 with(doc)
   {
