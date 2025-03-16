@@ -1,5 +1,5 @@
 ﻿<!DOCTYPE html>
-<!--Drewbster / 20250212-->
+<!--Drewbster / 20250316-->
 <html>
 
 <head>
@@ -61,14 +61,14 @@ body,li
 
 .sticky + .content
   {
-    padding-top: 487px;
+    padding-top: 530px;
   }
 
 .anchor
   {
     display: block;
     position: relative;
-    top: -494px;
+    top: -537px;
     visibility: hidden;
   }
 
@@ -156,6 +156,8 @@ body,li
                   <li><a href="#stylesheet">Create default user stylesheet that applies to all websites</a></li>
                   <li><a href="#extensions1">Extensions info and local storage</a></li>
                   <li><a href="#extensions2">Useful extensions</a></li>
+                  <li><a href="#plugins1">Disable plug-in signing requirement</a></li>
+                  <li><a href="#plugins2">Temporarily allow unsigned add-ons</a></li>
                 </ul>
               </td>
             </tr>
@@ -292,6 +294,25 @@ body
 	      <li><a href="https://brewdster.github.io/projects/other/Firefox_new_tab_override-15.1.1.xpi" target="_blank">New Tab Override</a> - specifies a webpage to open when a new tab is created</li>
 	      <li><a href="https://brewdster.github.io/projects/other/Firefox_zjm_whatfont-1.3.xpi" target="_blank">WhatFont</a> - identifies font family used in webpages</li>
 	      <li><a href="https://brewdster.github.io/projects/other/Firefox_live_editor_for_css_Magic_CSS.xpi" target="_blank">Magic CSS</a> - allows for coding custom CSS overrides in webpages</li>
+	    </ol>
+	  </p></li>
+
+          <a class="anchor" name="plugins1"></a>
+          <li><p><span class="head1">Disable plug-in signing requirement <a href="#top" style="text-decoration: none"><b>&#8634;</b></a></span><br>
+	    <ol>
+	      <li>about:config</li>
+	      <li>Set xpinstall.signatures.required to false.</li>
+	      <li>Set extensions.langpacks.signatures.required to false.</li>
+	    </ol>
+	  </p></li>
+
+          <a class="anchor" name="plugins2"></a>
+          <li><p><span class="head1">Temporarily allow unsigned add-ons <a href="#top" style="text-decoration: none"><b>&#8634;</b></a></span><br>
+	    <ol>
+	      <li>about:debugging</li>
+	      <li>Click on "This Firefox".</li>
+	      <li>Click on "Load Temporary Add-on..." button.</li>
+	      <li>Select an XPI file.</li>
 	    </ol>
 	  </p></li>
 
