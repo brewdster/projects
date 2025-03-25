@@ -1,5 +1,5 @@
 ﻿<!DOCTYPE html>
-<!--Drewbster / 20250316-->
+<!--Drewbster / 20250325-->
 <html>
 
 <head>
@@ -61,14 +61,14 @@ body,li
 
 .sticky + .content
   {
-    padding-top: 530px;
+    padding-top: 550px;
   }
 
 .anchor
   {
     display: block;
     position: relative;
-    top: -537px;
+    top: -557px;
     visibility: hidden;
   }
 
@@ -122,7 +122,7 @@ body,li
                 </table>
               </td>
               <td style="font-size: 20px; font-weight: 500; line-height: 24px" class="Reduct">My Firefox Tweaks & Tips</td>
-              <td style="font-size: 14px; font-weight: normal; line-height: 18px" align="right">Updated 2025-02-12</td>
+              <td style="font-size: 14px; font-weight: normal; line-height: 18px" align="right">Updated 2025-03-25</td>
               <td width="92" align="right" valign="middle"><iframe border="0" style="padding: 0px 1px 1px 5px; vertical-align: bottom" src="https://free.timeanddate.com/clock/i9pce7fe/n250/szw80/szh80/hocc9fefe/hbw3/hfcc9fefe/cf100/hnc9edbff/fas24/fdi64/mqcf00/mqs3/mql13/mqw4/mqd94/mhcfff/mhs3/mhl13/mhw4/mhd94/mmc000/mml5/mmw1/mmd94/hwm2/hhs2/hhb18/hms2/hml80/hmb18/hmr7/hss1/hsl90/hsw2/hsr8" frameborder="0" width="81" height="81"></iframe></td>
               <td width="2%">&nbsp;</td>
             </tr>
@@ -158,6 +158,7 @@ body,li
                   <li><a href="#extensions2">Useful extensions</a></li>
                   <li><a href="#plugins1">Disable plug-in signing requirement</a></li>
                   <li><a href="#plugins2">Temporarily allow unsigned add-ons</a></li>
+                  <li><a href="#startup">How to “Load Temporary Add-on” or extensions automatically during startup using scripting</a></li>
                 </ul>
               </td>
             </tr>
@@ -256,7 +257,7 @@ body,li
 	  </p></li>
 
           <a class="anchor" name="stylesheet"></a>
-          <li><p><span class="head1">Create default user stylesheet that applies to all websites<sup>&dagger;</sup> <a href="#top" style="text-decoration: none"><b>&#8634;</b></a></span><br>
+          <li><p><span class="head1">Create default user stylesheet that applies to all websites<sup>†</sup> <a href="#top" style="text-decoration: none"><b>&#8634;</b></a></span><br>
             <ol>
 	      <li>Locate profile folder in Windows Explorer:
 	        <ul style="list-style-type:lower-alpha">
@@ -277,7 +278,7 @@ body
   }</span>
 	      </li>
 	    </ol>
-	    <span style="font-size: 12px"><sup>&dagger;</sup> <em>May not be supported in all versions.</em></span>
+	    <span style="font-size: 12px"><sup>†</sup> <em>May not be supported in all versions.</em></span>
 	  </p></li>
 
           <a class="anchor" name="extensions1"></a>
@@ -309,11 +310,28 @@ body
           <a class="anchor" name="plugins2"></a>
           <li><p><span class="head1">Temporarily allow unsigned add-ons <a href="#top" style="text-decoration: none"><b>&#8634;</b></a></span><br>
 	    <ol>
-	      <li>about:debugging</li>
-	      <li>Click on "This Firefox".</li>
+	      <li>about:debugging#/runtime/this-firefox</li>
 	      <li>Click on "Load Temporary Add-on..." button.</li>
 	      <li>Select an XPI file.</li>
 	    </ol>
+	  </p></li>
+
+          <a class="anchor" name="startup"></a>
+          <li><p><span class="head1">How to “Load Temporary Add-on” or extensions automatically during startup using scripting <a href="#top" style="text-decoration: none"><b>&#8634;</b></a></span><br>
+	    <ol>
+	      <li>Modify the "channel-prefs.js" file in "C:\Program Files\Mozilla Firefox\defaults\pref" folder (Windows 64-bit version). Add the lines from this <a href="https://brewdster.github.io/projects/other/channel-prefs.txt" target="_blank">file</a> to the existing lines (commented lines optional).</li>
+	      <li>Copy this <a href="https://brewdster.github.io/projects/other/extloader.js" target="_blank">JavaScript file</a> to "C:\Program Files\Mozilla Firefox" (ex. extloader.js).</li>
+	      <li>Edit the above file (extloader.js) and modify the lines under "<span class="hlt">function installUnpackedExtensions()</span>" to reflect the <em>folder locations</em><b>*</b> of your own extensions.<br>(e.g. <span class="hlt">installExtension("D:\\Firefox\\Downloads\\Extensions\\magic_css", true);</span>)<sup><b>†</b></sup></li>
+	      <li>Open Firefox and type in the following url: <b>about:debugging#/runtime/this-firefox</b>.</li>
+	      <li>Click on "Load Temporary Add-on..." to load your extensions just this once only. Every time Firefox restarts afterwards, all your extensions will always be auto-loaded.</li>
+	    </ol>
+	    <span class="hlt">Notes:</span>
+	    <ul style="list-style-type: disc">
+	      <li>* This works only if you unpack your extension's files into a folder and reference the path in step 4 above. It doesn't work on .XPI files (which are just zip files).</li>
+	      <li><sup>†</sup> When editing the "installUnpackedExtensions" function in your JavaScript file, note the double backlashes when entering the path of your extensions <b>(important)!</b></li>
+	      <li>If you do something with your extension after loading it temporarily that might require saving to local storage, such as adding the icon to your toolbar, ensure these following <a href="https://brewdster.github.io/projects/other/manifest_json.txt" target="_blank">lines</a> are added to the "manifest.json" file of your extension.</li>
+	      <li>For an in-depth resource, click <a href="https://www.reddit.com/r/firefox/comments/xixjsi/permanently_add_temporary_unzipped_addon_from/?rdt=59061">here</a>.
+	    </ul>
 	  </p></li>
 
         </ul>
