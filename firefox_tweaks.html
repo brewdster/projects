@@ -61,14 +61,14 @@ body,li
 
 .sticky + .content
   {
-    padding-top: 575px;
+    padding-top: 435px;
   }
 
 .anchor
   {
     display: block;
     position: relative;
-    top: -582px;
+    top: -442px;
     visibility: hidden;
   }
 
@@ -144,7 +144,7 @@ body,li
         <table width="100%" cellspacing="0" cellpadding="0" border="0">
           <tbody>
             <tr>
-              <td align="left" valign="top" style="padding: 20px 0px 10px 27px; font-size: 16px; font-family: 'Poppins', sans-serif; line-height: 22px; color: #000000; font-weight: normal"><span class="head1">Page index</span>
+              <td width="50%" align="left" valign="top" style="padding: 20px 0px 10px 27px; font-size: 16px; font-family: 'Poppins', sans-serif; line-height: 22px; color: #000000; font-weight: normal"><span class="head1">Page index</span>
                 <ul style="list-style-type: none; padding: 0px">
                   <li><a href="#autoplay">Autoplay config</a></li>
                   <li><a href="#zoom">Change default zoom levels</a></li>
@@ -153,13 +153,17 @@ body,li
                   <li><a href="#delay">Modify delay before interacting with a dialog box</a></li>
                   <li><a href="#compact">Change toolbar size to compact mode</a></li>
                   <li><a href="#dialogs">Disable prompt “Prevent this page from creating additional dialogs”</a></li>
+                </ul>
+              </td>
+              <td width="50%" align="left" valign="top" style="padding: 20px 0px 10px 27px; font-size: 16px; font-family: 'Poppins', sans-serif; line-height: 22px; color: #000000; font-weight: normal"><span class="head1"> </span>
+                <ul style="list-style-type: none; padding: 0px">
                   <li><a href="#screenshot">How to take screenshots using console</a></li>
                   <li><a href="#stylesheet">Create default user stylesheet that applies to all websites</a></li>
                   <li><a href="#extensions1">Extensions info and local storage</a></li>
                   <li><a href="#extensions2">Useful extensions</a></li>
                   <li><a href="#plugins1">Disable plug-in signing requirement</a></li>
                   <li><a href="#plugins2">Temporarily allow unsigned add-ons</a></li>
-                  <li><a href="#startup">How to “Load Temporary Add-on” or extensions automatically during startup using scripting</a></li>
+                  <li><a href="#startup">How to auto-“Load Temporary Add-on” or extensions at startup using scripting</a></li>
                 </ul>
               </td>
             </tr>
@@ -326,7 +330,7 @@ body
 	  </p></li>
 
           <a class="anchor" name="startup"></a>
-          <li><p><span class="head1">How to “Load Temporary Add-on” or extensions automatically during startup using scripting <a href="#top" style="text-decoration: none"><b>&#8634;</b></a></span><br>
+          <li><p><span class="head1">How to auto-“Load Temporary Add-on” or extensions at startup using scripting <a href="#top" style="text-decoration: none"><b>&#8634;</b></a></span><br>
 	    <ol>
 	      <li>Modify the "channel-prefs.js" file in "C:\Program Files\Mozilla Firefox\defaults\pref" folder (Windows 64-bit version). Add the lines from this <a href="https://brewdster.github.io/projects/other/channel-prefs.txt" target="_blank">file</a> to the existing lines (commented lines optional).</li>
 	      <li>Copy this <a href="https://brewdster.github.io/projects/other/extloader.js" target="_blank">JavaScript file</a> to "C:\Program Files\Mozilla Firefox" (ex. extloader.js).</li>
