@@ -1,5 +1,5 @@
 ﻿<!DOCTYPE html>
-<!--Drewbster / 20250326-->
+<!--Drewbster / 20250413-->
 <html>
 
 <head>
@@ -61,14 +61,14 @@ body,li
 
 .sticky + .content
   {
-    padding-top: 420px;
+    padding-top: 441px;
   }
 
 .anchor
   {
     display: block;
     position: relative;
-    top: -427px;
+    top: -448px;
     visibility: hidden;
   }
 
@@ -153,6 +153,7 @@ body,li
                   <li><a href="#delay">Modify delay before interacting with a dialog box</a></li>
                   <li><a href="#compact">Change toolbar size to compact mode</a></li>
                   <li><a href="#dialogs">Disable prompt “Prevent this page from creating additional dialogs”</a></li>
+                  <li><a href="#fonts">Modify use of system fonts in Firefox</a></li>
                 </ul>
               </td>
               <td width="50%" align="left" valign="top" style="padding: 20px 0px 10px 27px; font-size: 16px; font-family: 'Poppins', sans-serif; line-height: 22px; color: #000000; font-weight: normal"><span class="head1"> </span>
@@ -251,12 +252,26 @@ body,li
 	  </p></li>
 
           <a class="anchor" name="dialogs"></a>
-          <li><p><span class="head1">Disable prompt "Prevent this page from creating additional dialogs" <a href="#top" style="text-decoration: none"><b>&#8634;</b></a></span><br>
+          <li><p><span class="head1">Disable prompt “Prevent this page from creating additional dialogs” <a href="#top" style="text-decoration: none"><b>&#8634;</b></a></span><br>
 	    <ol>
 	      <li>about:config</li>
 	      <li>Create a new "dom.successive_dialog_time_limit" parameter in Number format.</li>
 	      <li>Set to 0 (seconds) or 2 (recommended), which will set the number of seconds between successive prompts for safety reasons.</li>
 	    </ol>
+	  </p></li>
+
+          <a class="anchor" name="fonts"></a>
+          <li><p><span class="head1">Modify use of system fonts in Firefox <a href="#top" style="text-decoration: none"><b>&#8634;</b></a></span><br>
+	    <ol>
+	      <li>about:config</li>
+	      <li>layout.css.font-visibility</li>
+	    </ol>
+	    <span class="hlt">Valid values:</span>
+	    <ul style="list-style-type: disc">
+	      <li>1 (only show/use base system fonts)</li>
+	      <li>2 (also show/use fonts from optional language packs)</li>
+	      <li>3 (also show/use user-installed fonts [default])</li>
+	    </ul>
 	  </p></li>
 
           <a class="anchor" name="screenshot"></a>
@@ -343,7 +358,7 @@ body
 	      <li>* This works only if you unpack your extension's files into a folder and reference the path in step 4 above. It doesn't work on .XPI files (which are just zip files).</li>
 	      <li><sup>†</sup> When editing the "installUnpackedExtensions" function in your JavaScript file, note the double backlashes when entering the path of your extensions <b>(important)!</b></li>
 	      <li>If you do something with your extension after loading it temporarily that might require saving to local storage, such as adding the icon to your toolbar, ensure these following <a href="https://brewdster.github.io/projects/other/manifest_json.txt" target="_blank">lines</a> are added to the "manifest.json" file of your extension.</li>
-	      <li>For an in-depth resource, click <a href="https://www.reddit.com/r/firefox/comments/xixjsi/permanently_add_temporary_unzipped_addon_from/?rdt=59061">here</a>.
+	      <li>For an in-depth resource, click <a href="https://www.reddit.com/r/firefox/comments/xixjsi/permanently_add_temporary_unzipped_addon_from/?rdt=59061">here</a>.</li>
 	    </ul>
 	  </p></li>
 
