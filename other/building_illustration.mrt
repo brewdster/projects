@@ -24,7 +24,7 @@
     <docket_orderid_lookup Ref="3" type="Page" isKey="true">
       <Border>None;Black;2;Solid;False;4;Black</Border>
       <Brush>Transparent</Brush>
-      <Components isList="true" count="74">
+      <Components isList="true" count="80">
         <Text10 Ref="4" type="Text" isKey="true">
           <Border>None;[0:0:0];1;Solid;True;2;[63:63:63]</Border>
           <Brush>[106:116:124]</Brush>
@@ -690,23 +690,7 @@
           <ShapeType Ref="65" type="Stimulsoft.Report.Components.ShapeTypes.StiRectangleShapeType" isKey="true" />
           <Size>0.5</Size>
         </Shape24>
-        <Shape25 Ref="66" type="Shape" isKey="true">
-          <BorderColor>132, 150, 176</BorderColor>
-          <Brush>GlareBrush,[85:99:150],[185:199:250],0,0.5,1</Brush>
-          <ClientRectangle>305,657,195,35</ClientRectangle>
-          <Conditions isList="true" count="0" />
-          <Expressions isList="true" count="0" />
-          <Font>Arial,8</Font>
-          <Guid>5168667cde90462a844062725a05fde4</Guid>
-          <Name>Shape25</Name>
-          <Page isRef="3" />
-          <Parent isRef="3" />
-          <ShapeType Ref="67" type="Stimulsoft.Report.Components.ShapeTypes.StiRoundedRectangleShapeType" isKey="true">
-            <Round>0.2</Round>
-          </ShapeType>
-          <Size>0.5</Size>
-        </Shape25>
-        <Shape20 Ref="68" type="Shape" isKey="true">
+        <Shape20 Ref="66" type="Shape" isKey="true">
           <BorderColor>132, 150, 176</BorderColor>
           <Brush>GradientBrush,[85:99:150],[185:199:250],0</Brush>
           <ClientRectangle>23,377,150,35</ClientRectangle>
@@ -717,12 +701,12 @@
           <Name>Shape20</Name>
           <Page isRef="3" />
           <Parent isRef="3" />
-          <ShapeType Ref="69" type="Stimulsoft.Report.Components.ShapeTypes.StiRoundedRectangleShapeType" isKey="true">
+          <ShapeType Ref="67" type="Stimulsoft.Report.Components.ShapeTypes.StiRoundedRectangleShapeType" isKey="true">
             <Round>0.2</Round>
           </ShapeType>
           <Size>0.5</Size>
         </Shape20>
-        <Shape21 Ref="70" type="Shape" isKey="true">
+        <Shape21 Ref="68" type="Shape" isKey="true">
           <BorderColor>132, 150, 176</BorderColor>
           <Brush>GradientBrush,[85:99:150],[185:199:250],0</Brush>
           <ClientRectangle>23,447,150,35</ClientRectangle>
@@ -733,12 +717,12 @@
           <Name>Shape21</Name>
           <Page isRef="3" />
           <Parent isRef="3" />
-          <ShapeType Ref="71" type="Stimulsoft.Report.Components.ShapeTypes.StiRoundedRectangleShapeType" isKey="true">
+          <ShapeType Ref="69" type="Stimulsoft.Report.Components.ShapeTypes.StiRoundedRectangleShapeType" isKey="true">
             <Round>0.2</Round>
           </ShapeType>
           <Size>0.5</Size>
         </Shape21>
-        <Shape22 Ref="72" type="Shape" isKey="true">
+        <Shape22 Ref="70" type="Shape" isKey="true">
           <BorderColor>132, 150, 176</BorderColor>
           <Brush>GradientBrush,[85:99:150],[185:199:250],0</Brush>
           <ClientRectangle>23,517,150,35</ClientRectangle>
@@ -749,12 +733,12 @@
           <Name>Shape22</Name>
           <Page isRef="3" />
           <Parent isRef="3" />
-          <ShapeType Ref="73" type="Stimulsoft.Report.Components.ShapeTypes.StiRoundedRectangleShapeType" isKey="true">
+          <ShapeType Ref="71" type="Stimulsoft.Report.Components.ShapeTypes.StiRoundedRectangleShapeType" isKey="true">
             <Round>0.2</Round>
           </ShapeType>
           <Size>0.5</Size>
         </Shape22>
-        <Shape26 Ref="74" type="Shape" isKey="true">
+        <Shape26 Ref="72" type="Shape" isKey="true">
           <BorderColor>132, 150, 176</BorderColor>
           <Brush>GradientBrush,[85:99:150],[185:199:250],0</Brush>
           <ClientRectangle>23,587,150,35</ClientRectangle>
@@ -765,12 +749,12 @@
           <Name>Shape26</Name>
           <Page isRef="3" />
           <Parent isRef="3" />
-          <ShapeType Ref="75" type="Stimulsoft.Report.Components.ShapeTypes.StiRoundedRectangleShapeType" isKey="true">
+          <ShapeType Ref="73" type="Stimulsoft.Report.Components.ShapeTypes.StiRoundedRectangleShapeType" isKey="true">
             <Round>0.2</Round>
           </ShapeType>
           <Size>0.5</Size>
         </Shape26>
-        <Shape27 Ref="76" type="Shape" isKey="true">
+        <Shape27 Ref="74" type="Shape" isKey="true">
           <BorderColor>132, 150, 176</BorderColor>
           <Brush>GradientBrush,[85:99:150],[185:199:250],0</Brush>
           <ClientRectangle>23,307,150,35</ClientRectangle>
@@ -781,28 +765,12 @@
           <Name>Shape27</Name>
           <Page isRef="3" />
           <Parent isRef="3" />
-          <ShapeType Ref="77" type="Stimulsoft.Report.Components.ShapeTypes.StiRoundedRectangleShapeType" isKey="true">
+          <ShapeType Ref="75" type="Stimulsoft.Report.Components.ShapeTypes.StiRoundedRectangleShapeType" isKey="true">
             <Round>0.2</Round>
           </ShapeType>
           <Size>0.5</Size>
         </Shape27>
-        <Shape28 Ref="78" type="Shape" isKey="true">
-          <BorderColor>132, 150, 176</BorderColor>
-          <Brush>GradientBrush,[85:99:150],[185:199:250],0</Brush>
-          <ClientRectangle>23,657,150,35</ClientRectangle>
-          <Conditions isList="true" count="0" />
-          <Expressions isList="true" count="0" />
-          <Font>Arial,8</Font>
-          <Guid>b5d1c5521b47438cb4743a9c372a3a0c</Guid>
-          <Name>Shape28</Name>
-          <Page isRef="3" />
-          <Parent isRef="3" />
-          <ShapeType Ref="79" type="Stimulsoft.Report.Components.ShapeTypes.StiRoundedRectangleShapeType" isKey="true">
-            <Round>0.2</Round>
-          </ShapeType>
-          <Size>0.5</Size>
-        </Shape28>
-        <Shape29 Ref="80" type="Shape" isKey="true">
+        <Shape29 Ref="76" type="Shape" isKey="true">
           <BorderColor>132, 150, 176</BorderColor>
           <Brush>GradientBrush,[185:199:250],[85:99:150],0</Brush>
           <ClientRectangle>637,380,150,35</ClientRectangle>
@@ -813,12 +781,12 @@
           <Name>Shape29</Name>
           <Page isRef="3" />
           <Parent isRef="3" />
-          <ShapeType Ref="81" type="Stimulsoft.Report.Components.ShapeTypes.StiRoundedRectangleShapeType" isKey="true">
+          <ShapeType Ref="77" type="Stimulsoft.Report.Components.ShapeTypes.StiRoundedRectangleShapeType" isKey="true">
             <Round>0.2</Round>
           </ShapeType>
           <Size>0.5</Size>
         </Shape29>
-        <Shape30 Ref="82" type="Shape" isKey="true">
+        <Shape30 Ref="78" type="Shape" isKey="true">
           <BorderColor>132, 150, 176</BorderColor>
           <Brush>GradientBrush,[185:199:250],[85:99:150],0</Brush>
           <ClientRectangle>637,450,150,35</ClientRectangle>
@@ -829,12 +797,12 @@
           <Name>Shape30</Name>
           <Page isRef="3" />
           <Parent isRef="3" />
-          <ShapeType Ref="83" type="Stimulsoft.Report.Components.ShapeTypes.StiRoundedRectangleShapeType" isKey="true">
+          <ShapeType Ref="79" type="Stimulsoft.Report.Components.ShapeTypes.StiRoundedRectangleShapeType" isKey="true">
             <Round>0.2</Round>
           </ShapeType>
           <Size>0.5</Size>
         </Shape30>
-        <Shape31 Ref="84" type="Shape" isKey="true">
+        <Shape31 Ref="80" type="Shape" isKey="true">
           <BorderColor>132, 150, 176</BorderColor>
           <Brush>GradientBrush,[185:199:250],[85:99:150],0</Brush>
           <ClientRectangle>637,520,150,35</ClientRectangle>
@@ -845,12 +813,12 @@
           <Name>Shape31</Name>
           <Page isRef="3" />
           <Parent isRef="3" />
-          <ShapeType Ref="85" type="Stimulsoft.Report.Components.ShapeTypes.StiRoundedRectangleShapeType" isKey="true">
+          <ShapeType Ref="81" type="Stimulsoft.Report.Components.ShapeTypes.StiRoundedRectangleShapeType" isKey="true">
             <Round>0.2</Round>
           </ShapeType>
           <Size>0.5</Size>
         </Shape31>
-        <Shape32 Ref="86" type="Shape" isKey="true">
+        <Shape32 Ref="82" type="Shape" isKey="true">
           <BorderColor>132, 150, 176</BorderColor>
           <Brush>GradientBrush,[185:199:250],[85:99:150],0</Brush>
           <ClientRectangle>637,590,150,35</ClientRectangle>
@@ -861,12 +829,12 @@
           <Name>Shape32</Name>
           <Page isRef="3" />
           <Parent isRef="3" />
-          <ShapeType Ref="87" type="Stimulsoft.Report.Components.ShapeTypes.StiRoundedRectangleShapeType" isKey="true">
+          <ShapeType Ref="83" type="Stimulsoft.Report.Components.ShapeTypes.StiRoundedRectangleShapeType" isKey="true">
             <Round>0.2</Round>
           </ShapeType>
           <Size>0.5</Size>
         </Shape32>
-        <Shape33 Ref="88" type="Shape" isKey="true">
+        <Shape33 Ref="84" type="Shape" isKey="true">
           <BorderColor>132, 150, 176</BorderColor>
           <Brush>GradientBrush,[185:199:250],[85:99:150],0</Brush>
           <ClientRectangle>637,310,150,35</ClientRectangle>
@@ -877,12 +845,62 @@
           <Name>Shape33</Name>
           <Page isRef="3" />
           <Parent isRef="3" />
-          <ShapeType Ref="89" type="Stimulsoft.Report.Components.ShapeTypes.StiRoundedRectangleShapeType" isKey="true">
+          <ShapeType Ref="85" type="Stimulsoft.Report.Components.ShapeTypes.StiRoundedRectangleShapeType" isKey="true">
             <Round>0.2</Round>
           </ShapeType>
           <Size>0.5</Size>
         </Shape33>
-        <Shape34 Ref="90" type="Shape" isKey="true">
+        <Text7 Ref="86" type="Text" isKey="true">
+          <Border>None;[0:0:0];1;Solid;True;2;[63:63:63]</Border>
+          <Brush>[106:116:124]</Brush>
+          <ClientRectangle>0,690,800,75</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Expressions isList="true" count="0" />
+          <Font>Poppins Medium,12</Font>
+          <Guid>bef16b35eda24da9b8e32610050c88cb</Guid>
+          <LineSpacing>1.15</LineSpacing>
+          <Margins>15,0,0,0</Margins>
+          <Name>Text7</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>  </Text>
+          <TextBrush>[255:255:255]</TextBrush>
+          <Type>Expression</Type>
+          <VertAlignment>Center</VertAlignment>
+        </Text7>
+        <Shape28 Ref="87" type="Shape" isKey="true">
+          <BorderColor>132, 150, 176</BorderColor>
+          <Brush>GradientBrush,[85:99:150],[185:199:250],0</Brush>
+          <ClientRectangle>23,657,150,35</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Expressions isList="true" count="0" />
+          <Font>Arial,8</Font>
+          <Guid>b5d1c5521b47438cb4743a9c372a3a0c</Guid>
+          <Name>Shape28</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <ShapeType Ref="88" type="Stimulsoft.Report.Components.ShapeTypes.StiRoundedRectangleShapeType" isKey="true">
+            <Round>0.2</Round>
+          </ShapeType>
+          <Size>0.5</Size>
+        </Shape28>
+        <Shape25 Ref="89" type="Shape" isKey="true">
+          <BorderColor>132, 150, 176</BorderColor>
+          <Brush>GlareBrush,[85:99:150],[185:199:250],0,0.5,1</Brush>
+          <ClientRectangle>305,657,195,35</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Expressions isList="true" count="0" />
+          <Font>Arial,8</Font>
+          <Guid>5168667cde90462a844062725a05fde4</Guid>
+          <Name>Shape25</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <ShapeType Ref="90" type="Stimulsoft.Report.Components.ShapeTypes.StiRoundedRectangleShapeType" isKey="true">
+            <Round>0.2</Round>
+          </ShapeType>
+          <Size>0.5</Size>
+        </Shape25>
+        <Shape34 Ref="91" type="Shape" isKey="true">
           <BorderColor>132, 150, 176</BorderColor>
           <Brush>GradientBrush,[185:199:250],[85:99:150],0</Brush>
           <ClientRectangle>637,660,150,35</ClientRectangle>
@@ -893,44 +911,114 @@
           <Name>Shape34</Name>
           <Page isRef="3" />
           <Parent isRef="3" />
-          <ShapeType Ref="91" type="Stimulsoft.Report.Components.ShapeTypes.StiRoundedRectangleShapeType" isKey="true">
+          <ShapeType Ref="92" type="Stimulsoft.Report.Components.ShapeTypes.StiRoundedRectangleShapeType" isKey="true">
             <Round>0.2</Round>
           </ShapeType>
           <Size>0.5</Size>
         </Shape34>
-        <ftr_line Ref="92" type="HorizontalLinePrimitive" isKey="true">
+        <Shape35 Ref="93" type="Shape" isKey="true">
+          <BorderColor>46, 117, 181</BorderColor>
+          <Brush>GlassBrush,[226:239:217],True,0.15</Brush>
+          <ClientRectangle>23,705,140,60</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Expressions isList="true" count="0" />
+          <Font>Arial,8</Font>
+          <Guid>a8f969ba35f84f3590590af8bb438df8</Guid>
+          <Name>Shape35</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <ShapeType Ref="94" type="Stimulsoft.Report.Components.ShapeTypes.StiRectangleShapeType" isKey="true" />
+          <Size>0.5</Size>
+        </Shape35>
+        <Shape36 Ref="95" type="Shape" isKey="true">
+          <BorderColor>46, 117, 181</BorderColor>
+          <Brush>GlassBrush,[226:239:217],True,0.15</Brush>
+          <ClientRectangle>637,705,140,60</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Expressions isList="true" count="0" />
+          <Font>Arial,8</Font>
+          <Guid>ffafc1f3d13f496f880f28ce4ead8cda</Guid>
+          <Name>Shape36</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <ShapeType Ref="96" type="Stimulsoft.Report.Components.ShapeTypes.StiRectangleShapeType" isKey="true" />
+          <Size>0.5</Size>
+        </Shape36>
+        <Shape37 Ref="97" type="Shape" isKey="true">
+          <BorderColor>46, 117, 181</BorderColor>
+          <Brush>GlassBrush,[226:239:217],True,0.15</Brush>
+          <ClientRectangle>307,705,186,60</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Expressions isList="true" count="0" />
+          <Font>Arial,8</Font>
+          <Guid>dd7a6c5d93b946ca9f7fd44c07f21f48</Guid>
+          <Name>Shape37</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <ShapeType Ref="98" type="Stimulsoft.Report.Components.ShapeTypes.StiRectangleShapeType" isKey="true" />
+          <Size>0.5</Size>
+        </Shape37>
+        <Shape38 Ref="99" type="Shape" isKey="true">
+          <BorderColor>46, 117, 181</BorderColor>
+          <Brush>GlassBrush,[226:239:217],True,0.15</Brush>
+          <ClientRectangle>165,705,140,60</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Expressions isList="true" count="0" />
+          <Font>Arial,8</Font>
+          <Guid>5d9319c7c6b24a4f8bda43a73abfab93</Guid>
+          <Name>Shape38</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <ShapeType Ref="100" type="Stimulsoft.Report.Components.ShapeTypes.StiRectangleShapeType" isKey="true" />
+          <Size>0.5</Size>
+        </Shape38>
+        <Shape39 Ref="101" type="Shape" isKey="true">
+          <BorderColor>46, 117, 181</BorderColor>
+          <Brush>GlassBrush,[226:239:217],True,0.15</Brush>
+          <ClientRectangle>495,705,140,60</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Expressions isList="true" count="0" />
+          <Font>Arial,8</Font>
+          <Guid>f0056dce3193485d962de3ecc345fed6</Guid>
+          <Name>Shape39</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <ShapeType Ref="102" type="Stimulsoft.Report.Components.ShapeTypes.StiRectangleShapeType" isKey="true" />
+          <Size>0.5</Size>
+        </Shape39>
+        <ftr_line Ref="103" type="HorizontalLinePrimitive" isKey="true">
           <ClientRectangle>10,999,730,1</ClientRectangle>
           <Color>175, 189, 33</Color>
           <Conditions isList="true" count="0" />
-          <EndCap Ref="93" type="Cap" isKey="true">
+          <EndCap Ref="104" type="Cap" isKey="true">
             <Color>Black</Color>
           </EndCap>
           <Expressions isList="true" count="0" />
           <Name>ftr_line</Name>
           <Page isRef="3" />
           <Parent isRef="3" />
-          <StartCap Ref="94" type="Cap" isKey="true">
+          <StartCap Ref="105" type="Cap" isKey="true">
             <Color>Black</Color>
           </StartCap>
         </ftr_line>
-        <HorizontalLinePrimitive1 Ref="95" type="HorizontalLinePrimitive" isKey="true">
+        <HorizontalLinePrimitive1 Ref="106" type="HorizontalLinePrimitive" isKey="true">
           <ClientRectangle>315,270,175,1</ClientRectangle>
           <Conditions isList="true" count="0" />
-          <EndCap Ref="96" type="Cap" isKey="true">
+          <EndCap Ref="107" type="Cap" isKey="true">
             <Color>Black</Color>
           </EndCap>
           <Expressions isList="true" count="0" />
           <Name>HorizontalLinePrimitive1</Name>
           <Page isRef="3" />
           <Parent isRef="3" />
-          <StartCap Ref="97" type="Cap" isKey="true">
+          <StartCap Ref="108" type="Cap" isKey="true">
             <Color>Black</Color>
           </StartCap>
         </HorizontalLinePrimitive1>
-        <VerticalLinePrimitive1 Ref="98" type="VerticalLinePrimitive" isKey="true">
+        <VerticalLinePrimitive1 Ref="109" type="VerticalLinePrimitive" isKey="true">
           <ClientRectangle>402,200,1,108</ClientRectangle>
           <Conditions isList="true" count="0" />
-          <EndCap Ref="99" type="Cap" isKey="true">
+          <EndCap Ref="110" type="Cap" isKey="true">
             <Color>Black</Color>
           </EndCap>
           <Expressions isList="true" count="0" />
@@ -938,11 +1026,11 @@
           <Name>VerticalLinePrimitive1</Name>
           <Page isRef="3" />
           <Parent isRef="3" />
-          <StartCap Ref="100" type="Cap" isKey="true">
+          <StartCap Ref="111" type="Cap" isKey="true">
             <Color>Black</Color>
           </StartCap>
         </VerticalLinePrimitive1>
-        <StartPointPrimitive2 Ref="101" type="Stimulsoft.Report.Components.StiStartPointPrimitive" isKey="true">
+        <StartPointPrimitive2 Ref="112" type="Stimulsoft.Report.Components.StiStartPointPrimitive" isKey="true">
           <ClientRectangle>402,200,0,0</ClientRectangle>
           <Conditions isList="true" count="0" />
           <Expressions isList="true" count="0" />
@@ -951,7 +1039,7 @@
           <Parent isRef="3" />
           <ReferenceToGuid>ccb4590b8ebe4859bf41645d26844ee8</ReferenceToGuid>
         </StartPointPrimitive2>
-        <EndPointPrimitive2 Ref="102" type="Stimulsoft.Report.Components.StiEndPointPrimitive" isKey="true">
+        <EndPointPrimitive2 Ref="113" type="Stimulsoft.Report.Components.StiEndPointPrimitive" isKey="true">
           <ClientRectangle>402,308,0,0</ClientRectangle>
           <Conditions isList="true" count="0" />
           <Expressions isList="true" count="0" />
@@ -960,10 +1048,10 @@
           <Parent isRef="3" />
           <ReferenceToGuid>ccb4590b8ebe4859bf41645d26844ee8</ReferenceToGuid>
         </EndPointPrimitive2>
-        <VerticalLinePrimitive2 Ref="103" type="VerticalLinePrimitive" isKey="true">
+        <VerticalLinePrimitive2 Ref="114" type="VerticalLinePrimitive" isKey="true">
           <ClientRectangle>402,341,1,37</ClientRectangle>
           <Conditions isList="true" count="0" />
-          <EndCap Ref="104" type="Cap" isKey="true">
+          <EndCap Ref="115" type="Cap" isKey="true">
             <Color>Black</Color>
           </EndCap>
           <Expressions isList="true" count="0" />
@@ -971,11 +1059,11 @@
           <Name>VerticalLinePrimitive2</Name>
           <Page isRef="3" />
           <Parent isRef="3" />
-          <StartCap Ref="105" type="Cap" isKey="true">
+          <StartCap Ref="116" type="Cap" isKey="true">
             <Color>Black</Color>
           </StartCap>
         </VerticalLinePrimitive2>
-        <StartPointPrimitive1 Ref="106" type="Stimulsoft.Report.Components.StiStartPointPrimitive" isKey="true">
+        <StartPointPrimitive1 Ref="117" type="Stimulsoft.Report.Components.StiStartPointPrimitive" isKey="true">
           <ClientRectangle>402,341,0,0</ClientRectangle>
           <Conditions isList="true" count="0" />
           <Expressions isList="true" count="0" />
@@ -984,7 +1072,7 @@
           <Parent isRef="3" />
           <ReferenceToGuid>90370a5b4f9247f59193a4cbad2ab7e9</ReferenceToGuid>
         </StartPointPrimitive1>
-        <EndPointPrimitive1 Ref="107" type="Stimulsoft.Report.Components.StiEndPointPrimitive" isKey="true">
+        <EndPointPrimitive1 Ref="118" type="Stimulsoft.Report.Components.StiEndPointPrimitive" isKey="true">
           <ClientRectangle>402,378,0,0</ClientRectangle>
           <Conditions isList="true" count="0" />
           <Expressions isList="true" count="0" />
@@ -993,10 +1081,10 @@
           <Parent isRef="3" />
           <ReferenceToGuid>90370a5b4f9247f59193a4cbad2ab7e9</ReferenceToGuid>
         </EndPointPrimitive1>
-        <VerticalLinePrimitive3 Ref="108" type="VerticalLinePrimitive" isKey="true">
+        <VerticalLinePrimitive3 Ref="119" type="VerticalLinePrimitive" isKey="true">
           <ClientRectangle>402,411,1,37</ClientRectangle>
           <Conditions isList="true" count="0" />
-          <EndCap Ref="109" type="Cap" isKey="true">
+          <EndCap Ref="120" type="Cap" isKey="true">
             <Color>Black</Color>
           </EndCap>
           <Expressions isList="true" count="0" />
@@ -1004,11 +1092,11 @@
           <Name>VerticalLinePrimitive3</Name>
           <Page isRef="3" />
           <Parent isRef="3" />
-          <StartCap Ref="110" type="Cap" isKey="true">
+          <StartCap Ref="121" type="Cap" isKey="true">
             <Color>Black</Color>
           </StartCap>
         </VerticalLinePrimitive3>
-        <StartPointPrimitive3 Ref="111" type="Stimulsoft.Report.Components.StiStartPointPrimitive" isKey="true">
+        <StartPointPrimitive3 Ref="122" type="Stimulsoft.Report.Components.StiStartPointPrimitive" isKey="true">
           <ClientRectangle>402,411,0,0</ClientRectangle>
           <Conditions isList="true" count="0" />
           <Expressions isList="true" count="0" />
@@ -1017,7 +1105,7 @@
           <Parent isRef="3" />
           <ReferenceToGuid>a28b82b212014555aba6ec3d66de69d2</ReferenceToGuid>
         </StartPointPrimitive3>
-        <EndPointPrimitive3 Ref="112" type="Stimulsoft.Report.Components.StiEndPointPrimitive" isKey="true">
+        <EndPointPrimitive3 Ref="123" type="Stimulsoft.Report.Components.StiEndPointPrimitive" isKey="true">
           <ClientRectangle>402,448,0,0</ClientRectangle>
           <Conditions isList="true" count="0" />
           <Expressions isList="true" count="0" />
@@ -1026,10 +1114,10 @@
           <Parent isRef="3" />
           <ReferenceToGuid>a28b82b212014555aba6ec3d66de69d2</ReferenceToGuid>
         </EndPointPrimitive3>
-        <VerticalLinePrimitive4 Ref="113" type="VerticalLinePrimitive" isKey="true">
+        <VerticalLinePrimitive4 Ref="124" type="VerticalLinePrimitive" isKey="true">
           <ClientRectangle>402,481,1,37</ClientRectangle>
           <Conditions isList="true" count="0" />
-          <EndCap Ref="114" type="Cap" isKey="true">
+          <EndCap Ref="125" type="Cap" isKey="true">
             <Color>Black</Color>
           </EndCap>
           <Expressions isList="true" count="0" />
@@ -1037,11 +1125,11 @@
           <Name>VerticalLinePrimitive4</Name>
           <Page isRef="3" />
           <Parent isRef="3" />
-          <StartCap Ref="115" type="Cap" isKey="true">
+          <StartCap Ref="126" type="Cap" isKey="true">
             <Color>Black</Color>
           </StartCap>
         </VerticalLinePrimitive4>
-        <StartPointPrimitive4 Ref="116" type="Stimulsoft.Report.Components.StiStartPointPrimitive" isKey="true">
+        <StartPointPrimitive4 Ref="127" type="Stimulsoft.Report.Components.StiStartPointPrimitive" isKey="true">
           <ClientRectangle>402,481,0,0</ClientRectangle>
           <Conditions isList="true" count="0" />
           <Expressions isList="true" count="0" />
@@ -1050,7 +1138,7 @@
           <Parent isRef="3" />
           <ReferenceToGuid>dc55475f313c479a8046f5a96a868de6</ReferenceToGuid>
         </StartPointPrimitive4>
-        <EndPointPrimitive4 Ref="117" type="Stimulsoft.Report.Components.StiEndPointPrimitive" isKey="true">
+        <EndPointPrimitive4 Ref="128" type="Stimulsoft.Report.Components.StiEndPointPrimitive" isKey="true">
           <ClientRectangle>402,518,0,0</ClientRectangle>
           <Conditions isList="true" count="0" />
           <Expressions isList="true" count="0" />
@@ -1059,10 +1147,10 @@
           <Parent isRef="3" />
           <ReferenceToGuid>dc55475f313c479a8046f5a96a868de6</ReferenceToGuid>
         </EndPointPrimitive4>
-        <VerticalLinePrimitive5 Ref="118" type="VerticalLinePrimitive" isKey="true">
+        <VerticalLinePrimitive5 Ref="129" type="VerticalLinePrimitive" isKey="true">
           <ClientRectangle>402,551,1,37</ClientRectangle>
           <Conditions isList="true" count="0" />
-          <EndCap Ref="119" type="Cap" isKey="true">
+          <EndCap Ref="130" type="Cap" isKey="true">
             <Color>Black</Color>
           </EndCap>
           <Expressions isList="true" count="0" />
@@ -1070,11 +1158,11 @@
           <Name>VerticalLinePrimitive5</Name>
           <Page isRef="3" />
           <Parent isRef="3" />
-          <StartCap Ref="120" type="Cap" isKey="true">
+          <StartCap Ref="131" type="Cap" isKey="true">
             <Color>Black</Color>
           </StartCap>
         </VerticalLinePrimitive5>
-        <StartPointPrimitive5 Ref="121" type="Stimulsoft.Report.Components.StiStartPointPrimitive" isKey="true">
+        <StartPointPrimitive5 Ref="132" type="Stimulsoft.Report.Components.StiStartPointPrimitive" isKey="true">
           <ClientRectangle>402,551,0,0</ClientRectangle>
           <Conditions isList="true" count="0" />
           <Expressions isList="true" count="0" />
@@ -1083,7 +1171,7 @@
           <Parent isRef="3" />
           <ReferenceToGuid>3f625b100e7b44e681d192764e21543e</ReferenceToGuid>
         </StartPointPrimitive5>
-        <EndPointPrimitive5 Ref="122" type="Stimulsoft.Report.Components.StiEndPointPrimitive" isKey="true">
+        <EndPointPrimitive5 Ref="133" type="Stimulsoft.Report.Components.StiEndPointPrimitive" isKey="true">
           <ClientRectangle>402,588,0,0</ClientRectangle>
           <Conditions isList="true" count="0" />
           <Expressions isList="true" count="0" />
@@ -1092,10 +1180,10 @@
           <Parent isRef="3" />
           <ReferenceToGuid>3f625b100e7b44e681d192764e21543e</ReferenceToGuid>
         </EndPointPrimitive5>
-        <VerticalLinePrimitive7 Ref="123" type="VerticalLinePrimitive" isKey="true">
+        <VerticalLinePrimitive7 Ref="134" type="VerticalLinePrimitive" isKey="true">
           <ClientRectangle>402,621,1,37</ClientRectangle>
           <Conditions isList="true" count="0" />
-          <EndCap Ref="124" type="Cap" isKey="true">
+          <EndCap Ref="135" type="Cap" isKey="true">
             <Color>Black</Color>
           </EndCap>
           <Expressions isList="true" count="0" />
@@ -1103,11 +1191,11 @@
           <Name>VerticalLinePrimitive7</Name>
           <Page isRef="3" />
           <Parent isRef="3" />
-          <StartCap Ref="125" type="Cap" isKey="true">
+          <StartCap Ref="136" type="Cap" isKey="true">
             <Color>Black</Color>
           </StartCap>
         </VerticalLinePrimitive7>
-        <StartPointPrimitive7 Ref="126" type="Stimulsoft.Report.Components.StiStartPointPrimitive" isKey="true">
+        <StartPointPrimitive7 Ref="137" type="Stimulsoft.Report.Components.StiStartPointPrimitive" isKey="true">
           <ClientRectangle>402,621,0,0</ClientRectangle>
           <Conditions isList="true" count="0" />
           <Expressions isList="true" count="0" />
@@ -1116,7 +1204,7 @@
           <Parent isRef="3" />
           <ReferenceToGuid>43ed1eb7be5d4051b8d704517d495be3</ReferenceToGuid>
         </StartPointPrimitive7>
-        <EndPointPrimitive7 Ref="127" type="Stimulsoft.Report.Components.StiEndPointPrimitive" isKey="true">
+        <EndPointPrimitive7 Ref="138" type="Stimulsoft.Report.Components.StiEndPointPrimitive" isKey="true">
           <ClientRectangle>402,658,0,0</ClientRectangle>
           <Conditions isList="true" count="0" />
           <Expressions isList="true" count="0" />
@@ -1151,7 +1239,7 @@
   <ReportAlias>Report</ReportAlias>
   <ReportChanged>2/23/2025 5:40:47 PM</ReportChanged>
   <ReportCreated>2/23/2025 5:40:47 PM</ReportCreated>
-  <ReportGuid>88897f0ba87d43089107916b8152d8c6</ReportGuid>
+  <ReportGuid>8d3b9987e7a941d48646497a1349d424</ReportGuid>
   <ReportName>Report</ReportName>
   <ReportUnit>HundredthsOfInch</ReportUnit>
   <ReportVersion>2024.4.4.0</ReportVersion>
