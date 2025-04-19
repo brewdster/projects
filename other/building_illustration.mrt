@@ -693,7 +693,7 @@
         <Text7 Ref="66" type="Text" isKey="true">
           <Border>None;[0:0:0];1;Solid;True;2;[63:63:63]</Border>
           <Brush>[106:116:124]</Brush>
-          <ClientRectangle>0,690,800,75</ClientRectangle>
+          <ClientRectangle>0,690,810,75</ClientRectangle>
           <Conditions isList="true" count="0" />
           <Expressions isList="true" count="0" />
           <Font>Poppins Medium,12</Font>
@@ -741,7 +741,7 @@
         <Shape36 Ref="71" type="Shape" isKey="true">
           <BorderColor>46, 117, 181</BorderColor>
           <Brush>GlassBrush,[226:239:217],True,0.15</Brush>
-          <ClientRectangle>637,705,140,60</ClientRectangle>
+          <ClientRectangle>647,705,140,60</ClientRectangle>
           <Conditions isList="true" count="0" />
           <Expressions isList="true" count="0" />
           <Font>Arial,8</Font>
@@ -755,7 +755,7 @@
         <Shape37 Ref="73" type="Shape" isKey="true">
           <BorderColor>46, 117, 181</BorderColor>
           <Brush>GlassBrush,[226:239:217],True,0.15</Brush>
-          <ClientRectangle>307,705,186,60</ClientRectangle>
+          <ClientRectangle>307,705,196,60</ClientRectangle>
           <Conditions isList="true" count="0" />
           <Expressions isList="true" count="0" />
           <Font>Arial,8</Font>
@@ -783,7 +783,7 @@
         <Shape39 Ref="77" type="Shape" isKey="true">
           <BorderColor>46, 117, 181</BorderColor>
           <Brush>GlassBrush,[226:239:217],True,0.15</Brush>
-          <ClientRectangle>495,705,140,60</ClientRectangle>
+          <ClientRectangle>505,705,140,60</ClientRectangle>
           <Conditions isList="true" count="0" />
           <Expressions isList="true" count="0" />
           <Font>Arial,8</Font>
@@ -1385,7 +1385,7 @@
       <Conditions isList="true" count="0" />
       <Expressions isList="true" count="0" />
       <Guid>d29b24c9dbfd48d68bdf5d3222e12a82</Guid>
-      <Margins>25,25,25,25</Margins>
+      <Margins>20,20,25,25</Margins>
       <MirrorMargins>True</MirrorMargins>
       <Name>docket_orderid_lookup</Name>
       <PageHeight>1100</PageHeight>
@@ -1407,7 +1407,7 @@
   <ReportAlias>Report</ReportAlias>
   <ReportChanged>2/23/2025 5:40:47 PM</ReportChanged>
   <ReportCreated>2/23/2025 5:40:47 PM</ReportCreated>
-  <ReportGuid>92ff5b790644473dae3ea4c44b6a530e</ReportGuid>
+  <ReportGuid>e713de592ccd4cd58cece321633cba82</ReportGuid>
   <ReportName>Report</ReportName>
   <ReportUnit>HundredthsOfInch</ReportUnit>
   <ReportVersion>2024.4.4.0</ReportVersion>
