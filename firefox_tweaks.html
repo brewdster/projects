@@ -1,5 +1,5 @@
 ﻿<!DOCTYPE html>
-<!--Drewbster / 20250413-->
+<!--Drewbster / 20250419-->
 <html>
 
 <head>
@@ -122,7 +122,7 @@ body,li
                 </table>
               </td>
               <td style="font-size: 20px; font-weight: 500; line-height: 24px" class="Reduct">My Firefox Tweaks & Tips</td>
-              <td style="font-size: 14px; font-weight: normal; line-height: 18px" align="right">Updated 2025-03-26</td>
+              <td style="font-size: 14px; font-weight: normal; line-height: 18px" align="right">Updated 2025-04-19</td>
               <td width="92" align="right" valign="middle"><iframe border="0" style="padding: 0px 1px 1px 5px; vertical-align: bottom" src="https://free.timeanddate.com/clock/i9pce7fe/n250/szw80/szh80/hocc9fefe/hbw3/hfcc9fefe/cf100/hnc9edbff/fas24/fdi64/mqcf00/mqs3/mql13/mqw4/mqd94/mhcfff/mhs3/mhl13/mhw4/mhd94/mmc000/mml5/mmw1/mmd94/hwm2/hhs2/hhb18/hms2/hml80/hmb18/hmr7/hss1/hsl90/hsw2/hsr8" frameborder="0" width="81" height="81"></iframe></td>
               <td width="2%">&nbsp;</td>
             </tr>
@@ -162,7 +162,7 @@ body,li
                   <li><a href="#stylesheet">Create default user stylesheet that applies to all websites</a></li>
                   <li><a href="#extensions1">Extensions info and local storage</a></li>
                   <li><a href="#extensions2">Useful extensions</a></li>
-                  <li><a href="#plugins1">Disable plug-in signing requirement</a></li>
+                  <li><a href="#plugins1">Disable plug-in signing requirement for extensions</a></li>
                   <li><a href="#plugins2">Temporarily allow unsigned add-ons</a></li>
                   <li><a href="#startup">How to auto-“Load Temporary Add-on” or extensions at startup using scripting</a></li>
                 </ul>
@@ -327,12 +327,14 @@ body
 	  </p></li>
 
           <a class="anchor" name="plugins1"></a>
-          <li><p><span class="head1">Disable plug-in signing requirement <a href="#top" style="text-decoration: none"><b>&#8634;</b></a></span><br>
+          <li><p><span class="head1">Disable plug-in signing requirement for extensions <a href="#top" style="text-decoration: none"><b>&#8634;</b></a></span><br>
 	    <ol>
 	      <li>about:config</li>
 	      <li>Set xpinstall.signatures.required to false.</li>
 	      <li>Set extensions.langpacks.signatures.required to false.</li>
 	    </ol>
+	    <br>
+	    <span class="hlt">Note:</span> only works for Firefox “Developer”, “ESR”, and “Nightly” editions.
 	  </p></li>
 
           <a class="anchor" name="plugins2"></a>
@@ -353,6 +355,7 @@ body
 	      <li>Open Firefox and type in the following url: <b>about:debugging#/runtime/this-firefox</b>.</li>
 	      <li>Click on "Load Temporary Add-on..." to load your extensions just this once only. Every time Firefox restarts afterwards, all your extensions will always be auto-loaded.</li>
 	    </ol>
+	    <br>
 	    <span class="hlt">Notes:</span>
 	    <ul style="list-style-type: disc">
 	      <li>* This works only if you unpack your extension's files into a folder and reference the path in step 4 above. It doesn't work on .XPI files (which are just zip files).</li>
