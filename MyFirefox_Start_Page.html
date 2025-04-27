@@ -1,0 +1,1451 @@
+<!DOCTYPE html>
+<!--Andrew 'Drewbster' Chua / v8.0 / 20250426-->
+<html>
+<head>
+
+<!-- add icon link -->
+<link rel = "icon" href = "https://brewdster.github.io/homepage/images/ElliefanIX.png" type = "image/x-icon">
+
+<script type="text/javascript">
+
+  function ysrch()
+    {
+      var ysrch = prompt("Yandex search for?").replace(/&/g,"%26").replace(/ /g,"+");
+      if (ysrch)
+        {
+            location.replace ('https://www.yandex.com/search/?text=' + ysrch);
+        }
+      else
+        {
+            location.replace('https://www.yandex.com/');
+        }
+    }
+
+  function dksrch()
+    {
+      var dksrch = prompt("DuckDuckGo search for?").replace(/&/g,"%26").replace(/ /g,"+");
+      if (dksrch)
+        {
+            location.replace ('https://www.duckduckgo.com/?q=' + dksrch + '&ia=web');
+        }
+      else
+        {
+            location.replace('https://www.duckduckgo.com/');
+        }
+    }
+
+  function bsrch()
+    {
+      var bsrch = prompt("Bing search for?").replace(/&/g,"%26").replace(/ /g,"+");
+      //var srchtxt = 'https://www.bing.com/search?q=' + (window.location.search);
+      //alert (srchtxt);
+      //location.href =  'https://www.bing.com/search?q=' + bsrch;
+      //window.open(myurl);
+      if (bsrch)
+        {
+            location.replace ('https://www.bing.com/search?q=' + bsrch);
+        }
+      else
+        {
+            location.replace('https://www.bing.com');
+        }
+    }
+
+  function gsrch()
+    {
+      var gsrch = prompt("Google search for?").replace(/&/g,"%26").replace(/ /g,"+");
+      if (gsrch)
+        {
+            location.replace ('https://www.google.com/search?q=' + gsrch);
+        }
+      else
+        {
+            location.replace('https://www.google.com/');
+        }
+    }
+
+  function mplsrch()
+    {
+      var mplsrch = prompt("Search for? (DVD/BD)").replace(/&/g,"%26").replace(/ /g,"+");
+      if (mplsrch)
+        {
+            location.replace ('https://markham.bibliocommons.com/v2/search?custom_edit=false&query=title%3A%28' + mplsrch + '%29formatcode%3A%28BLURAY+OR+DVD+%29&searchType=bl&suppress=true');
+        }
+      else
+        {
+            location.replace('https://markham.bibliocommons.com/search');
+        }
+    }
+
+  function ytsrch()
+    {
+      var ytsrch = prompt("Search for?").replace(/&/g,"%26").replace(/ /g,"+");
+      if (ytsrch)
+        {
+            location.replace ('https://www.youtube.com/results?search_query=' + ytsrch);
+        }
+      else
+        {
+            location.replace('https://www.youtube.com/');
+        }
+    }
+
+  function bimgsrch()
+    {
+      var bimgsrch = prompt("Search image?").replace(/&/g,"%26").replace(/ /g,"+");
+      if (bimgsrch)
+        {
+            location.replace ('https://images.bing.com/search?q=' + bimgsrch);
+        }
+      else
+        {
+            location.replace('https://images.bing.com/');
+        }
+    }
+
+  function gimgsrch()
+    {
+      var gimgsrch = prompt("Search image?").replace(/&/g,"%26").replace(/ /g,"+");
+      if (gimgsrch)
+        {
+            location.replace ('https://www.google.com/search?tbm=isch&q=' + gimgsrch);
+        }
+      else
+        {
+            location.replace('https://images.google.com/');
+        }
+    }
+
+  function dimgsrch()
+    {
+      var dimgsrch = prompt("Search image?").replace(/&/g,"%26").replace(/ /g,"+");
+      if (dimgsrch)
+        {
+            location.replace ('https://www.duckduckgo.com/?q=' + dimgsrch + '&iax=images&ia=images');
+        }
+      else
+        {
+            location.replace('https://www.duckduckgo.com/');
+        }
+    }
+
+  function amapsrch()
+    {
+      var amapsrch = prompt("Search street address?").replace(/&/g,"%26").replace(/ /g,"+");
+      if (amapsrch)
+        {
+            location.replace ('https://beta.maps.apple.com/?address=' + amapsrch);
+        }
+      else
+        {
+            location.replace('https://beta.maps.apple.com/?ll=35.69585908975702%2C77.4224903815848&spn=103.1711797329921%2C195.79384443965853');
+        }
+    }
+
+  function omapsrch()
+    {
+      var omapsrch = prompt("Search street address?").replace(/&/g,"%26").replace(/,/g,"%2C");
+      if (omapsrch)
+        {
+            location.replace ('https://www.openstreetmap.org/search?query=' + omapsrch);
+        }
+      else
+        {
+            location.replace('https://www.openstreetmap.org/#map=3/42.42/79.45');
+        }
+    }
+
+  function bmapsrch()
+    {
+      var bmapsrch = prompt("Search street address?").replace(/&/g,"%26").replace(/ /g,"+");
+      if (bmapsrch)
+        {
+            location.replace ('https://www.bing.com/maps?q=' + bmapsrch);
+        }
+      else
+        {
+            location.replace('https://www.bing.com/maps?q=&cp=28.627291%7E86.252853&lvl=3.1');
+        }
+    }
+
+  function gmapsrch()
+    {
+      var gmapsrch = prompt("Search street address?").replace(/&/g,"%26").replace(/ /g,"+");
+      if (gmapsrch)
+        {
+            location.replace ('https://www.google.com/maps?q=' + gmapsrch);
+        }
+      else
+        {
+            location.replace('https://www.google.com/maps/@27.5891646,17.6664504,3z?entry=ttu&g_ep=EgoyMDI1MDMxOS4yIKXMDSoASAFQAw%3D%3D');
+        }
+    }
+
+  function wikisrch()
+      {
+        var wikisrch = prompt("Search for?").replace(/&/g,"%26").replace(/ /g,"_");
+        if (wikisrch)
+          {
+              location.replace ('https://en.wikipedia.org/wiki/' + wikisrch);
+          }
+        else
+          {
+              location.replace('https://www.wikipedia.org/');
+          }
+      }
+
+  function amzsrch()
+    {
+      var amzsrch = prompt("Item?").toLowerCase().replace(/&/g,"%26").replace(/ /g,"+");
+      if (amzsrch)
+        {
+            location.replace ('https://www.amazon.ca/s?k=' + amzsrch);
+        }
+      else
+        {
+            location.replace('https://www.amazon.ca');
+        }
+    }
+
+  function alisrch()
+    {
+      var alisrch = prompt("Item?").toLowerCase().replace(/&/g,"%26").replace(/ /g,"-");
+      if (alisrch)
+        {
+            location.replace ('https://www.aliexpress.com/w/wholesale-' + alisrch + '.html');
+        }
+      else
+        {
+            location.replace('https://www.aliexpress.com');
+        }
+    }
+
+  function bestsrch()
+    {
+      var bestsrch = prompt("Item?").toLowerCase().replace(/&/g,"%26").replace(/ /g,"+");
+      if (bestsrch)
+        {
+            location.replace ('https://www.bestbuy.ca/en-ca/search?search=' + bestsrch);
+        }
+      else
+        {
+            location.replace('https://www.bestbuy.ca/en-ca');
+        }
+    }
+
+  function stplsrch()
+    {
+      var stplsrch = prompt("Item?").toLowerCase();
+      if (stplsrch)
+        {
+            location.replace ('https://www.staples.ca/search?query=' + stplsrch);
+        }
+      else
+        {
+            location.replace('https://www.staples.ca');
+        }
+    }
+
+  function imdbsrch()
+    {
+      var imdbsrch = prompt("Movie title?");
+      if (imdbsrch)
+        {
+            location.replace ('https://www.imdb.com/find?s=tt&q=' + imdbsrch);
+        }
+      else
+        {
+            location.replace('https://www.imdb.com/');
+        }
+    }
+
+  function walsrch()
+    {
+      var walsrch = prompt("Item?").toLowerCase().replace(/&/g,"%26").replace(/ /g,"+");
+      if (walsrch)
+        {
+            location.replace ('https://www.walmart.ca/search?q=' + walsrch);
+        }
+      else
+        {
+            location.replace('https://www.walmart.ca');
+        }
+    }
+
+  function bvidsrch()
+    {
+      var bvidsrch = prompt("Which video?").toLowerCase().replace(/&/g,"%26").replace(/ /g,"+");
+      if (bvidsrch)
+        {
+            location.replace ('https://www.bing.com/videos/search?q=' + bvidsrch);
+        }
+      else
+        {
+            location.replace('https://www.bing.com/videos/');
+        }
+    }
+
+  function dvidsrch()
+    {
+      var dvidsrch = prompt("Which video?").replace(/&/g,"%26").replace(/ /g,"+");
+      if (dvidsrch)
+        {
+            location.replace ('https://www.duckduckgo.com/?q=' + dvidsrch + '&iax=videos&ia=videos');
+        }
+      else
+        {
+            location.replace('https://www.duckduckgo.com/');
+        }
+    }
+
+  function dicsrch()
+    {
+      var dicsrch = prompt("What word?").toLowerCase();
+      if (dicsrch)
+        {
+            location.replace ('https://dictionary.cambridge.org/dictionary/english/' + dicsrch);
+        }
+      else
+        {
+            location.replace('https://dictionary.cambridge.org/');
+        }
+    }
+
+  function tmsrch()
+    {
+      var tmsrch = prompt("Item?").toLowerCase();
+      if (tmsrch)
+        {
+            location.replace ('https://www.temu.com/search_result.html?search_key=' + tmsrch);
+        }
+      else
+        {
+            location.replace('https://www.temu.com/');
+        }
+    }
+
+  function bbsrch()
+    {
+      var bbsrch = prompt("Which video?").toLowerCase().replace(/&/g,"%26").replace(/ /g,"+");
+      if (bbsrch)
+        {
+            location.replace ('https://search.bilibili.com/all?keyword=' + bbsrch);
+        }
+      else
+        {
+            location.replace('https://www.bilibili.com/');
+        }
+    }
+
+  function bdsrch()
+    {
+      var bdsrch = prompt("Which video?").toLowerCase().replace(/&/g,"%26");
+      if (bdsrch)
+        {
+            location.replace ('https://haokan.baidu.com/web/search/page?query=' + bdsrch);
+        }
+      else
+        {
+            location.replace('https://haokan.baidu.com/');
+        }
+    }
+
+  function airsrch()
+    {
+      var airsrch = prompt("Item?");
+      if (airsrch)
+        {
+            location.replace ('https://rewards.airmiles.ca/merchandise/search?q=' + airsrch);
+        }
+      else
+        {
+            location.replace('https://rewards.airmiles.ca/merchandise');
+        }
+    }
+
+  function gfsrch()
+    {
+      var gfsrch = prompt("Which font?").toLowerCase().replace(/&/g,"%26").replace(/ /g,"+");
+      if (gfsrch)
+        {
+            location.replace ('https://fonts.google.com/?query=' + gfsrch);
+        }
+      else
+        {
+            location.replace('https://fonts.google.com/');
+        }
+    }
+
+  function yfsrch()
+    {
+      var yfsrch = prompt("Which index/stock? (^GSPC, ^IXIC, ^DJI, NVDA, GC=F)").toUpperCase();
+      if (yfsrch)
+        {
+            location.replace ('https://finance.yahoo.com/quote/' + yfsrch);
+        }
+      else
+        {
+            location.replace('https://finance.yahoo.com/');
+        }
+    }
+
+  function ytpop()
+    {
+      var ytpop = prompt("Reference?");
+      if (ytpop)
+        {
+            location.replace ('https://www.youtube.com/watch_popup?v=' + ytpop + '&mute=0&autoplay=1');
+        }
+      else
+        {
+            location.replace('https://www.youtube.com/');
+        }
+    }
+
+  function rsrch()
+    {
+      var rsrch = prompt("Search for?");
+      if (rsrch)
+        {
+            location.replace ('https://rumble.com/search/all?q=' + rsrch);
+        }
+      else
+        {
+            location.replace('https://rumble.com/');
+        }
+    }
+
+  function shsrch()
+    {
+      var shsrch = prompt("Search for?");
+      if (shsrch)
+        {
+            location.replace ('https://ca.shein.com/pdsearch/' + shsrch);
+        }
+      else
+        {
+            location.replace('https://ca.shein.com/');
+        }
+    }
+
+  !function(d,s,id)
+  {
+    var js,fjs=d.getElementsByTagName(s)[0];
+    if(!d.getElementById(id))
+      {
+        js=d.createElement(s);
+        js.id=id;
+        js.src='https://weatherwidget.io/js/widget.min.js';
+        fjs.parentNode.insertBefore(js,fjs);
+      }
+  }
+  (document,'script','weatherwidget-io-js');
+
+</script>
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
+<meta charset="UTF-8">
+<title>My Start Page</title>
+
+<style>
+
+body
+{
+    font-family: 'Omnes Medium';
+}
+
+.dropbtn
+{
+    min-width: 125px;
+    background-color: transparent;
+    font-family: 'Omnes Medium';
+    color: white;
+    font-size: 19px;
+    line-height: 50px;
+    border: none;
+    text-shadow: 1px 1px 5px #000000;
+
+}
+
+.dropbtn2
+{
+    min-width: 125px;
+    background-color: transparent;
+    font-family: 'Omnes Medium';
+    color: white;
+    font-size: 28px;
+    line-height: 48px;
+    border: none;
+}
+
+.dropdown
+{
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content
+{
+    display: none;
+    position: absolute;
+    background-color: #9A9A9A;
+    line-height: 16px;
+    min-width: 200px;
+    z-index: 1;
+}
+
+.dropdown-content a
+{
+    font-family: 'Omnes Medium';
+    font-size: 16px;
+    color: #FFFFFF;
+    text-align: left;
+    padding: 8px;
+    text-decoration: none;
+    display: block;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.dropdown-content a:hover
+{
+    background-color: #F28B00; color: #FFFFFF;
+}
+
+.dropdown:hover .dropdown-content
+{
+	display: block;
+}
+
+.dropdown:hover .dropbtn
+{
+    background-color: transparent;
+}
+
+.copy-shadow
+{
+    text-shadow: 1px 1px 5px #000000;
+}
+
+.bullet
+{
+    font-size: 12px;
+    vertical-align: middle;
+}
+
+.copy-shadow1
+{
+    text-shadow: 1px 1px 3px #000000;
+}
+
+.copy-shadow2
+{
+    text-shadow: 1px 1px 3px #FFFFFF;
+}
+
+.hlin
+{
+   width: 100%;
+   height: 2px;
+   margin-left: auto;
+   margin-right: auto;
+   background-color: #0062D7;
+   box-shadow: 1px 1px 2px 1px #7D7D7D;
+}
+
+.hlin2
+{
+   width: 100%;
+   height: 2px;
+   margin-left: auto;
+   margin-right: auto;
+   background-color: #0062D7;
+   box-shadow: 1px 1px 2px 1px #BEBEBE;
+}
+
+</style>
+
+</head>
+
+<body style="background-image: url(images/backart.jpg); background-repeat: no-repeat; background-size: cover" bgcolor="#EA3C5C">
+<p style="font-size: 3px; margin: 2px">&nbsp;</p>
+
+<table width="89" height="89" align="center" border="0" cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td style="-moz-border-radius: 45px; -webkit-border-radius: 45px; border-radius: 45px; background-color: #FFFF00; border-bottom: solid; border-right: solid; border-width: 4px; border-color: #555555">
+<!--$F4C430-->
+        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tbody>
+            <tr>
+              <td align="center" style="padding: 0px 0px 0px 2px"><a href="file:///D:/Drewbster/Documents/HTML/startpage_beta_logo_position.html"><img src="file:///D:/Drewbster/pictures/digital_art/svg/China_flag_circle.svg" width="80" border="0" style="vertical-align: bottom"></a></td>
+            </tr>
+          </tbody>
+        </table>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table width="100%" cellspacing="0" cellpadding="0" border="0">
+  <tbody>
+    <tr>
+      <td style="padding: 6px 30px 20px 30px">
+        <table width="100%" cellspacing="0" cellpadding="0" border="0">
+          <tbody>
+            <tr>
+              <td style="font-size: 30px" class="copy-shadow" width="6%" align="left"><a href="http://192.168.0.1" target="_blank" style="text-decoration: none">⚜️</a> ▪ </td>
+              <td width="39%"><div class="hlin2"></div></td>
+              <td style="font-size: 24px; color: #FFFF00" class="copy-shadow" width="10%" align="center">★❤️😊💎★</td>
+              <td width="39%"><div class="hlin2"></div></td>
+              <td style="font-size: 30px" class="copy-shadow" width="6%" align="right"> ▪ <a href="https://toronto.testmy.net/b/SmarTest/combined" target="_blank" style="text-decoration: none">⚜️</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table width="100%" cellspacing="0" cellpadding="0" border="0">
+  <tbody>
+    <tr>
+      <td style="padding: 0px 30px 0px 30px">
+        <table width="100%" cellspacing="0" cellpadding="0" border="0">
+          <tbody>
+            <tr>
+
+              <td width="6%"></td>
+
+              <td width="39%">
+                <table width="100%" cellspacing="0" cellpadding="0" border="0">
+                  <tbody>
+                    <tr>
+                      <td width="50%">
+                        <table width="100%" cellspacing="0" cellpadding="0" border="0">
+                          <tbody>
+                            <tr>
+                              <td style="padding: 10px 0px 8px 0px">
+                                <table style="-moz-border-radius: 6px; -webkit-border-radius: 6px; border-radius: 6px; border-right: solid; border-right-width: 2px; border-right-color: #5E5E5E; border-bottom: solid; border-bottom-width: 2px; border-bottom-color: #5E5E5E; background-image: url(images/btn_green_dpdn_2x.png); background-repeat: no-repeat; background-size: cover" cellspacing="0" cellpadding="0" border="0" bgcolor="transparent" align="left">
+                                  <tbody>
+                                    <tr>
+                                      <td width="47" height="50" align="right">
+                                        <a href="#" onclick="dksrch()" style="text-decoration: none"><img src="images/search-icon.png" width="35" height="35"></a>
+                                      </td>
+                                      <td width="153" height="50">
+                                        <div class="dropdown">
+                                          <button class="dropbtn" onclick="dksrch()"><a href="#" style="color: #FFFFFF; text-decoration: none">🦆🦆 Go</a>   </button>
+                                          <div class="dropdown-content">
+                                            <a href="#" onclick="dimgsrch()"><span class="bullet">🔹</span>  🦆🦆 Go Images</a>
+                                            <a href="#" onclick="dvidsrch()"><span class="bullet">🔹</span>  🦆🦆 Go Videos</a>
+                                            <a href="#" onclick="wikisrch()"><span class="bullet">🔹</span>  Wikipedia</a>
+                                            <a href="#" onclick="dicsrch()"><span class="bullet">🔹</span>  Dictionary</a>
+                                            <a href="#" onclick="imdbsrch()"><span class="bullet">🔹</span>  IMDB Movie</a>
+                                            <a href="#" onclick="omapsrch()"><span class="bullet">🔹</span>  OpenStreetMap</a>
+                                            <a href="https://maps.yango.com/?ll=60.513598%2C32.618592&z=3"><span class="bullet">🔹</span>  Yango Maps</a>
+                                            <a href="#" onclick="ysrch()"><span class="bullet">🔹</span>  Yandex Web</a>
+                                            <a href="#" onclick="gsrch()"><span class="bullet">🔹</span>  Google Web</a>
+                                            <a href="#" onclick="gimgsrch()"><span class="bullet">🔹</span>  Google Images</a>
+                                            <a href="#" onclick="gmapsrch()"><span class="bullet">🔹</span>  Google Maps</a>
+                                            <a href="https://translate.google.com/"><span class="bullet">🔹</span>  Google Translate</a>
+                                            <a href="#" onclick="gfsrch()"><span class="bullet">🔹</span>  Google Fonts</a>
+                                            <a href="https://earth.google.com/web/"><span class="bullet">🔹</span>  Google Earth</a>
+                                            <a href="#" onclick="amapsrch()"><span class="bullet">🔹</span>  Apple Maps</a>
+                                            <a href="https://badnoise.net/TypeRip/"><span class="bullet">🔹</span>  Adobe Fonts</a>
+                                            <a href="https://maps.baidu.com/"><span class="bullet">🔹</span>  Baidu Maps</a>
+                                            <a href="#" onclick="bsrch()"><span class="bullet">🔹</span>  Bing Web</a>
+                                            <a href="#" onclick="bimgsrch()"><span class="bullet">🔹</span>  Bing Images</a>
+                                            <a href="#" onclick="bmapsrch()"><span class="bullet">🔹</span>  Bing Maps</a>
+                                            <a href="https://translate.bing.com/"><span class="bullet">🔹</span>  Bing Translate</a>
+                                            <!--<a href="#" onclick="bvidsrch()"><span class="bullet">🔹</span>  Bing Videos</a>-->
+                                          </div>
+                                        </div>
+                                      </td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </td>
+
+                      <td width="50%">
+                        <table width="100%" cellspacing="0" cellpadding="0" border="0">
+                          <tbody>
+                            <tr>
+                              <td style="padding: 10px 0px 8px 0px">
+                                <table style="-moz-border-radius: 6px; -webkit-border-radius: 6px; border-radius: 6px; border-right: solid; border-right-width: 2px; border-right-color: #5E5E5E; border-bottom: solid; border-bottom-width: 2px; border-bottom-color: #5E5E5E; background-image: url(images/btn_green_dpdn_2x.png); background-repeat: no-repeat; background-size: cover" cellspacing="0" cellpadding="0" border="0" bgcolor="transparent" align="right">
+                                  <tbody>
+                                    <tr>
+                                      <td width="47" height="50" align="right">
+                                        <img src="images/news-icon.png" width="35" height="35">
+                                      </td>
+                                      <td width="153" height="50">
+                                        <div class="dropdown">
+                                         <button class="dropbtn">News     </button>
+                                          <div class="dropdown-content">
+                                            <a href="https://www.globaltimes.cn/"><span class="bullet">🔹</span>  Global Times</a>
+                                            <a href="https://www.rt.com/"><span class="bullet">🔹</span>  RT America</a>
+                                            <a href="https://www.cgtn.com/"><span class="bullet">🔹</span>  CGTN</a>
+                                            <a href="https://english.news.cn/"><span class="bullet">🔹</span>  新華 (Xin Hua)</a>
+                                            <a href="https://www.chinadaily.com.cn/"><span class="bullet">🔹</span>  China Daily</a>
+                                            <a href="https://www.fridayeveryday.com/"><span class="bullet">🔹</span>  Fridayeveryday</a>
+                                            <a href="https://www.pna.gov.ph/"><span class="bullet">🔹</span>  Philippine News Agency</a>
+                                            <a href="https://www.inquirer.net/"><span class="bullet">🔹</span>  Philippine Inquirer</a>
+                                            <a href="https://news.abs-cbn.com/"><span class="bullet">🔹</span>  ABS-CBN</a>
+                                            <a href="https://rabble.ca/"><span class="bullet">🔹</span>  Rabble</a>
+                                            <a href="https://ground.news/"><span class="bullet">🔹</span>  Ground</a>
+                                            <a href="https://moats.tv/watch/"><span class="bullet">🔹</span>  MOATS</a>
+                                            <a href="https://www3.nhk.or.jp/nhkworld/"><span class="bullet">🔹</span>  NHK English</a>
+                                            <a href="https://www.ctvnews.ca/"><span class="bullet">🔹</span>  CTV</a>
+                                            <a href="https://www.pbs.org/newshour/"><span class="bullet">🔹</span>  PBS</a>
+                                            <a href="https://thediplomat.com/"><span class="bullet">🔹</span>  The Diplomat</a>
+                                            <a href="https://www.channelnewsasia.com/singapore"><span class="bullet">🔹</span>  CNA Singapore</a>                                                                        <a href="https://maritime-executive.com/"><span class="bullet">🔹</span>  Maritime Executive</a>
+                                          </div>
+                                        </div>
+                                      </td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </td>
+
+              <td width="10%">
+                <table width="100%" cellspacing="0" cellpadding="0" border="0">
+                  <tbody>
+                    <tr>
+                      <td></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </td>
+
+              <td width="39%">
+                <table width="100%" cellspacing="0" cellpadding="0" border="0">
+                  <tbody>
+                    <tr>
+                      <td width="50%">
+                        <table width="100%" cellspacing="0" cellpadding="0" border="0">
+                          <tbody>
+                            <tr>
+                              <td style="padding: 10px 0px 8px 0px">
+                                <table style="-moz-border-radius: 6px; -webkit-border-radius: 6px; border-radius: 6px; border-right: solid; border-right-width: 2px; border-right-color: #5E5E5E; border-bottom: solid; border-bottom-width: 2px; border-bottom-color: #5E5E5E; background-image: url(images/mk_cta.png); background-repeat: no-repeat; background-size: cover" cellspacing="0" cellpadding="0" border="0" bgcolor="transparent" align="left">
+                                  <tbody>
+                                    <tr>
+                                      <td width="200" height="50" align="center">
+                                        <div class="dropdown">
+                                          <button class="dropbtn"><a href="https://www.marketingkitchen.ca/" style="color: #6A747C; text-decoration: none"><span style="text-shadow: 1.5px 1.5px 1px #000000">Marketing    </a><a href="https://www.mkpromo.ca/" style="color: #AFBD21; text-decoration: none">Kitchen   </a></span></button>
+                                          <div class="dropdown-content">
+                                            <a href="https://login.marketingkitchen.ca/sonicui/7/login/#/"><span class="bullet">🔹</span>  SonicWall</a>
+                                            <a href="https://brewdster.github.io/projects/mk_docs.html"><span class="bullet">🔹</span>  MK Docs</a>
+                                            <a href="https://marketingkitchen.vsmidnight.com/Order/OrderSearch.aspx"><span class="bullet">🔹</span>  Customer Service</a>
+                                            <a href="https://marketingkitchen.vsmidnight.com/JobBoard/TaskView.aspx"><span class="bullet">🔹</span>  Job Board</a>
+                                            <a href="https://marketingkitchen.vsmidnight.com/Reports/ReportView.aspx?ReportId=672"><span class="bullet">🔹</span>  Daily Hours</a>
+                                            <a href="https://marketingkitchen.vsmidnight.com/Reports/ReportView.aspx?ReportId=690"><span class="bullet">🔹</span>  Data Forms Hours</a>
+                                            <a href="https://marketingkitchen.vsmidnight.com/Reports/ReportView.aspx?ReportId=674"><span class="bullet">🔹</span>  OrderID Lookup</a>
+                                            <a href="https://marketingkitchen.vsmidnight.com/Reports/ReportView.aspx?ReportId=734"><span class="bullet">🔹</span>  EstimateID Lookup</a>
+                                            <a href="https://marketingkitchen.vsmidnight.com/Reports/ReportView.aspx?ReportId=314"><span class="bullet">🔹</span>  Dockets Status</a>
+                                            <a href="https://marketingkitchen.vsmidnight.com/JobCost/JobCostSearch.aspx"><span class="bullet">🔹</span>  Job Costing</a>
+                                            <a href="https://marketingkitchen.vsmidnight.com/Item/ItemSearch.aspx"><span class="bullet">🔹</span>  Warehouse</a>
+                                            <a href="https://marketingkitchen.vsmidnight.com/Reports/ReportDesigner.aspx"><span class="bullet">🔹</span>  Reports Designer</a>
+                                            <a href="https://marketingkitchen.vsmidnight.com/Reports/ReportView.aspx?ReportId=683"><span class="bullet">🔹</span>  CSR Jobs Status</a>
+                                            <a href="https://marketingkitchen.vsmidnight.com/Reports/ReportView.aspx?ReportId=724"><span class="bullet">🔹</span>  YTD Sales by CSR</a>
+                                            <a href="https://marketingkitchen.vsmidnight.com/Reports/ReportView.aspx?ReportId=735"><span class="bullet">🔹</span>  Midnight Painting</a>
+                                            <a href="https://transfer.marketingkitchen.ca/login"><span class="bullet">🔹</span>  SFTP</a>
+                                            <a href="https://marketingkitchen.atlassian.net/servicedesk/customer/portals"><span class="bullet">🔹</span>  Help Desk</a>
+                                            <a href="https://docs.google.com/spreadsheets/d/1S6N6t9KOceP6uCwyStHB39_dgdg0lazIqnYPBZsiXys/edit#gid=2006145818"><span class="bullet">🔹</span>  Office Status</a>
+                                            <a href="https://www.enfocus.com/en/learn"><span class="bullet">🔹</span>  Enfocus Learn</a>
+                                            <a href="https://campus.xmpie.com/eLearning/xmpie-uplan-training/the-user-view-to-string-function-uv2str"><span class="bullet">🔹</span>  XMPie uPlan</a>
+                                            <a href="https://campus.xmpie.com/Tutorials/Set/Introduction-to-uProduce-Hot-Folders"><span class="bullet">🔹</span>  uProduce Hot Folders</a>
+                                            <a href="https://us04web.zoom.us/j/78451225936?pwd=EIZGYIHidbPWWXnl6EgHI74_CCstpl.1#success"><span class="bullet">🔹</span>  Prod. Meeting</a>
+                                          </div>
+                                        </div>
+                                      </td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </td>
+
+                      <td width="50%">
+                        <table width="100%" cellspacing="0" cellpadding="0" border="0">
+                          <tbody>
+                            <tr>
+                              <td style="padding: 10px 0px 8px 0px" align="left">
+                                <table style="-moz-border-radius: 6px; -webkit-border-radius: 6px; border-radius: 6px; border-right: solid; border-right-width: 2px; border-right-color: #5E5E5E; border-bottom: solid; border-bottom-width: 2px; border-bottom-color: #5E5E5E; background-image: url(images/btn_green_dpdn_2x.png); background-repeat: no-repeat; background-size: cover" cellspacing="0" cellpadding="0" border="0" bgcolor="transparent" align="right">
+                                  <tbody>
+                                    <tr>
+                                      <td width="47" height="50" align="right">
+                                        <img src="images/tools1.png" width="35" height="35">
+                                      </td>
+                                      <td width="153" height="50">
+                                        <div class="dropdown">
+                                          <button class="dropbtn">Tools    </button>
+                                          <div class="dropdown-content">
+                                            <a href="https://brewdster.github.io/projects/my_articles.html"><span class="bullet">🔹</span>  Articles</a>
+                                            <a href="https://github.com/brewdster?tab=repositories"><span class="bullet">🔹</span>  Github</a>
+                                            <a href="https://brewdster.github.io/projects/Indesign_scripting.html"><span class="bullet">🔹</span>  Indesign scripting</a>
+                                            <a href="https://brewdster.github.io/projects/firefox_tweaks.html"><span class="bullet">🔹</span>  Firefox tweaks & tips</a>
+                                            <a href="https://www.html-color.codes/" target="_blank"><span class="bullet">🔹</span>  HTML colours</a>
+                                            <a href="https://www.colordesigner.io/" target="_blank"><span class="bullet">🔹</span>  Color Designer</a>
+                                            <a href="https://colordesigner.io/convert/rgbtocmyk/" target="_blank"><span class="bullet">🔹</span>  RGB to CMYK</a>
+                                            <a href="https://brewdster.github.io/projects/Matching_color_palettes.html"><span class="bullet">🔹</span>  Color palettes</a>
+                                            <a href="https://www.freepik.com/"><span class="bullet">🔹</span>  FreeP!k</a>
+                                            <a href="https://www.clipart-library.com/" target="_blank"><span class="bullet">🔹</span>  Clipart Library</a>
+                                            <a href="https://www.iconarchive.com/"><span class="bullet">🔹</span>  Icon Archive</a>
+                                            <a href="https://www.cpubenchmark.net/"><span class="bullet">🔹</span>  CPU Benchmark</a>
+                                            <a href="https://www.google.com/maps/d/edit?mid=14AYhYlj7QvSe0X_OZAfTERbHVyMViI8&usp=sharing"><span class="bullet">🔹</span>  Around the World</a>
+                                          </div>
+                                        </div>
+                                      </td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </td>
+
+              <td width="6%"></td>
+
+            </tr>
+          </tbody>
+        </table>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<br>
+<br>
+<br>
+
+<table width="100%" cellspacing="0" cellpadding="0" border="0">
+  <tbody>
+    <tr>
+      <td style="padding: 0px 30px 0px 30px">
+        <table width="100%" cellspacing="0" cellpadding="0" border="0">
+          <tbody>
+            <tr>
+
+              <td width="6%"></td>
+
+              <td width="39%">
+                <table width="100%" cellspacing="0" cellpadding="0" border="0">
+                  <tbody>
+                    <tr>
+                    <td width="50%">
+                      <table width="100%" cellspacing="0" cellpadding="0" border="0">
+                        <tbody>
+                          <tr>
+                            <td style="padding: 10px 0px 8px 0px">
+                              <table style="-moz-border-radius: 6px; -webkit-border-radius: 6px; border-radius: 6px; border-right: solid; border-right-width: 2px; border-right-color: #5E5E5E; border-bottom: solid; border-bottom-width: 2px; border-bottom-color: #5E5E5E; background-image: url(images/btn_green_dpdn_2x.png); background-repeat: no-repeat; background-size: cover" cellspacing="0" cellpadding="0" border="0" bgcolor="transparent" align="left">
+                                <tbody>
+                                  <tr>
+                                    <td width="47" height="50" align="right">
+                                      <a href="https://markhampubliclibrary.ca/" style="text-decoration: none"><img src="images/mpl-icon.png" width="35" height="35"></a>
+                                    </td>
+                                    <td width="153" height="50">
+                                      <div class="dropdown">
+                                        <button class="dropbtn"><a href="https://markhampubliclibrary.ca/" style="color: #FFFFFF; text-decoration: none">MPL</a>    </button>
+                                        <div class="dropdown-content">
+                                          <a href="https://markham.bibliocommons.com/user/login"><span class="bullet">🔹</span>  Log In</a>
+                                          <a href="http://markham.bibliocommons.com/search?suppress=true&amp;custom_query=li%3A[*%20TO%20*]%20nw%3A[0%20TO%20180]&amp;title=All%20New%20Titles&amp;sort[direction]=descending&amp;sort[field]=NEWLY_ACQUIRED&amp;sort[type]=BIB_FIELDS&amp;formats=DVD&amp;display_quantity=50&amp;page=1"><span class="bullet">🔹</span>  New DVDs</a>
+                                          <a href="https://markham.bibliocommons.com/holds/index/not_yet_available"><span class="bullet">🔹</span>  Holds</a>
+                                          <a href="http://markham.bibliocommons.com/checkedout?display_quantity=50&amp;page=1"><span class="bullet">🔹</span>  Checked Out</a>
+                                          <a href="http://markham.bibliocommons.com/search?suppress=true&amp;custom_query=li:[*%20TO%20*]%20nw:[0%20TO%20180]&amp;title=All%20New%20Titles&amp;sort[direction]=descending&amp;sort[field]=NEWLY_ACQUIRED&amp;sort[type]=BIB_FIELDS&amp;display_quantity=50&amp;page=1&amp;formats=BLURAY"><span class="bullet">🔹</span>  New BDs</a>
+                                          <a href="#" onclick="mplsrch()"><span class="bullet">🔹</span>  Search</a>
+                                          <a href="https://markham.bibliocommons.com/v2/users/73503789/shelves/for_later"><span class="bullet">🔹</span>  For Later Shelf</a>
+                                          <a href="https://markham.overdrive.com/library/magazines"><span class="bullet">🔹</span>  OverDrive</a>
+                                          <a href="http://markham.bibliocommons.com/user/logout"><span class="bullet">🔹</span>  Log Out</a>
+                                        </div>
+                                      </div>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+
+                    <td width="50%">
+                      <table width="100%" cellspacing="0" cellpadding="0" border="0">
+                        <tbody>
+                          <tr>
+                            <td style="padding: 10px 0px 8px 0px">
+                              <table style="-moz-border-radius: 6px; -webkit-border-radius: 6px; border-radius: 6px; border-right: solid; border-right-width: 2px; border-right-color: #5E5E5E; border-bottom: solid; border-bottom-width: 2px; border-bottom-color: #5E5E5E; background-image: url(images/btn_green_dpdn_2x.png); background-repeat: no-repeat; background-size: cover" cellspacing="0" cellpadding="0" border="0" bgcolor="transparent" align="right">
+                                <tbody>
+                                  <tr>
+                                    <td width="47" height="50" align="right">
+                                      <img src="images/finance-icon3.png" width="35" height="35">
+                                    </td>
+                                    <td width="153" height="50">
+                                      <div class="dropdown">
+                                        <button class="dropbtn">Finance    </button>
+                                        <div class="dropdown-content">
+                                          <a href="https://client.investia.ca/"><span class="bullet">🔹</span>  Investia</a>
+                                          <a href="https://www.tangerine.ca/en"><span class="bullet">🔹</span>  Tangerine</a>
+                                          <a href="https://payroll.payworks.ca/loginscreen.asp?CustomerID="><span class="bullet">🔹</span>  Payworks</a>
+                                          <a href="https://www.prestocard.ca/"><span class="bullet">🔹</span>  Presto</a>
+                                          <a href="https://www.cibc.com/en/personal-banking.html"><span class="bullet">🔹</span>  CIBC</a>
+                                          <a href="https://www.wealthsimple.com/en-us/"><span class="bullet">🔹</span>  Wealthsimple</a>
+                                          <a href="https://id.manulife.ca/signin"><span class="bullet">🔹</span>  Manulife</a>
+                                          <a href="https://myaccount.enbridgegas.com/sign-in"><span class="bullet">🔹</span>  Enbridge</a>
+                                          <a href="https://sid.dmcihomes.com/"><span class="bullet">🔹</span>  DMCI Homes</a>
+                                          <a href="https://www.fidelity.ca/"><span class="bullet">🔹</span>  Fidelity</a>
+                                          <a href="#" onclick="yfsrch()"><span class="bullet">🔹</span>  Yahoo Finance</a>
+                                          <a href="https://atlas.hks.harvard.edu/explore/treemap?exporter=country-156&productClass=HS92&year=2023&view=markets"><span class="bullet">🔹</span>  The Economic Atlas</a>
+                                          <a href="https://oilprice.com/oil-price-charts/"><span class="bullet">🔹</span>  Oil Price Charts</a>
+                                          <a href="https://www.google.com/search?source=hp&amp;ei=PlbWX-HnKN2F9PwPxIugyAE&amp;q=currency+converter"><span class="bullet">🔹</span>  Currencies</a>
+                                          <a href="https://www.usdebtclock.org/" target="_blank"><span class="bullet">🔹</span>  US debt</a>
+                                          <a href="https://www.usinflationcalculator.com/"><span class="bullet">🔹</span>  US Inflation</a>
+                                          <a href="https://carrytel.ca/"><span class="bullet">🔹</span>  Carry Telecom</a>
+                                        </div>
+                                      </div>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </td>
+
+              <td width="10%">
+                <table width="100%" cellspacing="0" cellpadding="0" border="0">
+                  <tbody>
+                    <tr>
+                      <td></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </td>
+
+              <td width="39%">
+                <table width="100%" cellspacing="0" cellpadding="0" border="0">
+                  <tbody>
+                    <tr>
+                      <td width="50%">
+                        <table width="100%" cellspacing="0" cellpadding="0" border="0">
+                          <tbody>
+                            <tr>
+                              <td style="padding: 10px 0px 8px 0px">
+                                <table style="-moz-border-radius: 6px; -webkit-border-radius: 6px; border-radius: 6px; border-right: solid; border-right-width: 2px; border-right-color: #5E5E5E; border-bottom: solid; border-bottom-width: 2px; border-bottom-color: #5E5E5E; background-image: url(images/btn_green_dpdn_2x.png); background-repeat: no-repeat; background-size: cover" cellspacing="0" cellpadding="0" border="0" bgcolor="transparent" align="left">
+                                  <tbody>
+                                    <tr>
+                                      <td width="47" height="50" align="right">
+                                        <a href="#" onclick="ytsrch()" style="text-decoration: none"><img src="images/youtube-icon.png" width="35" height="35"></a>
+                                      </td>
+                                      <td width="153" height="50">
+                                        <div class="dropdown">
+                                          <button class="dropbtn" onclick="ytsrch()"><a href="#" style="color: #FFFFFF; text-decoration: none">Videos</a>    </button>
+                                          <div class="dropdown-content">
+                                            <a href="https://www.youtube.com/channel/UCEgdi0XIXXZ-qJOFPf4JSKw"><span class="bullet">🔹</span>  Youtube Sports</a>
+                                            <a href="#" onclick="ytpop()"><span class="bullet">🔹</span>  Youtube Popup</a>
+                                            <a href="https://www.youtube.com/channel/UCYfdidRxbB8Qhf0Nx7ioOYw"><span class="bullet">🔹</span>  Youtube News</a>
+                                            <a href="https://www.youtube.com/feed/trending"><span class="bullet">🔹</span>  Youtube Trending</a>
+                                            <a href="https://accounts.google.com/signin"><span class="bullet">🔹</span>  Youtube Sign in</a>
+                                            <a href="https://www.youtube.com/feed/channels"><span class="bullet">🔹</span>  Youtube Channels</a>
+                                            <a href="#" onclick="rsrch()"><span class="bullet">🔹</span>  Rumble</a>
+                                            <a href="https://tv.cctv.com/cctv5/"><span class="bullet">🔹</span>  CCTV-5 Sports</a>
+                                            <a href="https://www.cgtnnow.com/browse"><span class="bullet">🔹</span>  CGTN Now</a>
+                                            <a href="#" onclick="bbsrch()"><span class="bullet">🔹</span>   哔哩哔哩 Bilibili</a>
+                                            <a href="#" onclick="bdsrch()"><span class="bullet">🔹</span>   百度好看 Baidu</a>
+                                          </div>
+                                        </div>
+                                      </td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </td>
+
+                      <td width="50%">
+                        <table width="100%" cellspacing="0" cellpadding="0" border="0">
+                          <tbody>
+                            <tr>
+                              <td style="padding: 10px 0px 8px 0px" align="left">
+                                <table style="-moz-border-radius: 6px; -webkit-border-radius: 6px; border-radius: 6px; border-right: solid; border-right-width: 2px; border-right-color: #5E5E5E; border-bottom: solid; border-bottom-width: 2px; border-bottom-color: #5E5E5E; background-image: url(images/btn_green_dpdn_2x.png); background-repeat: no-repeat; background-size: cover" cellspacing="0" cellpadding="0" border="0" bgcolor="transparent" align="right">
+                                  <tbody>
+                                    <tr>
+                                      <td width="47" height="50" align="right">
+                                        <img src="images/movies-icon.png" width="35" height="35">
+                                      </td>
+                                      <td width="153" height="50">
+                                        <div class="dropdown">
+                                          <button class="dropbtn">Movies     </button>
+                                          <div class="dropdown-content">
+                                            <a href="https://www.magellantv.com/login"><span class="bullet">🔹</span>  MagellanTV</a>
+                                            <a href="https://www.tubitv.com/login"><span class="bullet">🔹</span>  Tubi</a>
+                                            <a href="https://www.kanopy.com/en/markham/login"><span class="bullet">🔹</span>  Kanopy</a>
+                                            <a href="https://www.hoopladigital.com/login"><span class="bullet">🔹</span>  Hoopla</a>
+                                          </div>
+                                        </div>
+                                      </td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </td>
+
+              <td width="6%"></td>
+        
+            </tr>
+          </tbody>
+        </table>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<br>
+<br>
+<br>
+
+<table width="100%" cellspacing="0" cellpadding="0" border="0">
+  <tbody>
+    <tr>
+      <td style="padding: 0px 30px 0px 30px">
+        <table width="100%" cellspacing="0" cellpadding="0" border="0">
+          <tbody>
+            <tr>
+
+              <td width="6%"></td>
+
+              <td width="39%">
+                <table width="100%" cellspacing="0" cellpadding="0" border="0">
+                  <tbody>
+                    <tr>
+                      <td width="50%">
+                        <table width="100%" cellspacing="0" cellpadding="0" border="0">
+                          <tbody>
+                            <tr>
+                              <td style="padding: 10px 0px 8px 0px">
+                                <table style="-moz-border-radius: 6px; -webkit-border-radius: 6px; border-radius: 6px; border-right: solid; border-right-width: 2px; border-right-color: #5E5E5E; border-bottom: solid; border-bottom-width: 2px; border-bottom-color: #5E5E5E; background-image: url(images/btn_green_dpdn_2x.png); background-repeat: no-repeat; background-size: cover" cellspacing="0" cellpadding="0" border="0" bgcolor="transparent" align="left">
+                                  <tbody>
+                                    <tr>
+                                      <td width="47" height="50" align="right">
+                                        <img src="images/shopping-icon.png" width="35" height="35">
+                                      </td>
+                                      <td width="153" height="50">
+                                        <div class="dropdown">
+                                          <button class="dropbtn">Shopping    </button>
+                                          <div class="dropdown-content">
+                                            <a href="#" onclick="amzsrch()"><span class="bullet">🔹</span>  Amazon</a>
+                                            <a href="#" onclick="alisrch()"><span class="bullet">🔹</span>  AliExpress</a>
+                                            <a href="#" onclick="walsrch()"><span class="bullet">🔹</span>  Walmart</a>
+                                            <a href="#" onclick="tmsrch()"><span class="bullet">🔹</span>  Temu</a>
+                                            <a href="#" onclick="airsrch()"><span class="bullet">🔹</span>  Air Miles</a>
+                                            <a href="#" onclick="stplsrch()"><span class="bullet">🔹</span>  Staples</a>
+                                            <a href="#" onclick="bestsrch()"><span class="bullet">🔹</span>  BestBuy</a>
+                                            <a href="#" onclick="shsrch()"><span class="bullet">🔹</span>  Shein</a>
+                                            <a href="https://www.kijiji.ca/b-gta-greater-toronto-area/mechanical-keyboard/k0l1700272?dc=true"><span class="bullet">🔹</span>  Kijiji</a>
+                                          </div>
+                                        </div>
+                                      </td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </td>
+
+                      <td width="50%">
+                        <table width="100%" cellspacing="0" cellpadding="0" border="0">
+                          <tbody>
+                            <tr>
+                              <td style="padding: 10px 0px 8px 0px">
+                                <table style="-moz-border-radius: 6px; -webkit-border-radius: 6px; border-radius: 6px; border-right: solid; border-right-width: 2px; border-right-color: #5E5E5E; border-bottom: solid; border-bottom-width: 2px; border-bottom-color: #5E5E5E; background-image: url(images/btn_green_dpdn_2x.png); background-repeat: no-repeat; background-size: cover" cellspacing="0" cellpadding="0" border="0" bgcolor="transparent" align="right">
+                                  <tbody>
+                                    <tr>
+                                      <td width="47" height="50" align="right">
+                                        <a href="https://www.outlook.com/" style="text-decoration: none"><img src="images/mail-icon.png" width="35" height="35">
+                                      </td>
+                                      <td width="153" height="50">
+                                        <div class="dropdown">
+                                          <button class="dropbtn"><a href="https://www.outlook.com/login" style="color: #FFFFFF; text-decoration: none">HoTMaiL</a>   </button>
+                                          <div class="dropdown-content">
+                                            <a href="https://www.gmail.com/"><span class="bullet">🔹</span>  GMail</a>
+                                            <a href="https://mail.yahoo.com/"><span class="bullet">🔹</span>  Yahoo Mail</a>
+                                            <a href="https://mail.proton.me/u/0/inbox"><span class="bullet">🔹</span>  Proton Mail</a>
+                                          </div>
+                                        </div>
+                                      </td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </td>
+
+              <td width="10%">
+                <table width="100%" cellspacing="0" cellpadding="0" border="0">
+                  <tbody>
+                    <tr>
+                      <td></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </td>
+
+              <td width="39%">
+                <table width="100%" cellspacing="0" cellpadding="0" border="0">
+                  <tbody>
+                    <tr>
+                      <td width="50%">
+                        <table width="100%" cellspacing="0" cellpadding="0" border="0">
+                          <tbody>
+                            <tr>
+                              <td style="padding: 10px 0px 8px 0px">
+                                <table style="-moz-border-radius: 6px; -webkit-border-radius: 6px; border-radius: 6px; border-right: solid; border-right-width: 2px; border-right-color: #5E5E5E; border-bottom: solid; border-bottom-width: 2px; border-bottom-color: #5E5E5E; background-image: url(images/btn_red_dpdn_2x.png); background-repeat: no-repeat; background-size: cover" cellspacing="0" cellpadding="0" border="0" bgcolor="transparent" align="left">
+                                  <tbody>
+                                    <tr>
+                                      <td width="47" height="50" align="right"><a href="https://www.drawchinese.com/" style="text-decoration: none"><img src="images/china-icon.png" width="35" height="35"></a></td>
+                                      <td width="153" height="50">
+                                        <div class="dropdown">
+                                          <button class="dropbtn"><a href="https://www.drawchinese.com/" style="color: #FFFFFF; text-decoration: none"><b>   中 日 한</b></a>       </button>
+                                          <div class="dropdown-content">
+                                            <a href="https://www.qhanzi.com/"><span class="bullet">🔹</span>  漢字</a>
+                                            <a href="https://www.drawjapanese.com/"><span class="bullet">🔹</span>  日本語</a>
+                                            <a href="https://www.drawkorean.com/"><span class="bullet">🔹</span>  한국인</a>
+                                            <a href="https://www.mdbg.net/chinese/dictionary"><span class="bullet">🔹</span>  MDBG</a>
+                                            <a href="https://www.archchinese.com/"><span class="bullet">🔹</span>  Arch Chinese</a>
+                                          </div>
+                                        </div>
+                                      </td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </td>
+
+                      <td width="50%">
+                        <table width="100%" cellspacing="0" cellpadding="0" border="0">
+                          <tbody>
+                            <tr>
+                              <td style="padding: 10px 0px 8px 0px">
+                                <table style="-moz-border-radius: 6px; -webkit-border-radius: 6px; border-radius: 6px; border-right: solid; border-right-width: 2px; border-right-color: #5E5E5E; border-bottom: solid; border-bottom-width: 2px; border-bottom-color: #5E5E5E; background-image: url(images/btn_blue_dpdn_2x.png); background-repeat: no-repeat; background-size: cover" cellspacing="0" cellpadding="0" border="0" bgcolor="transparent" align="right">
+                                  <tbody>
+                                    <tr>
+                                      <td width="47" height="50" align="right"><a href="#" style="text-decoration: none"><img src="images/firstaid_cache.png" width="35" height="35"></a></td>
+                                      <td width="153" height="50">
+                                        <div class="dropdown">
+                                          <button class="dropbtn">Sundry   </button>
+                                          <div class="dropdown-content">
+                                            <a href="https://onedrive.live.com/"><span class="bullet">🔹</span>  Onedrive</a>
+                                            <a href="https://www.linkedin.com/login"><span class="bullet">🔹</span>  LinkedIn</a>
+                                            <a href="https://tripplanner.yrt.ca/#/app/tripplanning"><span class="bullet">🔹</span>  YRT</a>
+                                            <a href="https://www.theweathernetwork.com/en/city/ca/ontario/markham/current"><span class="bullet">🔹</span>  The Weather Network</a>
+                                            <a href="https://en1.savefrom.net/2ol/"><span class="bullet">🔹</span>  Savefrom.net</a>
+                                            <a href="https://ezmp3.io/"><span class="bullet">🔹</span>  EzMP3</a>
+                                            <a href="https://ytmp3.ski/"><span class="bullet">🔹</span>  YtMP3</a>
+                                          </div>
+                                        </div>
+                                      </td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </td>
+
+                    </tr>
+                  </tbody>
+                </table>
+              </td>
+
+              <td width="6%"></td>
+
+            </tr>
+          </tbody>
+        </table>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<br>
+<br>
+<br>
+
+<table width="100%" cellspacing="0" cellpadding="0" border="0">
+  <tbody>
+    <tr>
+      <td style="padding: 0px 30px 0px 30px">
+        <table width="100%" cellspacing="0" cellpadding="0" border="0">
+          <tbody>
+            <tr>
+
+              <td width="6%"></td>
+
+              <td width="39%">
+                <table width="100%" cellspacing="0" cellpadding="0" border="0">
+                  <tbody>
+                    <tr>
+
+                      <td width="50%">
+                        <table width="100%" cellspacing="0" cellpadding="0" border="0">
+                          <tbody>
+                            <tr>
+                              <td style="padding: 8px 0px 8px 0px">
+                                <table style="-moz-border-radius: 6px; -webkit-border-radius: 6px; border-radius: 6px; border-right: solid; border-right-width: 2px; border-right-color: #151515; border-bottom: solid; border-bottom-width: 2px; border-bottom-color: #151515; background: linear-gradient(90deg, rgba(54,54,54,1) 4%, rgba(106,116,124,1) 25%, rgba(160,160,160,1) 50%, rgba(106,116,124,1) 75%, rgba(54,54,54,1) 96%)" cellspacing="0" cellpadding="0" border="0" align="left">
+                                  <tbody>
+                                    <tr>
+                                      <td width="200" height="50" align="center">
+                                        <div><a href="#" target="_blank" class="copy-shadow"><img src="images/favicon.png" width="35" height="35" style="vertical-align: bottom" border="0"></a></div>
+                                      </td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </td>
+
+                      <td width="50%">
+                        <table width="100%" cellspacing="0" cellpadding="0" border="0">
+                          <tbody>
+                            <tr>
+                              <td style="padding: 8px 0px 8px 0px">
+                                <table style="-moz-border-radius: 6px; -webkit-border-radius: 6px; border-radius: 6px; border-right: solid; border-right-width: 2px; border-right-color: #5E5E5E; border-bottom: solid; border-bottom-width: 2px; border-bottom-color: #5E5E5E; background: linear-gradient(90deg, #A0FFB9, #00CC44, #009933, #006600)" cellspacing="0" cellpadding="0" border="0" align="right">
+                                  <tbody>
+                                    <tr>
+                                      <td width="50" height="50" align="right">
+                                        <a href="#" style="text-decoration: none"><img src="images/sample_apng.png" width="38" height="38" style="vertical-align: bottom" border="0"></a>
+                                      </td>
+                                      <td width="150" height="50" valign="bottom">
+                                        <div><a href="#" style="color: #FFFFFF; display: inline-block; font-family: Omnes Medium, Arial, Helvetica, sans-serif; font-size: 19px; font-weight: normal; line-height: 44px; text-align: center; text-decoration: none; width: 112px; -webkit-text-size-adjust: none" class="copy-shadow">Custom</a></div>
+                                      </td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </td>
+
+              <td width="10%">
+                <table width="100%" cellspacing="0" cellpadding="0" border="0">
+                  <tbody>
+                    <tr>
+                      <td>
+                        <table align="center" border="0" cellspacing="0" cellpadding="0">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <iframe style="vertical-align: bottom" src="https://free.timeanddate.com/clock/i9pce7fe/n250/szw80/szh80/hoc888/hbw4/cf100/hncddbd73/hwcaaa/fas26/fdi64/mqcf00/mqs3/mql13/mqw4/mqd94/mhcfff/mhs3/mhl13/mhw4/mhd94/mmc000/mml5/mmw1/mmd88/hwm2/hhs2/hhb18/hms2/hml80/hmb18/hmr7/hss1/hsl90/hsw2/hsr8" frameborder="0" width="80" height="80"></iframe>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </td>
+
+              <td width="39%">
+                <table width="100%" cellspacing="0" cellpadding="0" border="0">
+                  <tbody>
+                    <tr>
+                      <td width="50%">
+                        <table width="100%" cellspacing="0" cellpadding="0" border="0">
+                          <tbody>
+                            <tr>
+                              <td style="padding: 8px 0px 8px 0px">
+                                <table style="-moz-border-radius: 6px; -webkit-border-radius: 6px; border-radius: 6px; border-right: solid; border-right-width: 2px; border-right-color: #5E5E5E; border-bottom: solid; border-bottom-width: 2px; border-bottom-color: #5E5E5E; background: linear-gradient(60deg, #FFC8FF, #FF0000, #FF0000, #FFC8FF)" cellspacing="0" cellpadding="0" border="0" align="left">
+                                  <tbody>
+                                    <tr>
+                                      <td width="200" height="50" align="center" valign="bottom">
+                                      <div><a href="#" style="color: #FFFF00; display: inline-block; font-family: Omnes Medium, Arial, Helvetica, sans-serif; font-size: 19px; font-weight: normal; line-height: 44px; text-align: center; text-decoration: none; width: 200px; -webkit-text-size-adjust: none" class="copy-shadow">★ ★    <b>华为</b>    ★ ★</a></div>
+                                      </td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </td>
+
+                      <td width="50%">
+                        <table width="100%" cellspacing="0" cellpadding="0" border="0">
+                          <tbody>
+                            <tr>
+                              <td style="padding: 10px 0px 8px 0px">
+                                <table style="-moz-border-radius: 6px; -webkit-border-radius: 6px; border-radius: 6px; border-right: solid; border-right-width: 2px; border-right-color: #5E5E5E; border-bottom: solid; border-bottom-width: 2px; border-bottom-color: #5E5E5E; background: linear-gradient(180deg, #C8FFFF, #3285FC, #3255FA, #3285FC, #C8FFFF)" cellspacing="0" cellpadding="0" border="0" align="right">
+                                  <tbody>
+                                    <tr>
+                                      <td width="47" height="50" align="right">
+                                        <a href="https://archive.org" style="text-decoration: none"><img src="images/internet_archive-icon.png" width="32" height="32"></a>
+                                      </td>
+                                      <td width="153" height="50" valign="bottom">
+                                        <div><a href="https://archive.org" style="color: #FFFFFF; display: inline-block; font-family: Omnes Medium, Arial, Helvetica, sans-serif; font-size: 19px; font-weight: normal; line-height: 44px; text-align: center; text-decoration: none; width: 153px; -webkit-text-size-adjust: none" class="copy-shadow">Internet Archive </a></div>
+                                      </td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </td>
+
+                    </tr>
+                  </tbody>
+                </table>
+              </td>
+
+              <td width="6%"></td>
+
+            </tr>
+          </tbody>
+        </table>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<br>
+<br>
+<br>
+
+<table width="100%" cellspacing="0" cellpadding="0" border="0">
+  <tbody>
+    <tr>
+      <td width="6%"></td>
+      <td width="88%" style="padding: 10px 27px 0px 27px">
+        <table width="100%" cellspacing="0" cellpadding="0" border="0" style="-moz-border-radius: 6px; -webkit-border-radius: 6px; border-radius: 6px; border-right: 2px solid #5E5E5E; border-bottom: solid 2px #5E5E5E; background-color:rgba(210,210,210,0.40)">
+          <tbody>
+            <tr>
+              <td>
+                <!--https://weatherwidget.io/-->
+                <!--https://forecast7.com/en/43d88n79d44/richmond-hill/-->
+                <div><a class="weatherwidget-io" href="https://forecast7.com/en/43d86n79d34/markham/" data-label_1="Markham, ON" data-label_2="7-day forecast" data-font="Roboto" data-icons="Climacons Animated" data-basecolor="" data-shadow="#6c6c6c" data-accent="rgba(200, 200, 200, 0.25)" data-textcolor="#000000" data-highcolor="#000000" data-lowcolor="#ffffff" data-suncolor="#ffff00" data-mooncolor="#ffae20" data-cloudcolor="#6a6a6a" data-cloudfill="#ffffff" data-raincolor="#4becf9" data-snowcolor="#4becf9"></a></div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </td>
+      <td width="6%"></td>
+    </tr>
+  </tbody>
+</table>
+
+<br>
+
+<table width="100%" cellspacing="0" cellpadding="0" border="0">
+  <tbody>
+    <tr>
+      <td width="6%"></td>
+      <td width="88%" style="padding: 18px 27px 2px 27px">
+        <table width="100%" cellspacing="0" cellpadding="0" border="0" style="-moz-border-radius: 6px; -webkit-border-radius: 6px; border-radius: 6px; border-right: 2px solid #5E5E5E; border-bottom: solid 2px #5E5E5E; background-color:rgba(225,225,225,.43)">
+          <tbody>
+            <tr>
+              <td>
+                <!--https://www.tradingview.com/widget/#charts-->
+                <div class="tradingview-widget-container">
+                  <div class="tradingview-widget-container__widget"></div>
+                  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-tickers.js" async>
+                    {
+                      "symbols":
+                        [
+                          {"proName": "FOREXCOM:SPXUSD", "title": "S&P 500"},
+                          {"description": "Nasdaq","proName": "NASDAQ:IXIC"},
+                          {"description": "Dow Jones","proName": "SPREADEX:DJI"},
+                          {"description": "Gold U$/oz.","proName": "TVC:GOLD"},
+                          {"description": "Bitcoin","proName": "BITSTAMP:BTCUSD"},
+                          {"description": "WTI Crude U$","proName": "EASYMARKETS:OILUSD"},
+                          {"description": "Nvidia","proName": "NASDAQ:NVDA"}
+                        ],
+                        "isTransparent": true,
+                        "showSymbolLogo": true,
+                        "colorTheme": "light",
+                        "locale": "en"
+                    }
+                  </script>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </td>
+      <td width="6%"></td>
+    </tr>
+  </tbody>
+</table>
+
+<table width="100%" cellspacing="0" cellpadding="0" border="0">
+  <tbody>
+    <tr>
+      <td style="padding: 30px 30px 0px 30px">
+        <table width="100%" cellspacing="0" cellpadding="0" border="0">
+          <tbody>
+            <tr>
+              <td style="font-size: 30px" class="copy-shadow" width="6%" align="left"><a href="http://192.168.0.149" target="_blank" style="text-decoration: none">⚜️</a> ▪ </td>
+              <td width="39%"><div class="hlin2"></div></td>
+              <td style="font-size: 24px" class="copy-shadow" width="10%" align="center">▪⚜️▪<a href="file:///d:/Drewbster/" style="text-decoration: none">🔹</a>▪⚜️▪</td>
+              <td width="39%"><div class="hlin2"></div></td>
+              <td style="font-size: 30px" class="copy-shadow" width="6%" align="right"> ▪ ⚜️</td>
+            </tr>
+          </tbody>
+        </table>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+</body>
+</html>
