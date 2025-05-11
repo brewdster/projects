@@ -1,0 +1,362 @@
+--------------------------------------
+Updated 2025-05-08
+--------------------------------------
+
+China Daily
+--------------------------------------
+a,
+p,
+.wsBt,
+.bd li,
+figcaption,
+.lft_art,
+h1,h2,h3,
+.info_l,
+.topNav2_art span
+{
+  font-family: 'Poppins' !important;
+}
+
+.txt1,
+.tmR .txtBox div span,
+.tmR .txtBox a
+{
+  font-size: 16px !important;
+  font-weight: bold !important;
+}
+
+#Content p
+{
+  font-size: 16px !important;
+  line-height: 20px !important;
+  color: #252525 !important;
+  margin-bottom: 14px !important;
+}
+
+figcaption
+{
+  font-size: 12px !important;
+  line-height: 14px !important;
+  margin-bottom: 12px !important;
+}
+
+Xin Hua Net
+--------------------------------------
+*
+  {
+    font-family: 'Poppins' !important;
+  }
+
+.content p,
+p
+  {
+    font-family: 'Poppins' !important;
+    font-size: 16px !important;
+    line-height: 20px !important;
+    padding-bottom: 14px !important;
+  }
+
+.content span,
+#detailContent .image span
+  {
+    font-family: 'Poppins' !important;
+    font-size: 12px !important;
+    line-height: 14px !important;
+    padding-bottom: 0px !important;
+  }
+
+.content p span
+  {
+    font-family: 'Poppins' !important;
+    font-size: 14px !important;
+    line-height: 18px !important;
+    padding-bottom: 0px !important;
+  }
+
+
+Global Times
+--------------------------------------
+
+* 
+{
+    font-family: 'Poppins' !important;
+}
+
+.sign_btn
+{
+  font-size: 11px !important;
+}
+
+.article_content .article_right,
+p
+{
+    font-size: 16px !important;
+    line-height: 20px !important;
+    margin-bottom: 10px !important;
+}
+
+.article .article_content .article_right p.picture
+{
+    font-size: 12px !important;
+    line-height: 14px !important;
+    margin-bottom: 20px !important;
+}
+
+
+
+RT America
+--------------------------------------
+
+*
+{
+    font-family: 'Poppins' !important;
+}
+
+p
+  {
+    font-family: 'Poppins' !important;
+    font-size: 16px !important;
+    color: #252525 !important;
+    line-height: 20px !important;
+    margin-top: 0px !important;
+    margin-bottom: 14px !important;
+  }
+
+.media__title_arcticle span,
+.media__title_footer
+{
+    font-family: 'Poppins' !important;
+    font-size: 12px !important;
+    color: #252525 !important;
+    line-height: 13px !important;
+    margin-top: 10px !important;
+    margin-bottom: 5px !important;
+}
+
+
+CGTN Main
+--------------------------------------
+
+*,
+a,
+.cg2023-general-7-2 .cg2023-general72-left .general72-left-top .news-item-intro .news-headline,
+.cg2023-general-7-2 .cg2023-general72-right .general72-right-top .news-item-intro .news-headline,
+.cg2023-general-7-2 .cg2023-general72-right .general72-right-top .news-item-intro .news-description,
+.cg2023-general-7-2 .cg2023-general72-right .general72-right-bottoms .news-item-intro .news-headline,
+.cg2023-general-7-2 .cg2023-general72-right .general72-right-bottoms .news-item-intro .news-description,
+.cg2023-general-7-2 .cg2023-general72-left .general72-left-bottom .general72-left-bottom-list .news-item-intro .news-headline,
+.cg2023-slide-14 .cg2023-slide14-wrap .slide14-wrap-top .slide14-wrap-topleft .divider-title,
+.cg2023-slide-14 .cg2023-slide14-wrap .slide14-wrap-top .slide14-wrap-topleft .news-item-intro .news-headline,
+.cg2023-slide-14 .cg2023-slide14-wrap .slide14-wrap-bottom .news-item-intro .news-headline,
+.divider-title,
+.cg2023_more_8_1_section .cg2023_general_more_8_1_wrapper .cg2023_general_more_8_1_container .cg2023-more-1-mainWrapper .cg-ge-ve-sm .cg-newsWrapper-in .cg-content-description .cg-title h3 a,
+.cg2023_general_5_9 .content_description_5_9,
+.only-title,
+.header-v3-nav-warp,
+.cg2022_home_1,
+.cg2022_home_1_2 .title,
+.title,
+.time-hidden,
+.cg2022_home_1_6 .title,
+.cg2022_home_1 .cg2022_home_1_6 .news-item:nth-child(1) .news-item-index, .cg2022_home_1 .cg2022_home_1_6 .news-item:nth-child(2) .news-item-index, .cg2022_home_1 .cg2022_home_1_6 .news-item:nth-child(3) .news-item-index,
+.cg2022_home_flex_child .cg2022_home_1_4 .opinions-news-item .name,
+.cg2022_home_flex_child .cg2022_home_1_4 .opinions-news-item a,
+.cg2022-home-2 .cg2022-home-2-container .title, .editor-row .name,
+.cg2022-home-2 .cg2022-home-2-container .content .left .top .editor .words,
+.titleMask a,
+.titleMask .timeArea,
+.cg2022-home-6, .cg-home6-title a,
+.cg2022-home-6 .cg-home6-leftmain .cg-home6-global-stringer .cg-home6-first .cg-home6-list .cg-content-description .cg-title a,
+.cg2022-home-6 .cg-home6-leftmain .cg-home6-global-stringer .cg-home6-second .cg-home6-list3 .cg-content-description .cg-title a, .cg2022-home-6 .cg-home6-leftmain .cg-home6-global-stringer .cg-home6-second .cg-home6-list4 .cg-content-description .cg-title a,
+.cg2022-home-6 .cg-home6-rightmain .cg-home6-list5 .cg-content-description .cg-title a, .cg2022-home-6 .cg-home6-rightmain .cg-home6-list6 .cg-content-description .cg-title a, .cg2022-home-6 .cg-home6-rightmain .cg-home6-list7 .cg-content-description .cg-title a,
+.cg2022-home-8, .cg2022-home-8 .cg-home8-leftmain .cg-home8-swipermain .container .swiper-slide .cg-content-description .cg-title a,
+.cg2022-home-9, .cg2022-home-9 .cg2022-home-9-container .cg2022-home-9-title a,
+.cg-time
+{
+  font-family: 'Poppins';
+}
+
+
+CGTN Sub
+--------------------------------------
+
+
+*,
+.new-detailWrap-v3 .cg-detail-mainWrap .cg-detail-left .news-top-title .news-title
+  {
+    font-family: 'Poppins' !important;
+  }
+
+p
+  {
+    font-family: 'Poppins' !important;
+    font-size: 16px !important;
+    line-height: 20px !important;
+    margin-top: 0px !important;
+    margin-bottom: 14px !important;
+  }
+
+.wrapper-visible .title
+  {
+    font-family: 'Poppins' !important;
+    font-size: 12px !important;
+    line-height: 16px !important;
+    margin-top: 0px !important;
+    margin-bottom: 14px !important;
+  }
+
+
+Wikipedia
+--------------------------------------
+p
+  {
+    font-family: 'Poppins' !important;
+    font-size: 14px !important;
+    color: #252525 !important;
+    line-height: 18px !important;
+    margin-top: 0px !important;
+    margin-bottom: 14px !important;
+  }
+
+.infobox th, .infobox td
+  {
+    font-family: 'Poppins' !important;
+    font-size: 12px !important;
+    color: #252525 !important;
+    line-height: 14px !important;
+    margin-top: 0px !important;
+    margin-bottom: 14px !important;  
+  }
+
+h1,h2,h3,
+figcaption,
+.vector-body,
+#toc-Early_life_and_education,
+.vector-toc .vector-toc-text
+  {
+    font-family: 'Poppins' !important;
+  }
+
+h1,h2,h3
+  {
+    font-weight: 500 !important;
+  }
+
+
+Yahoo Finance
+--------------------------------------
+#atomic .tw-line-clamp-none,
+#atomic .tw-line-clamp-3,
+.container.yf-82qtw3 .content .titles h3.yf-82qtw3,
+.pf-lead.yf-14nevj4 .lead-wrapper .title.yf-14nevj4,
+.cover-title,
+h1,h2,h3,
+.type-ui-xxl-bold, .type-ui-xxl-reg, .type-ui-xxl-med
+{
+    font-family: 'Poppins' !important;
+}
+
+p
+  {
+    font-family: 'Poppins' !important;
+    font-size: 16px !important;
+    color: #252525 !important;
+    line-height: 20px !important;
+    margin-top: 0px !important;
+    margin-bottom: 14px !important;
+  }
+
+CTV
+--------------------------------------
+*
+{
+    font-family: 'Poppins' !important;
+}
+
+p
+  {
+    font-family: 'Poppins' !important;
+    font-size: 16px !important;
+    color: #252525 !important;
+    line-height: 20px !important;
+    margin-top: 0px !important;
+    margin-bottom: 14px !important;
+  }
+
+.c-media-item__caption
+{
+    font-family: 'Poppins' !important;
+    font-size: 12px !important;
+    line-height: 14px !important;
+}
+
+
+Midnight (inactive)
+--------------------------------------
+
+td#btShowModal_BTC,td#btnDesignReport_BTC,#btnEmail,#btnClose,
+.x-grid-cell-inner,
+.dxgvControl a,
+.gridcellpadding,
+.TreeView1_1,
+.stiJsViewerClearAllStyles,
+.stiJsViewerParametersPanel td
+{
+  font-family: Poppins !important;
+}
+
+
+Markham Public Library
+--------------------------------------
+*
+{
+  font-family: 'Poppins' !important;
+}
+
+.col-lg-3
+{
+  width: 20% !important;
+}
+
+.col-md-2
+{
+  width: 6% !important;
+  padding-left: 15px;
+  padding-right: 1px;
+}
+
+.cp-manifestation-list-item .cp-format-info .call-number,
+.cp-search-result-item, .cp-search-result-item-content, .cp-title,
+.cp-manifestation-list-item,
+.cp-availability-status.on_order,
+.cp-availability-bib-block .availability-link.availability-link--shifted
+{
+  font-size: 14px !important;
+  font-weight: bold !important;
+  line-height: 14px !important;
+  padding: 0px !important;
+}
+
+.cp-format-info .display-info-primary,
+.cp-hold-counts
+{
+  font-size: 12px !important;
+  line-height: 14px !important;
+}
+
+.btn
+{
+  font-size: 12px !important;
+  min-height: 14px !important;
+  box-shadow: inset 0 0px !important;
+}
+
+.btn-secondary,.cp-secondary-solid-button
+{
+  background-color: #DC143C !important;
+}
+
+.holds-shelf-button,.cp-combo-btn,.combo-button--block
+{
+  display: none !important;
+}
