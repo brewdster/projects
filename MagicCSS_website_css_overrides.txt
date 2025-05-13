@@ -76,7 +76,6 @@ p
 
 Global Times
 --------------------------------------
-
 * 
 {
     font-family: 'Poppins' !important;
@@ -85,6 +84,11 @@ Global Times
 .sign_btn
 {
   font-size: 11px !important;
+}
+
+.picture
+{
+  color: #3F3F3F !important;
 }
 
 .article_content .article_right,
