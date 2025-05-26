@@ -1,5 +1,5 @@
 --------------------------------------
-Updated 2025-05-16
+Updated 2025-05-25
 --------------------------------------
 
 China Daily
@@ -249,13 +249,7 @@ h1,h2,h3
 
 Yahoo Finance
 --------------------------------------
-#atomic .tw-line-clamp-none,
-#atomic .tw-line-clamp-3,
-.container.yf-82qtw3 .content .titles h3.yf-82qtw3,
-.pf-lead.yf-14nevj4 .lead-wrapper .title.yf-14nevj4,
-.cover-title,
-h1,h2,h3,
-.type-ui-xxl-bold, .type-ui-xxl-reg, .type-ui-xxl-med
+*
 {
     font-family: 'Poppins' !important;
 }
@@ -269,6 +263,32 @@ p
     margin-top: 0px !important;
     margin-bottom: 14px !important;
   }
+
+.readmore
+{
+  visibility: hidden !important;
+  display: none !important;
+}
+
+.read-more-wrapper
+{
+  display: block !important;
+}
+
+MSN
+--------------------------------------
+*
+{
+  font-family: 'Poppins' !important;
+  font-size: 16px !important;
+  line-height: 20px !important;
+}
+
+.continue-reading-slot
+{
+  display: none !important;
+}
+
 
 CTV
 --------------------------------------
