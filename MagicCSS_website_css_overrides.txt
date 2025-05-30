@@ -1,5 +1,5 @@
 --------------------------------------
-Updated 2025-05-25
+Updated 2025-05-30
 --------------------------------------
 
 China Daily
@@ -184,7 +184,6 @@ a,
 CGTN Sub
 --------------------------------------
 
-
 *,
 .new-detailWrap-v3 .cg-detail-mainWrap .cg-detail-left .news-top-title .news-title
   {
@@ -195,6 +194,7 @@ p
   {
     font-family: 'Poppins' !important;
     font-size: 16px !important;
+    color: #000000 !important;
     line-height: 20px !important;
     margin-top: 0px !important;
     margin-bottom: 14px !important;
@@ -202,12 +202,10 @@ p
 
 .wrapper-visible .title
   {
-    font-family: 'Poppins' !important;
     font-size: 12px !important;
     line-height: 16px !important;
-    margin-top: 0px !important;
-    margin-bottom: 14px !important;
   }
+
 
 
 Wikipedia
