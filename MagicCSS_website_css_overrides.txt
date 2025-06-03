@@ -322,7 +322,9 @@ td#btShowModal_BTC,td#btnDesignReport_BTC,#btnEmail,#btnClose,
 .gridcellpadding,
 .TreeView1_1,
 .stiJsViewerClearAllStyles,
-.stiJsViewerParametersPanel td
+.stiJsViewerTextBoxDefault,
+.stiJsViewerParametersPanel td,
+.dxeBase
 {
   font-family: Poppins !important;
 }
