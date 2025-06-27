@@ -275,6 +275,7 @@ p
 
 MSN
 --------------------------------------
+
 *
 {
   font-family: 'Poppins' !important;
@@ -282,10 +283,34 @@ MSN
   line-height: 20px !important;
 }
 
-.continue-reading-slot
+cp-article
+{
+  display: block !important;
+  visibility: visible !important;
+  overflow-y: visible !important;
+  max-height: none !important;
+  height: auto !important;
+}
+
+.continue-reading-slot,
+.intra-article-module
 {
   display: none !important;
 }
+
+.hide-overflown-content, .hide-overflown-content ~ *
+{
+  display: block !important;
+  visibility: visible !important;
+  height: auto !important;
+}
+
+above-river-block,
+.consumption-page-feed-wrapper
+{
+  display: none !important;
+}
+
 
 
 CTV
