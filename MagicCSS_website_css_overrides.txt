@@ -1,5 +1,5 @@
 --------------------------------------
-Updated 2025-06-27
+Updated 2025-07-04
 --------------------------------------
 
 China Daily
@@ -47,8 +47,7 @@ Xin Hua Net
     font-family: 'Poppins' !important;
   }
 
-.content p,
-p
+.content p, .content p span, p
   {
     font-family: 'Poppins' !important;
     font-size: 16px !important;
@@ -65,13 +64,6 @@ p
     padding-bottom: 0px !important;
   }
 
-.content p span
-  {
-    font-family: 'Poppins' !important;
-    font-size: 14px !important;
-    line-height: 18px !important;
-    padding-bottom: 0px !important;
-  }
 
 
 Global Times
@@ -357,6 +349,7 @@ td#btShowModal_BTC,td#btnDesignReport_BTC,#btnEmail,#btnClose,
 
 Markham Public Library
 --------------------------------------
+
 *
 {
   font-family: 'Poppins' !important;
@@ -413,4 +406,16 @@ button.btn.btn-primary
 .holds-shelf-button,.cp-combo-btn,.combo-button--block
 {
   display: none !important;
+}
+
+.cp-hold-status-icon.with-background.ready_for_pickup
+{
+  font-weight: 500 !important;
+}
+
+.cp-hold-status-icon.with-background.in_transit
+{
+  background-color: #FFB347 !important;
+  font-weight: 500 !important;
+  color: #3E3E3E !important;
 }
