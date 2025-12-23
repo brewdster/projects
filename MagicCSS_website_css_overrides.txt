@@ -1,5 +1,5 @@
 --------------------------------------
-Updated 2025-07-28
+Updated 2025-12-22
 --------------------------------------
 
 China Daily
@@ -330,17 +330,12 @@ p
 }
 
 
-Midnight (inactive)
+Midnight
 --------------------------------------
-
-td#btShowModal_BTC,td#btnDesignReport_BTC,#btnEmail,#btnClose,
-.x-grid-cell-inner,
-.dxgvControl a,
-.gridcellpadding,
-.TreeView1_1,
-.stiJsViewerClearAllStyles,
-.stiJsViewerTextBoxDefault,
-.stiJsViewerParametersPanel td,
+span,
+td,
+a,
+.widget_header,
 .dxeBase
 {
   font-family: Poppins !important;
@@ -419,3 +414,4 @@ button.btn.btn-primary
   font-weight: 500 !important;
   color: #3E3E3E !important;
 }
+
