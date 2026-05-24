@@ -370,3 +370,16 @@ button.btn.btn-primary
   font-weight: 500 !important;
   color: #3E3E3E !important;
 }
+
+Substack
+--------------------------------------
+*
+{
+  font-family: 'Poppins' !important;
+}
+
+p
+{
+  font-size: 16px !important;
+  line-height: 125% !important;
+}
