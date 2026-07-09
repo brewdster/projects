@@ -112,6 +112,19 @@ table.datetbl
     text-shadow: 2px 2px 4px #000000;
 }
 
+.hmove  {display: flex;}
+.hitem  {width: 100%; flex-shrink: 0; font-size: 16px; font-weight: 500; color: #C80815;}
+.hwrap  {overflow: hidden;}
+.hmove  {animation: tickerh linear 12s infinite;}
+.hmove:hover
+        {animation-play-state: paused;}
+ 
+@keyframes tickerh
+{
+  0% { transform: translatex(100%);}
+  100% { transform: translatex(-100%);}
+}
+
 </style>
 
 </head>
@@ -235,6 +248,17 @@ table.datetbl
                         </div>
                       </td>
                     </tr>
+
+                    <tr>
+                      <td style="padding: 10px 10px 0px 0px">
+                        <div class="hwrap">
+                          <div class="hmove">
+                            <div class="hitem">< Please feel free to contact the author if any questions. ></div>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+
                   </tbody>
                 </table>
               </td>
