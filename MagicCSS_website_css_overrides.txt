@@ -1,5 +1,5 @@
 --------------------------------------
-Updated 2026-05-24
+Updated 2026-08-10
 --------------------------------------
 
 China Daily
@@ -21,8 +21,15 @@ h1,h2,h3,
 .tmR .txtBox div span,
 .tmR .txtBox a
 {
-  font-size: 16px !important;
+  font-size: 15px !important;
   font-weight: bold !important;
+  line-height: 17px !important;
+}
+
+h3
+{
+  font-size: 20px !important;
+  line-height: 21px !important;
 }
 
 #Content p
