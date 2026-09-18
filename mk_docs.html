@@ -79,14 +79,14 @@ li
 
 .sticky + .content
   {
-    padding-top: 553px;
+    padding-top: 480px;
   }
 
 .anchor
   {
     display: block;
     position: relative;
-    top: -560px;
+    top: -487px;
     visibility: hidden;
   }
 
@@ -110,19 +110,6 @@ table.datetbl
 .copy-shadow
 {
     text-shadow: 2px 2px 4px #000000;
-}
-
-.hmove  {display: flex;}
-.hitem  {width: 100%; flex-shrink: 0; font-size: 16px; font-weight: 500; color: #C80815;}
-.hwrap  {overflow: hidden;}
-.hmove  {animation: tickerh linear 12s infinite;}
-.hmove:hover
-        {animation-play-state: paused;}
- 
-@keyframes tickerh
-{
-  0% { transform: translatex(100%);}
-  100% { transform: translatex(-100%);}
 }
 
 </style>
@@ -188,7 +175,7 @@ table.datetbl
         <table width="100%" cellspacing="0" cellpadding="0" border="0" bgcolor="#F8F8F8">
           <tbody>
             <tr>
-              <td width="50%" align="left" valign="top" style="padding: 20px 0px 0px 27px; font-size: 16px; font-family: 'Poppins', sans-serif; line-height: 22px; color: #000000; font-weight: normal"><span class="head1">Page index</span>
+              <td width="25%" align="left" valign="top" style="padding: 20px 0px 0px 27px; font-size: 16px; font-family: 'Poppins', sans-serif; line-height: 22px; color: #000000; font-weight: normal"><span class="head1">Page index</span>
                 <ul style="list-style-type: none; padding: 0px">
                   <li><a href="#freq">Frequently-used qLingo</a></li>
                   <li><a href="#seq_chk">Sequencing & record-checking</a></li>
@@ -200,6 +187,10 @@ table.datetbl
                   <li><a href="#string">QLingo string functions</a></li>
                   <li><a href="#numeric">QLingo numeric functions</a></li>
                   <li><a href="#date">QLingo date functions</a></li>
+                </ul>
+              </td>
+              <td width="25%" align="left" valign="top" style="padding: 20px 10px 0px 0px; font-size: 16px; font-family: 'Poppins', sans-serif; line-height: 22px; color: #000000; font-weight: normal"><span class="head1"> </span>
+                <ul style="list-style-type: none; padding: 0px">
                   <li><a href="#conversion">QLingo conversion functions</a></li>
                   <li><a href="#system">QLingo system functions</a></li>
                   <li><a href="#custom">Custom & other uPlan functions</a></li>
@@ -216,7 +207,7 @@ table.datetbl
                 <table width="100%" cellspacing="0" cellpadding="0" border="0">
                   <tbody>
                     <tr>
-                      <td style="padding: 0px 10px 20px 0px; font-size: 16px; line-height: 20px">
+                      <td style="padding: 0px 10px 5px 0px; font-size: 16px; line-height: 20px">
                         <p><span class="head1">7-day weather forecast : <span id="curdate"></span>,
                           <iframe style="vertical-align: top" src="https://free.timeanddate.com/clock/i9r42t6e/n250/fn6/fs16/fcc80815/tct/pct/ahl/avb/ftb/pl0/pr0/pt0/pb0/ta1" frameborder="0" width="160" height="23" allowtransparency="true"></iframe></span>
                         </p>
@@ -235,9 +226,9 @@ table.datetbl
                               [
                                 {"proName": "FOREXCOM:SPXUSD", "title": "S&P 500 Index"},
                                 {"description": "Dow Jones","proName": "SPREADEX:DJI"},
+                                {"description": "WTI Crude U$","proName": "EASYMARKETS:OILUSD"},
                                 {"description": "Gold U$/oz.","proName": "TVC:GOLD"},
                                 {"description": "Bitcoin","proName": "BITSTAMP:BTCUSD"},
-                                {"description": "WTI Crude U$","proName": "EASYMARKETS:OILUSD"},
                                 {"description": "Nvidia","proName": "NASDAQ:NVDA"},
                                 {"description": "Nasdaq","proName": "NASDAQ:IXIC"},
                                 {"description": "Tesla","proName": "NASDAQ:TSLA"}
@@ -245,16 +236,6 @@ table.datetbl
                               "isTransparent": false,"showSymbolLogo": true,"colorTheme": "dark","locale": "en"
                             }
                           </script>
-                        </div>
-                      </td>
-                    </tr>
-
-                    <tr>
-                      <td style="padding: 10px 10px 0px 0px">
-                        <div class="hwrap">
-                          <div class="hmove">
-                            <div class="hitem">< Please feel free to contact the author if any questions. ></div>
-                          </div>
                         </div>
                       </td>
                     </tr>
