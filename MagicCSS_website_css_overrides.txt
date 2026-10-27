@@ -1,5 +1,5 @@
 --------------------------------------
-Updated 2026-08-10
+Updated 2026-10-26
 --------------------------------------
 
 China Daily
@@ -389,4 +389,27 @@ p
 {
   font-size: 16px !important;
   line-height: 125% !important;
+}
+
+
+
+blogTO
+--------------------------------------
+*
+{
+  font-family: 'Poppins' !important;
+}
+
+.article-lead-title-text
+{
+  font-weight: 700 !important;
+}
+
+.rich-content-wrapper .rich-content li, .rich-content-wrapper .rich-content p
+{
+  font-family: 'Poppins' !important;
+  font-size: 16px !important;
+  line-height: 20px !important;
+  font-weight: 400 !important;
+  margin: 14px !important;
 }
