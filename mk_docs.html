@@ -752,12 +752,13 @@ Result:
 	  <ol>
 	    <li>Create multiple character styles (ex: "E_cstyl", "F_cstyl").</li>
 	    <li>Create a Style content object and enter the following sample qLingo code:</li>
-	  </ol><br>
-          <span style="white-space: pre">__PrivateInternalStyle(Switch(@{var_lang})
-{
-  Case "E" : "E_cstyl"
-  Case "F" : "F_cstyl"
-})</span></p></li>
+	  </ol>
+          <span style="white-space: pre">
+       __PrivateInternalStyle(Switch(@{var_lang})
+       {
+         Case "E" : "E_cstyl"
+         Case "F" : "F_cstyl"
+       })</span></p></li>
 
         <a class="anchor" name="sqldb"></a>
         <li><p><span class="head1">Steps to re-create local SQLDB <a href="#top" style="text-decoration: none"><b>&#8634;</b></a></span><br>
