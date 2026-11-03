@@ -196,6 +196,7 @@ table.datetbl
                 <ul style="list-style-type: none; padding: 0px">
                   <li><a href="#query">Sample uProduce query code for selecting records</a></li>
                   <li><a href="#styles">Create dynamic styles in XMPie video tutorial</a></li>
+                  <li><a href="#cstyle">Apply variable character styles with a Style content object</a></li>
                   <li><a href="#sqldb">Steps to re-create local SQLDB</a></li>
                   <li><a href="#adobe">Adobe CC tips</a></li>
                   <li><a href="#grep">Applying dynamic paragraph & character styles using GREP</a></li>
@@ -745,6 +746,18 @@ Result:
 	<li><p><span class="head1">Create dynamic styles in XMPie video tutorial <a href="#top" style="text-decoration: none"><b>&#8634;</b></a></span><br><br>
 	<iframe width="800" height="450" src="https://www.youtube.com/embed/JdtXnY_MnvU?si=DxcyJcVeyJ9mSSxd" title="Create dynamic styles in XMPie" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 	</p></li>
+
+        <a class="anchor" name="cstyle"></a>
+	<li><p><span class="head1">Apply variable character styles with a Style content object <a href="#top" style="text-decoration: none"><b>&#8634;</b></a></span><br>
+	  <ol>
+	    <li>Create multiple character styles (ex: "E_cstyl", "F_cstyl").</li>
+	    <li>Create a Style content object and enter the following sample qLingo code:</li>
+	  </ol><br>
+          <span style="white-space: pre">__PrivateInternalStyle(Switch(@{var_lang})
+{
+  Case "E" : "E_cstyl"
+  Case "F" : "F_cstyl"
+})</span></p></li>
 
         <a class="anchor" name="sqldb"></a>
         <li><p><span class="head1">Steps to re-create local SQLDB <a href="#top" style="text-decoration: none"><b>&#8634;</b></a></span><br>
